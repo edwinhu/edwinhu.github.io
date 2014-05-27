@@ -8,7 +8,7 @@ p.small {
 	font-size: 16px
 }
 a, a:hover, a:focus, a:active, a.active {
-	color: #ccc;
+	color: #ff6600;
 	outline: 0
 }
 h1, h2, h3, h4, h5, h6 {
@@ -25,7 +25,7 @@ hr.star-light, hr.star-primary {
 	margin: 25px auto 30px
 }
 hr.star-light:after, hr.star-primary:after {
-	content: "\1f4c8";
+	content: "\0177";
 	font-family: FontAwesome;
 	display: inline-block;
 	position: relative;
@@ -34,11 +34,11 @@ hr.star-light:after, hr.star-primary:after {
 	padding: 0 .25em
 }
 hr.star-light {
-	border-color: #000
+	border-color: #2c3e50
 }
 hr.star-light:after {
 	background-color: #ccc;
-	color: #000
+	color: #2c3e50
 }
 hr.star-primary {
 	border-color: #2c3e50
@@ -53,7 +53,7 @@ hr.star-primary:after {
 header {
 	text-align: center;
 	background: #ccc;
-	color: #000
+	color: #2c3e50
 }
 header .container {
 	padding-top: 100px;
@@ -132,7 +132,7 @@ section h2 {
 }
 section.success {
 	background: #ccc;
-	color: #000
+	color: #2c3e50
 }
 @media (max-width:767px) {
 	section {
@@ -190,9 +190,9 @@ section.success {
 	}
 }
 .btn-outline {
-	color: #fff;
+	color: #ff6600;
 	font-size: 20px;
-	border: solid 2px #fff;
+	border: solid 2px #ff6600;
 	background: 0 0;
 	transition: all .3s ease-in-out;
 	margin-top: 15px
