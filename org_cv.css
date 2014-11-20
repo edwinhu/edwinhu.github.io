@@ -1,0 +1,63 @@
+#content {
+    width: 45em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+a, a:visited, a:hover, a:active {
+  color: #0000EE;
+  text-decoration: none;
+}
+
+.title {
+    text-align: center;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+h1,h2,h3,h4 {
+    font-weight: normal;
+}
+
+h1,h2 {
+    font-variant: small-caps
+}
+
+h2 {
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+h3,h4 {
+    margin-left: 4em;
+}
+
+h3 {
+    font-size: medium;
+}
+
+.timestamp {
+    color: #000;
+    font-style: italic;
+}
+
+table {
+    width: 100%;
+    border-style: hidden;
+    margin-left: 6em;
+}
+
+td {
+    padding: 0px;
+}
+
+p {
+    margin-left: 6em;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 6em;
+}
+
