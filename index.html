@@ -1,431 +1,325 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<title>Edwin Hu</title>
+<!-- 2014-11-19 Wed 18:58 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="eddyhu" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="http://www.w3.org/html/logo/downloads/HTML5_Badge.svg?v=2" />
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="org_cv.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
 
-    <title>Edwin Hu</title>
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/freelancer.css" rel="stylesheet" type="text/css">
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
 
-    <!-- Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
 
-    <!-- IE8 support for HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
 
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
 </head>
+<body>
+<div id="content">
+<h1 class="title">Edwin Hu</h1>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
-<body id="page-top" class="index">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">Edwin Hu</a>
-            </div>
+<colgroup>
+<col  class="left" />
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Research</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+<col  class="center" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left"><a href="http://www.rice.edu/">Rice University</a></td>
+<td class="center">(206) 552-9388</td>
+</tr>
 
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.svg" alt="">
-                    <div class="intro-text">
-                        <span class="name">Edwin Hu</span>
-                        <hr class="star-light">
-                        <span class="skills">
-                        Finance Ph.D Candidate
-                        <br>Rice University, 
-                        <br>Jones Graduate School of Business
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+<tr>
+<td class="left">6100 Main St.</td>
+<td class="center"><a href="mailto:eddyhu@gmail.com"><code>eddyhu@gmail.com</code></a></td>
+</tr>
 
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Research</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/synth.svg" class="img-responsive" alt="" />
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="" />
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="" />
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="" />
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="" />
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="" />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+<tr>
+<td class="left">Houston, Texas</td>
+<td class="center">&#xa0;</td>
+</tr>
 
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>I am a Finance Ph.D candidate at Rice University's Jones Graduate School of Business. I am interested in social and economic networks, and their role in real and financial activity.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>I believe in Free and Open Source Software (FOSS), Literate Programming, and Reproducible Research.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<tr>
+<td class="left">77005-1892</td>
+<td class="center">&#xa0;</td>
+</tr>
 
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h3>Location</h3>
-                        <p>Rice University
-                            <br>McNair Hall 359a
-                            <br>Houston, Texas 77252</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li><a href="http://github.com/edwinhu" class="btn-social btn-outline" title="My Code on GitHub"><i class="fa fa-fw fa-github"></i></a>
-                            </li>
-                            <li><a href="#" class="btn-social btn-outline" title="I don't really use Google+"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li><a href="#" class="btn-social btn-outline" title="View my LinkedIn Profile"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>E-mail</h3>
-                        <p>eddyhu [at] gmail [dot] com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<tr>
+<td class="left">Office 359A</td>
+<td class="center">&#xa0;</td>
+</tr>
+</tbody>
+</table>
 
-    <footer class="text-center">
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Made with <a href="http://startbootstrap.com/freelancer">Freelancer</a> template from <a href="http://startbootstrap.com">Startbootstrap</a>.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 
-    <div class="scroll-top page-scroll visible-xs visble-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Summary</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+I am a quantitative researcher with a background in finance and computational mathematics. 
+</p>
 
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/synth.svg" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<p>
+I specialize in data analysis with <code>Python</code> &#x2013; I use <a href="http://pandas.pydata.org/"><code>pandas</code></a> for data manipulation on a daily basis, build models using <a href="http://statsmodels.sourceforge.net/"><code>statsmodels</code></a> and <a href="http://scikit-learn.org/stable/"><code>scikit-learn</code></a>, and do numerical analysis with <a href="http://www.numpy.org/"><code>numpy</code></a> and <a href="http://scipy.org/"><code>scipy</code></a>. I am also a proponent of using <a href="http://www.sqlalchemy.org/"><code>SQLAlchemy</code></a> to manage databases, which makes <code>pandas</code> even more powerful for analyzing large financial data, and unstructured datasets. 
+</p>
 
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-    <script src="js/freelancer.js"></script>
+<p>
+My current research projects include modeling the causal impact of banking regulation on economic growth, and predicting the arrival of private information around earnings announcements and mergers and acquisitions. 
+</p>
+</div>
+</div>
 
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Education</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><a href="http://business.rice.edu/">Rice University, Jesse H. Jones Graduate School of Business</a>, Houston, TX USA</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Ph.D, <a href="http://business.rice.edu/PhD_Finance_Area.aspx">Finance</a> (Expected 2016)
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><a href="http://www.washington.edu/">University of Washington</a>, Seattle, WA USA</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+B.S. <a href="https://www.math.washington.edu/acms/">Applied and Computational Mathematical Sciences</a>
+</p>
+<ul class="org-ul">
+<li>A joint program between <a href="http://www.cs.washington.edu/">Computer Science</a> and <a href="http://depts.washington.edu/amath/">Applied Math</a>.
+</li>
+</ul>
+<p>
+B.S. <a href="http://econ.washington.edu/">Economics</a> <i>Cum Laude</i> (2006 - 2010)
+</p>
+<ul class="org-ul">
+<li><a href="http://econ.washington.edu/files/2013/04/Quant.-Manager.-Aug-2014.pdf">Certificate in Quantitative Managerial Economics</a> and <a href="https://www.math.washington.edu/acms/programoptions4.html">Mathematical Economics</a>.
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Skills</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1">Data Analysis</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+I have broad experience doing data analysis with <code>Python</code>, <code>R</code>, <code>MATLAB</code>, <code>SAS</code>, <code>STATA</code> and <code>SQL</code>. Although each framework has its strengths and weaknesses, I&rsquo;ve found that research and development is much quicker with <code>Python</code> because it is far more expressive than most domain-specific languages, and far easier to use than most general programming languages. By combining a <code>SQLite</code> or <code>PostgreSQL</code> database backend with a <code>SQLAlchemy</code> and <code>pandas</code> frontend it is very easy to <a href="http://en.wikipedia.org/wiki/Extract,_transform,_load">Extract, Transform, and Load</a> the data and <a href="http://www.jstatsoft.org/v40/i01/paper">Split, Apply, and Combine</a> the analysis. I have worked with a variety of large datasets ranging from intraday tick data to unstructured text documents.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2">Financial Econometrics</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+I have extensive experience with quantitative economic and financial time series modeling. My primary areas of expertise are in <a href="http://www.jstor.org/discover/10.2307/2289064">statistical causal impact modeling</a>, and market microstructure econometrics. Causal impact modeling seeks to estimate the causal effect of an intervention on a time series. Empirical microstructure modeling is concerned with identifying the sources of value and reasons for trading activity.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3">High Performance Computing</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+I have experience profiling, optimizing, and parallelizing algorithms in <code>R</code>, <code>MATLAB</code>, and <code>Python</code>. Most of my recent work is in <code>Python</code>, for which I use <a href="http://numba.pydata.org/"><code>numba</code></a> to JIT compile native <code>Python</code> code to machine code (and GPU code). I use <code>IPython.parallel</code> to run code on HPC servers, grids, or occasionally on EC2 cloud clusters.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4">Software Development</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+I develop on <code>*NIX</code> machines. I make a habit to carefully document my code and write detailed commit messages in <code>git</code>. I learned and used <code>Java</code> for course work. 
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Work Experience</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1">Intern - Quantitative Investment Strategy, <a href="http://www.russell.com/us/default.aspx">Russell Investments</a>, Fall 2014-Present</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Skills used: <code>Python</code>, <code>R</code>, <code>MATLAB</code>, <code>SQLite</code>
+</p>
+
+<p>
+Overview: I am developing a <code>Python</code> platform to automate the Short Term Forecasting process. The current process requires a lot of human interaction with various data sources (csv, Excel, databases), and various scripts (<code>R</code>, <code>MATLAB</code>). I am using <code>Python</code> to create a data extraction layer and glue it to the forecasting layer allowing us to develop a robust backtesting process.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2">Graduate Researcher - Rice University, Fall 2010 - Present</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+Skills used: <code>Python</code>, <code>STATA</code>, <code>SAS</code>, <code>PostgreSQL</code>
+</p>
+
+<p>
+Overview: Research Statement available upon request.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3">Undergraduate Researcher - University of Washington, Fall 2009 - Summer 2010</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+Skills used: <code>R</code> 
+</p>
+
+<p>
+Overview: I conducted a large scale simulation study to understand the asymtoptic properties of Value at Risk and Shortfall models using <code>R</code>. I used Amazon EC2 and Hadoop to parallelize the simulations. As a research assistant I built a <code>Linux/Python/MySQL</code> web application to conduct surveys leveraging Amazon&rsquo;s Mechanical Turk user base.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: eddyhu</p>
+<p class="date">Created: 2014-11-19 Wed 18:58</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.3beta)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
 </body>
-
 </html>
