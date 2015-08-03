@@ -46,3 +46,13 @@
 body {
     font-family: "Computer Modern Serif", serif;
 }
+
+img.img-responsive {
+    display:block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+div.bs-docs-sidebar.affix {
+    
+}
