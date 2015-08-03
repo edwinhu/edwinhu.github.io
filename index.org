@@ -1,3 +1,4 @@
+#+TITLE: Edwin Hu
 #+OPTIONS: author:t creator:t timestamp:nil
 #+CREATOR: Jesse H. Jones Graduate School of Business @ Rice University
 #+HTML_HEAD:<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
@@ -7,8 +8,6 @@
 #+HTML_HEAD:<script src="js/boostrap.min.js"></script>
 #+HTML_HEAD:<script src="js/jquery.bxslider.min.js"></script>
 #+HTML_HEAD:<script src="js/main.js"></script>
-
-* Edwin Hu
 
 Ph.D Finance (/Expected Spring 2016/)
 
