@@ -1,0 +1,37 @@
+#+OPTIONS: author:t creator:t timestamp:nil
+#+CREATOR: Jesse H. Jones Graduate School of Business @ Rice University
+#+HTML_HEAD:<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+#+HTML_HEAD:<link rel="stylesheet" type="text/css" href="/css/jquery.bxslider.css">
+#+HTML_HEAD:<link rel="stylesheet" type="text/css" href="/css/main.css">
+#+HTML_HEAD:<script src="js/jquery.min.js"></script>
+#+HTML_HEAD:<script src="js/boostrap.min.js"></script>
+#+HTML_HEAD:<script src="js/jquery.bxslider.min.js"></script>
+#+HTML_HEAD:<script src="js/main.js"></script>
+
+* Edwin Hu
+
+Ph.D Finance (/Expected Spring 2016/)
+
+** Contact
+| [[http://business.rice.edu][Jesse H. Jones Graduate School of Business]] | Last Updated: [2015-08-02 Sun] |
+| [[http://www.rice.edu][Rice University]]                            |                                |
+| 6100 Main St.                              | (206) 552-9388                 |
+| Houston, Texas 77005-1892                  | [[mailto:eddyhu@gmail.com][eddyhu@gmail.com]]               |
+| Office 359A                                |                                |
+
+** Research
+
+*** Interests
+Information asymmetry, institutional investors, networks, causal inference.
+
+*** Papers
+[[http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790][In Progress]]:
+- [[http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2564369][What Does the Pin Model Identify as Private Information?]] with Jefferson Duarte, and Lance Young
+
+  - [[./figs/xom-dy-1993.svg]] 
+  - [[./figs/xom-dy-2012.svg]]
+
+- [[http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2139679][Credit Be Dammed: The Impact of Banking Deregulation on Economic Growth]] with Elizabeth Berger, Alexander Butler, and Morad Zekhnini
+
+  - [[./figs/ATE_CI_Hi_loans_inst.svg]]
+  - [[./figs/ATE_CI_Low_loans_inst.svg]]
