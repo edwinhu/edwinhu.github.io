@@ -1,6 +1,6 @@
 #+TITLE: Edwin Hu
 #+AUTHOR: Edwin Hu
-#+OPTIONS: author:t creator:t timestamp:nil
+#+OPTIONS: author:t creator:t timestamp:nil toc:nil
 #+CREATOR: Jesse H. Jones Graduate School of Business @ Rice University
 #+HTML_HEAD:<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
 #+HTML_HEAD:<link rel="stylesheet" type="text/css" href="/css/jquery.bxslider.css">
