@@ -235,6 +235,7 @@ sashtml*.htm*
 tex/_region_*
 tex/auto
 ltxpng/
+_site/
 
 #Images
 *.eps
@@ -252,6 +253,5 @@ ltxpng/
 *.out
 *.csv
 *.fls
-*.org
 *.tex
 *.sty
