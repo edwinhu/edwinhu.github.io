@@ -1,6 +1,6 @@
 #+TITLE: Edwin Hu
 #+AUTHOR: Edwin Hu
-#+OPTIONS: author:t creator:t timestamp:nil toc:nil
+#+OPTIONS: author:t creator:t timestamp:nil toc:2
 #+CREATOR: Jesse H. Jones Graduate School of Business @ Rice University
 #+HTML_HEAD:<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
 #+HTML_HEAD:<link rel="stylesheet" type="text/css" href="/css/jquery.bxslider.css">
@@ -11,6 +11,8 @@
 #+HTML_HEAD:<script src="js/main.js"></script>
 
 Ph.D Finance (/Expected Spring 2016/)
+
+CV [[./cv][(HTML)]] [[./cv/index.pdf][(PDF)]]
 
 * Research
 
@@ -25,8 +27,8 @@ Information asymmetry, institutional investors, networks, causal inference.
 Some recent papers suggest that the Easley and O'Hara (1987) probability of informed trade (PIN) model fails to capture private information. We investigate this issue by comparing the PIN model with the Duarte and Young (2009) (DY) and Odders-White and Ready (2008) (OWR) models of private information arrival. We find that the PIN and DY models fail to capture private information because they mistakenly associate variations in turnover with the arrival of private information. On the other hand, the OWR model, which uses returns along with order flow imbalance to identify informed trade, seems to produce patterns that are consistent with the arrival of private information.
 #+END_QUOTE
 
-  - [[./figs/xom-dy-1993.svg]] 
-  - [[./figs/xom-dy-2012.svg]]
+  - @@html:<img src="./figs/xom-dy-1993.svg" class="img-responsive" title="XOM 1993 - The Duarte and Young (2009) model (black clouds) fit the data (+) and infers private information from order imbalances.">@@
+  - @@html:<img src="./figs/xom-dy-2012.svg" class="img-responsive" title="XOM 2012 - Late in sample both the DY and PIN can no longer fit 90% of the data.">@@
 
 *** [[http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2139679][Credit Be Dammed: The Impact of Banking Deregulation on Economic Growth]] 
 /with Elizabeth Berger, Alexander Butler, and Morad Zekhnini/
@@ -34,8 +36,8 @@ Some recent papers suggest that the Easley and O'Hara (1987) probability of info
 We document substantial variation in the effect of state-level bank branching deregulation in the United States on economic growth. We examine the sources of this variation by testing multiple channels that may link deregulation and economic growth. Using a matching method that utilizes synthetic counterfactual states, we find support for the hypothesis that economic growth was associated with states where deregulation solved a capital immobility or "dammed" credit problem. We do not find support for other channels, which posit that banks became more efficient, financed more innovative businesses, or learned by observing prior deregulations.
 #+END_QUOTE
 
-  - [[./figs/ATE_CI_Hi_loans_inst.svg]]
-  - [[./figs/ATE_CI_Low_loans_inst.svg]]
+  - @@html:<img src="./figs/ATE_CI_Hi_loans_inst.svg" class="img-responsive" title="Following bank branching deregulation only states with a 'dammed' credit problem experience economic growth.">@@
+  - @@html:<img src="./figs/ATE_CI_Low_loans_inst.svg" class="img-responsive" title="States without a 'dammed' credit problem experience no significant growth.">@@
 
 * Contact
 | [[http://business.rice.edu][Jesse H. Jones Graduate School of Business]] | Last Updated: [2015-08-02 Sun] |

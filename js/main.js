@@ -1,5 +1,6 @@
 $(document).ready(function(){
   $('.org-ul').bxSlider({
-      preloadImages: 'all'
+      preloadImages: 'all',
+      captions: true
   });
 });
