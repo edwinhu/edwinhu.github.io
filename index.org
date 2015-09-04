@@ -1,5 +1,6 @@
 #+TITLE: Edwin Hu
 #+AUTHOR: Edwin Hu
+#+DATE: {{{time(%Y-%m-%d)}}}
 #+OPTIONS: author:t creator:t timestamp:nil toc:2
 #+CREATOR: Jesse H. Jones Graduate School of Business @ Rice University
 #+HTML_HEAD:<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
@@ -42,8 +43,8 @@ We document substantial variation in the effect of state-level bank branching de
   - @@html:<img src="./figs/ATE_CI_Low_loans_inst.svg" class="img-responsive" title="States without a 'dammed' credit problem experience no significant growth.">@@
 
 * Contact
-| [[http://business.rice.edu][Jesse H. Jones Graduate School of Business]] | Last Updated: [2015-08-02 Sun] |
-| [[http://www.rice.edu][Rice University]]                            |                                |
-| 6100 Main St.                              | (206) 552-9388                 |
-| Houston, Texas 77005-1892                  | [[mailto:eddyhu@gmail.com][eddyhu@gmail.com]]               |
-| Office 359A                                |                                |
+| [[http://business.rice.edu][Jesse H. Jones Graduate School of Business]] | Last Updated: {{{date}}} |
+| [[http://www.rice.edu][Rice University]]                            |                          |
+| 6100 Main St.                              | (206) 552-9388           |
+| Houston, Texas 77005-1892                  | [[mailto:eddyhu@gmail.com][eddyhu@gmail.com]]         |
+| Office 359A                                |                          |
