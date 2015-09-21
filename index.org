@@ -10,6 +10,7 @@
 #+HTML_HEAD:<script src="js/boostrap.min.js"></script>
 #+HTML_HEAD:<script src="js/jquery.bxslider.min.js"></script>
 #+HTML_HEAD:<script src="js/main.js"></script>
+#+HTML_HEAD:<script src="js/ga.js"></script>
 
 Ph.D Finance (/Expected Spring 2016/)
 
