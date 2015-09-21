@@ -237,13 +237,6 @@ tex/auto
 ltxpng/
 _site/
 
-#Images
-*.eps
-*.svg
-*.pdf
-*.gph
-*.png
-
 #Common project stuff
 .lst
 .Rhistory

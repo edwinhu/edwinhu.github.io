@@ -22,6 +22,15 @@ Information asymmetry, institutional investors, networks, causal inference.
 
 ** [[http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790][Working Papers]]
 
+*** [[./docs/idc.pdf][Information Diffusion in Institutional Investor Networks]]
+
+#+BEGIN_QUOTE
+This paper tests whether institutional investors share valuable information with one another through information networks. I develop a new measure, "Information Diffusion Centrality," based on a stylized model of bilateral information exchange. The model predicts that central investors have superior access to information because they are on the paths of many random walks. Consistent with this prediction, I show that the interim trading performance of central investors is 60% higher than that of the average investor. Furthermore, central investors' round-trip trading performance in target stock around merger announcements is more than two times higher than that of the average investor, even controlling for connections to merger advisors. In contrast, centrality plays no role in trading performance around sudden board director and key manager deaths. Overall, my findings suggest that network information diffusion plays an important role in informed trading.
+#+END_QUOTE
+
+  - @@html:<img src="./figs/2002Q2_crop.png" class="img-responsive" title="2002Q2 Weighted Trading Correlation Network with nodes colored by Information Diffusion Centrality">@@
+  - @@html:<img src="./figs/eigvsidc.svg" class="img-responsive" title="Eigenvector Centrality vs Information Diffusion Centrality">@@
+
 *** [[http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2564369][What Does the Pin Model Identify as Private Information?]] 
 /with Jefferson Duarte, and Lance Young/ 
 
