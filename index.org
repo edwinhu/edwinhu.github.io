@@ -31,7 +31,7 @@ This paper shows that network information flows generate a substantial informati
 #+END_QUOTE
 
   - @@html:<img src="./figs/2002Q2_crop.png" height="360px" width="360px" class="img-responsive" title="2002Q2 Weighted Trading Correlation Network with nodes colored by Information Diffusion Centrality">@@
-  - @@html:<img src="./figs/eigvsidc.png" class="img-responsive" title="Eigenvector Centrality vs Information Diffusion Centrality">@@
+  - @@html:<img src="./figs/eigvsidc.png" class="img-responsive" title="Information Diffusion Centrality measures <i>novel</i> information whereas Eigenvector Centrality measures <i>commonly-held</i> beliefs.">@@
 
 *** [[http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2564369][What Does the Pin Model Identify as Private Information?]] 
 /with Jefferson Duarte, and Lance Young/ 
