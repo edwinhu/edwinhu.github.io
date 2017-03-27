@@ -10,7 +10,6 @@
 #+HTML_HEAD:<script src="js/boostrap.min.js"></script>
 #+HTML_HEAD:<script src="js/jquery.bxslider.min.js"></script>
 #+HTML_HEAD:<script src="js/main.js"></script>
-#+HTML_HEAD:<script src="js/ga.js"></script>
 
 Financial Economist, S.E.C., Washington, D.C.
 [[http://www.sec.gov/dera][Division of Economic and Risk Analysis]]
@@ -81,15 +80,7 @@ observing prior deregulations.
 *** Information Diffusion in Institutional Investor Networks
 
 * Contact
-<<<<<<< HEAD
   | [[http://www.sec.gov][U.S. Securities and Exchange Commission]] | Last Updated: {{{date}}}           |
   | 100 F St NE, MS 4020                    | ph: (202) 551-8993 (office)        |
   | Washington, D.C. 20549                  | email: eddyhu at g m a i l dot com |
   |                                         | web: [[http://edwinhu.github.io][edwinhu.github.io]]             |
-=======
-| [[http://business.rice.edu][Jesse H. Jones Graduate School of Business]] | Last Updated: {{{date}}} |
-| [[http://www.rice.edu][Rice University]]                            |                          |
-| 6100 Main St.                              | (206) 552-9388           |
-| Houston, Texas 77005-1892                  | [[mailto:eddyhu@gmail.com][eddyhu@gmail.com]]         |
-| Office 359A                                |                          |
->>>>>>> 39d21d432d1a7243c18ca599a130c7e55910e291
