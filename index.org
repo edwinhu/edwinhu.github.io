@@ -58,7 +58,7 @@ somewhat better.
 #  - @@html:<img src="./figs/xom-dy-1993.svg" class="img-responsive" title="XOM 1993 - The Duarte and Young (2009) model (black clouds) fit the data (+) and infers private information from order imbalances.">@@
 #  - @@html:<img src="./figs/xom-dy-2012.svg" class="img-responsive" title="XOM 2012 - Late in sample both the DY and PIN can no longer fit 90% of the data.">@@
 
-*** [[http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2139679][Credit Be Dammed: The Impact of Banking Deregulation on Economic Growth]] 
+*** [[https://ssrn.com/abstract=2139679][Credit Be Dammed: The Impact of Banking Deregulation on Economic Growth]]
 /with Elizabeth Berger, Alexander Butler, and Morad Zekhnini/
 #+BEGIN_QUOTE
 We document substantial variation in the effect of state-level bank branching
