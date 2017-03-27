@@ -55,8 +55,8 @@ to identify private information, but indicate that the OWR model performs
 somewhat better.
 #+END_QUOTE
 
-  - @@html:<img src="./figs/xom-dy-1993.svg" class="img-responsive" title="XOM 1993 - The Duarte and Young (2009) model (black clouds) fit the data (+) and infers private information from order imbalances.">@@
-  - @@html:<img src="./figs/xom-dy-2012.svg" class="img-responsive" title="XOM 2012 - Late in sample both the DY and PIN can no longer fit 90% of the data.">@@
+#  - @@html:<img src="./figs/xom-dy-1993.svg" class="img-responsive" title="XOM 1993 - The Duarte and Young (2009) model (black clouds) fit the data (+) and infers private information from order imbalances.">@@
+#  - @@html:<img src="./figs/xom-dy-2012.svg" class="img-responsive" title="XOM 2012 - Late in sample both the DY and PIN can no longer fit 90% of the data.">@@
 
 *** [[http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2139679][Credit Be Dammed: The Impact of Banking Deregulation on Economic Growth]] 
 /with Elizabeth Berger, Alexander Butler, and Morad Zekhnini/
@@ -72,8 +72,8 @@ became more efficient, financed more innovative businesses, or learned by
 observing prior deregulations.
 #+END_QUOTE
 
-  - @@html:<img src="./figs/ATE_CI_Hi_loans_inst.svg" class="img-responsive" title="Following bank branching deregulation only states with a 'dammed' credit problem experience economic growth.">@@
-  - @@html:<img src="./figs/ATE_CI_Low_loans_inst.svg" class="img-responsive" title="States without a 'dammed' credit problem experience no significant growth.">@@
+#  - @@html:<img src="./figs/ATE_CI_Hi_loans_inst.svg" class="img-responsive" title="Following bank branching deregulation only states with a 'dammed' credit problem experience economic growth.">@@
+#  - @@html:<img src="./figs/ATE_CI_Low_loans_inst.svg" class="img-responsive" title="States without a 'dammed' credit problem experience no significant growth.">@@
 
 
 ** Work in Progress
