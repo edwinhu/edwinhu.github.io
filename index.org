@@ -9,7 +9,6 @@
 #+HTML_HEAD:<script src="js/jquery.min.js"></script>
 #+HTML_HEAD:<script src="js/boostrap.min.js"></script>
 #+HTML_HEAD:<script src="js/jquery.bxslider.min.js"></script>
-#+HTML_HEAD:<script src="js/main.js"></script>
 
 Financial Economist, S.E.C., Washington, D.C.
 [[http://www.sec.gov/dera][Division of Economic and Risk Analysis]]
