@@ -3,12 +3,15 @@
 #+DATE: {{{time(%Y-%m-%d)}}}
 #+OPTIONS: author:t creator:t timestamp:nil toc:2 num:nil
 #+CREATOR: Jesse H. Jones Graduate School of Business @ Rice University
-#+HTML_HEAD:<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-#+HTML_HEAD:<link rel="stylesheet" type="text/css" href="/css/jquery.bxslider.css">
-#+HTML_HEAD:<link rel="stylesheet" type="text/css" href="/css/main.css">
+#+HTML_HEAD:<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+#+HTML_HEAD:<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+#+HTML_HEAD:<link rel="stylesheet" type="text/css" href="css/main.css">
+#+HTML_HEAD:<link rel="stylesheet" type="text/css" href="css/twbs.css">
 #+HTML_HEAD:<script src="js/jquery.min.js"></script>
 #+HTML_HEAD:<script src="js/boostrap.min.js"></script>
 #+HTML_HEAD:<script src="js/jquery.bxslider.min.js"></script>
+#+HTML_HEAD:<script src="js/main.js"></script>
+#+HTML_HEAD:<script src="js/ga.js"></script>
 
 Financial Economist, S.E.C., Washington, D.C.
 [[http://www.sec.gov/dera][Division of Economic and Risk Analysis]]
