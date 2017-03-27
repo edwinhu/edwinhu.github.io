@@ -28,7 +28,7 @@ Financial Economist, S.E.C., Washington, D.C. \\
 [[http://www.sec.gov/dera][Division of Economic and Risk Analysis]] \\
 Office of Markets - Market Data and Research \\
 
-CV [[./cv/index.pdf][(PDF)]]
+CV [[./cv/cv.pdf][(PDF)]]
 
 * Research
 
