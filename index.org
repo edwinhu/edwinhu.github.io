@@ -1,6 +1,7 @@
 #+TITLE: Edwin Hu
 #+AUTHOR: Edwin Hu
-#+OPTIONS: author:t creator:t timestamp:nil toc:2
+#+DATE: {{{time(%Y-%m-%d)}}}
+#+OPTIONS: author:t creator:t timestamp:nil toc:2 num:nil
 #+CREATOR: Jesse H. Jones Graduate School of Business @ Rice University
 #+HTML_HEAD:<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
 #+HTML_HEAD:<link rel="stylesheet" type="text/css" href="/css/jquery.bxslider.css">
@@ -9,6 +10,7 @@
 #+HTML_HEAD:<script src="js/boostrap.min.js"></script>
 #+HTML_HEAD:<script src="js/jquery.bxslider.min.js"></script>
 #+HTML_HEAD:<script src="js/main.js"></script>
+#+HTML_HEAD:<script src="js/ga.js"></script>
 
 Financial Economist, S.E.C., Washington, D.C.
 [[http://www.sec.gov/dera][Division of Economic and Risk Analysis]]
@@ -23,11 +25,25 @@ Market microstructure, financial markets regulation, big data, causal inference.
 
 ** [[http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790][Working Papers]]
 
+<<<<<<< HEAD
 *** Intentional Access Delays, Market Quality, and Price Discovery: Evidence from IEX Becoming an Exchange
 /Coming Soon/
+=======
+*** [[./idc.pdf][Information Diffusion in Institutional Investor Networks]] 
+
+*Job Market Paper*
+#+BEGIN_QUOTE
+This paper shows that network information flows generate a substantial information advantage for "central" institutional investors. I develop a new measure, Information Diffusion Centrality, which captures an investor's access to novel information as it arrives and diffuses through the network. I show that the abnormal interim trading performance of central investors is on average 32 basis points higher than that of peripheral investors in the following quarter. Central investors also have superior access to information about mergers. Central investors' round-trip trading performance in target stock is on average 150 basis points higher than that of peripheral investors. Centrality is distinct from common sources of information due to connections to merger advisors, is unrelated to industry expertise, and does not spuriously predict trading performance around sudden deaths of board members and key executives. My results suggest that institutional investors regularly share valuable information with one another.
+#+END_QUOTE
+
+  - @@html:<img src="./figs/2002Q2_crop.png" height="360px" width="360px" class="img-responsive" title="2002Q2 Weighted Trading Correlation Network with nodes colored by Information Diffusion Centrality">@@
+  - @@html:<img src="./figs/eigvsidc.png" class="img-responsive" title="Information Diffusion Centrality measures <i>novel</i> information whereas Eigenvector Centrality measures <i>commonly-held</i> beliefs.">@@
+>>>>>>> 39d21d432d1a7243c18ca599a130c7e55910e291
 
 *** [[http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2564369][What Does the Pin Model Identify as Private Information?]] 
-/with Jefferson Duarte, and Lance Young/
+/with Jefferson Duarte, and Lance Young/ 
+
+*Revise and Resubmit at Journal of Finance*
 #+BEGIN_QUOTE
 Some recent papers suggest that the Easley and O'Hara (1987) probability of
 informed trade (PIN) model fails to capture private information. We investigate
@@ -65,7 +81,15 @@ observing prior deregulations.
 *** Information Diffusion in Institutional Investor Networks
 
 * Contact
+<<<<<<< HEAD
   | [[http://www.sec.gov][U.S. Securities and Exchange Commission]] | Last Updated: {{{date}}}           |
   | 100 F St NE, MS 4020                    | ph: (202) 551-8993 (office)        |
   | Washington, D.C. 20549                  | email: eddyhu at g m a i l dot com |
   |                                         | web: [[http://edwinhu.github.io][edwinhu.github.io]]             |
+=======
+| [[http://business.rice.edu][Jesse H. Jones Graduate School of Business]] | Last Updated: {{{date}}} |
+| [[http://www.rice.edu][Rice University]]                            |                          |
+| 6100 Main St.                              | (206) 552-9388           |
+| Houston, Texas 77005-1892                  | [[mailto:eddyhu@gmail.com][eddyhu@gmail.com]]         |
+| Office 359A                                |                          |
+>>>>>>> 39d21d432d1a7243c18ca599a130c7e55910e291
