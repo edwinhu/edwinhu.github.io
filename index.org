@@ -13,9 +13,20 @@
 #+HTML_HEAD:<script src="js/main.js"></script>
 #+HTML_HEAD:<script src="js/ga.js"></script>
 
-Financial Economist, S.E.C., Washington, D.C.
-[[http://www.sec.gov/dera][Division of Economic and Risk Analysis]]
-Office of Markets - Market Data and Research
+#+BEGIN_SRC emacs-lisp :exports none :results none
+(setq org-publish-project-alist
+      '(("org-defaults"
+         :base-directory "."
+         :publishing-directory "."
+         :publishing-function org-twbs-publish-to-html
+         :with-sub-superscript nil
+         ("org" :components ("org-defaults"))
+         )))
+#+END_SRC
+
+Financial Economist, S.E.C., Washington, D.C. \\
+[[http://www.sec.gov/dera][Division of Economic and Risk Analysis]] \\
+Office of Markets - Market Data and Research \\
 
 CV [[./cv][(HTML)]] [[./cv/index.pdf][(PDF)]]
 
