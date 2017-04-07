@@ -42,6 +42,8 @@ Market microstructure, financial markets regulation, big data, causal inference.
 *** [[https://ssrn.com/abstract=2564369][Does the PIN Model Mis-Identify Private Information and If So, What are our Alternatives?]]
 /with Jefferson Duarte, and Lance Young/ 
 
+*Revise and Resubmit Journal of Financial Economics*
+
 #+BEGIN_QUOTE
 We investigate whether the Easley and O’Hara (1987) PIN model mis-identifies
 private information from variation in turnover. We find that the PIN model is no
