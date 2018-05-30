@@ -9,7 +9,6 @@
 
 * [[https://ssrn.com/abstract=2564369][Does the PIN Model Mis-Identify Private Information and If So, What are our Alternatives?]]
 /with Jefferson Duarte, and Lance Young/ 
-
 - *Revise and Resubmit Journal of Financial Economics*
 - Presented at Rice University (2015), Texas A&M (2015*), Multinational Finance
   Society Conference (MFS, 2015*) *Best Paper Award*, China International
@@ -18,6 +17,7 @@
   2015*), American Finance Association Conference (AFA, 2016), University of
   Washington (2016*), University of Virginia (McIntire) (2017*), Southern
   Methodist University (2017*).
+- *[[https://edwinhu.github.io/pin/][Data]]*
 
 #+BEGIN_QUOTE
 We show that the PIN model is no more useful in identifying private-information
