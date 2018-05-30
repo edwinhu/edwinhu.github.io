@@ -17,7 +17,7 @@
   2015*), American Finance Association Conference (AFA, 2016), University of
   Washington (2016*), University of Virginia (McIntire) (2017*), Southern
   Methodist University (2017*).
-- *[[https://edwinhu.github.io/pin/][Data]]*
+- *[[https://edwinhu.github.io/pin/][Data and Previous Refereed Versions]]*
 
 #+BEGIN_QUOTE
 We show that the PIN model is no more useful in identifying private-information
