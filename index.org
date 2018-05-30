@@ -52,19 +52,19 @@ Financial markets regulation, market microstructure, financial intermediation, c
 :END:
 #+INCLUDE: teaching.org :minlevel 3
 
-* Education
+* Education :noexport:
 :PROPERTIES:
 :CUSTOM_ID: education
 :END:
 #+INCLUDE: education.org :minlevel 3
 
-* Professional Service
+* Professional Service :noexport:
 :PROPERTIES:
 :CUSTOM_ID: service
 :END:
 #+INCLUDE: service.org
 
-* Skills
+* Skills :noexport:
 :PROPERTIES:
 :CUSTOM_ID: skills
 :END:

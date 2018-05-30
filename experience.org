@@ -1,7 +1,7 @@
 * June 2016--Present: 
-  Financial Economist Fellow, SEC, Washington, D.C.
+  Financial Economist Fellow \\
+  Securities and Exchange Commission, Washington, D.C. \\
   [[http://www.sec.gov/dera][Division of Economic and Risk Analysis]]
-  Office of Markets - Market Data and Research
 
 - I study the economic implications of rulemaking on financial markets.
   - I led the Staff Speed Bump Report responding to [[https://www.sec.gov/rules/interp/2016/34-78102.pdf][Commission Interpretation

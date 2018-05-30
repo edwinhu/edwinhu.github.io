@@ -249,3 +249,5 @@ _site/
 *.tex
 *.sty
 auto
+
+cv/
