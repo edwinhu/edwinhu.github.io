@@ -1,0 +1,3 @@
+Data analysis, financial econometrics, high performance scientific computing, parallel computing, data visualization, causal inference.
+
+~Python~, ~SAS~, ~STATA~, ~SQL~, ~R~, ~bash~, ~git~

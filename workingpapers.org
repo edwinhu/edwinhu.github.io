@@ -1,0 +1,52 @@
+
+* Intentional Access Delays, Market Quality, and Price Discovery: Evidence from IEX Becoming an Exchange
+/Coming Soon/
+
+
+* Loan Syndication Networks
+/with Ioannis Spyridiopoulos/
+
+
+* [[https://ssrn.com/abstract=2564369][Does the PIN Model Mis-Identify Private Information and If So, What are our Alternatives?]]
+/with Jefferson Duarte, and Lance Young/ 
+
+- *Revise and Resubmit Journal of Financial Economics*
+- Presented at Rice University (2015), Texas A&M (2015*), Multinational Finance
+  Society Conference (MFS, 2015*) *Best Paper Award*, China International
+  Finance Conference (CICF, 2015*), Society of Financial Econometrics Conference
+  (SoFiE, 2015*), Instituto Technologico Autonomo de Mexico Conference (ITAM,
+  2015*), American Finance Association Conference (AFA, 2016), University of
+  Washington (2016*), University of Virginia (McIntire) (2017*), Southern
+  Methodist University (2017*).
+
+#+BEGIN_QUOTE
+We show that the PIN model is no more useful in identifying private-information
+arrival than simply looking at whether turnover is above average or not. This
+calls into question PIN as a measure of private information since turnover
+varies for many reasons unrelated to private-information arrival. We also
+examine an alternative to the PIN model, the Odders-White and Ready (2008)
+model. Our tests indicate that measures of private information based on the
+Odders-White and Ready (2008) model are promising alternatives to PIN.
+#+END_QUOTE
+
+
+* [[https://ssrn.com/abstract=2139679][Credit Be Dammed: The Impact of Banking Deregulation on Economic Growth]]
+/with Elizabeth Berger, Alexander Butler, and Morad Zekhnini/
+
+- *Revise and Resubmit Journal of Financial Intermediation*
+- Presented at Rice University (2012*), Financial Management Association
+  Conference (FMA 2013), Securities and Exchange Commission (SEC, 2014*),
+  Fordham University (2014*), University of Cincinnati (2014*), University of
+  Kentucky (2014*), Yale School of Management (2015*).
+
+#+BEGIN_QUOTE
+We document a positive effect of financial integration on economic growth. Using
+US state-by-state financial deregulations, we find that economic growth occurred
+in states where bank deregulation solved a capital immobility problem. We use a
+matching method that constructs synthetic counterfactual states to identify the
+channels that link bank deregulation to financial integration, and thereby to
+economic growth. Our results reveal a correlation between financial integration
+and subsequent banking sector changes including improved bank efficiency, better
+lending and borrowing rates, and an expansion in loan recipients. We show that
+financial integration democratizes lending and spurs economic growth.
+#+END_QUOTE

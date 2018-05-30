@@ -2,87 +2,76 @@
 #+AUTHOR: Edwin Hu
 #+DATE: {{{time(%Y-%m-%d)}}}
 #+OPTIONS: author:t creator:t timestamp:nil toc:2 num:nil
-#+CREATOR: 
-#+HTML_HEAD:<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-#+HTML_HEAD:<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
-#+HTML_HEAD:<link rel="stylesheet" type="text/css" href="css/main.css">
-#+HTML_HEAD:<link rel="stylesheet" type="text/css" href="css/twbs.css">
-#+HTML_HEAD:<script src="js/jquery.min.js"></script>
-#+HTML_HEAD:<script src="js/boostrap.min.js"></script>
-#+HTML_HEAD:<script src="js/jquery.bxslider.min.js"></script>
-#+HTML_HEAD:<script src="js/main.js"></script>
-#+HTML_HEAD:<script src="js/ga.js"></script>
+#+CREATOR: The Securities and Exchange Commission disclaims responsibility for any private publication or statement of any SEC employee or Commissioner. This webpage expresses the author's views and does not necessariliy reflect those of the Commission, the Commissioners, or members of the staff.
 
-#+BEGIN_SRC emacs-lisp :exports none :results none
-(setq org-publish-project-alist
-      '(("org-defaults"
-         :base-directory "."
-         :publishing-directory "."
-         :publishing-function org-twbs-publish-to-html
-         :with-sub-superscript nil
-         ("org" :components ("org-defaults"))
-         )))
-#+END_SRC
-
-Financial Economist, S.E.C., Washington, D.C. \\
+Financial Economist Fellow \\
+Securities and Exchange Commission \\
 [[http://www.sec.gov/dera][Division of Economic and Risk Analysis]] \\
 Office of Markets - Market Data and Research \\
 
-CV [[./cv/cv.pdf][(PDF)]]
+[[./cv][CV (PDF)]] | [[https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790][SSRN]] | [[https://www.linkedin.com/in/huedwin/][LinkedIn]] | [[https://github.com/edwinhu][GitHub]]
 
 * Research
-
+:PROPERTIES:
+:CUSTOM_ID: research
+:END:
 ** Interests
-Market microstructure, financial markets regulation, big data, causal inference.
+:PROPERTIES:
+:CUSTOM_ID: interests
+:END:
+Financial markets regulation, market microstructure, financial intermediation, causal inference.
 
 ** [[http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790][Working Papers]]
-
-*** Intentional Access Delays, Market Quality, and Price Discovery: Evidence from IEX Becoming an Exchange
-/Coming Soon/
-*** [[https://ssrn.com/abstract=2564369][Does the PIN Model Mis-Identify Private Information and If So, What are our Alternatives?]]
-/with Jefferson Duarte, and Lance Young/ 
-
-*Revise and Resubmit Journal of Financial Economics*
-
-#+BEGIN_QUOTE
-We investigate whether the Easley and O’Hara (1987) PIN model mis-identifies
-private information from variation in turnover. We find that the PIN model is no
-more useful in identifying private information arrival than simply looking at
-whether turnover is above average or not. This calls into question the PIN as a
-measure of private information since turnover varies for many reasons unrelated
-to private information arrival. We also examine two alternatives to the PIN
-model, the Generalized PIN model (GPIN) and the Odders-White and Ready (2008)
-model (OWR). Our tests do not reveal any problems with these two models’ ability
-to identify private information, but indicate that the OWR model performs
-somewhat better.
-#+END_QUOTE
-
-#  - @@html:<img src="./figs/xom-dy-1993.svg" class="img-responsive" title="XOM 1993 - The Duarte and Young (2009) model (black clouds) fit the data (+) and infers private information from order imbalances.">@@
-#  - @@html:<img src="./figs/xom-dy-2012.svg" class="img-responsive" title="XOM 2012 - Late in sample both the DY and PIN can no longer fit 90% of the data.">@@
-
-*** [[https://ssrn.com/abstract=2139679][Credit Be Dammed: The Impact of Banking Deregulation on Economic Growth]]
-/with Elizabeth Berger, Alexander Butler, and Morad Zekhnini/
-#+BEGIN_QUOTE
-We document substantial variation in the effect of state-level bank branching
-deregulation in the United States on economic growth. We examine the sources of
-this variation by testing multiple channels that may link deregulation and
-economic growth. Using a matching method that utilizes synthetic counterfactual
-states, we find support for the hypothesis that economic growth was associated
-with states where deregulation solved a capital immobility or "dammed" credit
-problem. We do not find support for other channels, which posit that banks
-became more efficient, financed more innovative businesses, or learned by
-observing prior deregulations.
-#+END_QUOTE
-
-#  - @@html:<img src="./figs/ATE_CI_Hi_loans_inst.svg" class="img-responsive" title="Following bank branching deregulation only states with a 'dammed' credit problem experience economic growth.">@@
-#  - @@html:<img src="./figs/ATE_CI_Low_loans_inst.svg" class="img-responsive" title="States without a 'dammed' credit problem experience no significant growth.">@@
-
+:PROPERTIES:
+:CUSTOM_ID: workingpapers
+:END:
+#+INCLUDE: workingpapers.org :minlevel 3
 
 ** Work in Progress
-*** Information Diffusion in Institutional Investor Networks
+:PROPERTIES:
+:CUSTOM_ID: wip
+:END:
+#+INCLUDE: wip.org :minlevel 3
+
+** Policy Work
+:PROPERTIES:
+:CUSTOM_ID: policy
+:END:
+#+INCLUDE: policy.org :minlevel 3
+
+
+* Experience :noexport:
+:PROPERTIES:
+:CUSTOM_ID: experience
+:END:
+#+INCLUDE: experience.org :minlevel 3
+
+* Teaching :noexport:
+:PROPERTIES:
+:CUSTOM_ID: teaching
+:END:
+#+INCLUDE: teaching.org :minlevel 3
+
+* Education
+:PROPERTIES:
+:CUSTOM_ID: education
+:END:
+#+INCLUDE: education.org :minlevel 3
+
+* Professional Service
+:PROPERTIES:
+:CUSTOM_ID: service
+:END:
+#+INCLUDE: service.org
+
+* Skills
+:PROPERTIES:
+:CUSTOM_ID: skills
+:END:
+#+INCLUDE: skills.org
 
 * Contact
-  | [[http://www.sec.gov][U.S. Securities and Exchange Commission]] | Last Updated: {{{date}}}           |
-  | 100 F St NE, MS 4020                    | ph: (202) 551-8993 (office)        |
-  | Washington, D.C. 20549                  | email: eddyhu at g m a i l dot com |
-  |                                         | web: [[http://edwinhu.github.io][edwinhu.github.io]]             |
+:PROPERTIES:
+:CUSTOM_ID: contact
+:END:
+#+INCLUDE: contact.org

@@ -1,0 +1,16 @@
+* [[https://www.sec.gov/files/bats_moc_analysis.pdf][Bats Market Close: Off-Exchange Closing Volume and Price Discovery]]
+
+- First SEC economic analysis to use regulatory audit trail and TRF data.
+- Led to NYSE cutting its top tier MOC fees by two-thirds. 
+
+#+BEGIN_QUOTE
+We analyze the correlation among closing price discovery and closing price
+efficiency–-two established metrics from the academic finance literature–-with
+off-exchange trading activity at the close. We analyze equity securities trading
+and quotation data during the first quarter of 2017 to determine the amount of
+closing auction volume, the amount of off-exchange Market-on-Close (MOC)
+activity, and estimates of closing price discovery and efficiency.
+#+END_QUOTE
+
+* Tick Size Pilot Program and Market Quality
+/with Paul Hughes, John Ritter, Patti Vegella, and Hao Zhang/
