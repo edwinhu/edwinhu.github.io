@@ -1,10 +1,24 @@
 
-* Intentional Access Delays, Market Quality, and Price Discovery: Evidence from IEX Becoming an Exchange
-/Coming Soon/
-
-
 * Loan Syndication Networks
 /with Ioannis Spyridiopoulos/
+
+
+* [[https://ssrn.com/abstract=3195001][Intentional Access Delays, Market Quality, and Price Discovery: Evidence from IEX Becoming an Exchange]]
+
+#+BEGIN_QUOTE
+This paper exploits cross-sectional variation in trading activity and the
+staggered securities phase-in when the Investors Exchange (IEX) becomes a
+national securities exchange to study the effects of intentional access delays
+on market quality and price discovery. Market quality improves after IEX becomes
+an exchange for securities with high historical IEX market share. Price
+discovery improves overall, although IEX's contribution to price discovery
+remains small. Intermarket Sweep Order activity decreases overall, coinciding
+with improvements in price discovery. In a second natural experiment where IEX's
+ECN goes dark in 28 symbols there is no change in market quality or price
+discovery. The findings in this paper suggest that protected markets with
+symmetric speed bumps may be a feasible solution to deemphasize speed in lieu of
+regulatory intervention.
+#+END_QUOTE
 
 
 * [[https://ssrn.com/abstract=2564369][Does the PIN Model Mis-Identify Private Information and If So, What are our Alternatives?]]
