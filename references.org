@@ -1,11 +1,25 @@
-| Jefferson Duarte (Chair)                                   | Alexander W. Butler  |
-| Associate Professor of Finance and                         | Professor of Finance |
-| Gerald D. Hines Associate Professor of Real Estate Finance | 713-348-6341         |
-| 713-348-6137                                               | Alex.Butler@rice.edu |
-| Jefferson.Duarte@rice.edu                                  |                      |
-|                                                            |                      |
-| Kerry E. Back                                              |                      |
-| J. Howard Creekmore Professor of Finance                   |                      |
-| Professor of Economics                                     |                      |
-| 713-348-4168                                               |                      |
-| Kerry.E.Back@rice.edu                                      |                      |
+| Jefferson Duarte                                           |
+| Associate Professor of Finance and                         |
+| Gerald D. Hines Associate Professor of Real Estate Finance |
+| Rice University                                            |
+| 713-348-6137                                               |
+| Jefferson.Duarte@rice.edu                                  |
+|                                                            |
+| Alexander W. Butler                                        |
+| Professor of Finance                                       |
+| Rice University                                            |
+| 713-348-6341                                               |
+| Alex.Butler@rice.edu                                       |
+|                                                            |
+| Kerry E. Back                                              |
+| J. Howard Creekmore Professor of Finance                   |
+| Professor of Economics                                     |
+| Rice University                                            |
+| 713-348-4168                                               |
+| Kerry.E.Back@rice.edu                                      |
+|                                                            |
+| Jeffrey H. Harris                                          |
+| Gary D. Cohn Goldman Sachs Chair in Finance                |
+| American University                                        |
+| 202-885-6669                                               |
+| jharris@american.edu                                       |
