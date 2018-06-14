@@ -4,14 +4,11 @@
   [[http://www.sec.gov/dera][Division of Economic and Risk Analysis]]
 
 - I study the economic implications of rulemaking on financial markets.
-  - I led the Staff Speed Bump Report responding to [[https://www.sec.gov/rules/interp/2016/34-78102.pdf][Commission Interpretation
-    Regarding Automated Quotations Under Regulation NMS]].[fn::Release No.
-    34-78102; File No. S7-03-16.]
-  - I conducted independent research responding to [[https://www.sec.gov/rules/sro/batsbzx/2017/34-81437.pdf][Order Instituting Proceedings
-    to Determine Whether to Approve or Disapprove a Proposed Rule Change to
-    Introduce Bats Market Close, a Closing Match Process for Non-BZX Listed
-    Securities Under New Exchange Rule 11.28]].[fn::Release No. 34-81437; File No.
-    SR-BatsBZX-2017-34.]
+  - I conducted [[https://ssrn.com/abstract=3195001][independent research]] suggesting that 'speed bumps' may improve
+    market quality, (see coverage in [[https://www.wsj.com/articles/study-finds-speed-bumps-help-protect-ordinary-investors-1528974002][Wall Street Journal]]).
+  - I conducted [[https://www.sec.gov/files/bats_moc_analysis.pdf][independent research]] suggesting that fragmentation of closing
+    auction liquidity is not related to in-efficient price discovery,
+    contrary to claims by incumbent exchanges.
 - I am involved in modernizing the Commission's technology infrastructure
   through data science and cloud-computing initiatives.
   - I led the development of the DERA Open Source Analytics Server (~R/Python~
