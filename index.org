@@ -4,12 +4,12 @@
 #+OPTIONS: author:t creator:t timestamp:nil toc:2 num:nil
 #+CREATOR: The Securities and Exchange Commission disclaims responsibility for any private publication or statement of any SEC employee or Commissioner. This webpage expresses the author's views and does not necessariliy reflect those of the Commission, the Commissioners, or members of the staff.
 #+HTML_HEAD_EXTRA: <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67919104-1"></script>
-#+HTML_HEAD_EXTRA:#+HTML_HEAD: <script>
-#+HTML_HEAD_EXTRA:#+HTML_HEAD:   window.dataLayer = window.dataLayer || [];
-#+HTML_HEAD_EXTRA:#+HTML_HEAD:   function gtag(){dataLayer.push(arguments);}
-#+HTML_HEAD_EXTRA:#+HTML_HEAD:   gtag('js', new Date());
-#+HTML_HEAD_EXTRA:#+HTML_HEAD:   gtag('config', 'UA-67919104-1');
-#+HTML_HEAD_EXTRA:#+HTML_HEAD: </script>
+#+HTML_HEAD_EXTRA: <script>
+#+HTML_HEAD_EXTRA:   window.dataLayer = window.dataLayer || [];
+#+HTML_HEAD_EXTRA:   function gtag(){dataLayer.push(arguments);}
+#+HTML_HEAD_EXTRA:   gtag('js', new Date());
+#+HTML_HEAD_EXTRA:   gtag('config', 'UA-67919104-1');
+#+HTML_HEAD_EXTRA: </script>
 
 Financial Economist Fellow \\
 Securities and Exchange Commission \\
