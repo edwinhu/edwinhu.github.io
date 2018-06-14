@@ -5,6 +5,7 @@
 
 * [[https://ssrn.com/abstract=3195001][Intentional Access Delays, Market Quality, and Price Discovery: Evidence from IEX Becoming an Exchange]]
 
+- Covered in the *Wall Street Journal* [[https://www.wsj.com/articles/study-finds-speed-bumps-help-protect-ordinary-investors-1528974002][/Study Finds ‘Speed Bumps’ Help Protect Ordinary Investors/]]
 #+BEGIN_QUOTE
 This paper exploits cross-sectional variation in trading activity and the
 staggered securities phase-in when the Investors Exchange (IEX) becomes a
