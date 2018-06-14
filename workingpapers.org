@@ -24,7 +24,6 @@ regulatory intervention.
 
 * [[https://ssrn.com/abstract=2564369][Does the PIN Model Mis-Identify Private Information and If So, What are our Alternatives?]]
 /with Jefferson Duarte, and Lance Young/ 
-- *Revise and Resubmit Journal of Financial Economics*
 - Presented at Rice University (2015), Texas A&M (2015*), Multinational Finance
   Society Conference (MFS, 2015*) *Best Paper Award*, China International
   Finance Conference (CICF, 2015*), Society of Financial Econometrics Conference
