@@ -12,5 +12,5 @@ closing auction volume, the amount of off-exchange Market-on-Close (MOC)
 activity, and estimates of closing price discovery and efficiency.
 #+END_QUOTE
 
-* Tick Size Pilot Program and Market Quality
+* [[https://www.sec.gov/dera/staff-papers/white-papers/dera_wp_tick_size-market_quality][Tick Size Pilot Program and Market Quality]]
 /with Paul Hughes, John Ritter, Patti Vegella, and Hao Zhang/
