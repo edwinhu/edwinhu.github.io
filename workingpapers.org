@@ -56,7 +56,7 @@ Odders-White and Ready (2008) model are promising alternatives to PIN.
 #+END_QUOTE
 
 
-* [[https://ssrn.com/abstract=2139679][Credit Be Dammed: The Impact of Banking Deregulation on Economic Growth]]
+* [[https://ssrn.com/abstract=2139679][Financial Integration and Credit Democratization: Linking Banking Deregulation to Economic Growth]]
 /with Elizabeth Berger, Alexander Butler, and Morad Zekhnini/
 
 - *Revise and Resubmit Journal of Financial Intermediation*
