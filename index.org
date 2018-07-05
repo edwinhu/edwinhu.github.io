@@ -26,7 +26,7 @@ Office of Markets - Market Data and Research \\
 :PROPERTIES:
 :CUSTOM_ID: interests
 :END:
-Financial markets regulation, market microstructure, financial intermediation, causal inference.
+#+INCLUDE: interests.org
 
 ** [[http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790][Working Papers]]
 :PROPERTIES:
