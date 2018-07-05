@@ -2,6 +2,17 @@
 * Loan Syndication Networks
 /with Ioannis Spyridiopoulos/
 
+#+BEGIN_QUOTE
+We document a positive relationship between lender network centrality and the
+ability to offer competitive bids in syndicated lending markets. Better
+connected lenders are more likely to syndicate loans as lead arrangers, and
+provide lower costs of borrowing. We exploit exogenous variation in network
+structure resulting from bank mergers to provide evidence that greater
+connectivity reduces firms' costs of borrowing. The effects are larger for
+borrowers with higher levels of information asymmetry---consistent with recent
+theory suggesting that superior networking facilitates information sharing and
+coordination.
+#+END_QUOTE
 
 * [[https://ssrn.com/abstract=3195001][Intentional Access Delays, Market Quality, and Price Discovery: Evidence from IEX Becoming an Exchange]]
 
