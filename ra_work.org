@@ -1,0 +1,29 @@
+
+* Rice University Jones Graduate School of Business 2010--2016
+
+- Worked under the supervision of Prof. Jefferson Duarte, my Ph.D advisor, on
+  option and equity markets. We co-authored a paper on private information
+  measurement in equity markets.
+
+- Worked under the supervision of Prof. Yael Hochberg on startup accelerators. I
+  helped plan and develop tools for gathering measures of entrepreneurial
+  activity ("nowcasting").
+
+* University of Washington 2008--2010
+
+** Michael G. Foster School of Business
+
+- Worked under the supervision of Prof. Stephan Siegel on [[https://academic.oup.com/rfs/article-abstract/25/8/2455/1570804][peer-to-peer lending
+  and trust]] in an online marketplace. I built a custom online survey platform
+  leveraging Amazon Mechanical Turk, and ran statistical analyses showing that
+  the appearance of trustworthiness factors into actual lending rates,
+  controlling for observable risk characteristics.
+
+** Department of Economics
+
+- Worked under the supervision of Prof. Eric Zivot, my undergraduate thesis
+  advisor, on tail-risk measurement. I built tools to leverage Amazon Elastic
+  Map Reduce with R, to show using simulations, that common measures of
+  tail-risk (Value-At-Risk, Expected Shortfall) are extremely statistically
+  inefficient--requiring thousands of years of data to produce reliable risk
+  estimates.
