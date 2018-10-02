@@ -1,6 +1,6 @@
 
 * [[https://ssrn.com/abstract=3221017][Loan Syndication Networks]]
-/with Ioannis Spyridiopoulos/
+/with Jeffrey Harris, and Ioannis Spyridiopoulos/
 
 #+BEGIN_QUOTE
 We document a positive relationship between lender network centrality and the
