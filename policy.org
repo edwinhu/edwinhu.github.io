@@ -1,3 +1,7 @@
+* [[https://www.sec.gov/rules/final/2018/34-84875.pdf][Rule 610T: Transaction Fee Pilot]]
+- Advised on market structure, routing practices, and pilot design.
+* [[https://www.sec.gov/rules/final/2018/33-10593.pdf][Disclosure of Hedging by Employees, Officers and Directors]]
+- Advised and conducted original research on existing hedging disclosures, use of derivative hedges, and stock performance.
 * [[https://www.sec.gov/files/bats_moc_analysis.pdf][Bats Market Close: Off-Exchange Closing Volume and Price Discovery]]
 
 - First SEC economic analysis to use regulatory audit trail and TRF data.

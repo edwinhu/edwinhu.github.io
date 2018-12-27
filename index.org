@@ -11,10 +11,8 @@
 #+HTML_HEAD_EXTRA:   gtag('config', 'UA-67919104-1');
 #+HTML_HEAD_EXTRA: </script>
 
-Financial Economist Fellow \\
-Securities and Exchange Commission \\
-[[http://www.sec.gov/dera][Division of Economic and Risk Analysis]] \\
-Office of Markets - Market Data and Research \\
+Counsel to [[https://www.sec.gov/biography/commissioner-robert-j-jackson][Commissioner Robert J. Jackson Jr.]]\\
+Securities and Exchange Commission
 
 [[./cv][CV (PDF)]] | [[https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790][SSRN]] | [[https://www.linkedin.com/in/huedwin/][LinkedIn]] | [[https://github.com/edwinhu][GitHub]]
 

@@ -1,19 +1,19 @@
-* June 2016--Present: 
+* 2018--Present:
+  Counsel to [[https://www.sec.gov/biography/commissioner-robert-j-jackson][Commissioner Robert J. Jackson Jr.]]\\
+  Securities and Exchange Commission, Washington, D.C.
+
+- I cover issues related to market structure, pilot programs, data, research and
+  analytics.
+
+* 2016--2018: 
   Financial Economist Fellow \\
   Securities and Exchange Commission, Washington, D.C. \\
   [[http://www.sec.gov/dera][Division of Economic and Risk Analysis]]
 
-- I study the economic implications of rulemaking on financial markets.
+- I studied the economic implications of rulemaking on financial markets.
   - I conducted [[https://ssrn.com/abstract=3195001][independent research]] suggesting that `speed bumps' may improve
     market quality, (see coverage in [[https://www.wsj.com/articles/study-finds-speed-bumps-help-protect-ordinary-investors-1528974002][Wall Street Journal]]).
-  - I conducted [[https://www.sec.gov/files/bats_moc_analysis.pdf][independent research]] suggesting that fragmentation of closing
-    auction liquidity is not related to in-efficient price discovery,
-    contrary to claims by incumbent exchanges.
-- I am involved in modernizing the Commission's technology infrastructure
+- I was involved in modernizing the Commission's technology infrastructure
   through data science and cloud initiatives (see [[https://www.sec.gov/files/SEC_Strategic_Plan_FY18-FY22_FINAL_0.pdf][SEC Strategic Plan
   2018--2022]]).
-  - I led the development of the DERA Open Source Analytics Server (~R/Python~
-    Jupyter Notebook environment with custom environment support).
-- I coordinate with SROs to acquire and construct regulatory datasets.
-  - FINRA off-exchange trade executions reported to the Trade Reporting
-    Facilities.
+- I coordinated with SROs to acquire and construct regulatory databases.
