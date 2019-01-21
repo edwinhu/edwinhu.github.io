@@ -33,9 +33,9 @@ regulatory intervention.
 #+END_QUOTE
 
 
-* [[https://ssrn.com/abstract=2564369][Does the PIN Model Mis-Identify Private Information and If So, What are our Alternatives?]]
+* [[https://ssrn.com/abstract=2564369][A comparison of some structural models of private information arrival]]
 /with Jefferson Duarte, and Lance Young/ 
-- *Revise and Resubmit at Journal of Financial Economics*
+- *Forthcoming in Journal of Financial Economics*
 - Presented at Rice University (2015), Texas A&M (2015*), Multinational Finance
   Society Conference (MFS, 2015*) *Best Paper Award*, China International
   Finance Conference (CICF, 2015*), Society of Financial Econometrics Conference
@@ -46,13 +46,7 @@ regulatory intervention.
 - *[[https://edwinhu.github.io/pin/][Data and Previous Refereed Versions]]*
 
 #+BEGIN_QUOTE
-We show that the PIN model is no more useful in identifying private-information
-arrival than simply looking at whether turnover is above average or not. This
-calls into question PIN as a measure of private information since turnover
-varies for many reasons unrelated to private-information arrival. We also
-examine an alternative to the PIN model, the Odders-White and Ready (2008)
-model. Our tests indicate that measures of private information based on the
-Odders-White and Ready (2008) model are promising alternatives to PIN.
+We show that the PIN and the Duarte and Young (2009) (APIN) models do not match the variability of noise trade in the data and that this limitation has severe implications for how these models identify private information. We examine two alternatives to these models, the Generalized PIN model (GPIN) and the Odders-White and Ready (2008) model (OWR).  Our tests indicate that measures of private information based on the OWR and GPIN models are promising alternatives to the APIN’s $Adj.PIN$ and $PIN$
 #+END_QUOTE
 
 
