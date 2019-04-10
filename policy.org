@@ -1,3 +1,8 @@
+* [[https://www.sec.gov/news/speech/speech-jackson-061118][Stock Buybacks and Corporate Cashouts]]
+- Conducted research showing that the market reacts negatively to
+  insider selling after stock buyback announcements in reponse to a
+  letter from [[https://www.vanhollen.senate.gov/news/press-releases/van-hollen-announces-new-sec-findings-on-stock-buybacks][Senator Chris Van Hollen (MD)]].
+- [[https://www.sec.gov/files/jackson-letter-030619.pdf][Letter]], [[https://www.sec.gov/files/data-appendix-030619-letter.pdf][Data Appendix]]
 * [[https://www.sec.gov/rules/final/2018/34-84875.pdf][Rule 610T: Transaction Fee Pilot]]
 - Advised on market structure, routing practices, and pilot design.
 * [[https://www.sec.gov/rules/final/2018/33-10593.pdf][Disclosure of Hedging by Employees, Officers and Directors]]
@@ -18,3 +23,5 @@ activity, and estimates of closing price discovery and efficiency.
 
 * [[https://www.sec.gov/dera/staff-papers/white-papers/dera_wp_tick_size-market_quality][Tick Size Pilot Program and Market Quality]]
 /with Paul Hughes, John Ritter, Patti Vegella, and Hao Zhang/
+- We find evidence that market quality deteriorates after the Tick
+  Size Pilot widens quoting increments to five cent increments.

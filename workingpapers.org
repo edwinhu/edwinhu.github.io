@@ -44,6 +44,7 @@ regulatory intervention.
   Washington (2016*), University of Virginia (McIntire) (2017*), Southern
   Methodist University (2017*).
 - *[[https://edwinhu.github.io/pin/][Data and Previous Refereed Versions]]*
+- Previously circulated under: "Does the PIN Model Mis-Identify Private Information and If So, What is the Alternative?"
 
 #+BEGIN_QUOTE
 We show that the PIN and the Duarte and Young (2009) (APIN) models do not match the variability of noise trade in the data and that this limitation has severe implications for how these models identify private information. We examine two alternatives to these models, the Generalized PIN model (GPIN) and the Odders-White and Ready (2008) model (OWR).  Our tests indicate that measures of private information based on the OWR and GPIN models are promising alternatives to the APIN’s $Adj.PIN$ and $PIN$
