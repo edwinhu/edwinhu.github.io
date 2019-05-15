@@ -16,7 +16,7 @@ Counsel to [[https://www.sec.gov/biography/commissioner-robert-j-jackson][Commis
 Securities and Exchange Commission
 
 [[./cv][CV (PDF)]] | [[https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790][SSRN]] | [[https://www.linkedin.com/in/huedwin/][LinkedIn]] | [[https://github.com/edwinhu][GitHub]] \\
-[[./pin][PIN Estimates]]| [[./sas][SAS Macros]]
+[[./pin][PIN Estimates]] | [[./sas][SAS Macros]]
 
 
 * Research
