@@ -1,3 +1,6 @@
+* [[https://www.sec.gov/news/public-statement/jackson-statement-proposed-amendments-accelerated-filer-definition][Amendments to Sarbanes-Oxley 404(b) Accelerated Filer Definition]]
+- Conducted research on the costs and benefits of rolling back auditor
+  attestation requirements for smaller firms.
 * [[https://www.sec.gov/news/speech/speech-jackson-061118][Stock Buybacks and Corporate Cashouts]]
 - Conducted research showing that the market reacts negatively to
   insider selling after stock buyback announcements in reponse to a
@@ -8,19 +11,8 @@
 * [[https://www.sec.gov/rules/final/2018/33-10593.pdf][Disclosure of Hedging by Employees, Officers and Directors]]
 - Advised and conducted original research on existing hedging disclosures, use of derivative hedges, and stock performance.
 * [[https://www.sec.gov/files/bats_moc_analysis.pdf][Bats Market Close: Off-Exchange Closing Volume and Price Discovery]]
-
 - First SEC economic analysis to use regulatory audit trail and TRF data.
 - Led to NYSE cutting its top tier MOC fees by two-thirds. 
-
-#+BEGIN_QUOTE
-We analyze the correlation among closing price discovery and closing price
-efficiency–-two established metrics from the academic finance literature–-with
-off-exchange trading activity at the close. We analyze equity securities trading
-and quotation data during the first quarter of 2017 to determine the amount of
-closing auction volume, the amount of off-exchange Market-on-Close (MOC)
-activity, and estimates of closing price discovery and efficiency.
-#+END_QUOTE
-
 * [[https://www.sec.gov/dera/staff-papers/white-papers/dera_wp_tick_size-market_quality][Tick Size Pilot Program and Market Quality]]
 /with Paul Hughes, John Ritter, Patti Vegella, and Hao Zhang/
 - We find evidence that market quality deteriorates after the Tick

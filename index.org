@@ -15,7 +15,9 @@
 Counsel to [[https://www.sec.gov/biography/commissioner-robert-j-jackson][Commissioner Robert J. Jackson Jr.]]\\
 Securities and Exchange Commission
 
-[[./cv][CV (PDF)]] | [[https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790][SSRN]] | [[https://www.linkedin.com/in/huedwin/][LinkedIn]] | [[https://github.com/edwinhu][GitHub]]
+[[./cv][CV (PDF)]] | [[https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790][SSRN]] | [[https://www.linkedin.com/in/huedwin/][LinkedIn]] | [[https://github.com/edwinhu][GitHub]] \\
+[[./pin][PIN Estimates]]| [[./sas][SAS Macros]]
+
 
 * Research
 :PROPERTIES:
@@ -39,10 +41,10 @@ Securities and Exchange Commission
 :END:
 #+INCLUDE: wip.org :minlevel 3
 
-** Policy Work
-:PROPERTIES:
-:CUSTOM_ID: policy
-:END:
+* Policy Work
+  :PROPERTIES:
+  :CUSTOM_ID: policy
+  :END:
 #+INCLUDE: policy.org :minlevel 3
 
 * Experience :noexport:
@@ -74,6 +76,8 @@ Securities and Exchange Commission
 :CUSTOM_ID: skills
 :END:
 #+INCLUDE: skills.org
+
+
 
 * Contact
 :PROPERTIES:

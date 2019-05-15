@@ -2,7 +2,6 @@
   Counsel to [[https://www.sec.gov/biography/commissioner-robert-j-jackson][Commissioner Robert J. Jackson Jr.]]\\
   Securities and Exchange Commission, Washington, D.C.
 
-- I use economics and data science to inform policy.
 - I advise on market structure, disclosure, asset management, and
   economic analyses.
 - I provide technical assistance to other agencies, Capitol Hill, and
@@ -21,4 +20,3 @@
 - I was involved in modernizing the Commission's technology infrastructure
   through data science and cloud initiatives (see [[https://www.sec.gov/files/SEC_Strategic_Plan_FY18-FY22_FINAL_0.pdf][SEC Strategic Plan
   2018--2022]]).
-- I coordinated with SROs to acquire and construct regulatory databases.
