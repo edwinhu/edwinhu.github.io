@@ -1,3 +1,6 @@
+
+* [[https://www.sec.gov/news/public-statement/statement-jackson-060519-iabd][Rules Governing Investment Advice]]
+- Conducted research on the disclosure of fiduciary duty and conflicted advice.
 * [[https://www.sec.gov/news/public-statement/jackson-statement-proposed-amendments-accelerated-filer-definition][Amendments to Sarbanes-Oxley 404(b) Accelerated Filer Definition]]
 - Conducted research on the costs and benefits of rolling back auditor
   attestation requirements for smaller firms.
