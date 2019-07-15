@@ -3,7 +3,8 @@
 - Conducted research showing that the proposed interpretation of the
   fiduciary standard was related to higher rates of conflicted advice.
 - Received support from prominent legislators including Senators
-  Warren, Booker, Speaker Pelosi, and Chair Waters
+  Warren, Booker, Speaker Pelosi, Chair Waters, and a dozen bipartisan
+  [[http://clsbluesky.law.columbia.edu/2019/06/25/statement-of-concerned-securities-law-professors-regarding-investment-advisers-and-fiduciary-obligations/][securities law professors]].
 - House Passed [[https://amendments-rules.house.gov/amendments/SECMAJA6--REVISED%20AMENDMENT624190937483748.pdf][Amendment 78]] to [[https://rules.house.gov/bill/116/hr-3351][H.R. 3351]] over concerns from Chair
   Maxine Waters about lowering the fiduciary standard.
 - Selected coverage: [[https://www.washingtonpost.com/business/2019/06/05/wall-street-just-scored-another-big-victory-trump-administration/][Washington Post]], [[https://www.nytimes.com/2019/06/05/your-money/sec-investment-brokers-fiduciary-duty.html][New York Times]], [[https://www.wsj.com/articles/new-sec-rule-heightens-broker-responsibilities-to-investors-11559743201][Wall Street
@@ -12,7 +13,7 @@
 * [[https://www.sec.gov/news/public-statement/jackson-statement-proposed-amendments-accelerated-filer-definition][Amendments to Sarbanes-Oxley 404(b) Accelerated Filer Definition]]
 - Conducted research on the costs and benefits of rolling back auditor
   attestation requirements for smaller firms.
-- Received support from [[https://www.sec.gov/comments/s7-06-19/s70619-5802113-187069.pdf][accounting]] and [[http://clsbluesky.law.columbia.edu/2019/07/15/sec-proposes-to-exempt-more-firms-from-required-attestation-of-internal-controls/][law]] faculty.
+- Received support from dozens of [[http://clsbluesky.law.columbia.edu/2019/07/15/sec-proposes-to-exempt-more-firms-from-required-attestation-of-internal-controls/][law]] and [[https://www.sec.gov/comments/s7-06-19/s70619-5802113-187069.pdf][accounting]] faculty.
 - Selected coverage: [[https://www.wsj.com/articles/sec-moves-to-ease-accounting-requirements-for-smaller-companies-11557411945][Wall Street Journal]]
 
 * [[https://www.sec.gov/news/speech/speech-jackson-061118][Stock Buybacks and Corporate Cashouts]]
