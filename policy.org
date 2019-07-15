@@ -1,21 +1,40 @@
 
-* [[https://www.sec.gov/news/public-statement/statement-jackson-060519-iabd][Rules Governing Investment Advice]]
-- Conducted research on the disclosure of fiduciary duty and conflicted advice.
+* [[https://www.sec.gov/news/public-statement/statement-jackson-060519-iabd][Rules Governing Investment Advice]] (Regulation Best Interest)
+- Conducted research showing that the proposed interpretation of the
+  fiduciary standard was related to higher rates of conflicted advice.
+- Received support from prominent legislators including Senators
+  Warren, Booker, Speaker Pelosi, and Chair Waters
+- House Passed [[https://amendments-rules.house.gov/amendments/SECMAJA6--REVISED%20AMENDMENT624190937483748.pdf][Amendment 78]] to [[https://rules.house.gov/bill/116/hr-3351][H.R. 3351]] over concerns from Chair
+  Maxine Waters about lowering the fiduciary standard.
+- Selected coverage: [[https://www.washingtonpost.com/business/2019/06/05/wall-street-just-scored-another-big-victory-trump-administration/][Washington Post]], [[https://www.nytimes.com/2019/06/05/your-money/sec-investment-brokers-fiduciary-duty.html][New York Times]], [[https://www.wsj.com/articles/new-sec-rule-heightens-broker-responsibilities-to-investors-11559743201][Wall Street
+  Journal]], [[https://www.bloomberg.com/news/articles/2019-06-05/wall-street-broker-conflict-regulation-set-for-approval-by-sec][Bloomberg]], [[https://www.bloomberg.com/opinion/articles/2019-06-07/you-can-t-vote-on-a-deal-with-no-deal][Money Stuff]]
+
 * [[https://www.sec.gov/news/public-statement/jackson-statement-proposed-amendments-accelerated-filer-definition][Amendments to Sarbanes-Oxley 404(b) Accelerated Filer Definition]]
 - Conducted research on the costs and benefits of rolling back auditor
   attestation requirements for smaller firms.
+- Received support from [[https://www.sec.gov/comments/s7-06-19/s70619-5802113-187069.pdf][accounting]] and [[http://clsbluesky.law.columbia.edu/2019/07/15/sec-proposes-to-exempt-more-firms-from-required-attestation-of-internal-controls/][law]] faculty.
+- Selected coverage: [[https://www.wsj.com/articles/sec-moves-to-ease-accounting-requirements-for-smaller-companies-11557411945][Wall Street Journal]]
+
 * [[https://www.sec.gov/news/speech/speech-jackson-061118][Stock Buybacks and Corporate Cashouts]]
+- [[https://www.sec.gov/files/jackson-letter-030619.pdf][Letter]], [[https://www.sec.gov/files/data-appendix-030619-letter.pdf][Data Appendix]]
 - Conducted research showing that the market reacts negatively to
   insider selling after stock buyback announcements in reponse to a
-  letter from [[https://www.vanhollen.senate.gov/news/press-releases/van-hollen-announces-new-sec-findings-on-stock-buybacks][Senator Chris Van Hollen (MD)]].
-- [[https://www.sec.gov/files/jackson-letter-030619.pdf][Letter]], [[https://www.sec.gov/files/data-appendix-030619-letter.pdf][Data Appendix]]
+  letter from [[https://www.vanhollen.senate.gov/news/press-releases/van-hollen-announces-new-sec-findings-on-stock-buybacks][Senator Chris Van Hollen]].
+- Cited in leglisation proposed by [[https://www.baldwin.senate.gov/imo/media/doc/Reward%20Work%20Not%20Wealth%20Baldwin%20Staff%20Report%203.26.19.pdf][Senator Tammy Baldwin]], and [[https://ourfinancialsecurity.org/2019/06/letter-regulator-group-petition-sec-rulemaking-ban-stock-buybacks-protect-workers/][Petition
+  to SEC]]
+- Selected coverage: [[https://www.cnn.com/2019/03/06/investing/stock-buybacks-sec-chris-van-hollen/index.html][CNN]], [[https://www.washingtonpost.com/business/capitalbusiness/these-executive-stock-sales-can-hurt-company-in-long-run-sec-commissioner-says/2019/03/07/56e38098-4054-11e9-922c-64d6b7840b82_story.html][Washington Post]], [[https://www.cnbc.com/2019/03/06/buybacks-under-attack-as-a-senator-proposes-restricting-insider-sales.html][CNBC]], [[https://www.foxbusiness.com/politics/trump-appointed-sec-leader-share-buybacks-benefit-executives-not-long-term-investors][Fox Business]]
+
 * [[https://www.sec.gov/rules/final/2018/34-84875.pdf][Rule 610T: Transaction Fee Pilot]]
 - Advised on market structure, routing practices, and pilot design.
+
 * [[https://www.sec.gov/rules/final/2018/33-10593.pdf][Disclosure of Hedging by Employees, Officers and Directors]]
-- Advised and conducted original research on existing hedging disclosures, use of derivative hedges, and stock performance.
+- Advised and conducted original research on existing hedging
+  disclosures, use of derivative hedges, and stock performance.
+
 * [[https://www.sec.gov/files/bats_moc_analysis.pdf][Bats Market Close: Off-Exchange Closing Volume and Price Discovery]]
 - First SEC economic analysis to use regulatory audit trail and TRF data.
 - Led to NYSE cutting its top tier MOC fees by two-thirds. 
+
 * [[https://www.sec.gov/dera/staff-papers/white-papers/dera_wp_tick_size-market_quality][Tick Size Pilot Program and Market Quality]]
 /with Paul Hughes, John Ritter, Patti Vegella, and Hao Zhang/
 - We find evidence that market quality deteriorates after the Tick

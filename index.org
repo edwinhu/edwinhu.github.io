@@ -77,8 +77,6 @@ Securities and Exchange Commission
 :END:
 #+INCLUDE: skills.org
 
-
-
 * Contact
 :PROPERTIES:
 :CUSTOM_ID: contact
