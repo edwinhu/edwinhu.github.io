@@ -2,11 +2,19 @@
   Counsel to [[https://www.sec.gov/biography/commissioner-robert-j-jackson][Commissioner Robert J. Jackson Jr.]]\\
   Securities and Exchange Commission, Washington, D.C.
 
-- I advise on market structure, disclosure, asset management, and
-  economic analyses.
-- I provide technical assistance to other agencies, Capitol Hill, and
-  the media.
-- I assist in writing policy speeches and statements.
+- Chief economist and economic advisor with primary responsibility for
+  development, coordination, and production of economic analysis
+  including original research that has been cited in legislation and
+  most major media outlets.
+- Principal policy advisor on trading and markets and economic and
+  risk analysis issues. Advisor on investment management, corporate
+  finance, and accounting issues.
+- Determines and executes communications strategy, with success
+  obtaining features on television, print, blogs, and
+  podcasts. Responsible for legislative affairs---including technical
+  assistance on bills and hearings.
+- Develops and writes speeches, statements, and op-eds that have
+  appeared in /The New York Times/ and /The Wall Street Journal/.
 
 
 * 2016--2018: 
@@ -14,9 +22,7 @@
   Securities and Exchange Commission, Washington, D.C. \\
   [[http://www.sec.gov/dera][Division of Economic and Risk Analysis]]
 
-- I studied the economic implications of rulemaking on financial markets.
-  - I conducted [[https://ssrn.com/abstract=3195001][independent research]] suggesting that `speed bumps' may improve
-    market quality, (see coverage in [[https://www.wsj.com/articles/study-finds-speed-bumps-help-protect-ordinary-investors-1528974002][Wall Street Journal]]).
-- I was involved in modernizing the Commission's technology infrastructure
-  through data science and cloud initiatives (see [[https://www.sec.gov/files/SEC_Strategic_Plan_FY18-FY22_FINAL_0.pdf][SEC Strategic Plan
-  2018--2022]]).
+- Development and production of original economic research on
+  controversial issues in financial markets.
+- My [[https://ssrn.com/abstract=3195001][research]] showing that `speed bumps' may improve market quality
+  was featured in /[[https://www.wsj.com/articles/study-finds-speed-bumps-help-protect-ordinary-investors-1528974002][The Wall Street Journal]]/.

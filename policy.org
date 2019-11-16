@@ -1,14 +1,16 @@
-I worked on policy ranging from [[https://www.sec.gov/news/public-statement/statement-jackson-050319][M&A disclosures]], [[https://www.sec.gov/news/public-statement/jackson-statement-margin-security-futures][margin requirements
-for security futures]], [[https://www.sec.gov/news/public-statement/statement-jackson-lee-082719][human capital disclosures]], [[https://www.sec.gov/rules/final/2018/33-10593.pdf][executive hedging
-disclosures]], the [[https://www.sec.gov/rules/final/2018/34-84875.pdf][Transaction Fee Pilot]], to the [[https://www.sec.gov/news/public-statement/statement-jackson-091919][Volcker Rule]]. I also
-conducted original policy research outlined below:
+I worked on policy issues including [[https://www.sec.gov/news/public-statement/statement-jackson-050319][M&A disclosures]], [[https://www.sec.gov/news/public-statement/jackson-statement-margin-security-futures][margin
+requirements for security futures]], [[https://www.sec.gov/news/public-statement/statement-jackson-lee-082719][human capital disclosures]],
+[[https://www.sec.gov/rules/final/2018/33-10593.pdf][executive hedging disclosures]], the [[https://www.sec.gov/rules/final/2018/34-84875.pdf][Transaction Fee Pilot]], and the
+[[https://www.sec.gov/news/public-statement/statement-jackson-091919][Volcker Rule]]. I also conducted original policy research summarized
+below:
 
 * [[https://www.sec.gov/news/public-statement/statement-jackson-2019-11-05-open-meeting][Proposed Rules Governing Proxy Advisors and Shareholder Proposals]]
 - Conducted research showing how the proposed rules would affect the
   resubmission of shareholder proposals, and the effect of including
   shareholder proposals on firm value (see [[https://www.sec.gov/news/statements/2019/jackson-data-appendix-on-proposals-to-restrict-shareholder-voting.pdf][Data Appendix]]).
 - Received support from [[https://www.brown.senate.gov/newsroom/press/release/waters-and-brown-statement-on-sec-proposals-to-curtail-shareholder-rights][Chair Waters and Ranking Member Brown]].
-- Selected coverage: [[https://www.cnbc.com/2019/11/05/rule-change-would-make-it-harder-to-submit-shareholder-resolutions.html][CNBC]], [[https://www.politico.com/news/2019/11/05/sec-proxy-advisory-firms-shareholder-proposals-066097][Politico]], [[https://www.bloomberg.com/opinion/articles/2019-11-06/advice-is-different-from-solicitation][Bloomberg (Money Stuff)]]
+- Selected coverage: [[https://www.cnbc.com/2019/11/05/rule-change-would-make-it-harder-to-submit-shareholder-resolutions.html][CNBC]], [[https://www.politico.com/news/2019/11/05/sec-proxy-advisory-firms-shareholder-proposals-066097][Politico]], [[https://www.bloomberg.com/opinion/articles/2019-11-06/advice-is-different-from-solicitation][Bloomberg (Money Stuff)]], [[https://podcasts.apple.com/us/podcast/sec-commissioner-robert-jackson-ceos-are-not-royalty/id1011668648?i=1000456870191][Recode Decode (Podcast)]]
+- Featured: [[https://corpgov.law.harvard.edu/2019/11/05/statement-on-proposals-to-restrict-shareholder-voting/][Harvard Law School Forum on Corporate Governance and Financial Regulation]], [[https://promarket.org/the-secs-proposal-on-proxy-advisor-regulation-shields-ceos-from-accountability-to-investors/][Chicago Booth Stigler Center ProMarket Blog]]
 
 * [[https://www.sec.gov/news/public-statement/statement-jackson-060519-iabd][Rules Governing Investment Advice]] (Regulation Best Interest)
 - Conducted research showing that the proposed interpretation of the
@@ -38,7 +40,7 @@ conducted original policy research outlined below:
 * [[https://www.sec.gov/files/bats_moc_analysis.pdf][Bats Market Close: Off-Exchange Closing Volume and Price Discovery]]
 - First SEC economic analysis to use regulatory audit trail and TRF data.
 - Led to NYSE cutting its top tier MOC fees by two-thirds.
-- Selected coverage: [[https://www.wsj.com/articles/stock-exchanges-squabble-over-end-of-day-auctions-1497541023][WSJ]]
+- Selected coverage: [[https://www.wsj.com/articles/stock-exchanges-squabble-over-end-of-day-auctions-1497541023][Wall Street Journal]]
 
 * [[https://www.sec.gov/dera/staff-papers/white-papers/dera_wp_tick_size-market_quality][Tick Size Pilot Program and Market Quality]]
 /with Paul Hughes, John Ritter, Patti Vegella, and Hao Zhang/
