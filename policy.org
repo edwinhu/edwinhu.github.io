@@ -4,7 +4,16 @@ requirements for security futures]], [[https://www.sec.gov/news/public-statement
 [[https://www.sec.gov/news/public-statement/statement-jackson-091919][Volcker Rule]]. I also conducted original policy research summarized
 below:
 
-* [[https://www.sec.gov/files/jackson-maloney-response-letter-111819-signed.pdf][Letter from Robert J. Jackson, Jr. to Congresswoman Maloney]]
+* [[https://www.sec.gov/news/public-statement/statement-jackson-2019-12-18-accredited-investor][Reducing Investor Protections around Private Markets]] (Accredited Investor Definition)
+- Conducted research showing that private placement brokers have
+  unusually high levels of sales practice complaints and
+  misconduct. Furthermore, past investor harm is highly predictive of
+  investor harm in the future---hence, supposedly sophisticated
+  investors still have a hard time sorting good brokers from bad.
+- Selected coverage: [[https://www.bloomberg.com/opinion/articles/2019-12-20/you-d-pay-not-to-see-your-stock-price][Bloomberg (Money Stuff)]]
+- Featured: [[https://corpgov.law.harvard.edu/2019/12/20/statement-by-commissioner-jackson-on-reducing-investor-protections-around-private-markets/][HLS Forum on Corporate Governance and Financial Regulation]]
+
+* [[https://www.sec.gov/files/jackson-maloney-response-letter-111819-signed.pdf][Letter from Robert J. Jackson, Jr. to Congresswoman Maloney on Political Spending Disclosure]]
 - Conducted research showing that the largest fund managers lack clear
   proxy-voting guidelines on lobbying and political spending
   disclosure---yet overwhelmingly vote against these proposals.
@@ -27,6 +36,8 @@ below:
   [[http://clsbluesky.law.columbia.edu/2019/06/25/statement-of-concerned-securities-law-professors-regarding-investment-advisers-and-fiduciary-obligations/][securities law professors]].
 - House Passed [[https://amendments-rules.house.gov/amendments/SECMAJA6--REVISED%20AMENDMENT624190937483748.pdf][Amendment 78]] to [[https://rules.house.gov/bill/116/hr-3351][H.R. 3351]] over concerns from Chair
   Maxine Waters about lowering the fiduciary standard.
+- Cited in [[https://www.warren.senate.gov/imo/media/doc/2019.12.11%20Letter%20from%20Senator%20Warren%20to%20DOL%20on%20new%20Fiduciary%20Rule.pdf][Warren letter to DOL Secretary]] in anticipation of DOL’s
+  proposed replacement for the Fiduciary Rule.
 - Selected coverage: [[https://www.washingtonpost.com/business/2019/06/05/wall-street-just-scored-another-big-victory-trump-administration/][Washington Post]], [[https://www.nytimes.com/2019/06/05/your-money/sec-investment-brokers-fiduciary-duty.html][New York Times]], [[https://www.wsj.com/articles/new-sec-rule-heightens-broker-responsibilities-to-investors-11559743201][Wall Street Journal]], [[https://www.bloomberg.com/news/articles/2019-06-05/wall-street-broker-conflict-regulation-set-for-approval-by-sec][Bloomberg]], [[https://www.bloomberg.com/opinion/articles/2019-06-07/you-can-t-vote-on-a-deal-with-no-deal][Money Stuff]]
 
 * [[https://www.sec.gov/news/public-statement/jackson-statement-proposed-amendments-accelerated-filer-definition][Amendments to Sarbanes-Oxley 404(b) Accelerated Filer Definition]]
