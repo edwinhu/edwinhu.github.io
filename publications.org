@@ -1,0 +1,23 @@
+
+* [[https://ssrn.com/abstract=2564369][A comparison of some structural models of private information arrival]]
+/with Jefferson Duarte, and Lance Young/ 
+- *Forthcoming in Journal of Financial Economics*
+- Presented at Rice University (2015), Texas A&M (2015*), Multinational Finance
+  Society Conference (MFS, 2015*) *Best Paper Award*, China International
+  Finance Conference (CICF, 2015*), Society of Financial Econometrics Conference
+  (SoFiE, 2015*), Instituto Technologico Autonomo de Mexico Conference (ITAM,
+  2015*), American Finance Association Conference (AFA, 2016), University of
+  Washington (2016*), University of Virginia (McIntire) (2017*), Southern
+  Methodist University (2017*).
+- *[[https://edwinhu.github.io/pin/][Data and Previous Refereed Versions]]*
+- Previously circulated under: "Does the PIN Model Mis-Identify Private Information and If So, What is the Alternative?"
+
+
+* [[https://ssrn.com/abstract=2139679][Financial Integration and Credit Democratization: Linking Banking Deregulation to Economic Growth]]
+/with Elizabeth Berger, Alexander Butler, and Morad Zekhnini/
+
+- *Forthcoming in Journal of Financial Intermediation*
+- Presented at Rice University (2012*), Financial Management Association
+  Conference (FMA 2013), Securities and Exchange Commission (SEC, 2014*),
+  Fordham University (2014*), University of Cincinnati (2014*), University of
+  Kentucky (2014*), Yale School of Management (2015*).
