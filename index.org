@@ -34,6 +34,11 @@ Securities and Exchange Commission
 :CUSTOM_ID: workingpapers
 :END:
 #+INCLUDE: workingpapers.org :minlevel 3
+** [[http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790][Publications]]
+:PROPERTIES:
+:CUSTOM_ID: pubs
+:END:
+#+INCLUDE: publications.org :minlevel 3
 
 ** Work in Progress
 :PROPERTIES:
