@@ -24,7 +24,8 @@ below:
 - Conducted research showing how the proposed rules would affect the
   resubmission of shareholder proposals, and the effect of including
   shareholder proposals on firm value (see [[https://www.sec.gov/news/statements/2019/jackson-data-appendix-on-proposals-to-restrict-shareholder-voting.pdf][Data Appendix]]).
-- Received support from [[https://www.brown.senate.gov/newsroom/press/release/waters-and-brown-statement-on-sec-proposals-to-curtail-shareholder-rights][Chair Waters and Ranking Member Brown]].
+- Received support from [[https://www.brown.senate.gov/newsroom/press/release/waters-and-brown-statement-on-sec-proposals-to-curtail-shareholder-rights][Chair Waters and Ranking Member Brown]], and
+  over [[https://promarket.org/over-60-leading-finance-economists-ask-sec-to-revise-the-shareholder-voting-draft-reform/][60 leading corporate governance scholars]].
 - Selected coverage: [[https://www.cnbc.com/2019/11/05/rule-change-would-make-it-harder-to-submit-shareholder-resolutions.html][CNBC]], [[https://www.politico.com/news/2019/11/05/sec-proxy-advisory-firms-shareholder-proposals-066097][Politico]], [[https://www.bloomberg.com/opinion/articles/2019-11-06/advice-is-different-from-solicitation][Bloomberg (Money Stuff)]], [[https://podcasts.apple.com/us/podcast/sec-commissioner-robert-jackson-ceos-are-not-royalty/id1011668648?i=1000456870191][Recode Decode (Podcast)]], [[https://www.economist.com/business/2019/11/14/proxy-advisers-come-under-fire][The Economist]], [[https://capitalisnt.simplecast.com/episodes/shareholder-vote-suppression-with-sec-commissioner-rob-jackson][Capitalisn't (Podcast)]]
 - Featured: [[https://corpgov.law.harvard.edu/2019/11/05/statement-on-proposals-to-restrict-shareholder-voting/][HLS Forum on Corporate Governance and Financial Regulation]], [[https://promarket.org/the-secs-proposal-on-proxy-advisor-regulation-shields-ceos-from-accountability-to-investors/][Chicago Booth Stigler Center ProMarket Blog]]
 
