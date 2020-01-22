@@ -56,9 +56,15 @@ below:
   to SEC]]
 - Selected coverage: [[https://www.cnn.com/2019/03/06/investing/stock-buybacks-sec-chris-van-hollen/index.html][CNN]], [[https://www.washingtonpost.com/business/capitalbusiness/these-executive-stock-sales-can-hurt-company-in-long-run-sec-commissioner-says/2019/03/07/56e38098-4054-11e9-922c-64d6b7840b82_story.html][Washington Post]], [[https://www.cnbc.com/2019/03/06/buybacks-under-attack-as-a-senator-proposes-restricting-insider-sales.html][CNBC]], [[https://www.foxbusiness.com/politics/trump-appointed-sec-leader-share-buybacks-benefit-executives-not-long-term-investors][Fox Business]], [[https://www.theatlantic.com/magazine/archive/2019/08/the-stock-buyback-swindle/592774/][The Atlantic]], [[https://www.bloomberg.com/news/articles/2019-12-06/ceos-goose-their-pay-with-buybacks][Bloomberg Businessweek]]
 
-* [[https://www.sec.gov/files/bats_moc_analysis.pdf][Bats Market Close: Off-Exchange Closing Volume and Price Discovery]]
-- First SEC economic analysis to use regulatory audit trail and TRF data.
+* [[https://www.sec.gov/files/bats_moc_analysis.pdf][CBOE (BATS) Market Close: Off-Exchange Closing Volume and Price Discovery]]
+- Conducted research showing that existing fragmentation of the close
+  has not negatively impacted closing price discovery. First SEC
+  economic analysis to use regulatory audit trail and TRF
+  data. Involved an unprecedented data fight between the exchanges.
 - Led to NYSE cutting its top tier MOC fees by two-thirds.
+- Approved unanimously by the Commission, despite [[https://www.sec.gov/comments/sr-batsbzx-2017-34/batsbzx201734-3432889-162194.pdf][lobbying]] from a
+  former SEC Chair, Chief Economist, two leading financial economists,
+  and a prominent attorney who later became a Cabinet Secretary.
 - Selected coverage: [[https://www.wsj.com/articles/stock-exchanges-squabble-over-end-of-day-auctions-1497541023][Wall Street Journal]]
 
 * [[https://www.sec.gov/dera/staff-papers/white-papers/dera_wp_tick_size-market_quality][Tick Size Pilot Program and Market Quality]]
