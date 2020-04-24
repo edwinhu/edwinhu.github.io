@@ -1,4 +1,4 @@
-   | [[http://www.sec.gov][Securities and Exchange Commission]] | Last Updated: {{{date}}}                        |
-   | 100 F St NE                        | @@latex:\Telefon@@@@html:📞@@: (202) 551-8993   |
-   | Washington, D.C. 20549             | @@latex:\Letter@@@@html:📧@@: ~hue@sec.gov~     |
-   |                                    | @@latex:\Mundus@@@@html:🌐@@: [[http://edwinhu.github.io][edwinhu.github.io]] |
+   | NYU School of Law                            | Last Updated: {{{date}}}                         |
+   | [[https://www.law.nyu.edu/centers/icgf][Institute for Corporate Governance & Finance]] | @@latex:\Letter@@@@html:📧@@: ~edwin.hu@nyu.edu~ |
+   | 40 Washington Sq. South                      | @@latex:\Mundus@@@@html:🌐@@: [[http://edwinhu.github.io][edwinhu.github.io]]  |
+   | New York, NY 10012                           |                                                  |
