@@ -17,7 +17,7 @@ NYU School of Law\\
 [[https://www.law.nyu.edu/centers/icgf][Institute for Corporate Governance & Finance]]
 
 [[./cv][CV (PDF)]] | [[https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790][SSRN]] | [[https://www.linkedin.com/in/huedwin/][LinkedIn]] | [[https://github.com/edwinhu][GitHub]] \\
-[[./pin][PIN Estimates]] | [[./sas][SAS Macros]]
+[[./pin][PIN Estimates]] | [[./sas][SAS Macros]] | [[./software][Software]]
 
 * Biography
 :PROPERTIES:

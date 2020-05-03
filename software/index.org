@@ -1,0 +1,357 @@
+#+TITLE: Software
+#+AUTHOR: Edwin Hu
+#+OPTIONS: ':t
+
+* Some command line tools worth learning
+
+** [[https://www.anaconda.com/products/individual][~anaconda~]]
+
+Specifically ~miniconda~.
+
+Python is one of the most flexible tools for data analysis, but as a general
+purpose programming language it does not come with all of the tools installed by
+default. As such you will likely need to install some packages like ~pandas~,
+~numpy~, or even ~jupyter notebook~. ~anaconda~ is a metapackage containing
+almost everything you will need to use. Plus it comes with a great package
+manager ~conda~, which automatically solves dependencies/requirements for you,
+and allows you to create your own environments.
+
+However, a default ~anaconda~ installation can be several gigabytes, and over
+time I've found that I never use some packages. That's where ~~miniconda~ comes
+in. It's a much lighter-weight version of ~anaconda~ with the basic tools to
+allow you to install only what you need. If you don't know what you will need,
+go ahead and install ~anaconda~.
+
+If you are using ~miniconda~, for starters I would recommend at least the
+following:
+#+BEGIN_SRC sh
+conda install jupyter pandas numpy scipy scikit-learn --yes
+#+END_SRC
+
+*** [[https://conda-forge.org/][~conda-forge~]]
+
+Some packages may not be available in the default ~conda~ channel. Oftentimes
+these packages are available in the [[https://conda-forge.org/][~conda-forge~]] channel. ~conda-forge~ is a
+vast, community-led project. As such you can often find what you need, but be
+warned that sometimes the dependencies will conflict with your base ~anaconda~
+installation.
+
+It's always worth checking ~conda-forge~, as there are even non-python binaries
+available, such as ~htop~. You never know what you will find there.
+
+*** environments
+
+If you have different dependency requirements, due to conflicts with different
+packages, channels, or if you just want to `freeze` each of your individual
+project requirements individually then you will want to explore environments.
+
+Using ~conda~ you can easily create your own environments and specify the exact
+packages and version numbers you want:
+#+BEGIN_SRC sh
+conda create -n myenv python=3.6 scipy=0.15.0
+#+END_SRC
+
+To start/stop using an environment:
+#+BEGIN_SRC sh
+activate myenv
+deactivate myenv
+#+END_SRC
+
+*** ~pip~
+
+As ~anaconda~ has grown and gotten more complex, sometimes resolving
+dependencies can become a very difficult and time-consuming task. This is
+especially true if you are working off of a highly customized ~anaconda~
+installation--which tends to happen if you have an old install that you keep
+adding to.
+
+In times like this it is useful to fall back on the default Python package
+manager ~pip~. ~pip~ does some dependency-management, and by default reads from
+[[https://pypi.org][PyPI]], the main Python Package Index, but can be tweaked to install from GitHub,
+or from local files.
+
+If you find yourself frustrated by ~conda~ don't forget, there is always ~pip~!
+
+*** ~conda~ for ~R~
+
+Yes I know, this is blasphemy. However, sometimes just getting a basic ~R~
+installation up and running can take some time, as you might run into issues
+getting things to compile correctly on your system. In fact, getting ~R~ set up
+on different machines is what drove me to switch to Python and to try ~anaconda~
+in the first place. ~anaconda~ has actually [[https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/][supported ~R~]] for years now, and
+just like with Python it is an easy way to get started. Plus, with projects like
+[[https://irkernel.github.io/][~IRkernel~]], which allows you to run ~R~ kernels in ~jupyter notebook~ it is a
+pretty good way to do interactive data analysis. Most ~R~ packages can be
+installed via ~conda~ with ~r-[package name]~.
+
+Much like ~anaconda~ for Python, I recommend that new ~R~ users start with
+~tidyverse~, and ~data.table~ for getting started with data analysis:
+#+BEGIN_SRC sh
+conda install r-base r-essentials r-irkernel r-tidyverse r-data.table
+#+END_SRC
+
+If, like me, you find yourself constantly playing with different ~R~ packages
+then you may actually want to rely on ~R~'s built-in ~install.packages()~, or
+the ~devtools::install_github~ included in ~tidyverse~. This may seem
+counterintuitive, as I have (hopefully) just convinced you that ~conda~ is the
+best tool for package management in every context--but just as you may want to
+fall back on ~pip~ for Python, you may find it easier to just use the default
+package manager in ~R~ /after/ you do your initial ~conda install~.
+
+
+** [[https://curl.haxx.se/][~curl~]]
+
+These days much of the data you will want to analyze lives on the web. If you
+want to get this data you will run into terms like HTTP, FTP, REST APIs, JSON.
+If you want to work with these things you should probably learn ~curl~.
+
+The basic usage of ~curl~ is simple, yet endlessly customizable:
+#+BEGIN_SRC sh
+curl [options] [URL...]
+#+END_SRC
+
+Why ~curl~ over something like ~wget~? ~curl~ by default writes to ~STDOUT~,
+while ~wget~ writes directly to disk. This gives ~curl~ a significant advantage
+in being a flexible utility in between pipes.
+
+Bonus tip: [[https://anaconda.org/conda-forge/curl][~curl~ is available in ~conda-forge~]].
+
+
+** [[https://stedolan.github.io/jq/][~jq~]]
+
+~jq~ is like ~awk~ but specifically for json files. It is fast, flexible, and
+plays nicely with your other command-line tools.
+
+It is extremely useful for pretty-printing your json files, and can be easily
+used to glob multiple files. The more advanced syntax including ~select~/~map~
+can help you explore very complex files in just a few lines of code.
+
+Bonus tip: [[https://anaconda.org/conda-forge/jq][~jq~ is available in ~conda-forge~]].
+
+
+** [[https://csvkit.readthedocs.io/en/latest/][~csvkit~]]
+
+Sometimes you need something a bit fancier than ~less~--that's when csvkit comes
+in. ~csvkit~ includes a variety of tools for working with csv files including
+~csvlook~, ~csvjoin~, ~csvformat~ all of which can greatly enhance your ability
+to work with csvs in the command line.
+
+** [[http://dtach.sourceforge.net/][~dtach~]]
+
+~dtach~ is like a much lighter-weight version of ~screen~ or ~tmux~. As such, it
+is very easy to use and is also a lot less finicky.
+
+Note: you will have to build ~dtach~ from source yourself.
+
+** [[https://lftp.yar.ru/][~lftp~]]
+
+~lftp~ is a great command line utility for FTP/FTPS. I use it because it is
+capable of connecting to Box.com, which is a storage application used by many
+universities.
+
+*** Setting up LFTP for Box.com
+
+If you don't have root, setting up ~lftp~ can be a huge pain. You can download a
+version through ~conda-forge~ but the version of ~openssl~ that it comes with
+won't work because it will try to get the newest version of openssl and it has
+an old API call, ~SSL_library_init()~, which has been deprecated since v1.1.0.
+
+To get around this you can create your own ~conda~ environment with an old, but
+compatible version of ~openssl~. Then all you have to do is symlink ~lftp~ onto
+your path.
+
+#+BEGIN_SRC sh
+conda create --name lftp lftp openssl=1.0.2 -c conda-forge --yes
+ln -s ~/miniconda3/envs/lftp/bin/lftp ~/miniconda3/bin/lftp
+#+END_SRC
+
+You can then log in and bookmark your site:
+#+BEGIN_SRC sh
+lftp -u YOUR@EMAIL.COM ftps://ftp.box.com
+Password:
+bookmark add box
+#+END_SRC
+
+If you want to have lftp save your password (generally not recommended) you can
+modify your ~~/.lftprc~ file by adding the following:
+#+BEGIN_SRC sh
+set bmk:save-passwords yes
+#+END_SRC
+
+You can then connect like this:
+#+BEGIN_SRC sh
+lftp
+open box
+#+END_SRC
+
+* Some python libraries worth learning
+
+**  [[https://requests.readthedocs.io/en/master/][~requests~]]
+
+~requests~ is a dead-simple HTTP library for Python. Like ~curl~ it is an
+essential building tool for working with data that lives on the web (aka
+scraping).
+
+For example, many websites are now built around REST APIs and deliver JSON
+payloads. Rather than scraping HTML with something like [[https://www.crummy.com/software/BeautifulSoup/bs4/doc/][~BeautifulSoup~]], [[https://lxml.de/][~lxml~]],
+or worst of all [[https://www.selenium.dev/][~Selenium~]] you can save yourself a lot of time and preserve your
+sanity by just using ~requests~ to get at the underlying data. All you need is
+the Inspect window of your browser, and some patience and soon you will be an
+API scraping master.
+
+Bonus tip: https://curl.trillworks.com/ is a great website that converts ~curl~
+statements into ~requests~ code. This is especially useful because some browsers
+allow you to copy the results of HTTP requests into ~curl~, which you can easily
+convert into ~requests~ code!
+
+
+** [[https://docs.python.org/3/library/asyncio.html][~asyncio~]]
+
+~asyncio~ is part of the Python standard library as of Python 3.4. It is a
+library for running concurrent (single-threaded) code, and brings Python to the
+forefront of event-driven programming. That is a fancy way of saying that it is
+a neat library that can help you write highly parallel code, help you write your
+own network apps, or even write some pretty fancy scrapers.
+
+~asyncio~ has spawned its own ecosystem of libraries, such as [[https://docs.aiohttp.org/en/stable/][~aiohttp~]] which is
+like a async version of [[https://requests.readthedocs.io/en/master/][~requests~]], and [[https://github.com/Tinche/aiofiles][~aiofiles~]] for dealing with the
+filesystem asynchronously.
+
+
+** [[https://ipyparallel.readthedocs.io/en/latest/][~ipyparallel~]]
+
+~ipyparallel~ is a parallel programming framework built around IPython. If you
+are using ~jupyter~ then you are already working within the IPython framework.
+~ipyparallel~ is great at parallelizing tasks that are typically trivial to
+parallelize such as long declarative ~for~ loops or large functional
+~map~/~reduce~ jobs. I've also found ~ipyparallel~ useful for running
+simulations. When it comes to processing data ~ipyparallel~ is sure to help in
+your workflow.
+
+
+** [[https://pandas.pydata.org/][~pandas~]]
+
+You have data. You use Python. If these conditions apply, then you should use
+~pandas~. The genius of ~pandas~ is that provides a ~DataFrame~, an indexed,
+two-dimensional, potentially heterogeneous and hierarchical table of rows and
+columns. In all likelihood 99% of the data you analyze with statistical
+techniques will fit into the ~DataFrame~ structure, and ~pandas~ makes working
+with ~DataFrames~ a breeze with powerful functions for data serialization and
+transformation.
+
+** [[https://www.pytables.org/][PyTables]]/hdf5
+
+Face it, sometimes you will have to write your data to disk. Maybe you don't
+want to write your large and wonderful ~DataFrame~ to a csv file where you will
+lose the easy row/column access and fast indexed-filtering. Fortunately PyTables
+exists, and since it is built on hdf5 it makes reading/writing data on disk
+super fast. The magic behind hdf5 is that it is 'hierarchical', and it has
+[[https://www.hdfgroup.org/2017/05/hdf5-data-compression-demystified-2-performance-tuning/][internal compression]] which often means your hdf5 files will be even smaller than
+your csv equivalents. It also has many of the nice features of working with
+~DataFrames~, and even some [[https://www.pytables.org/cookbook/hints_for_sql_users.html][~sql~-like]] convenience functions.
+
+~pandas~ also makes working with PyTables and hdf5 files more generally a
+breeze:
+#+BEGIN_SRC python
+df.to_hdf(..., format='table')
+df.read_hdf(..., where, start, stop, columns, chunksize)
+#+END_SRC
+
+Warning: While PyTables is a great substitute for running a RMDB, or even
+~sqlite~ note that it is not designed for simultaneous write. It can however be
+used for simultaneous read-only access. It's a great data format when you have
+an ~ipyparallel~ workflow where you need to split/apply with a large data file.
+
+
+** [[https://dask.org/][~dask~]]
+
+~dask~ is a parallel data processing library. A typical use-case is when you
+have a bunch of files spread across your filesystem, network, etc. and you want
+to glob all of them do some minor processing/filtering and produce a combined
+dataset. Perhaps you could write some bash script to ~find~ all of these files
+and maybe then you ~cat~/~grep~/~sed~/~awk~ them together in some way. You might
+even parallelize this process with ~xargs~ or GNU ~parallel~. ~dask~ is
+purpose-built for this task, and can be much easier to scale up.
+
+Invoking ~dask~ is very simple:
+#+BEGIN_SRC python
+import dask.bag as db
+import ujson as json
+
+files = ! cat /path/to/your/files
+b = db.read_text(files, files_per_partition=10000).map(json.loads)
+#+END_SRC
+
+~dask~ also has great diagnostic tools such as a ~ProgressBar~ and various
+[[https://docs.dask.org/en/latest/diagnostics-local.html][profilers]].
+
+** [[https://github.com/ultrajson/ultrajson][~ujson~]]
+
+~ujson~ stands for UltraJSON, which is an ultra fast JSON serializer written in
+C with Python bindings. For most applications you can use it as a drop-in
+replacement for the default Python ~json~ module, which is written in pure
+Python and as such is slower.
+
+
+** [[https://github.com/fabiocaccamo/python-benedict][~benedict~]]
+
+~benedict~ is a Python dictionary subclass that makes navigating dictionaries in
+Python a lot easier. In many ways it is like [[https://www.crummy.com/software/BeautifulSoup/bs4/doc/][~BeautifulSoup~]], which is very good
+at working with irregular or malformed HTML/XML data, but for Python
+dictionaries, and JSON-like data. It is not as full-featured as many of the
+libraries on this list, but it can be very useful if you are working with
+irregular JSON data.
+
+
+** [[http://numba.pydata.org/][~numba~]]
+
+At first glance, ~numba~ seems like an odd choice for Python users. The appeal of Python is that it is an interpreted language, and hence does not need to be compiled to run. ~numba~ is a compiler for Python code. However, it is an easy to use, just-in-time (JIT) compiler using the LLVM compiler library. That means that it can take very simple Python and ~numpy~ code and turn it into LLVM compiled code that is nearly as fast as C or FORTRAN code.
+
+A good use case for ~numba~ is taking an expensive matrix multiplication and
+re-writing it as a loop. This may seem counterintuitive as the whole point of
+~numpy~ is to abstract away from slow Python loops for optimized abstracted
+matrix operations. Yet these dumb, slow Python loops combined with ~numba~ can
+be significantly faster than ~numpy~ counterparts if used correctly.
+
+
+* Some ~R~ libraries worth learning
+
+** [[https://mran.microsoft.com/open][Microsoft R Open (MRO)]]
+This is not an ~R~ library, but a distribution. Years ago, Revolution Analytics
+produced a highly optimized ~R~ distribution that was significantly faster for
+analytics than the base ~R~. It leveraged tools like the Intel Math Kernel
+Library to speed up matrix operations and was fantastic to use. The problem is
+that unlike R which is free and doesn't require a license, Revolution ~R~
+required a license and could be expensive. Microsoft acquired Revolution
+Analytics, and the distribution is now available for free, as the Microsoft R
+Open distribution, which is available through ~conda~!
+
+Installing is as easy as replacing ~r-base~ with ~mro-base~:
+#+BEGIN_SRC sh
+conda install mro-base r-essentials
+#+END_SRC
+
+MRO is good enough to use as an everyday R distribution, but you may still find
+that it is better to put it in a separate environment.
+
+** [[https://www.tidyverse.org/][~tidyverse~]]
+
+~tidyverse~ is a metapackage of data analysis tools for ~R~. In many ways it is
+like the ~anaconda~ default installation in that it includes so many of the
+essentials. To get started analyzing data in a modern ~R~ setup you will likely
+need ~ggplot2~, ~dplyr~, ~stringr~, and ~purrr~ just to name a few. All of these
+are part of ~tidyverse~.
+
+~tidyverse~ also contains one of the most useful packages in any language:
+~haven~, which allows you to read ~SAS~ and ~Stata~ files. Look, we can all
+pretend like we don't have co-authors that use these languages, or we can deal
+with it and use ~haven~.
+
+
+** [[https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html][~data.table~]]
+
+~data.table~ is [[https://github.com/Rdatatable/data.table/wiki/Benchmarks-%3A-Grouping][very fast]], and has an intuitive syntax. It is certainly
+different from ~tidyverse::dplyr~, but for those familiar with ~pandas~,
+PyTable, or ~sql~ it may be more intuitive.
+
+Bonus tip: DataCamp has a great [[https://s3.amazonaws.com/assets.datacamp.com/blog_assets/datatable_Cheat_Sheet_R.pdf][cheat sheet]] for ~data.table~.
