@@ -17,7 +17,7 @@ manager ~conda~, which automatically solves dependencies/requirements for you,
 and allows you to create your own environments.
 
 However, a default ~anaconda~ installation can be several gigabytes, and over
-time I've found that I never use some packages. That's where ~~miniconda~ comes
+time I've found that I never use some packages. That's where ~miniconda~ comes
 in. It's a much lighter-weight version of ~anaconda~ with the basic tools to
 allow you to install only what you need. If you don't know what you will need,
 go ahead and install ~anaconda~.
@@ -173,7 +173,7 @@ bookmark add box
 #+END_SRC
 
 If you want to have lftp save your password (generally not recommended) you can
-modify your ~~/.lftprc~ file by adding the following:
+modify your ~/.lftprc~ file by adding the following:
 #+BEGIN_SRC sh
 set bmk:save-passwords yes
 #+END_SRC
