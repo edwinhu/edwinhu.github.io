@@ -184,6 +184,57 @@ lftp
 open box
 #+END_SRC
 
+** [[https://www.gnu.org/software/parallel/][~GNU parallel~]]
+
+~GNU parallel~ is a great command line utility written in Perl which allows for
+very fine-tuned control over parallelization. If you are familiar with something
+like ~xargs~, then ~parallel~ is like a more robust, scalable version of
+~xargs~.
+
+Admittedly the learning curve for ~parallel~ can be a bit high, but it makes
+replacing serial loops with parallel tasks very easy.
+
+Suppose you have a script ~SOMETHING~ which you want to run over a list of ~csv~
+files in your current directory:
+#+BEGIN_SRC sh
+for i in $(find *.csv); do
+    ./SOMETHING $i
+done
+#+END_SRC
+
+One way to easily parallelize this in ~bash~ is to add ~&~:
+#+BEGIN_SRC sh
+for i in $(find *.csv); do
+    ./SOMETHING $i &
+done
+#+END_SRC
+
+You could also accomplish the same task with a pipe:
+#+BEGIN_SRC sh
+find *.csv | ./SOMETHING
+#+END_SRC
+or if the number of ~csv~ files is large you can use ~xargs~:
+#+BEGIN_SRC sh
+find *.csv | xargs ./SOMETHING
+#+END_SRC
+
+If you want more fine tuned control, such as over the number of concurrent jobs,
+then that is where ~parallel~ comes in:
+#+BEGIN_SRC sh
+find *.csv | parallel -j8 ./SOMETHING
+#+END_SRC
+
+~parallel~ is very powerful, and can handle things like parsing arguments, and
+handle concurrent writing in a safe way. Suppose that your input is a pipe
+delimited file that you want to pass as arugments to your script and output to a
+single file:
+#+BEGIN_SRC sh
+cat INPUT.csv | parallel --colsep '\|' "./SOMETHING {1} {2}" > OUTPUT.csv
+#+END_SRC
+
+Just remember you ~bash~ quoting rules and you will be fine!
+
+
 * Some python libraries worth learning
 
 **  [[https://requests.readthedocs.io/en/master/][~requests~]]
