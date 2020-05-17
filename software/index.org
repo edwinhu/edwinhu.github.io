@@ -128,6 +128,13 @@ can help you explore very complex files in just a few lines of code.
 
 Bonus tip: [[https://anaconda.org/conda-forge/jq][~jq~ is available in ~conda-forge~]].
 
+** [[http://xmlstar.sourceforge.net/overview.php][~xmlstarlet~]]
+
+~xmlstarlet~ is like ~awk/sed/grep~ for XML files.
+
+It is extremely useful for browsing the structure of your XML files (~xmlstarlet
+el~), and subsequently extract the relevant information (~xmlstarlet sel~). It
+is written in ~C~ so it is very fast.
 
 ** [[https://csvkit.readthedocs.io/en/latest/][~csvkit~]]
 
