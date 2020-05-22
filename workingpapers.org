@@ -1,4 +1,26 @@
 
+* [[https://papers.ssrn.com/abstract=3600230][Vestigial Tails: Floor Brokers at the Close in Modern Electronic Markets]]
+/with Dermot Murphy/
+
+- Covered in the [[https://www.wsj.com/articles/coronavirus-shutdown-casts-doubt-on-value-of-exchange-trading-floors-11590053419][Wall Street Journal]], [[https://www.bloomberg.com/opinion/articles/2020-05-22/a-vaccine-with-a-poison-pill][Money Stuff (Bloomberg)]].
+
+#+BEGIN_QUOTE
+Closing auctions determine daily closing prices and trillions of dollars of net
+asset values. We study closing auction market quality on NYSE and Nasdaq as
+measured by the accuracy of indicative closing auction prices, volume, and order
+imbalances. Closing auction market quality is significantly lower on NYSE
+compared to Nasdaq due to the existence of a second-stage auction period on NYSE
+which is exclusive to floor brokers. When NYSE closes its floor during the
+COVID-19 pandemic, we find that NYSE auction quality improves. We use exogenous
+shocks to impatient liquidity trader volume stemming from end-of-month portfolio
+rebalancing periods and "triple witching" days to show that closing auction
+market quality is worse on NYSE because impatient liquidity traders pool their
+orders in the first-stage auction period. Consistent with this view, NYSE
+auction quality deteriorates during our 2011-2018 sample period as passive
+investing overtakes active management.
+#+END_QUOTE
+
+
 * [[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3295980][Loan Syndication Networks]]
 /with Jeffrey Harris, and Ioannis Spyridiopoulos/
 
