@@ -2,7 +2,7 @@
 * [[https://papers.ssrn.com/abstract=3600230][Vestigial Tails: Floor Brokers at the Close in Modern Electronic Markets]]
 /with Dermot Murphy/
 
-- Covered in the [[https://www.wsj.com/articles/coronavirus-shutdown-casts-doubt-on-value-of-exchange-trading-floors-11590053419][Wall Street Journal]], [[https://www.bloomberg.com/opinion/articles/2020-05-22/a-vaccine-with-a-poison-pill][Money Stuff (Bloomberg)]].
+- Covered in the [[https://www.wsj.com/articles/coronavirus-shutdown-casts-doubt-on-value-of-exchange-trading-floors-11590053419][Wall Street Journal]], [[https://www.bloomberg.com/opinion/articles/2020-05-22/a-vaccine-with-a-poison-pill][Money Stuff (Bloomberg)]], [[https://www.economist.com/finance-and-economics/2020/05/25/covid-19-forced-trading-floors-to-close-theyll-be-back][The Economist]].
 
 #+BEGIN_QUOTE
 Closing auctions determine daily closing prices and trillions of dollars of net
