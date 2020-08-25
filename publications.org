@@ -1,7 +1,7 @@
 
 * [[https://ssrn.com/abstract=2564369][A comparison of some structural models of private information arrival]]
 /with Jefferson Duarte, and Lance Young/ 
-- *Forthcoming in Journal of Financial Economics*
+- /Journal of Financial Economics 135.3 (2020): 795-815/
 - Presented at Rice University (2015), Texas A&M (2015*), Multinational Finance
   Society Conference (MFS, 2015*) *Best Paper Award*, China International
   Finance Conference (CICF, 2015*), Society of Financial Econometrics Conference
@@ -15,8 +15,7 @@
 
 * [[https://ssrn.com/abstract=2139679][Financial Integration and Credit Democratization: Linking Banking Deregulation to Economic Growth]]
 /with Elizabeth Berger, Alexander Butler, and Morad Zekhnini/
-
-- *Forthcoming in Journal of Financial Intermediation*
+- /Journal of Financial Intermediation (2020): 100857/
 - Presented at Rice University (2012*), Financial Management Association
   Conference (FMA 2013), Securities and Exchange Commission (SEC, 2014*),
   Fordham University (2014*), University of Cincinnati (2014*), University of

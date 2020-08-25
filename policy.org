@@ -4,6 +4,10 @@ requirements for security futures]], [[https://www.sec.gov/news/public-statement
 [[https://www.sec.gov/news/public-statement/statement-jackson-091919][Volcker Rule]]. I also conducted original policy research summarized
 below:
 
+* [[https://www.wsj.com/articles/banks-could-get-24-billion-in-fees-from-ppp-loans-11594134444][(WSJ) Banks Could Get $24 Billion in Fees From PPP Loans]]
+/with Colleen Honigsberg/
+- Front page, main article.
+
 * [[https://www.sec.gov/news/public-statement/statement-jackson-2019-12-18-accredited-investor][Reducing Investor Protections around Private Markets]] (Accredited Investor Definition)
 - Conducted research showing that private placement brokers have
   unusually high levels of sales practice complaints and
