@@ -1,6 +1,6 @@
 
 * [[https://ssrn.com/abstract=2564369][A comparison of some structural models of private information arrival]]
-/with Jefferson Duarte, and Lance Young/ 
+/with Jefferson Duarte and Lance Young/
 - /Journal of Financial Economics 135.3 (2020): 795-815/
 - Presented at Rice University (2015), Texas A&M (2015*), Multinational Finance
   Society Conference (MFS, 2015*) *Best Paper Award*, China International
