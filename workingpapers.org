@@ -2,16 +2,16 @@
 /with Colleen Honigsberg and Robert Jackson/
 
 - Presented at JCLAW (2020*), Berkeley Law, Accounting, & Business Workshop
-  (2020), NYU Law and Economics Faculty Workship (2021 Scheduled), Harvard
-  Empirical Law and Finance Workshop (2021 Scheduled), 33rd Annual Tulane
-  Corporate Law Institute (2021* Scheduled)
+  (2020), NYU Law and Economics Faculty Workship (2021), Harvard
+  Empirical Law and Finance Workshop (2021), Goethe University LawFin
+  Seminar (2021), 33rd Annual Tulane Corporate Law Institute (2021*)
 
 * [[https://ssrn.com/abstract=3673531][The Index-Fund Dilemma: An Empirical Study of the Lending-Voting Tradeoff]]
 /with Joshua Mitts and Haley Sylvester/
 
 - Covered in [[https://clsbluesky.law.columbia.edu/2021/01/19/the-index-fund-dilemma-an-empirical-study-of-the-lending-voting-tradeoff][Columbia Blue Sky Blog]], [[https://www.bloomberg.com/opinion/articles/2021-01-19/maybe-the-index-funds-don-t-vote][Money Stuff (Bloomberg)]]
-- Presented at JCLAW (2020*), Harvard Empirical Law and Finance Workshop (2021
-  Scheduled), Columbia Law and Economics Workshop (2021* Scheduled)
+- Policy: Speech by [[https://www.sec.gov/news/speech/lee-every-vote-counts][SEC Chair Lee on share lending and proxy voting disclosure]], Statement by [[https://www.sec.gov/news/public-statement/crenshaw-amac-remarks-031921][SEC Commissioner Crenshaw on the lending-voting tradeoff]].
+- Presented at JCLAW (2020*), Harvard Empirical Law and Finance Workshop (2021*), Columbia Law and Economics Workshop (2021*)
 
 
 * [[https://papers.ssrn.com/abstract=3600230][Vestigial Tails?: Floor Brokers at the Close in Modern Electronic Markets]]
@@ -21,7 +21,7 @@
 - Presented at University of Illinois Chicago (2020*), Rice University (2020),
   SEC (2020*), The Microstructure Exchange (2020) ([[https://www.youtube.com/watch?v=cRQigejq5jg][recording]]) ([[https://microstructure.exchange/slides/20201006%20Microstructure%20Exchange%20-%20WEB.pdf][slides]]), [[https://iextrading.com/insights/academic-research-conference-2020/][IEX ARC]]
   (2020), NBER Big Data Conference (2020), Microstructure Online Seminars Asia
-  Pacific (2021 Scheduled)
+  Pacific (2021 Scheduled), Western Finance Association (2021 Scheduled)
 
 
 * [[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3295980][Loan Syndication Networks]]
