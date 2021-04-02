@@ -9,7 +9,7 @@
 * [[https://ssrn.com/abstract=3673531][The Index-Fund Dilemma: An Empirical Study of the Lending-Voting Tradeoff]]
 /with Joshua Mitts and Haley Sylvester/
 
-- Covered in [[https://clsbluesky.law.columbia.edu/2021/01/19/the-index-fund-dilemma-an-empirical-study-of-the-lending-voting-tradeoff][Columbia Blue Sky Blog]], [[https://www.bloomberg.com/opinion/articles/2021-01-19/maybe-the-index-funds-don-t-vote][Money Stuff (Bloomberg)]]
+- Covered in [[https://clsbluesky.law.columbia.edu/2021/01/19/the-index-fund-dilemma-an-empirical-study-of-the-lending-voting-tradeoff][Columbia Blue Sky Blog]], [[https://www.bloomberg.com/opinion/articles/2021-01-19/maybe-the-index-funds-don-t-vote][Money Stuff (Bloomberg)]], [[https://www.wsj.com/articles/gamestop-called-attention-to-the-share-lending-market-heres-what-you-should-know-11617375748][/The Wall Street Journal/]]
 - Policy: Speech by [[https://www.sec.gov/news/speech/lee-every-vote-counts][SEC Chair Lee on share lending and proxy voting disclosure]], Statement by [[https://www.sec.gov/news/public-statement/crenshaw-amac-remarks-031921][SEC Commissioner Crenshaw on the lending-voting tradeoff]].
 - Presented at JCLAW (2020*), Harvard Empirical Law and Finance Workshop (2021*), Columbia Law and Economics Workshop (2021*)
 
