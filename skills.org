@@ -1,4 +1,3 @@
 Data analysis, financial econometrics, high performance scientific computing, parallel computing, data visualization, causal inference, matching.
 
-~python~, ~R~, ~SAS~, ~stata~, ~sql~, ~bash~, ~git~, ~awk~
-@@latex:\hiddentext{Emacs}{\texttt{latex}}@@
+~python~, ~R~, ~SAS~, ~stata~, ~sql~, ~bash~, ~git~, ~awk~, \LaTeX
