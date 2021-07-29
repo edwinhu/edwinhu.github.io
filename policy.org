@@ -71,6 +71,6 @@ below:
 - Selected coverage: [[https://www.wsj.com/articles/stock-exchanges-squabble-over-end-of-day-auctions-1497541023][Wall Street Journal]]
 
 * [[https://www.sec.gov/dera/staff-papers/white-papers/dera_wp_tick_size-market_quality][Tick Size Pilot Program and Market Quality]]
-/with Paul Hughes, John Ritter, Patti Vegella, and Hao Zhang/
+with Paul Hughes, John Ritter, Patti Vegella, and Hao Zhang
 - We find evidence that market quality deteriorates after the Tick
   Size Pilot widens quoting increments to five cent increments.

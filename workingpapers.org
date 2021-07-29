@@ -1,37 +1,32 @@
-* [[https://papers.ssrn.com/abstract=3769653][Wandering Financial Advisors]]
-/with Colleen Honigsberg and Robert Jackson/
+* The Index-Fund Dilemma: An Empirical Study of the Lending-Voting Tradeoff
+with Joshua Mitts and Haley Sylvester ([[https://ssrn.com/abstract=3673531][SSRN]])
 
-- Covered in [[https://www.thinkadvisor.com/2021/05/14/wandering-bad-brokers-pose-risks-for-clients-industry/][ThinkAdvisor]], [[https://www.marketwatch.com/story/the-first-step-of-searching-for-a-financial-adviser-trust-no-one-11621876941][MarketWatch]], [[https://www.financial-planning.com/news/misconduct-study-sheds-light-on-wandering-advisors][Financial Planning]], [[https://www.investmentnews.com/ex-sec-member-targets-rogue-brokers-turning-to-insurance-sales-206925][InvestmentNews]]
-- Presented at JCLAW (2020*), Berkeley Law, Accounting, & Business Workshop
-  (2020), NYU Law and Economics Faculty Workship (2021), Harvard
-  Empirical Law and Finance Workshop (2021), Goethe University LawFin
-  Seminar (2021), 33rd Annual Tulane Corporate Law Institute (2021*)
-
-* [[https://ssrn.com/abstract=3673531][The Index-Fund Dilemma: An Empirical Study of the Lending-Voting Tradeoff]]
-/with Joshua Mitts and Haley Sylvester/
-
+- Revise and Resubmit, /J. Legal Stud./
 - Covered in [[https://clsbluesky.law.columbia.edu/2021/01/19/the-index-fund-dilemma-an-empirical-study-of-the-lending-voting-tradeoff][Columbia Blue Sky Blog]], [[https://www.bloomberg.com/opinion/articles/2021-01-19/maybe-the-index-funds-don-t-vote][Money Stuff (Bloomberg)]], [[https://www.wsj.com/articles/gamestop-called-attention-to-the-share-lending-market-heres-what-you-should-know-11617375748][/The Wall Street Journal/]], [[https://www.marketwatch.com/story/reddit-and-robinhood-army-fights-with-grievance-capital-to-break-wall-streets-elite-wall-11612387089][MarketWatch]]
 - Policy: Speech by [[https://www.sec.gov/news/speech/lee-every-vote-counts][SEC Chair Lee on share lending and proxy voting disclosure]], Statement by [[https://www.sec.gov/news/public-statement/crenshaw-amac-remarks-031921][SEC Commissioner Crenshaw on the lending-voting tradeoff]].
-- Presented at JCLAW (2020*), Harvard Empirical Law and Finance Workshop (2021*), Columbia Law and Economics Workshop (2021*)
+- Presented at JCLAW (2020*), Harvard Empirical Law and Finance Workshop
+  (2021*), Columbia Law and Economics Workshop (2021*)
 
 
-* [[https://papers.ssrn.com/abstract=3600230][Vestigial Tails?: Floor Brokers at the Close in Modern Electronic Markets]]
-/with Dermot Murphy/
+* Vestigial Tails? Floor Brokers at the Close in Modern Electronic Markets
+with Dermot Murphy ([[https://papers.ssrn.com/abstract=3600230][SSRN]])
 
 - Covered in [[https://www.wsj.com/articles/coronavirus-shutdown-casts-doubt-on-value-of-exchange-trading-floors-11590053419][/The Wall Street Journal/]], [[https://www.bloomberg.com/opinion/articles/2020-05-22/a-vaccine-with-a-poison-pill][Money Stuff (Bloomberg)]], [[https://www.economist.com/finance-and-economics/2020/05/25/covid-19-forced-trading-floors-to-close-theyll-be-back][/The Economist/]].
 - Presented at University of Illinois Chicago (2020*), Rice University (2020),
   SEC (2020*), The Microstructure Exchange (2020) ([[https://www.youtube.com/watch?v=cRQigejq5jg][recording]]) ([[https://microstructure.exchange/slides/20201006%20Microstructure%20Exchange%20-%20WEB.pdf][slides]]), [[https://iextrading.com/insights/academic-research-conference-2020/][IEX ARC]]
   (2020), NBER Big Data Conference (2020), Microstructure Online Seminars Asia
-  Pacific (2021 Scheduled), Western Finance Association (2021 Scheduled)
+  Pacific (2021), Western Finance Association (2021), European Finance
+  Association (2021 Scheduled)
 
 
-* [[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3295980][Loan Syndication Networks]]
-/with Jeffrey Harris, and Ioannis Spyridiopoulos/
+* Loan Syndication Networks
+with Jeffrey Harris and Ioannis Spyridiopoulos ([[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3295980][SSRN]])
 
 - Presented at FMA (2019*)
 
 
-* [[https://ssrn.com/abstract=3195001][Intentional Access Delays, Market Quality, and Price Discovery: Evidence from IEX Becoming an Exchange]]
+* Intentional Access Delays, Market Quality, and Price Discovery: Evidence from IEX Becoming an Exchange
+([[https://ssrn.com/abstract=3195001][SSRN]], [[https://www.sec.gov/dera/staff-papers/working-papers/07feb18_hu_iex_becoming_an_exchange][SEC]])
 
 - Covered in [[https://www.wsj.com/articles/study-finds-speed-bumps-help-protect-ordinary-investors-1528974002][/The Wall Street Journal/ (1)]] [[https://www.wsj.com/articles/sec-wont-release-speed-bump-study-it-promised-two-years-ago-1540401251][(2)]], [[https://www.theglobeandmail.com/business/article-trading-speed-bumps-protect-regular-investors-from-high-frequency/][/Globe and Mail/]], [[http://www.tradersmagazine.com/news/ecns_and_exchanges/sec-says-as-exchange-iex-helps-improve-market-quality-117836-1.html][/Traders Magazine/]], [[https://tabbforum.com/researches/intentional-access-delays-market-quality-and-price-discovery-evidence-from-iex-becoming-an-exchange][TabbFORUM]], [[https://www.ft.com/content/20d40032-9b0d-11e8-88de-49c908b1f264][/Financial Times/]], [[https://www.fastcompany.com/video/how-38-miles-of-cable-changed-the-stock-market-forever/UaSEVpma][Fast Company (Video)]]
 - Presented at Securities and Exchange Commission (2019), DC Juniors Finance
