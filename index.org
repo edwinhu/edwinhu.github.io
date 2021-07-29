@@ -11,7 +11,6 @@
 #+HTML_HEAD_EXTRA:   gtag('config', 'UA-67919104-1');
 #+HTML_HEAD_EXTRA: </script>
 #+HTML_HEAD_EXTRA: <link rel="icon" href="favicon.ico" type="image/x-icon" />
-#+HTML_HEAD_EXTRA: <style>*{font-family: serif !important}</style>
 
 Research Fellow\\
 NYU School of Law\\
