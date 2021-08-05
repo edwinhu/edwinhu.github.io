@@ -150,11 +150,15 @@ is very easy to use and is also a lot less finicky.
 
 Note: you will have to build ~dtach~ from source yourself.
 
-** [[https://lftp.yar.ru/][~lftp~]]
+** [[https://lftp.yar.ru/][~lftp~]] and [[https://github.com/dropbox/dbxcli][~dbxcli~]]
 
 ~lftp~ is a great command line utility for FTP/FTPS. I use it because it is
 capable of connecting to Box.com, which is a storage application used by many
 universities.
+
+~dbxcli~ is a third-party open soruce tool for command line access to Dropbox.com
+which works a lot like ~lftp~. Instructions for setting up ~dbxcli~ are available on
+the GitHub page.
 
 *** Setting up LFTP for Box.com
 
@@ -413,3 +417,10 @@ different from ~tidyverse::dplyr~, but for those familiar with ~pandas~,
 PyTable, or ~sql~ it may be more intuitive.
 
 Bonus tip: DataCamp has a great [[https://s3.amazonaws.com/assets.datacamp.com/blog_assets/datatable_Cheat_Sheet_R.pdf][cheat sheet]] for ~data.table~.
+
+
+** [[https://www.rdocumentation.org/packages/lfe/versions/2.8-6/topics/felm][~felm~]] and [[https://github.com/amrei-stammann/alpaca][~alpaca~]]
+
+~felm~ and ~alpaca~ are R packages for linear/logistic regressions with high
+dimensional fixed effects and clustered standard errors. Both are available on
+CRAN, and are fairly well documented.
