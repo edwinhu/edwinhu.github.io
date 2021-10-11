@@ -12,7 +12,7 @@ with Colleen Honigsberg and Robert Jackson ([[https://papers.ssrn.com/abstract=3
 
 * Financial Integration and Credit Democratization: Linking Banking Deregulation to Economic Growth
 45 /J. Fin. Intermediation/ 100857 (2021)\\
-with Elizabeth Berger, Alexander Butler, and Morad Zekhnini ([[https://ssrn.com/abstract=213][SSRN]], [[https://doi.org/10.1016/j.jfi.2020.100857][DOI]])
+with Elizabeth Berger, Alexander Butler, and Morad Zekhnini ([[https://ssrn.com/abstract=2139679][SSRN]], [[https://doi.org/10.1016/j.jfi.2020.100857][DOI]])
 
 - Presented at Rice University (2012*), Financial Management Association
   Conference (FMA 2013), Securities and Exchange Commission (SEC, 2014*),
