@@ -386,15 +386,11 @@ Library to speed up matrix operations and was fantastic to use. The problem is
 that unlike R which is free and doesn't require a license, Revolution ~R~
 required a license and could be expensive. Microsoft acquired Revolution
 Analytics, and the distribution is now available for free, as the Microsoft R
-Open distribution, which is available through ~conda~!
+Open distribution, which is available as the default R distribution through ~conda~!
 
-Installing is as easy as replacing ~r-base~ with ~mro-base~:
 #+BEGIN_SRC sh
-conda install mro-base r-essentials
+conda install r-base r-essentials
 #+END_SRC
-
-MRO is good enough to use as an everyday R distribution, but you may still find
-that it is better to put it in a separate environment.
 
 ** [[https://www.tidyverse.org/][~tidyverse~]]
 

@@ -4,9 +4,6 @@ requirements for security futures]], [[https://www.sec.gov/news/public-statement
 [[https://www.sec.gov/news/public-statement/statement-jackson-091919][Volcker Rule]]. I also conducted original policy research summarized
 below:
 
-* [[https://www.wsj.com/articles/banks-could-get-24-billion-in-fees-from-ppp-loans-11594134444][(WSJ) Banks Could Get $24 Billion in Fees From PPP Loans]]
-- Front page, main article.
-
 * [[https://www.sec.gov/news/public-statement/statement-jackson-2019-12-18-accredited-investor][Reducing Investor Protections around Private Markets]] (Accredited Investor Definition)
 - Conducted research showing that private placement brokers have
   unusually high levels of sales practice complaints and
@@ -58,6 +55,10 @@ below:
 - Cited in legislation proposed by [[https://www.baldwin.senate.gov/imo/media/doc/Reward%20Work%20Not%20Wealth%20Baldwin%20Staff%20Report%203.26.19.pdf][Senator Tammy Baldwin]], and [[https://ourfinancialsecurity.org/2019/06/letter-regulator-group-petition-sec-rulemaking-ban-stock-buybacks-protect-workers/][Petition
   to SEC]]
 - Selected coverage: [[https://www.cnn.com/2019/03/06/investing/stock-buybacks-sec-chris-van-hollen/index.html][CNN]], [[https://www.washingtonpost.com/business/capitalbusiness/these-executive-stock-sales-can-hurt-company-in-long-run-sec-commissioner-says/2019/03/07/56e38098-4054-11e9-922c-64d6b7840b82_story.html][Washington Post]], [[https://www.cnbc.com/2019/03/06/buybacks-under-attack-as-a-senator-proposes-restricting-insider-sales.html][CNBC]], [[https://www.foxbusiness.com/politics/trump-appointed-sec-leader-share-buybacks-benefit-executives-not-long-term-investors][Fox Business]], [[https://www.theatlantic.com/magazine/archive/2019/08/the-stock-buyback-swindle/592774/][The Atlantic]], [[https://www.bloomberg.com/news/articles/2019-12-06/ceos-goose-their-pay-with-buybacks][Bloomberg Businessweek]]
+
+* [[https://www.sec.gov/dera/staff-papers/working-papers/07feb18_hu_iex_becoming_an_exchange][Intentional Access Delays, Market Quality, and Price Discovery: Evidence from IEX Becoming an Exchange]]
+- Conducted research showing that slowing down trading reduced trading costs in some stocks. ([[https://ssrn.com/abstract=3195001][SSRN]])
+- Covered in [[https://www.wsj.com/articles/study-finds-speed-bumps-help-protect-ordinary-investors-1528974002][/The Wall Street Journal/ (1)]] [[https://www.wsj.com/articles/sec-wont-release-speed-bump-study-it-promised-two-years-ago-1540401251][(2)]], [[https://www.theglobeandmail.com/business/article-trading-speed-bumps-protect-regular-investors-from-high-frequency/][/Globe and Mail/]], [[http://www.tradersmagazine.com/news/ecns_and_exchanges/sec-says-as-exchange-iex-helps-improve-market-quality-117836-1.html][/Traders Magazine/]], [[https://tabbforum.com/researches/intentional-access-delays-market-quality-and-price-discovery-evidence-from-iex-becoming-an-exchange][TabbFORUM]], [[https://www.ft.com/content/20d40032-9b0d-11e8-88de-49c908b1f264][/Financial Times/]], [[https://www.fastcompany.com/video/how-38-miles-of-cable-changed-the-stock-market-forever/UaSEVpma][Fast Company (Video)]]
 
 * [[https://www.sec.gov/files/bats_moc_analysis.pdf][CBOE (BATS) Market Close: Off-Exchange Closing Volume and Price Discovery]]
 - Conducted research showing that existing fragmentation of the close
