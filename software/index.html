@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>Software</title>
-<!-- 2022-06-15 Wed 11:50 -->
+<!-- 2022-06-15 Wed 17:34 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Org-mode">
@@ -956,13 +956,22 @@ Best of all <code>ScrapingBee</code> is fairly easy to use. If you can write a s
 Last but not least, <code>ScrapingBee</code> only charges you for successful requests, so if
 their proxies get blocked it doesn&rsquo;t cost you any additional money.
 </p>
+
+<p>
+<b>Warning:</b> If you pay for a higher tier with concurrency, do not follow the
+<code>ScrapingBee</code> tutorials and try to use <code>multiprocessing</code> or <code>concurrent.futures</code> for
+parallelism. Although it is syntactically simple, they run into the Python GIL
+and will lock after a few iterations. Instead, use <code>aiohttp</code> and just replace the
+url field with the <code>ScrapingBee</code> url, include your API Key as a parameter, and the
+url you want to scrape as another parameter.
+</p>
 </div>
 </div>
 </div>
 </div></div></div>
 <footer id="postamble" class="">
 <div><p class="author">Author: Edwin Hu</p>
-<p class="date">Created: 2022-06-15 Wed 11:50</p>
+<p class="date">Created: 2022-06-15 Wed 17:34</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 27.1 (<a href="http://orgmode.org">Org-mode</a> 9.5)</p>
 </div>
 </footer>

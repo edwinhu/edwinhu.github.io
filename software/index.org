@@ -455,3 +455,10 @@ Best of all ~ScrapingBee~ is fairly easy to use. If you can write a simple
 ~requests~ script (see above), then converting it to use ~ScrapingBee~ is trivial.
 Last but not least, ~ScrapingBee~ only charges you for successful requests, so if
 their proxies get blocked it doesn't cost you any additional money.
+
+*Warning:* If you pay for a higher tier with concurrency, do not follow the
+~ScrapingBee~ tutorials and try to use ~multiprocessing~ or ~concurrent.futures~ for
+parallelism. Although it is syntactically simple, they run into the Python GIL
+and will lock after a few iterations. Instead, use ~aiohttp~ and just replace the
+url field with the ~ScrapingBee~ url, include your API Key as a parameter, and the
+url you want to scrape as another parameter.
