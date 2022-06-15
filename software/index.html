@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>Software</title>
-<!-- 2021-08-05 Thu 17:15 -->
+<!-- 2022-06-15 Wed 11:50 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Org-mode">
@@ -226,6 +226,12 @@ $(function() {
 <li><a href="#sec-3-2">3.2. <code>tidyverse</code></a></li>
 <li><a href="#sec-3-3">3.3. <code>data.table</code></a></li>
 <li><a href="#sec-3-4">3.4. <code>felm</code> and <code>alpaca</code></a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4. APIs/Scraping Tools</a>
+<ul class="nav">
+<li><a href="#sec-4-1">4.1. <code>GraphQL</code></a></li>
+<li><a href="#sec-4-2">4.2. <code>ScrapingBee</code></a></li>
 </ul>
 </li>
 </ul>
@@ -845,22 +851,14 @@ Library to speed up matrix operations and was fantastic to use. The problem is
 that unlike R which is free and doesn&rsquo;t require a license, Revolution <code>R</code>
 required a license and could be expensive. Microsoft acquired Revolution
 Analytics, and the distribution is now available for free, as the Microsoft R
-Open distribution, which is available through <code>conda</code>!
+Open distribution, which is available as the default R distribution through <code>conda</code>!
 </p>
 
-<p>
-Installing is as easy as replacing <code>r-base</code> with <code>mro-base</code>:
-</p>
 <div class="org-src-container">
 
-<pre class="src src-sh">conda install mro-base r-essentials
+<pre class="src src-sh">conda install r-base r-essentials
 </pre>
 </div>
-
-<p>
-MRO is good enough to use as an everyday R distribution, but you may still find
-that it is better to put it in a separate environment.
-</p>
 </div>
 </div>
 
@@ -912,10 +910,59 @@ CRAN, and are fairly well documented.
 </div>
 </div>
 </div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> APIs/Scraping Tools</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> <a href="https://graphql.org/"><code>GraphQL</code></a></h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+<code>GraphQL</code> is a modern query language for APIs, originally developed at Facebook
+and now open sourced and maintained by numerous contributors. You may already be
+familiar with REST APIs, which many websites use to serve their data. <code>GraphQL</code> is
+a dramatic improvement over traditional REST because it allows for getting all
+of the data you need in a single request (including nested operations). Hence
+instead of making thousands of requests and piecing together a dataset, <code>GraphQL</code>
+allows the user to submit a single query much like a traditional database
+transaction. Moreover, GraphQL APIs are somewhat self-documenting, meaning that
+it is fairly easy to inspect the API to figure out all of the things that are in
+the data, and how they connect to one another. There are many clients for
+interacting with <code>GraphQL</code> including <a href="https://github.com/graphql-python/gql"><code>gql</code></a> for Python.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> <a href="https://www.scrapingbee.com/"><code>ScrapingBee</code></a></h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+Sometimes the only way to get data is through traditional web scraping. Scraping
+is <a href="https://cdn.ca9.uscourts.gov/datastore/opinions/2022/04/18/17-16783.pdf">controversial</a> and at the very least most websites have some sort of rate
+limiting or bot restrictions. Other websites are weirdly designed and require
+javascript rendering to be able to access content. <code>ScrapingBee</code> handles the
+former by providing headless instances that imitate a real Chrome browser,
+running through different proxies (including residential IP addresses) and the
+latter through custom javascript rendering. Thus, <code>ScrapingBee</code> makes scraping
+<i>much much</i> easier in the modern age.
+</p>
+
+<p>
+Unlike the rest of the tools on this page, <code>ScrapingBee</code> is a service you have to
+pay for. But the rates are fairly reasonable considering that spinning up a
+custom solution (e.g., multiple AWS instances) is costly and time-consuming.
+Best of all <code>ScrapingBee</code> is fairly easy to use. If you can write a simple
+<code>requests</code> script (see above), then converting it to use <code>ScrapingBee</code> is trivial.
+Last but not least, <code>ScrapingBee</code> only charges you for successful requests, so if
+their proxies get blocked it doesn&rsquo;t cost you any additional money.
+</p>
+</div>
+</div>
+</div>
 </div></div></div>
 <footer id="postamble" class="">
 <div><p class="author">Author: Edwin Hu</p>
-<p class="date">Created: 2021-08-05 Thu 17:15</p>
+<p class="date">Created: 2022-06-15 Wed 11:50</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 27.1 (<a href="http://orgmode.org">Org-mode</a> 9.5)</p>
 </div>
 </footer>

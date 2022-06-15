@@ -420,3 +420,38 @@ Bonus tip: DataCamp has a great [[https://s3.amazonaws.com/assets.datacamp.com/b
 ~felm~ and ~alpaca~ are R packages for linear/logistic regressions with high
 dimensional fixed effects and clustered standard errors. Both are available on
 CRAN, and are fairly well documented.
+
+* APIs/Scraping Tools
+
+** [[https://graphql.org/][~GraphQL~]]
+
+~GraphQL~ is a modern query language for APIs, originally developed at Facebook
+and now open sourced and maintained by numerous contributors. You may already be
+familiar with REST APIs, which many websites use to serve their data. ~GraphQL~ is
+a dramatic improvement over traditional REST because it allows for getting all
+of the data you need in a single request (including nested operations). Hence
+instead of making thousands of requests and piecing together a dataset, ~GraphQL~
+allows the user to submit a single query much like a traditional database
+transaction. Moreover, GraphQL APIs are somewhat self-documenting, meaning that
+it is fairly easy to inspect the API to figure out all of the things that are in
+the data, and how they connect to one another. There are many clients for
+interacting with ~GraphQL~ including [[https://github.com/graphql-python/gql][~gql~]] for Python.
+
+** [[https://www.scrapingbee.com/][~ScrapingBee~]]
+
+Sometimes the only way to get data is through traditional web scraping. Scraping
+is [[https://cdn.ca9.uscourts.gov/datastore/opinions/2022/04/18/17-16783.pdf][controversial]] and at the very least most websites have some sort of rate
+limiting or bot restrictions. Other websites are weirdly designed and require
+javascript rendering to be able to access content. ~ScrapingBee~ handles the
+former by providing headless instances that imitate a real Chrome browser,
+running through different proxies (including residential IP addresses) and the
+latter through custom javascript rendering. Thus, ~ScrapingBee~ makes scraping
+/much much/ easier in the modern age.
+
+Unlike the rest of the tools on this page, ~ScrapingBee~ is a service you have to
+pay for. But the rates are fairly reasonable considering that spinning up a
+custom solution (e.g., multiple AWS instances) is costly and time-consuming.
+Best of all ~ScrapingBee~ is fairly easy to use. If you can write a simple
+~requests~ script (see above), then converting it to use ~ScrapingBee~ is trivial.
+Last but not least, ~ScrapingBee~ only charges you for successful requests, so if
+their proxies get blocked it doesn't cost you any additional money.
