@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>Software</title>
-<!-- 2022-06-15 Wed 17:34 -->
+<!-- 2022-07-17 Sun 17:15 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Org-mode">
@@ -203,7 +203,7 @@ $(function() {
 <li><a href="#sec-1-4">1.4. <code>xmlstarlet</code></a></li>
 <li><a href="#sec-1-5">1.5. <code>csvkit</code></a></li>
 <li><a href="#sec-1-6">1.6. <code>dtach</code></a></li>
-<li><a href="#sec-1-7">1.7. <code>lftp</code> and <code>dbxcli</code></a></li>
+<li><a href="#sec-1-7">1.7. <code>Rclone</code></a></li>
 <li><a href="#sec-1-8">1.8. <code>GNU parallel</code></a></li>
 </ul>
 </li>
@@ -431,7 +431,7 @@ plays nicely with your other command-line tools.
 
 <p>
 It is extremely useful for pretty-printing your json files, and can be easily
-used to glob multiple files. The more advanced syntax including <code>select~/~map</code>
+used to glob multiple files. The more advanced syntax including <code>select/map</code>
 can help you explore very complex files in just a few lines of code.
 </p>
 
@@ -483,75 +483,19 @@ Note: you will have to build <code>dtach</code> from source yourself.
 </div>
 
 <div id="outline-container-sec-1-7" class="outline-3">
-<h3 id="sec-1-7"><span class="section-number-3">1.7</span> <a href="https://lftp.yar.ru/"><code>lftp</code></a> and <a href="https://github.com/dropbox/dbxcli"><code>dbxcli</code></a></h3>
+<h3 id="sec-1-7"><span class="section-number-3">1.7</span> <a href="https://rclone.org/"><code>Rclone</code></a></h3>
 <div class="outline-text-3" id="text-1-7">
 <p>
-<code>lftp</code> is a great command line utility for FTP/FTPS. I use it because it is
-capable of connecting to Box.com, which is a storage application used by many
-universities.
+Rclone is a command-line tool for accessing data located in cloud storage, including common enterprise tools like Box, Dropbox, or Google Drive.
 </p>
 
 <p>
-<code>dbxcli</code> is a third-party open soruce tool for command line access to Dropbox.com
-which works a lot like <code>lftp</code>. Instructions for setting up <code>dbxcli</code> are available on
-the GitHub page.
-</p>
-</div>
-
-<div id="outline-container-sec-1-7-1" class="outline-4">
-<h4 id="sec-1-7-1"><span class="section-number-4">1.7.1</span> Setting up LFTP for Box.com</h4>
-<div class="outline-text-4" id="text-1-7-1">
-<p>
-If you don&rsquo;t have root, setting up <code>lftp</code> can be a huge pain. You can download a
-version through <code>conda-forge</code> but the version of <code>openssl</code> that it comes with
-won&rsquo;t work because it will try to get the newest version of openssl and it has
-an old API call, <code>SSL_library_init()</code>, which has been deprecated since v1.1.0.
+It&rsquo;s fairly easy to use because it has commands that should be familiar to most unix users. Moreover, it is pretty fast.
 </p>
 
 <p>
-To get around this you can create your own <code>conda</code> environment with an old, but
-compatible version of <code>openssl</code>. Then all you have to do is symlink <code>lftp</code> onto
-your path.
+It also happens to be installed by default on WRDS (/usr/bin/rclone).
 </p>
-
-<div class="org-src-container">
-
-<pre class="src src-sh">conda create --name lftp lftp <span style="color: #D8DEE9;">openssl</span>=1.0.2 -c conda-forge --yes
-<span style="color: #8FBCBB;">ln</span> -s ~/miniconda3/envs/lftp/bin/lftp ~/miniconda3/bin/lftp
-</pre>
-</div>
-
-<p>
-You can then log in and bookmark your site:
-</p>
-<div class="org-src-container">
-
-<pre class="src src-sh">lftp -u YOUR@EMAIL.COM ftps://ftp.box.com
-Password:
-bookmark add box
-</pre>
-</div>
-
-<p>
-If you want to have lftp save your password (generally not recommended) you can
-modify your <code>/.lftprc</code> file by adding the following:
-</p>
-<div class="org-src-container">
-
-<pre class="src src-sh"><span style="color: #81A1C1;">set</span> bmk:save-passwords yes
-</pre>
-</div>
-
-<p>
-You can then connect like this:
-</p>
-<div class="org-src-container">
-
-<pre class="src src-sh">lftp
-open box
-</pre>
-</div>
-</div>
 </div>
 </div>
 
@@ -971,7 +915,7 @@ url you want to scrape as another parameter.
 </div></div></div>
 <footer id="postamble" class="">
 <div><p class="author">Author: Edwin Hu</p>
-<p class="date">Created: 2022-06-15 Wed 17:34</p>
+<p class="date">Created: 2022-07-17 Sun 17:15</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 27.1 (<a href="http://orgmode.org">Org-mode</a> 9.5)</p>
 </div>
 </footer>

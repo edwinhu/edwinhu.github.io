@@ -123,7 +123,7 @@ Bonus tip: [[https://anaconda.org/conda-forge/curl][~curl~ is available in ~cond
 plays nicely with your other command-line tools.
 
 It is extremely useful for pretty-printing your json files, and can be easily
-used to glob multiple files. The more advanced syntax including ~select~/~map~
+used to glob multiple files. The more advanced syntax including ~select/map~
 can help you explore very complex files in just a few lines of code.
 
 Bonus tip: [[https://anaconda.org/conda-forge/jq][~jq~ is available in ~conda-forge~]].
@@ -150,50 +150,13 @@ is very easy to use and is also a lot less finicky.
 
 Note: you will have to build ~dtach~ from source yourself.
 
-** [[https://lftp.yar.ru/][~lftp~]] and [[https://github.com/dropbox/dbxcli][~dbxcli~]]
+** [[https://rclone.org/][~Rclone~]]
 
-~lftp~ is a great command line utility for FTP/FTPS. I use it because it is
-capable of connecting to Box.com, which is a storage application used by many
-universities.
+Rclone is a command-line tool for accessing data located in cloud storage, including common enterprise tools like Box, Dropbox, or Google Drive.
 
-~dbxcli~ is a third-party open soruce tool for command line access to Dropbox.com
-which works a lot like ~lftp~. Instructions for setting up ~dbxcli~ are available on
-the GitHub page.
+It's fairly easy to use because it has commands that should be familiar to most unix users. Moreover, it is pretty fast.
 
-*** Setting up LFTP for Box.com
-
-If you don't have root, setting up ~lftp~ can be a huge pain. You can download a
-version through ~conda-forge~ but the version of ~openssl~ that it comes with
-won't work because it will try to get the newest version of openssl and it has
-an old API call, ~SSL_library_init()~, which has been deprecated since v1.1.0.
-
-To get around this you can create your own ~conda~ environment with an old, but
-compatible version of ~openssl~. Then all you have to do is symlink ~lftp~ onto
-your path.
-
-#+BEGIN_SRC sh
-conda create --name lftp lftp openssl=1.0.2 -c conda-forge --yes
-ln -s ~/miniconda3/envs/lftp/bin/lftp ~/miniconda3/bin/lftp
-#+END_SRC
-
-You can then log in and bookmark your site:
-#+BEGIN_SRC sh
-lftp -u YOUR@EMAIL.COM ftps://ftp.box.com
-Password:
-bookmark add box
-#+END_SRC
-
-If you want to have lftp save your password (generally not recommended) you can
-modify your ~/.lftprc~ file by adding the following:
-#+BEGIN_SRC sh
-set bmk:save-passwords yes
-#+END_SRC
-
-You can then connect like this:
-#+BEGIN_SRC sh
-lftp
-open box
-#+END_SRC
+It also happens to be installed by default on WRDS (/usr/bin/rclone).
 
 ** [[https://www.gnu.org/software/parallel/][~GNU parallel~]]
 
