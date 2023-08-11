@@ -1,28 +1,19 @@
-* Regulatory Arbitrage and the Persistence of Financial Misconduct
-74 /Stan. L. Rev./ (forthcoming, 2022)\\
-with Colleen Honigsberg and Robert Jackson ([[https://papers.ssrn.com/abstract=3769653][SSRN]])
-
+* Regulatory Arbitrage and the Persistence of Financial Misconduct, 74 /Stan. L. Rev./ 737 (2022), with Colleen Honigsberg and Robert Jackson ([[https://papers.ssrn.com/abstract=3769653][SSRN]], [[https://review.law.stanford.edu/wp-content/uploads/sites/3/2022/04/Honigsberg-et-al.-74-Stan.-L.-Rev.-737.pdf][PDF]])
 - Covered in [[https://www.thinkadvisor.com/2021/05/14/wandering-bad-brokers-pose-risks-for-clients-industry/][ThinkAdvisor]], [[https://www.marketwatch.com/story/the-first-step-of-searching-for-a-financial-adviser-trust-no-one-11621876941][MarketWatch]], [[https://www.financial-planning.com/news/misconduct-study-sheds-light-on-wandering-advisors][Financial Planning]], [[https://www.investmentnews.com/ex-sec-member-targets-rogue-brokers-turning-to-insurance-sales-206925][InvestmentNews]], [[https://www.nasdaq.com/articles/finra-targets-recidivist-brokers-but-its-reach-goes-only-so-far][Nasdaq News and Insights]]
 - Presented at JCLAW (2020*), Berkeley Law, Accounting, & Business Workshop
-  (2020), NYU Law and Economics Faculty Workship (2021), Harvard Empirical Law
+  (2020), NYU Law and Economics Faculty Workshop (2021), Harvard Empirical Law
   and Finance Workshop (2021), Goethe University LawFin Seminar (2021), 33rd
   Annual Tulane Corporate Law Institute (2021*), Oxford Business Law Workshop
   (2021*), Investor Issues Dialogue (2021).
 - Previously circulated under working title "Wandering Financial Advisors"
 
-* Financial Integration and Credit Democratization: Linking Banking Deregulation to Economic Growth
-45 /J. Fin. Intermediation/ 100857 (2021)\\
-with Elizabeth Berger, Alexander Butler, and Morad Zekhnini ([[https://ssrn.com/abstract=2139679][SSRN]], [[https://doi.org/10.1016/j.jfi.2020.100857][DOI]])
-
+* Financial Integration and Credit Democratization: Linking Banking Deregulation to Economic Growth, 45 /J. Fin. Intermediation/ 100857 (2021), with Elizabeth Berger, Alexander Butler, and Morad Zekhnini ([[https://ssrn.com/abstract=2139679][SSRN]], [[https://doi.org/10.1016/j.jfi.2020.100857][DOI]])
 - Presented at Rice University (2012*), Financial Management Association
   Conference (FMA 2013), Securities and Exchange Commission (SEC, 2014*),
   Fordham University (2014*), University of Cincinnati (2014*), University of
   Kentucky (2014*), Yale School of Management (2015*).
 
-* A Comparison of Some Structural Models of Private Information Arrival
-135 /J. Fin. Econ./ 795 (2020)\\
-with Jefferson Duarte and Lance Young, ([[https://ssrn.com/abstract=2564369][SSRN]], [[https://doi.org/10.1016/j.jfineco.2019.08.005][DOI]])
-
+* A Comparison of Some Structural Models of Private Information Arrival, 135 /J. Fin. Econ./ 795 (2020), with Jefferson Duarte and Lance Young, ([[https://ssrn.com/abstract=2564369][SSRN]], [[https://doi.org/10.1016/j.jfineco.2019.08.005][DOI]])
 - Presented at Rice University (2015), Texas A&M (2015*), Multinational Finance
   Society Conference (MFS, 2015*) *Best Paper Award*, China International
   Finance Conference (CICF, 2015*), Society of Financial Econometrics Conference

@@ -1,35 +1,35 @@
-* *2020--Present: Research Fellow*
+* *2020--Present: Postdoctoral Fellow*
 NYU School of Law, New York, NY\\
 [[https://www.law.nyu.edu/centers/icgf][Institute for Corporate Governance & Finance]]
 
-- Research in corporate governance and financial markets.
-- My research on [[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3600230][floor brokers]] was featured in [[https://www.wsj.com/articles/coronavirus-shutdown-casts-doubt-on-value-of-exchange-trading-floors-11590053419][/The Wall Street Journal/]].
-- My analysis of the [[https://www.wsj.com/articles/banks-could-get-24-billion-in-fees-from-ppp-loans-11594134444#:~:text=according%20to%20Edwin%20Hu][PPP bank fees]] was featured on the front page of /The Wall
-  Street Journal/.
+# - Research in corporate governance and financial markets.
+# - My research on [[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3600230][floor brokers]] was featured in [[https://www.wsj.com/articles/coronavirus-shutdown-casts-doubt-on-value-of-exchange-trading-floors-11590053419][/The Wall Street Journal/]].
+# - My analysis of the [[https://www.wsj.com/articles/banks-could-get-24-billion-in-fees-from-ppp-loans-11594134444#:~:text=according%20to%20Edwin%20Hu][PPP bank fees]] was featured on the front page of /The Wall
+#   Street Journal/.
 
 
 * *2018--2020: Counsel to [[https://www.sec.gov/biography/commissioner-robert-j-jackson][Commissioner Robert J. Jackson Jr.]]*
   Securities and Exchange Commission, Washington, D.C.
 
-- Chief economic advisor with primary responsibility for development,
-  coordination, and production of economic analyses including original
-  research that has been cited in legislation and most major media
-  outlets.
-- Principal policy advisor on trading and markets and economic and
-  risk analysis issues, as well as on investment management, corporate
-  finance, and accounting issues.
-- Determine and execute communications strategy, with success
-  obtaining features on television, print, blogs, and
-  podcasts. Responsible for legislative affairs---including technical
-  assistance on bills and hearings.
-- Develop and write speeches, statements, and op-eds that have
-  appeared in /The New York Times/ and /The Wall Street Journal/.
+# - Chief economic advisor with primary responsibility for development,
+#   coordination, and production of economic analyses including original
+#   research that has been cited in legislation and most major media
+#   outlets.
+# - Principal policy advisor on trading and markets and economic and
+#   risk analysis issues, as well as on investment management, corporate
+#   finance, and accounting issues.
+# - Determine and execute communications strategy, with success
+#   obtaining features on television, print, blogs, and
+#   podcasts. Responsible for legislative affairs---including technical
+#   assistance on bills and hearings.
+# - Develop and write speeches, statements, and op-eds that have
+#   appeared in /The New York Times/ and /The Wall Street Journal/.
 
 
-* *2016--2018: Financial Economist Fellow*
+* *2016--2018: Financial Economist*
   Securities and Exchange Commission, Washington, D.C. \\
   [[http://www.sec.gov/dera][Division of Economic and Risk Analysis]]
 
-- Economic analysis of controversial issues in financial markets.
-- My [[https://ssrn.com/abstract=3195001][research]] showing that `speed bumps' may improve market quality
-  was featured in /[[https://www.wsj.com/articles/study-finds-speed-bumps-help-protect-ordinary-investors-1528974002][The Wall Street Journal]]/.
+# - Economic analysis of controversial issues in financial markets.
+# - My [[https://ssrn.com/abstract=3195001][research]] showing that `speed bumps' may improve market quality
+#   was featured in /[[https://www.wsj.com/articles/study-finds-speed-bumps-help-protect-ordinary-investors-1528974002][The Wall Street Journal]]/.

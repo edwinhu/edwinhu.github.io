@@ -1,12 +1,11 @@
-Edwin is a Furman Scholar at the NYU School of Law and a Research Fellow at The
-Institute for Corporate Governance & Finance where his research on empirical
-law and finance is focused on understanding the incentives of financial
-institutions and why the law sometimes fails to achieve its policy objectives.
-His scholarly and policy research has been published or is forthcoming in the
-/Journal of Financial Economics/, the /Journal of Financial Intermediation/, the
-/Stanford Law Review/ and featured prominently across major periodicals including
-/The Atlantic/, /Bloomberg/, /The Economist/, /The New York Times/, /The Washington Post/,
-and the front page of /The Wall Street Journal/.
+Edwin is a Postdoctoral Fellow at the NYU School of Law Institute for Corporate
+Governance & Finance where he writes in empirical law and finance. His current
+research is focused on financial advisors, institutional voting, and equity
+market structure. His scholarly and policy research has been published or is
+forthcoming in the /Journal of Financial Economics/, the /Journal of Financial
+Intermediation/, the /Stanford Law Review/ and featured prominently across major
+periodicals including /The Atlantic/, /Bloomberg/, /The Economist/, /The New York
+Times/, /The Washington Post/, and the front page of /The Wall Street Journal/.
 
 Previously, he was chief economist and counsel to [[https://www.sec.gov/biography/commissioner-robert-j-jackson][Commissioner Robert J. Jackson]]
 Jr. at the Securities and Exchange Commission on broker-dealer, exchange, and
@@ -16,4 +15,5 @@ stock buybacks has been cited in every major media outlet, by members of
 Congress in the House and Senate, and by leading securities and corporate
 governance scholars. He holds two bachelor’s degrees (in economics and applied
 computational math) from the University of Washington, and a masters and Ph.D.
-in finance from Rice University.
+in finance from Rice University, and a J.D. from NYU Law where he was a Furman
+Academic Scholar.

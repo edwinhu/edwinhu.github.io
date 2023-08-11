@@ -1,25 +1,19 @@
-| Jefferson Duarte                                           |
-| Associate Professor of Finance and                         |
-| Gerald D. Hines Associate Professor of Real Estate Finance |
-| Rice University                                            |
-| 713-348-6137                                               |
-| Jefferson.Duarte@rice.edu                                  |
-|                                                            |
-| Alexander W. Butler                                        |
-| Professor of Finance                                       |
-| Rice University                                            |
-| 713-348-6341                                               |
-| Alex.Butler@rice.edu                                       |
-|                                                            |
-| Kerry E. Back                                              |
-| J. Howard Creekmore Professor of Finance                   |
-| Professor of Economics                                     |
-| Rice University                                            |
-| 713-348-4168                                               |
-| Kerry.E.Back@rice.edu                                      |
-|                                                            |
-| Jeffrey H. Harris                                          |
-| Gary D. Cohn Goldman Sachs Chair in Finance                |
-| American University                                        |
-| 202-885-6669                                               |
-| jharris@american.edu                                       |
+| Robert J. Jackson, Jr.                       | Colleen Honigsberg                                |
+| Pierrepont Family Professor of Law           | Professor of Law                                  |
+| Co-Director, Jacobson Leadership Program     | Co-Director, Rock Center for Corporate Governance |
+| NYU School of Law                            | Stanford Law School                               |
+| 212.998.6225                                 | 650.736.8777                                      |
+| robert.j.jackson@nyu.edu                     | colleenh@law.stanford.edu                         |
+|                                              |                                                   |
+| Stephen J. Choi                              | Geoffrey P. Miller                                |
+| Bernard Petrie Professor of Law and Business | Stuyvesant P. Comfort Professor of Law            |
+| Director, Pollack Center                     | Director, Center for Financial Institutions       |
+| NYU School of Law                            | NYU School of Law                                 |
+| 212.992.8962                                 | 212.998.6329                                      |
+| stephen.choi@nyu.edu                         | geoffrey.miller@nyu.edu                           |
+|                                              |                                                   |
+| Daniel J. Hemel                              | David L. Yermack                                  |
+| Professor of Law                             | Albert Fingerhut Professor of Finance             |
+| NYU School of Law                            | Chair, Finance Department                         |
+| 213.998.6354                                 | NYU Stern                                         |
+| daniel.hemel@nyu.edu                         | dy1@stern.nyu.edu                                 |

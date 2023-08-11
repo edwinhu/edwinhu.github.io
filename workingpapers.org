@@ -1,3 +1,20 @@
+* The Dark Side of Private Markets
+(Job Talk Paper)
+- AALS Section on Law & Economics (2024 Invited).
+
+* Institutional Investor Deliberation
+with Jonathon Zytnick and Nadya Malenko
+- Presented at American Law and Economics Association (2023) Junior Scholars Featured Papers Panel, NYU Law Institute for Corporate Governance Spring Roundtable (2023*).
+
+* Regulatory Leakage Among Financial Advisors: Evidence From FINRA Regulation of "Bad" Brokers
+with Colleen Honigsberg and Robert J. Jackson, Jr. ([[https://papers.ssrn.com/abstract=4410143][SSRN]])
+- Presented at Harvard Law School Workshop in Empirical Law and Economics (2022), Corporate and Securities Litigation Workshop (2022), Junior Corporate Law Workshop (2022), University of Texas Law, Business, and Economics Workshop (2022*), Northwestern Pritzker Law and Economics Colloquium (2022), NYU Law and Economics Workshop (2023), Stanford Law Faculty Workshop (2023*), American Law and Economics Association (2023), American Finance Association (2024 Scheduled).
+
+* Competition for Retail Order Flow and Market Quality
+with Dermot Murphy ([[https://ssrn.com/abstract=4070056][SSRN]])
+- Policy: Cited in SEC's [[https://www.sec.gov/rules/proposed/2022/34-96495.pdf][Proposed Rule on Order Competition]].
+- Presented at Microstructure Exchange (2022*), UBC Summer Finance Conference (2023*).
+
 * The Index-Fund Dilemma: An Empirical Study of the Lending-Voting Tradeoff
 with Joshua Mitts and Haley Sylvester ([[https://ssrn.com/abstract=3673531][SSRN]])
 
@@ -5,21 +22,16 @@ with Joshua Mitts and Haley Sylvester ([[https://ssrn.com/abstract=3673531][SSRN
 - Covered in [[https://clsbluesky.law.columbia.edu/2021/01/19/the-index-fund-dilemma-an-empirical-study-of-the-lending-voting-tradeoff][Columbia Blue Sky Blog]], [[https://www.bloomberg.com/opinion/articles/2021-01-19/maybe-the-index-funds-don-t-vote][Money Stuff (Bloomberg)]], [[https://www.wsj.com/articles/gamestop-called-attention-to-the-share-lending-market-heres-what-you-should-know-11617375748][/The Wall Street Journal/]], [[https://www.marketwatch.com/story/reddit-and-robinhood-army-fights-with-grievance-capital-to-break-wall-streets-elite-wall-11612387089][MarketWatch]]
 - Policy: Speech by [[https://www.sec.gov/news/speech/lee-every-vote-counts][SEC Chair Lee on share lending and proxy voting disclosure]], Statement by [[https://www.sec.gov/news/public-statement/crenshaw-amac-remarks-031921][SEC Commissioner Crenshaw on the lending-voting tradeoff]].
 - Presented at JCLAW (2020*), Harvard Empirical Law and Finance Workshop
-  (2021*), Columbia Law and Economics Workshop (2021*)
-
+  (2021*), Columbia Law and Economics Workshop (2021*).
 
 * Vestigial Tails? Floor Brokers at the Close in Modern Electronic Markets
 with Dermot Murphy ([[https://papers.ssrn.com/abstract=3600230][SSRN]])
 
+- Revise and Resubmit, /Mgmt. Sci./
 - Covered in [[https://www.wsj.com/articles/coronavirus-shutdown-casts-doubt-on-value-of-exchange-trading-floors-11590053419][/The Wall Street Journal/]], [[https://www.bloomberg.com/opinion/articles/2020-05-22/a-vaccine-with-a-poison-pill][Money Stuff (Bloomberg)]], [[https://www.economist.com/finance-and-economics/2020/05/25/covid-19-forced-trading-floors-to-close-theyll-be-back][/The Economist/]].
 - Policy: Cited in [[https://crsreports.congress.gov/product/pdf/IN/IN11447][Congressional Research Service Report IN11447]].
 - Presented at University of Illinois Chicago (2020*), Rice University (2020),
   SEC (2020*), The Microstructure Exchange (2020) ([[https://www.youtube.com/watch?v=cRQigejq5jg][recording]]) ([[https://microstructure.exchange/slides/20201006%20Microstructure%20Exchange%20-%20WEB.pdf][slides]]), [[https://iextrading.com/insights/academic-research-conference-2020/][IEX ARC]]
   (2020), NBER Big Data Conference (2020), Microstructure Online Seminars Asia
   Pacific (2021), Western Finance Association (2021), European Finance
-  Association (2021 Scheduled)
-
-* Loan Syndication Networks
-with Jeffrey Harris and Ioannis Spyridiopoulos ([[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3295980][SSRN]])
-
-- Presented at FMA (2019*)
+  Association (2021).

@@ -75,3 +75,4 @@ below:
 with Paul Hughes, John Ritter, Patti Vegella, and Hao Zhang
 - We find evidence that market quality deteriorates after the Tick
   Size Pilot widens quoting increments to five cent increments.
+- Cited by Former Commissioner and Acting Chair Michael Piwowar in [[https://financialservices.house.gov/uploadedfiles/hhrg-117-ba16-wstate-piwowarm-20220330.pdf][House Testimony]].

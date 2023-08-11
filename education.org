@@ -1,10 +1,8 @@
-* *2020--2023 (Expected): [[https://www.law.nyu.edu][NYU School of Law]]*
-- J.D., [[https://www.law.nyu.edu/furmanprogram][Furman Scholar]]
+* *2020--2023: [[https://www.law.nyu.edu][NYU School of Law]]*
+- J.D., [[https://www.law.nyu.edu/furmanprogram][Furman Scholar]], Law and Economics Prize.
 
 * *2010--2016: [[http://business.rice.edu][Rice University]]*
-- Ph.D., M.A. [[http://business.rice.edu/PhD_Finance_Area.aspx][Finance]].
-   Jones Graduate School of Business.
+- Ph.D., M.A. [[https://business.rice.edu/our-programs/phd-business/finance-phd][Finance]].
 
 * *2006--2010: [[http://www.washington.edu][University of Washington]]*
-- B.S. [[https://www.math.washington.edu/acms/][Applied and Computational Mathematical Sciences]].
-- B.S. [[http://econ.washington.edu/][Economics]] /Cum Laude/.
+- B.S.  [[http://econ.washington.edu/][Economics]], [[https://www.math.washington.edu/acms/][Applied and Computational Mathematical Sciences]], /Cum Laude/.

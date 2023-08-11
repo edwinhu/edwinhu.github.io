@@ -1,7 +1,5 @@
-* Rice University (Teaching Assistant)
-
-Core Finance (Spring 2014) /Full time and Professional MBA/
-- Average teaching evaluation: 4.4/5
-- 2 sessions per week with additional exam recitations and grading
-- Average 20 students per week, up to 100+ students for exams
-- In class and on-line participation
+* Rice University --- Corporate Finance (Spring 2014) /Full-Time and Professional MBA/
+# - Average teaching evaluation: 4.4/5
+# - 2 sessions per week with additional exam recitations and grading
+# - Average 20 students per week, up to 100+ students for exams
+# - In class and on-line participation
