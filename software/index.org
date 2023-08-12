@@ -384,7 +384,21 @@ Bonus tip: DataCamp has a great [[https://s3.amazonaws.com/assets.datacamp.com/b
 dimensional fixed effects and clustered standard errors. Both are available on
 CRAN, and are fairly well documented.
 
-* APIs/Scraping Tools
+* Other Useful Software
+
+** [[https://duckdb.org/][~DuckDB~]]
+
+~DuckDB~ is a SQL-style database with very convenient syntax for data analysis. It
+works very well with standard tabular data formats, and plays nicely with
+Python. It is also very fast for analytic workflows, including read/write and
+processing data. One of the most useful features is the variety of built-in
+datatypes, such as ~LIST~ and ~STRUCT~ which map to Python/JSON datatypes. It also
+allows for nested or composite datatypes, which are often found in real-world
+data. By default, ~DuckDB~ operates in-memory databases. In many ways, it is like
+~SQLite~ but designed for data analysis workflows. It also features a lot of
+useful extensions whic facilitate full text search, JSON querying,
+reading/writing remote files over HTTP, and reading from ~Postgres/SQLite~
+databases.
 
 ** [[https://graphql.org/][~GraphQL~]]
 

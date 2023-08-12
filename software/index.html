@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>Software</title>
-<!-- 2022-07-17 Sun 17:15 -->
+<!-- 2023-08-12 Sat 13:10 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Org-mode">
@@ -228,10 +228,11 @@ $(function() {
 <li><a href="#sec-3-4">3.4. <code>felm</code> and <code>alpaca</code></a></li>
 </ul>
 </li>
-<li><a href="#sec-4">4. APIs/Scraping Tools</a>
+<li><a href="#sec-4">4. Other Useful Software</a>
 <ul class="nav">
-<li><a href="#sec-4-1">4.1. <code>GraphQL</code></a></li>
-<li><a href="#sec-4-2">4.2. <code>ScrapingBee</code></a></li>
+<li><a href="#sec-4-1">4.1. <code>DuckDB</code></a></li>
+<li><a href="#sec-4-2">4.2. <code>GraphQL</code></a></li>
+<li><a href="#sec-4-3">4.3. <code>ScrapingBee</code></a></li>
 </ul>
 </li>
 </ul>
@@ -856,11 +857,30 @@ CRAN, and are fairly well documented.
 </div>
 
 <div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> APIs/Scraping Tools</h2>
+<h2 id="sec-4"><span class="section-number-2">4</span> Other Useful Software</h2>
 <div class="outline-text-2" id="text-4">
 </div><div id="outline-container-sec-4-1" class="outline-3">
-<h3 id="sec-4-1"><span class="section-number-3">4.1</span> <a href="https://graphql.org/"><code>GraphQL</code></a></h3>
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> <a href="https://duckdb.org/"><code>DuckDB</code></a></h3>
 <div class="outline-text-3" id="text-4-1">
+<p>
+<code>DuckDB</code> is a SQL-style database with very convenient syntax for data analysis. It
+works very well with standard tabular data formats, and plays nicely with
+Python. It is also very fast for analytic workflows, including read/write and
+processing data. One of the most useful features is the variety of built-in
+datatypes, such as <code>LIST</code> and <code>STRUCT</code> which map to Python/JSON datatypes. It also
+allows for nested or composite datatypes, which are often found in real-world
+data. By default, <code>DuckDB</code> operates in-memory databases. In many ways, it is like
+<code>SQLite</code> but designed for data analysis workflows. It also features a lot of
+useful extensions whic facilitate full text search, JSON querying,
+reading/writing remote files over HTTP, and reading from <code>Postgres/SQLite</code>
+databases.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> <a href="https://graphql.org/"><code>GraphQL</code></a></h3>
+<div class="outline-text-3" id="text-4-2">
 <p>
 <code>GraphQL</code> is a modern query language for APIs, originally developed at Facebook
 and now open sourced and maintained by numerous contributors. You may already be
@@ -877,9 +897,9 @@ interacting with <code>GraphQL</code> including <a href="https://github.com/grap
 </div>
 </div>
 
-<div id="outline-container-sec-4-2" class="outline-3">
-<h3 id="sec-4-2"><span class="section-number-3">4.2</span> <a href="https://www.scrapingbee.com/"><code>ScrapingBee</code></a></h3>
-<div class="outline-text-3" id="text-4-2">
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> <a href="https://www.scrapingbee.com/"><code>ScrapingBee</code></a></h3>
+<div class="outline-text-3" id="text-4-3">
 <p>
 Sometimes the only way to get data is through traditional web scraping. Scraping
 is <a href="https://cdn.ca9.uscourts.gov/datastore/opinions/2022/04/18/17-16783.pdf">controversial</a> and at the very least most websites have some sort of rate
@@ -915,8 +935,8 @@ url you want to scrape as another parameter.
 </div></div></div>
 <footer id="postamble" class="">
 <div><p class="author">Author: Edwin Hu</p>
-<p class="date">Created: 2022-07-17 Sun 17:15</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 27.1 (<a href="http://orgmode.org">Org-mode</a> 9.5)</p>
+<p class="date">Created: 2023-08-12 Sat 13:10</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="http://orgmode.org">Org-mode</a> 9.5)</p>
 </div>
 </footer>
 </body>
