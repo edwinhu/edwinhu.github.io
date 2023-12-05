@@ -1,4 +1,4 @@
-* The Dark Side of Private Markets
+* Shining Light on Retail Private Markets
 (Job Talk Paper)
 - AALS Section on Law & Economics (2024 Invited).
 
@@ -8,6 +8,8 @@ with Jonathon Zytnick and Nadya Malenko
 
 * Regulatory Leakage Among Financial Advisors: Evidence From FINRA Regulation of "Bad" Brokers
 with Colleen Honigsberg and Robert J. Jackson, Jr. ([[https://papers.ssrn.com/abstract=4410143][SSRN]])
+
+- Revise and Resubmit, /J. Fin. Econ./
 - Presented at Harvard Law School Workshop in Empirical Law and Economics (2022), Corporate and Securities Litigation Workshop (2022), Junior Corporate Law Workshop (2022), University of Texas Law, Business, and Economics Workshop (2022*), Northwestern Pritzker Law and Economics Colloquium (2022), NYU Law and Economics Workshop (2023), Stanford Law Faculty Workshop (2023*), American Law and Economics Association (2023), American Finance Association (2024 Scheduled).
 
 * Competition for Retail Order Flow and Market Quality
