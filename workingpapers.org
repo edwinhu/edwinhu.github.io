@@ -2,7 +2,7 @@
 (Job Talk Paper)
 - AALS Section on Law & Economics (2024).
 
-* Custom Proxy Voting Advice
+* Custom Proxy Voting Advice ([[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4770971][SSRN]])
 with Jonathon Zytnick and Nadya Malenko
 - Presented at American Law and Economics Association (2023) Junior Scholars Featured Papers Panel, NYU Law Institute for Corporate Governance Spring Roundtable (2023*), Clemson ESG Conference (2024*), UT Austin Business Law & Economics Workshop (2024).
 
