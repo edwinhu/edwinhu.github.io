@@ -12,8 +12,9 @@
 #+HTML_HEAD_EXTRA: </script>
 #+HTML_HEAD_EXTRA: <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-Associate Professor of Law \\
-UVA School of Law
+NYU School of Law\\
+Postdoctoral Fellow\\
+[[https://www.law.nyu.edu/centers/icgf][Institute for Corporate Governance & Finance]]
 
 [[./cv][CV (PDF)]] | [[https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790][SSRN]] | [[https://www.linkedin.com/in/huedwin/][LinkedIn]] | [[https://github.com/edwinhu][GitHub]] \\
 [[./pin][PIN Estimates]] | [[./sas][SAS Macros]] | [[./software][Software]]
@@ -88,7 +89,7 @@ UVA School of Law
 :END:
 #+INCLUDE: skills.org
 
-* Contact :noexport:
+* Contact
 :PROPERTIES:
 :CUSTOM_ID: contact
 :END:
