@@ -1,9 +1,6 @@
-* Shining Light on Retail Private Markets
-(Job Talk Paper)
-- AALS Section on Law & Economics (2024).
-
 * Custom Proxy Voting Advice ([[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4770971][SSRN]])
 with Jonathon Zytnick and Nadya Malenko
+- Covered in [[https://corpgov.law.harvard.edu/2024/05/23/custom-proxy-voting-advice/][Harvard Law School Forum on Corporate Governance]].
 - Presented at American Law and Economics Association (2023) Junior Scholars Featured Papers Panel, NYU Law Institute for Corporate Governance Spring Roundtable (2023*), Clemson ESG Conference (2024*), UT Austin Business Law & Economics Workshop (2024).
 
 * Regulatory Leakage Among Financial Advisors: Evidence From FINRA Regulation of "Bad" Brokers
