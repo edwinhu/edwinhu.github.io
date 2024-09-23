@@ -1,13 +1,13 @@
 * Custom Proxy Voting Advice ([[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4770971][SSRN]])
 with Jonathon Zytnick and Nadya Malenko
 - Covered in [[https://corpgov.law.harvard.edu/2024/05/23/custom-proxy-voting-advice/][Harvard Law School Forum on Corporate Governance]].
-- Presented at American Law and Economics Association (2023) Junior Scholars Featured Papers Panel, NYU Law Institute for Corporate Governance Spring Roundtable (2023*), Clemson ESG Conference (2024*), UT Austin Business Law & Economics Workshop (2024).
+- Presented at American Law and Economics Association (2023) Junior Scholars Featured Papers Panel, NYU Law Institute for Corporate Governance Spring Roundtable (2023*), Clemson ESG Conference (2024*), UT Austin Business Law & Economics Workshop (2024), Northern Finance Association (2024) *Best Paper Award in Corporate Finance*, PRI Academic Network Conference (2024*), CELS (2024), Tulane Corporate and Securities Roundtable (2025).
 
 * Regulatory Leakage Among Financial Advisors: Evidence From FINRA Regulation of "Bad" Brokers
 with Colleen Honigsberg and Robert J. Jackson, Jr. ([[https://papers.ssrn.com/abstract=4410143][SSRN]])
 
 - Revise and Resubmit, /J. Fin. Econ./
-- Presented at Harvard Law School Workshop in Empirical Law and Economics (2022), Corporate and Securities Litigation Workshop (2022), Junior Corporate Law Workshop (2022), University of Texas Law, Business, and Economics Workshop (2022*), Northwestern Pritzker Law and Economics Colloquium (2022), NYU Law and Economics Workshop (2023), Stanford Law Faculty Workshop (2023*), American Law and Economics Association (2023), American Finance Association (2024).
+- Presented at Harvard Law School Workshop in Empirical Law and Economics (2022), Corporate and Securities Litigation Workshop (2022), Junior Corporate Law Workshop (2022), University of Texas Law, Business, and Economics Workshop (2022*), Northwestern Pritzker Law and Economics Colloquium (2022), NYU Law and Economics Workshop (2023), Stanford Law Faculty Workshop (2023*), American Law and Economics Association (2023), American Finance Association (2024), SEC Investor Advisory Committe (2024).
 
 * Competition for Retail Order Flow and Market Quality
 with Dermot Murphy ([[https://ssrn.com/abstract=4070056][SSRN]])
