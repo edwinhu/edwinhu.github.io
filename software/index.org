@@ -6,26 +6,30 @@
 
 ** [[https://www.anaconda.com/products/individual][~anaconda~]]
 
-Specifically ~miniconda~.
+Specifically +~miniconda~+ ~micromamba~ or ~mamba~ ~miniforge~.
 
 Python is one of the most flexible tools for data analysis, but as a general
 purpose programming language it does not come with all of the tools installed by
 default. As such you will likely need to install some packages like ~pandas~,
-~numpy~, or even ~jupyter notebook~. ~anaconda~ is a metapackage containing
+~numpy~, or even ~jupyter notebook~. ~anaconda~ is one of many metapackages containing
 almost everything you will need to use. Plus it comes with a great package
-manager ~conda~, which automatically solves dependencies/requirements for you,
-and allows you to create your own environments.
+manager ~conda~, which automatically solves dependencies/requirements for you, and
+allows you to create your own environments. However, I do not recommend using
+the default ~conda~ installer as it has become very slow, so instead I recommend a
+third-party installer like ~mamba~ which is much faster.
 
-However, a default ~anaconda~ installation can be several gigabytes, and over
-time I've found that I never use some packages. That's where ~miniconda~ comes
-in. It's a much lighter-weight version of ~anaconda~ with the basic tools to
-allow you to install only what you need. If you don't know what you will need,
+The default ~anaconda~ installation can be several gigabytes, and over time I've
+found that I never use some packages. That's where ~miniconda~ or ~miniforge~ comes
+in. It's a much lighter-weight version of ~anaconda~ with the basic tools to allow
+you to install only what you need. Or if you prefer even more minimalism, you
+can install ~micromamba~ which is a self-contained package manager that does not
+require any python environment of its own. If you don't know what you will need,
 go ahead and install ~anaconda~.
 
 If you are using ~miniconda~, for starters I would recommend at least the
 following:
-#+BEGIN_SRC sh
-conda install jupyter pandas numpy scipy scikit-learn --yes
+#+BEGIN_SRC src
+mamba install jupyter pandas numpy scipy scikit-learn --yes
 #+END_SRC
 
 *** [[https://conda-forge.org/][~conda-forge~]]
@@ -57,6 +61,24 @@ activate myenv
 deactivate myenv
 #+END_SRC
 
+If you are going to use environments, I highly recommend creating a basic ~.yml~
+configuration file to keep track of what packages you are using in case you need
+to move to a different computer. If you need to change a package, just update
+the ~.yml~ file. Creating one for each new project takes only a little bit of
+time, but speaking from experience, this can save you hours later on when trying
+to figure out why your old code is no longer running on a fresh ~anaconda~
+install. For example the above command for creating an environment could be
+represented as:
+#+BEGIN_SRC yaml
+name: myenv
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.6.0
+  - scipy=0.15.0
+#+END_SRC
+
 *** ~pip~
 
 As ~anaconda~ has grown and gotten more complex, sometimes resolving
@@ -65,26 +87,33 @@ especially true if you are working off of a highly customized ~anaconda~
 installation--which tends to happen if you have an old install that you keep
 adding to.
 
-In times like this it is useful to fall back on the default Python package
+In times like this it is useful to fall back on the default python package
 manager ~pip~. ~pip~ does some dependency-management, and by default reads from
 [[https://pypi.org][PyPI]], the main Python Package Index, but can be tweaked to install from GitHub,
 or from local files.
 
 If you find yourself frustrated by ~conda~ don't forget, there is always ~pip~!
 
+Fortunately, it is also very easy to add ~pip~ packages to your environment ~.yml~ files:
+#+begin_src yml
+dependencies:
+  - pip:
+    - scipy=0.15.0
+#+end_src
+
 *** ~conda~ for ~R~
 
 Yes I know, this is blasphemy. However, sometimes just getting a basic ~R~
 installation up and running can take some time, as you might run into issues
 getting things to compile correctly on your system. In fact, getting ~R~ set up
-on different machines is what drove me to switch to Python and to try ~anaconda~
+on different machines is what drove me to switch to python and to try ~anaconda~
 in the first place. ~anaconda~ has actually [[https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/][supported ~R~]] for years now, and
-just like with Python it is an easy way to get started. Plus, with projects like
+just like with python it is an easy way to get started. Plus, with projects like
 [[https://irkernel.github.io/][~IRkernel~]], which allows you to run ~R~ kernels in ~jupyter notebook~ it is a
 pretty good way to do interactive data analysis. Most ~R~ packages can be
 installed via ~conda~ with ~r-[package name]~.
 
-Much like ~anaconda~ for Python, I recommend that new ~R~ users start with
+Much like ~anaconda~ for python, I recommend that new ~R~ users start with
 ~tidyverse~, and ~data.table~ for getting started with data analysis:
 #+BEGIN_SRC sh
 conda install r-base r-essentials r-irkernel r-tidyverse r-data.table
@@ -95,7 +124,7 @@ then you may actually want to rely on ~R~'s built-in ~install.packages()~, or
 the ~devtools::install_github~ included in ~tidyverse~. This may seem
 counterintuitive, as I have (hopefully) just convinced you that ~conda~ is the
 best tool for package management in every context--but just as you may want to
-fall back on ~pip~ for Python, you may find it easier to just use the default
+fall back on ~pip~ for python, you may find it easier to just use the default
 package manager in ~R~ /after/ you do your initial ~conda install~.
 
 
@@ -136,12 +165,15 @@ It is extremely useful for browsing the structure of your XML files (~xmlstarlet
 el~), and subsequently extract the relevant information (~xmlstarlet sel~). It
 is written in ~C~ so it is very fast.
 
-** [[https://csvkit.readthedocs.io/en/latest/][~csvkit~]]
+** [[https://github.com/BurntSushi/xsv][~xsv~]]
 
-Sometimes you need something a bit fancier than ~less~--that's when csvkit comes
-in. ~csvkit~ includes a variety of tools for working with csv files including
-~csvlook~, ~csvjoin~, ~csvformat~ all of which can greatly enhance your ability
-to work with csvs in the command line.
+Oftentimes you need to look through a csv file through the command line, and
+maybe you even want to do some basic analysis. Enter ~xsv~, which is written in
+Rust and is extremely fast and capable. ~xsv~ can quickly filter, join, pretty
+print, etc. a csv, which makes it an invaluable tool.
+
+I used to recommend ~csvkit~ which is written in python, but the performance of
+~xsv~ has convinced me to switch for good.
 
 ** [[http://dtach.sourceforge.net/][~dtach~]]
 
@@ -208,32 +240,37 @@ cat INPUT.csv | parallel --colsep '\|' "./SOMETHING {1} {2}" > OUTPUT.csv
 
 Just remember you ~bash~ quoting rules and you will be fine!
 
+**  Other great CLI tools
+
+- [[https://github.com/junegunn/fzf][~fzf~]] for fuzzy finding stuff.
+- [[https://github.com/ogham/exa][~exa~]] which is like a more advanced ~ls~.
+- [[https://github.com/aristocratos/btop][~btop~]] which is a prettier ~htop~.
+- [[https://github.com/BurntSushi/ripgrep][~ripgrep~]] which is a very fast ~grep~ search from the developer of ~xsv~.
+- [[https://github.com/ajeetdsouza/zoxide][~zoxide~]] which is a more advanced ~cd~.
 
 * Some python libraries worth learning
 
 **  [[https://requests.readthedocs.io/en/master/][~requests~]]
 
-~requests~ is a dead-simple HTTP library for Python. Like ~curl~ it is an
-essential building tool for working with data that lives on the web (aka
-scraping).
+~requests~ is a dead-simple HTTP library for python. Like ~curl~ it is an essential
+building tool for working with data that lives on the web (aka scraping).
 
 For example, many websites are now built around REST APIs and deliver JSON
 payloads. Rather than scraping HTML with something like [[https://www.crummy.com/software/BeautifulSoup/bs4/doc/][~BeautifulSoup~]], [[https://lxml.de/][~lxml~]],
 or worst of all [[https://www.selenium.dev/][~Selenium~]] you can save yourself a lot of time and preserve your
-sanity by just using ~requests~ to get at the underlying data. All you need is
-the Inspect window of your browser, and some patience and soon you will be an
-API scraping master.
+sanity by just using ~requests~ to get at the underlying data. All you need is the
+Inspect window of your browser, and some patience and soon you will be an API
+scraping master.
 
 Bonus tip: https://curl.trillworks.com/ is a great website that converts ~curl~
 statements into ~requests~ code. This is especially useful because some browsers
 allow you to copy the results of HTTP requests into ~curl~, which you can easily
 convert into ~requests~ code!
 
-
 ** [[https://docs.python.org/3/library/asyncio.html][~asyncio~]]
 
-~asyncio~ is part of the Python standard library as of Python 3.4. It is a
-library for running concurrent (single-threaded) code, and brings Python to the
+~asyncio~ is part of the python standard library as of python 3.4. It is a library
+for running concurrent (single-threaded) code, and brings python to the
 forefront of event-driven programming. That is a fancy way of saying that it is
 a neat library that can help you write highly parallel code, help you write your
 own network apps, or even write some pretty fancy scrapers.
@@ -242,118 +279,49 @@ own network apps, or even write some pretty fancy scrapers.
 like a async version of [[https://requests.readthedocs.io/en/master/][~requests~]], and [[https://github.com/Tinche/aiofiles][~aiofiles~]] for dealing with the
 filesystem asynchronously.
 
-
-** [[https://ipyparallel.readthedocs.io/en/latest/][~ipyparallel~]]
-
-~ipyparallel~ is a parallel programming framework built around IPython. If you
-are using ~jupyter~ then you are already working within the IPython framework.
-~ipyparallel~ is great at parallelizing tasks that are typically trivial to
-parallelize such as long declarative ~for~ loops or large functional
-~map~/~reduce~ jobs. I've also found ~ipyparallel~ useful for running
-simulations. When it comes to processing data ~ipyparallel~ is sure to help in
-your workflow.
-
-
 ** [[https://pandas.pydata.org/][~pandas~]]
 
-You have data. You use Python. If these conditions apply, then you should use
+You have data. You use python. If these conditions apply, then you should use
 ~pandas~. The genius of ~pandas~ is that provides a ~DataFrame~, an indexed,
 two-dimensional, potentially heterogeneous and hierarchical table of rows and
 columns. In all likelihood 99% of the data you analyze with statistical
-techniques will fit into the ~DataFrame~ structure, and ~pandas~ makes working
-with ~DataFrames~ a breeze with powerful functions for data serialization and
+techniques will fit into the ~DataFrame~ structure, and ~pandas~ makes working with
+~DataFrames~ a breeze with powerful functions for data serialization and
 transformation.
-
-** [[https://www.pytables.org/][PyTables]]/hdf5
-
-Face it, sometimes you will have to write your data to disk. Maybe you don't
-want to write your large and wonderful ~DataFrame~ to a csv file where you will
-lose the easy row/column access and fast indexed-filtering. Fortunately PyTables
-exists, and since it is built on hdf5 it makes reading/writing data on disk
-super fast. The magic behind hdf5 is that it is 'hierarchical', and it has
-[[https://www.hdfgroup.org/2017/05/hdf5-data-compression-demystified-2-performance-tuning/][internal compression]] which often means your hdf5 files will be even smaller than
-your csv equivalents. It also has many of the nice features of working with
-~DataFrames~, and even some [[https://www.pytables.org/cookbook/hints_for_sql_users.html][~sql~-like]] convenience functions.
-
-~pandas~ also makes working with PyTables and hdf5 files more generally a
-breeze:
-#+BEGIN_SRC python
-df.to_hdf(..., format='table')
-df.read_hdf(..., where, start, stop, columns, chunksize)
-#+END_SRC
-
-Warning: While PyTables is a great substitute for running a RMDB, or even
-~sqlite~ note that it is not designed for simultaneous write. It can however be
-used for simultaneous read-only access. It's a great data format when you have
-an ~ipyparallel~ workflow where you need to split/apply with a large data file.
-
-
-** [[https://dask.org/][~dask~]]
-
-~dask~ is a parallel data processing library. A typical use-case is when you
-have a bunch of files spread across your filesystem, network, etc. and you want
-to glob all of them do some minor processing/filtering and produce a combined
-dataset. Perhaps you could write some bash script to ~find~ all of these files
-and maybe then you ~cat~/~grep~/~sed~/~awk~ them together in some way. You might
-even parallelize this process with ~xargs~ or GNU ~parallel~. ~dask~ is
-purpose-built for this task, and can be much easier to scale up.
-
-Invoking ~dask~ is very simple:
-#+BEGIN_SRC python
-import dask.bag as db
-import ujson as json
-
-files = ! cat /path/to/your/files
-b = db.read_text(files, files_per_partition=10000).map(json.loads)
-#+END_SRC
-
-~dask~ also has great diagnostic tools such as a ~ProgressBar~ and various
-[[https://docs.dask.org/en/latest/diagnostics-local.html][profilers]].
 
 ** [[https://github.com/ultrajson/ultrajson][~ujson~]]
 
-~ujson~ stands for UltraJSON, which is an ultra fast JSON serializer written in
-C with Python bindings. For most applications you can use it as a drop-in
-replacement for the default Python ~json~ module, which is written in pure
-Python and as such is slower.
-
+~ujson~ stands for UltraJSON, which is an ultra fast JSON serializer written in C
+with python bindings. For most applications you can use it as a drop-in
+replacement for the default python ~json~ module, which is written in pure python
+and as such is slower.
 
 ** [[https://github.com/fabiocaccamo/python-benedict][~benedict~]]
 
-~benedict~ is a Python dictionary subclass that makes navigating dictionaries in
-Python a lot easier. In many ways it is like [[https://www.crummy.com/software/BeautifulSoup/bs4/doc/][~BeautifulSoup~]], which is very good
-at working with irregular or malformed HTML/XML data, but for Python
+~benedict~ is a python dictionary subclass that makes navigating dictionaries in
+python a lot easier. In many ways it is like [[https://www.crummy.com/software/BeautifulSoup/bs4/doc/][~BeautifulSoup~]], which is very good
+at working with irregular or malformed HTML/XML data, but for python
 dictionaries, and JSON-like data. It is not as full-featured as many of the
 libraries on this list, but it can be very useful if you are working with
 irregular JSON data.
 
-
 ** [[http://numba.pydata.org/][~numba~]]
 
-At first glance, ~numba~ seems like an odd choice for Python users. The appeal of Python is that it is an interpreted language, and hence does not need to be compiled to run. ~numba~ is a compiler for Python code. However, it is an easy to use, just-in-time (JIT) compiler using the LLVM compiler library. That means that it can take very simple Python and ~numpy~ code and turn it into LLVM compiled code that is nearly as fast as C or FORTRAN code.
+At first glance, ~numba~ seems like an odd choice for python users. The appeal of
+python is that it is an interpreted language, and hence does not need to be
+compiled to run. ~numba~ is a compiler for python code. However, it is an easy to
+use, just-in-time (JIT) compiler using the LLVM compiler library. That means
+that it can take very simple python and ~numpy~ code and turn it into LLVM
+compiled code that is nearly as fast as C or FORTRAN code.
 
 A good use case for ~numba~ is taking an expensive matrix multiplication and
 re-writing it as a loop. This may seem counterintuitive as the whole point of
-~numpy~ is to abstract away from slow Python loops for optimized abstracted
-matrix operations. Yet these dumb, slow Python loops combined with ~numba~ can
-be significantly faster than ~numpy~ counterparts if used correctly.
+~numpy~ is to abstract away from slow python loops for optimized abstracted matrix
+operations. Yet these dumb, slow python loops combined with ~numba~ can be
+significantly faster than ~numpy~ counterparts if used correctly.
 
 
 * Some ~R~ libraries worth learning
-
-** [[https://mran.microsoft.com/open][Microsoft R Open (MRO)]]
-This is not an ~R~ library, but a distribution. Years ago, Revolution Analytics
-produced a highly optimized ~R~ distribution that was significantly faster for
-analytics than the base ~R~. It leveraged tools like the Intel Math Kernel
-Library to speed up matrix operations and was fantastic to use. The problem is
-that unlike R which is free and doesn't require a license, Revolution ~R~
-required a license and could be expensive. Microsoft acquired Revolution
-Analytics, and the distribution is now available for free, as the Microsoft R
-Open distribution, which is available as the default R distribution through ~conda~!
-
-#+BEGIN_SRC sh
-conda install r-base r-essentials
-#+END_SRC
 
 ** [[https://www.tidyverse.org/][~tidyverse~]]
 
@@ -390,9 +358,9 @@ CRAN, and are fairly well documented.
 
 ~DuckDB~ is a SQL-style database with very convenient syntax for data analysis. It
 works very well with standard tabular data formats, and plays nicely with
-Python. It is also very fast for analytic workflows, including read/write and
+python. It is also very fast for analytic workflows, including read/write and
 processing data. One of the most useful features is the variety of built-in
-datatypes, such as ~LIST~ and ~STRUCT~ which map to Python/JSON datatypes. It also
+datatypes, such as ~LIST~ and ~STRUCT~ which map to python/JSON datatypes. It also
 allows for nested or composite datatypes, which are often found in real-world
 data. By default, ~DuckDB~ operates in-memory databases. In many ways, it is like
 ~SQLite~ but designed for data analysis workflows. It also features a lot of
@@ -400,19 +368,9 @@ useful extensions whic facilitate full text search, JSON querying,
 reading/writing remote files over HTTP, and reading from ~Postgres/SQLite~
 databases.
 
-** [[https://graphql.org/][~GraphQL~]]
-
-~GraphQL~ is a modern query language for APIs, originally developed at Facebook
-and now open sourced and maintained by numerous contributors. You may already be
-familiar with REST APIs, which many websites use to serve their data. ~GraphQL~ is
-a dramatic improvement over traditional REST because it allows for getting all
-of the data you need in a single request (including nested operations). Hence
-instead of making thousands of requests and piecing together a dataset, ~GraphQL~
-allows the user to submit a single query much like a traditional database
-transaction. Moreover, GraphQL APIs are somewhat self-documenting, meaning that
-it is fairly easy to inspect the API to figure out all of the things that are in
-the data, and how they connect to one another. There are many clients for
-interacting with ~GraphQL~ including [[https://github.com/graphql-python/gql][~gql~]] for Python.
+~DuckDB~ now plays nicely with both python and R, and with their respective
+dataframes. It is also very very good at reading all sorts of common data files
+like csv, json, and parquet.
 
 ** [[https://www.scrapingbee.com/][~ScrapingBee~]]
 

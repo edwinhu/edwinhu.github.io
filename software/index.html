@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>Software</title>
-<!-- 2023-08-12 Sat 13:10 -->
+<!-- 2024-11-12 Tue 01:14 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Org-mode">
@@ -201,38 +201,34 @@ $(function() {
 <li><a href="#sec-1-2">1.2. <code>curl</code></a></li>
 <li><a href="#sec-1-3">1.3. <code>jq</code></a></li>
 <li><a href="#sec-1-4">1.4. <code>xmlstarlet</code></a></li>
-<li><a href="#sec-1-5">1.5. <code>csvkit</code></a></li>
+<li><a href="#sec-1-5">1.5. <code>xsv</code></a></li>
 <li><a href="#sec-1-6">1.6. <code>dtach</code></a></li>
 <li><a href="#sec-1-7">1.7. <code>Rclone</code></a></li>
 <li><a href="#sec-1-8">1.8. <code>GNU parallel</code></a></li>
+<li><a href="#sec-1-9">1.9. Other great CLI tools</a></li>
 </ul>
 </li>
 <li><a href="#sec-2">2. Some python libraries worth learning</a>
 <ul class="nav">
 <li><a href="#sec-2-1">2.1. <code>requests</code></a></li>
 <li><a href="#sec-2-2">2.2. <code>asyncio</code></a></li>
-<li><a href="#sec-2-3">2.3. <code>ipyparallel</code></a></li>
-<li><a href="#sec-2-4">2.4. <code>pandas</code></a></li>
-<li><a href="#sec-2-5">2.5. PyTables/hdf5</a></li>
-<li><a href="#sec-2-6">2.6. <code>dask</code></a></li>
-<li><a href="#sec-2-7">2.7. <code>ujson</code></a></li>
-<li><a href="#sec-2-8">2.8. <code>benedict</code></a></li>
-<li><a href="#sec-2-9">2.9. <code>numba</code></a></li>
+<li><a href="#sec-2-3">2.3. <code>pandas</code></a></li>
+<li><a href="#sec-2-4">2.4. <code>ujson</code></a></li>
+<li><a href="#sec-2-5">2.5. <code>benedict</code></a></li>
+<li><a href="#sec-2-6">2.6. <code>numba</code></a></li>
 </ul>
 </li>
 <li><a href="#sec-3">3. Some <code>R</code> libraries worth learning</a>
 <ul class="nav">
-<li><a href="#sec-3-1">3.1. Microsoft R Open (MRO)</a></li>
-<li><a href="#sec-3-2">3.2. <code>tidyverse</code></a></li>
-<li><a href="#sec-3-3">3.3. <code>data.table</code></a></li>
-<li><a href="#sec-3-4">3.4. <code>felm</code> and <code>alpaca</code></a></li>
+<li><a href="#sec-3-1">3.1. <code>tidyverse</code></a></li>
+<li><a href="#sec-3-2">3.2. <code>data.table</code></a></li>
+<li><a href="#sec-3-3">3.3. <code>felm</code> and <code>alpaca</code></a></li>
 </ul>
 </li>
 <li><a href="#sec-4">4. Other Useful Software</a>
 <ul class="nav">
 <li><a href="#sec-4-1">4.1. <code>DuckDB</code></a></li>
-<li><a href="#sec-4-2">4.2. <code>GraphQL</code></a></li>
-<li><a href="#sec-4-3">4.3. <code>ScrapingBee</code></a></li>
+<li><a href="#sec-4-2">4.2. <code>ScrapingBee</code></a></li>
 </ul>
 </li>
 </ul>
@@ -247,24 +243,28 @@ $(function() {
 <h3 id="sec-1-1"><span class="section-number-3">1.1</span> <a href="https://www.anaconda.com/products/individual"><code>anaconda</code></a></h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
-Specifically <code>miniconda</code>.
+Specifically <del><code>miniconda</code></del> <code>micromamba</code> or <code>mamba</code> <code>miniforge</code>.
 </p>
 
 <p>
 Python is one of the most flexible tools for data analysis, but as a general
 purpose programming language it does not come with all of the tools installed by
 default. As such you will likely need to install some packages like <code>pandas</code>,
-<code>numpy</code>, or even <code>jupyter notebook</code>. <code>anaconda</code> is a metapackage containing
+<code>numpy</code>, or even <code>jupyter notebook</code>. <code>anaconda</code> is one of many metapackages containing
 almost everything you will need to use. Plus it comes with a great package
-manager <code>conda</code>, which automatically solves dependencies/requirements for you,
-and allows you to create your own environments.
+manager <code>conda</code>, which automatically solves dependencies/requirements for you, and
+allows you to create your own environments. However, I do not recommend using
+the default <code>conda</code> installer as it has become very slow, so instead I recommend a
+third-party installer like <code>mamba</code> which is much faster.
 </p>
 
 <p>
-However, a default <code>anaconda</code> installation can be several gigabytes, and over
-time I&rsquo;ve found that I never use some packages. That&rsquo;s where <code>miniconda</code> comes
-in. It&rsquo;s a much lighter-weight version of <code>anaconda</code> with the basic tools to
-allow you to install only what you need. If you don&rsquo;t know what you will need,
+The default <code>anaconda</code> installation can be several gigabytes, and over time I&rsquo;ve
+found that I never use some packages. That&rsquo;s where <code>miniconda</code> or <code>miniforge</code> comes
+in. It&rsquo;s a much lighter-weight version of <code>anaconda</code> with the basic tools to allow
+you to install only what you need. Or if you prefer even more minimalism, you
+can install <code>micromamba</code> which is a self-contained package manager that does not
+require any python environment of its own. If you don&rsquo;t know what you will need,
 go ahead and install <code>anaconda</code>.
 </p>
 
@@ -274,7 +274,7 @@ following:
 </p>
 <div class="org-src-container">
 
-<pre class="src src-sh">conda install jupyter pandas numpy scipy scikit-learn --yes
+<pre class="src src-src">mamba install jupyter pandas numpy scipy scikit-learn --yes
 </pre>
 </div>
 </div>
@@ -312,7 +312,7 @@ packages and version numbers you want:
 </p>
 <div class="org-src-container">
 
-<pre class="src src-sh">conda create -n myenv <span style="color: #D8DEE9;">python</span>=<span style="color: #B48EAD; font-weight: bold;">3.6</span> <span style="color: #D8DEE9;">scipy</span>=0.15.0
+<pre class="src src-sh">conda create -n myenv <span style="color: #ff98a4;">python</span>=<span style="color: #ff995e; font-weight: bold;">3.6</span> <span style="color: #ff98a4;">scipy</span>=0.15.0
 </pre>
 </div>
 
@@ -323,6 +323,28 @@ To start/stop using an environment:
 
 <pre class="src src-sh">activate myenv
 deactivate myenv
+</pre>
+</div>
+
+<p>
+If you are going to use environments, I highly recommend creating a basic <code>.yml</code>
+configuration file to keep track of what packages you are using in case you need
+to move to a different computer. If you need to change a package, just update
+the <code>.yml</code> file. Creating one for each new project takes only a little bit of
+time, but speaking from experience, this can save you hours later on when trying
+to figure out why your old code is no longer running on a fresh <code>anaconda</code>
+install. For example the above command for creating an environment could be
+represented as:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">name: myenv
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.6.0
+  - scipy=0.15.0
 </pre>
 </div>
 </div>
@@ -340,7 +362,7 @@ adding to.
 </p>
 
 <p>
-In times like this it is useful to fall back on the default Python package
+In times like this it is useful to fall back on the default python package
 manager <code>pip</code>. <code>pip</code> does some dependency-management, and by default reads from
 <a href="https://pypi.org">PyPI</a>, the main Python Package Index, but can be tweaked to install from GitHub,
 or from local files.
@@ -349,6 +371,17 @@ or from local files.
 <p>
 If you find yourself frustrated by <code>conda</code> don&rsquo;t forget, there is always <code>pip</code>!
 </p>
+
+<p>
+Fortunately, it is also very easy to add <code>pip</code> packages to your environment <code>.yml</code> files:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yml">dependencies:
+  - pip:
+    - scipy=0.15.0
+</pre>
+</div>
 </div>
 </div>
 
@@ -359,16 +392,16 @@ If you find yourself frustrated by <code>conda</code> don&rsquo;t forget, there 
 Yes I know, this is blasphemy. However, sometimes just getting a basic <code>R</code>
 installation up and running can take some time, as you might run into issues
 getting things to compile correctly on your system. In fact, getting <code>R</code> set up
-on different machines is what drove me to switch to Python and to try <code>anaconda</code>
+on different machines is what drove me to switch to python and to try <code>anaconda</code>
 in the first place. <code>anaconda</code> has actually <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/">supported <code>R</code></a> for years now, and
-just like with Python it is an easy way to get started. Plus, with projects like
+just like with python it is an easy way to get started. Plus, with projects like
 <a href="https://irkernel.github.io/"><code>IRkernel</code></a>, which allows you to run <code>R</code> kernels in <code>jupyter notebook</code> it is a
 pretty good way to do interactive data analysis. Most <code>R</code> packages can be
 installed via <code>conda</code> with <code>r-[package name]</code>.
 </p>
 
 <p>
-Much like <code>anaconda</code> for Python, I recommend that new <code>R</code> users start with
+Much like <code>anaconda</code> for python, I recommend that new <code>R</code> users start with
 <code>tidyverse</code>, and <code>data.table</code> for getting started with data analysis:
 </p>
 <div class="org-src-container">
@@ -383,7 +416,7 @@ then you may actually want to rely on <code>R</code>&rsquo;s built-in <code>inst
 the <code>devtools::install_github</code> included in <code>tidyverse</code>. This may seem
 counterintuitive, as I have (hopefully) just convinced you that <code>conda</code> is the
 best tool for package management in every context&#x2013;but just as you may want to
-fall back on <code>pip</code> for Python, you may find it easier to just use the default
+fall back on <code>pip</code> for python, you may find it easier to just use the default
 package manager in <code>R</code> <i>after</i> you do your initial <code>conda install</code>.
 </p>
 </div>
@@ -405,7 +438,7 @@ The basic usage of <code>curl</code> is simple, yet endlessly customizable:
 </p>
 <div class="org-src-container">
 
-<pre class="src src-sh"><span style="color: #8FBCBB;">curl</span> <span style="color: #81A1C1;">[</span>options<span style="color: #81A1C1;">]</span> <span style="color: #81A1C1;">[</span>URL...<span style="color: #81A1C1;">]</span>
+<pre class="src src-sh"><span style="color: #ffc777;">curl</span> <span style="color: #c099ff;">[</span>options<span style="color: #c099ff;">]</span> <span style="color: #c099ff;">[</span>URL...<span style="color: #c099ff;">]</span>
 </pre>
 </div>
 
@@ -458,13 +491,18 @@ is written in <code>C</code> so it is very fast.
 </div>
 
 <div id="outline-container-sec-1-5" class="outline-3">
-<h3 id="sec-1-5"><span class="section-number-3">1.5</span> <a href="https://csvkit.readthedocs.io/en/latest/"><code>csvkit</code></a></h3>
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> <a href="https://github.com/BurntSushi/xsv"><code>xsv</code></a></h3>
 <div class="outline-text-3" id="text-1-5">
 <p>
-Sometimes you need something a bit fancier than <code>less</code>&#x2013;that&rsquo;s when csvkit comes
-in. <code>csvkit</code> includes a variety of tools for working with csv files including
-<code>csvlook</code>, <code>csvjoin</code>, <code>csvformat</code> all of which can greatly enhance your ability
-to work with csvs in the command line.
+Oftentimes you need to look through a csv file through the command line, and
+maybe you even want to do some basic analysis. Enter <code>xsv</code>, which is written in
+Rust and is extremely fast and capable. <code>xsv</code> can quickly filter, join, pretty
+print, etc. a csv, which makes it an invaluable tool.
+</p>
+
+<p>
+I used to recommend <code>csvkit</code> which is written in python, but the performance of
+<code>xsv</code> has convinced me to switch for good.
 </p>
 </div>
 </div>
@@ -521,9 +559,9 @@ files in your current directory:
 </p>
 <div class="org-src-container">
 
-<pre class="src src-sh"><span style="color: #81A1C1;">for</span> i<span style="color: #81A1C1;"> in</span> $<span style="color: #81A1C1;">(</span><span style="color: #8FBCBB;">find</span> *.csv<span style="color: #81A1C1;">)</span>; <span style="color: #81A1C1;">do</span>
-    ./SOMETHING $<span style="color: #D8DEE9;">i</span>
-<span style="color: #81A1C1;">done</span>
+<pre class="src src-sh"><span style="color: #c099ff;">for</span> i<span style="color: #c099ff;"> in</span> $<span style="color: #c099ff;">(</span><span style="color: #ffc777;">find</span> *.csv<span style="color: #c099ff;">)</span>; <span style="color: #c099ff;">do</span>
+    ./SOMETHING $<span style="color: #ff98a4;">i</span>
+<span style="color: #c099ff;">done</span>
 </pre>
 </div>
 
@@ -532,9 +570,9 @@ One way to easily parallelize this in <code>bash</code> is to add <code>&amp;</c
 </p>
 <div class="org-src-container">
 
-<pre class="src src-sh"><span style="color: #81A1C1;">for</span> i<span style="color: #81A1C1;"> in</span> $<span style="color: #81A1C1;">(</span><span style="color: #8FBCBB;">find</span> *.csv<span style="color: #81A1C1;">)</span>; <span style="color: #81A1C1;">do</span>
-    ./SOMETHING $<span style="color: #D8DEE9;">i</span> &amp;
-<span style="color: #81A1C1;">done</span>
+<pre class="src src-sh"><span style="color: #c099ff;">for</span> i<span style="color: #c099ff;"> in</span> $<span style="color: #c099ff;">(</span><span style="color: #ffc777;">find</span> *.csv<span style="color: #c099ff;">)</span>; <span style="color: #c099ff;">do</span>
+    ./SOMETHING $<span style="color: #ff98a4;">i</span> &amp;
+<span style="color: #c099ff;">done</span>
 </pre>
 </div>
 
@@ -543,7 +581,7 @@ You could also accomplish the same task with a pipe:
 </p>
 <div class="org-src-container">
 
-<pre class="src src-sh"><span style="color: #8FBCBB;">find</span> *.csv | ./SOMETHING
+<pre class="src src-sh"><span style="color: #ffc777;">find</span> *.csv | ./SOMETHING
 </pre>
 </div>
 <p>
@@ -551,7 +589,7 @@ or if the number of <code>csv</code> files is large you can use <code>xargs</cod
 </p>
 <div class="org-src-container">
 
-<pre class="src src-sh"><span style="color: #8FBCBB;">find</span> *.csv | xargs ./SOMETHING
+<pre class="src src-sh"><span style="color: #ffc777;">find</span> *.csv | xargs ./SOMETHING
 </pre>
 </div>
 
@@ -561,7 +599,7 @@ then that is where <code>parallel</code> comes in:
 </p>
 <div class="org-src-container">
 
-<pre class="src src-sh"><span style="color: #8FBCBB;">find</span> *.csv | parallel -j8 ./SOMETHING
+<pre class="src src-sh"><span style="color: #ffc777;">find</span> *.csv | parallel -j8 ./SOMETHING
 </pre>
 </div>
 
@@ -573,7 +611,7 @@ single file:
 </p>
 <div class="org-src-container">
 
-<pre class="src src-sh"><span style="color: #8FBCBB;">cat</span> INPUT.csv | parallel --colsep <span style="color: #A3BE8C;">'\|'</span> <span style="color: #A3BE8C;">"./SOMETHING {1} {2}"</span> &gt; OUTPUT.csv
+<pre class="src src-sh"><span style="color: #ffc777;">cat</span> INPUT.csv | parallel --colsep <span style="color: #c3e88d;">'\|'</span> <span style="color: #c3e88d;">"./SOMETHING {1} {2}"</span> &gt; OUTPUT.csv
 </pre>
 </div>
 
@@ -582,8 +620,25 @@ Just remember you <code>bash</code> quoting rules and you will be fine!
 </p>
 </div>
 </div>
-</div>
 
+<div id="outline-container-sec-1-9" class="outline-3">
+<h3 id="sec-1-9"><span class="section-number-3">1.9</span> Other great CLI tools</h3>
+<div class="outline-text-3" id="text-1-9">
+<ul class="org-ul">
+<li><a href="https://github.com/junegunn/fzf"><code>fzf</code></a> for fuzzy finding stuff.
+</li>
+<li><a href="https://github.com/ogham/exa"><code>exa</code></a> which is like a more advanced <code>ls</code>.
+</li>
+<li><a href="https://github.com/aristocratos/btop"><code>btop</code></a> which is a prettier <code>htop</code>.
+</li>
+<li><a href="https://github.com/BurntSushi/ripgrep"><code>ripgrep</code></a> which is a very fast <code>grep</code> search from the developer of <code>xsv</code>.
+</li>
+<li><a href="https://github.com/ajeetdsouza/zoxide"><code>zoxide</code></a> which is a more advanced <code>cd</code>.
+</li>
+</ul>
+</div>
+</div>
+</div>
 
 <div id="outline-container-sec-2" class="outline-2">
 <h2 id="sec-2"><span class="section-number-2">2</span> Some python libraries worth learning</h2>
@@ -592,18 +647,17 @@ Just remember you <code>bash</code> quoting rules and you will be fine!
 <h3 id="sec-2-1"><span class="section-number-3">2.1</span> <a href="https://requests.readthedocs.io/en/master/"><code>requests</code></a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-<code>requests</code> is a dead-simple HTTP library for Python. Like <code>curl</code> it is an
-essential building tool for working with data that lives on the web (aka
-scraping).
+<code>requests</code> is a dead-simple HTTP library for python. Like <code>curl</code> it is an essential
+building tool for working with data that lives on the web (aka scraping).
 </p>
 
 <p>
 For example, many websites are now built around REST APIs and deliver JSON
 payloads. Rather than scraping HTML with something like <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"><code>BeautifulSoup</code></a>, <a href="https://lxml.de/"><code>lxml</code></a>,
 or worst of all <a href="https://www.selenium.dev/"><code>Selenium</code></a> you can save yourself a lot of time and preserve your
-sanity by just using <code>requests</code> to get at the underlying data. All you need is
-the Inspect window of your browser, and some patience and soon you will be an
-API scraping master.
+sanity by just using <code>requests</code> to get at the underlying data. All you need is the
+Inspect window of your browser, and some patience and soon you will be an API
+scraping master.
 </p>
 
 <p>
@@ -615,13 +669,12 @@ convert into <code>requests</code> code!
 </div>
 </div>
 
-
 <div id="outline-container-sec-2-2" class="outline-3">
 <h3 id="sec-2-2"><span class="section-number-3">2.2</span> <a href="https://docs.python.org/3/library/asyncio.html"><code>asyncio</code></a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-<code>asyncio</code> is part of the Python standard library as of Python 3.4. It is a
-library for running concurrent (single-threaded) code, and brings Python to the
+<code>asyncio</code> is part of the python standard library as of python 3.4. It is a library
+for running concurrent (single-threaded) code, and brings python to the
 forefront of event-driven programming. That is a fancy way of saying that it is
 a neat library that can help you write highly parallel code, help you write your
 own network apps, or even write some pretty fancy scrapers.
@@ -635,126 +688,40 @@ filesystem asynchronously.
 </div>
 </div>
 
-
 <div id="outline-container-sec-2-3" class="outline-3">
-<h3 id="sec-2-3"><span class="section-number-3">2.3</span> <a href="https://ipyparallel.readthedocs.io/en/latest/"><code>ipyparallel</code></a></h3>
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> <a href="https://pandas.pydata.org/"><code>pandas</code></a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-<code>ipyparallel</code> is a parallel programming framework built around IPython. If you
-are using <code>jupyter</code> then you are already working within the IPython framework.
-<code>ipyparallel</code> is great at parallelizing tasks that are typically trivial to
-parallelize such as long declarative <code>for</code> loops or large functional
-<code>map~/~reduce</code> jobs. I&rsquo;ve also found <code>ipyparallel</code> useful for running
-simulations. When it comes to processing data <code>ipyparallel</code> is sure to help in
-your workflow.
-</p>
-</div>
-</div>
-
-
-<div id="outline-container-sec-2-4" class="outline-3">
-<h3 id="sec-2-4"><span class="section-number-3">2.4</span> <a href="https://pandas.pydata.org/"><code>pandas</code></a></h3>
-<div class="outline-text-3" id="text-2-4">
-<p>
-You have data. You use Python. If these conditions apply, then you should use
+You have data. You use python. If these conditions apply, then you should use
 <code>pandas</code>. The genius of <code>pandas</code> is that provides a <code>DataFrame</code>, an indexed,
 two-dimensional, potentially heterogeneous and hierarchical table of rows and
 columns. In all likelihood 99% of the data you analyze with statistical
-techniques will fit into the <code>DataFrame</code> structure, and <code>pandas</code> makes working
-with <code>DataFrames</code> a breeze with powerful functions for data serialization and
+techniques will fit into the <code>DataFrame</code> structure, and <code>pandas</code> makes working with
+<code>DataFrames</code> a breeze with powerful functions for data serialization and
 transformation.
 </p>
 </div>
 </div>
 
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> <a href="https://github.com/ultrajson/ultrajson"><code>ujson</code></a></h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+<code>ujson</code> stands for UltraJSON, which is an ultra fast JSON serializer written in C
+with python bindings. For most applications you can use it as a drop-in
+replacement for the default python <code>json</code> module, which is written in pure python
+and as such is slower.
+</p>
+</div>
+</div>
+
 <div id="outline-container-sec-2-5" class="outline-3">
-<h3 id="sec-2-5"><span class="section-number-3">2.5</span> <a href="https://www.pytables.org/">PyTables</a>/hdf5</h3>
+<h3 id="sec-2-5"><span class="section-number-3">2.5</span> <a href="https://github.com/fabiocaccamo/python-benedict"><code>benedict</code></a></h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
-Face it, sometimes you will have to write your data to disk. Maybe you don&rsquo;t
-want to write your large and wonderful <code>DataFrame</code> to a csv file where you will
-lose the easy row/column access and fast indexed-filtering. Fortunately PyTables
-exists, and since it is built on hdf5 it makes reading/writing data on disk
-super fast. The magic behind hdf5 is that it is &rsquo;hierarchical&rsquo;, and it has
-<a href="https://www.hdfgroup.org/2017/05/hdf5-data-compression-demystified-2-performance-tuning/">internal compression</a> which often means your hdf5 files will be even smaller than
-your csv equivalents. It also has many of the nice features of working with
-<code>DataFrames</code>, and even some <a href="https://www.pytables.org/cookbook/hints_for_sql_users.html"><code>sql</code>-like</a> convenience functions.
-</p>
-
-<p>
-<code>pandas</code> also makes working with PyTables and hdf5 files more generally a
-breeze:
-</p>
-<div class="org-src-container">
-
-<pre class="src src-python">df.to_hdf(..., <span style="color: #81A1C1;">format</span>=<span style="color: #A3BE8C;">'table'</span>)
-df.read_hdf(..., where, start, stop, columns, chunksize)
-</pre>
-</div>
-
-<p>
-Warning: While PyTables is a great substitute for running a RMDB, or even
-<code>sqlite</code> note that it is not designed for simultaneous write. It can however be
-used for simultaneous read-only access. It&rsquo;s a great data format when you have
-an <code>ipyparallel</code> workflow where you need to split/apply with a large data file.
-</p>
-</div>
-</div>
-
-
-<div id="outline-container-sec-2-6" class="outline-3">
-<h3 id="sec-2-6"><span class="section-number-3">2.6</span> <a href="https://dask.org/"><code>dask</code></a></h3>
-<div class="outline-text-3" id="text-2-6">
-<p>
-<code>dask</code> is a parallel data processing library. A typical use-case is when you
-have a bunch of files spread across your filesystem, network, etc. and you want
-to glob all of them do some minor processing/filtering and produce a combined
-dataset. Perhaps you could write some bash script to <code>find</code> all of these files
-and maybe then you <code>cat~/~grep~/~sed~/~awk</code> them together in some way. You might
-even parallelize this process with <code>xargs</code> or GNU <code>parallel</code>. <code>dask</code> is
-purpose-built for this task, and can be much easier to scale up.
-</p>
-
-<p>
-Invoking <code>dask</code> is very simple:
-</p>
-<div class="org-src-container">
-
-<pre class="src src-python"><span style="color: #81A1C1;">import</span> dask.bag <span style="color: #81A1C1;">as</span> db
-<span style="color: #81A1C1;">import</span> ujson <span style="color: #81A1C1;">as</span> json
-
-<span style="color: #D8DEE9;">files</span> = ! cat /path/to/your/files
-<span style="color: #D8DEE9;">b</span> = db.read_text(files, files_per_partition=<span style="color: #B48EAD; font-weight: bold;">10000</span>).<span style="color: #81A1C1;">map</span>(json.loads)
-</pre>
-</div>
-
-<p>
-<code>dask</code> also has great diagnostic tools such as a <code>ProgressBar</code> and various
-<a href="https://docs.dask.org/en/latest/diagnostics-local.html">profilers</a>.
-</p>
-</div>
-</div>
-
-<div id="outline-container-sec-2-7" class="outline-3">
-<h3 id="sec-2-7"><span class="section-number-3">2.7</span> <a href="https://github.com/ultrajson/ultrajson"><code>ujson</code></a></h3>
-<div class="outline-text-3" id="text-2-7">
-<p>
-<code>ujson</code> stands for UltraJSON, which is an ultra fast JSON serializer written in
-C with Python bindings. For most applications you can use it as a drop-in
-replacement for the default Python <code>json</code> module, which is written in pure
-Python and as such is slower.
-</p>
-</div>
-</div>
-
-
-<div id="outline-container-sec-2-8" class="outline-3">
-<h3 id="sec-2-8"><span class="section-number-3">2.8</span> <a href="https://github.com/fabiocaccamo/python-benedict"><code>benedict</code></a></h3>
-<div class="outline-text-3" id="text-2-8">
-<p>
-<code>benedict</code> is a Python dictionary subclass that makes navigating dictionaries in
-Python a lot easier. In many ways it is like <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"><code>BeautifulSoup</code></a>, which is very good
-at working with irregular or malformed HTML/XML data, but for Python
+<code>benedict</code> is a python dictionary subclass that makes navigating dictionaries in
+python a lot easier. In many ways it is like <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"><code>BeautifulSoup</code></a>, which is very good
+at working with irregular or malformed HTML/XML data, but for python
 dictionaries, and JSON-like data. It is not as full-featured as many of the
 libraries on this list, but it can be very useful if you are working with
 irregular JSON data.
@@ -762,20 +729,24 @@ irregular JSON data.
 </div>
 </div>
 
-
-<div id="outline-container-sec-2-9" class="outline-3">
-<h3 id="sec-2-9"><span class="section-number-3">2.9</span> <a href="http://numba.pydata.org/"><code>numba</code></a></h3>
-<div class="outline-text-3" id="text-2-9">
+<div id="outline-container-sec-2-6" class="outline-3">
+<h3 id="sec-2-6"><span class="section-number-3">2.6</span> <a href="http://numba.pydata.org/"><code>numba</code></a></h3>
+<div class="outline-text-3" id="text-2-6">
 <p>
-At first glance, <code>numba</code> seems like an odd choice for Python users. The appeal of Python is that it is an interpreted language, and hence does not need to be compiled to run. <code>numba</code> is a compiler for Python code. However, it is an easy to use, just-in-time (JIT) compiler using the LLVM compiler library. That means that it can take very simple Python and <code>numpy</code> code and turn it into LLVM compiled code that is nearly as fast as C or FORTRAN code.
+At first glance, <code>numba</code> seems like an odd choice for python users. The appeal of
+python is that it is an interpreted language, and hence does not need to be
+compiled to run. <code>numba</code> is a compiler for python code. However, it is an easy to
+use, just-in-time (JIT) compiler using the LLVM compiler library. That means
+that it can take very simple python and <code>numpy</code> code and turn it into LLVM
+compiled code that is nearly as fast as C or FORTRAN code.
 </p>
 
 <p>
 A good use case for <code>numba</code> is taking an expensive matrix multiplication and
 re-writing it as a loop. This may seem counterintuitive as the whole point of
-<code>numpy</code> is to abstract away from slow Python loops for optimized abstracted
-matrix operations. Yet these dumb, slow Python loops combined with <code>numba</code> can
-be significantly faster than <code>numpy</code> counterparts if used correctly.
+<code>numpy</code> is to abstract away from slow python loops for optimized abstracted matrix
+operations. Yet these dumb, slow python loops combined with <code>numba</code> can be
+significantly faster than <code>numpy</code> counterparts if used correctly.
 </p>
 </div>
 </div>
@@ -786,30 +757,8 @@ be significantly faster than <code>numpy</code> counterparts if used correctly.
 <h2 id="sec-3"><span class="section-number-2">3</span> Some <code>R</code> libraries worth learning</h2>
 <div class="outline-text-2" id="text-3">
 </div><div id="outline-container-sec-3-1" class="outline-3">
-<h3 id="sec-3-1"><span class="section-number-3">3.1</span> <a href="https://mran.microsoft.com/open">Microsoft R Open (MRO)</a></h3>
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> <a href="https://www.tidyverse.org/"><code>tidyverse</code></a></h3>
 <div class="outline-text-3" id="text-3-1">
-<p>
-This is not an <code>R</code> library, but a distribution. Years ago, Revolution Analytics
-produced a highly optimized <code>R</code> distribution that was significantly faster for
-analytics than the base <code>R</code>. It leveraged tools like the Intel Math Kernel
-Library to speed up matrix operations and was fantastic to use. The problem is
-that unlike R which is free and doesn&rsquo;t require a license, Revolution <code>R</code>
-required a license and could be expensive. Microsoft acquired Revolution
-Analytics, and the distribution is now available for free, as the Microsoft R
-Open distribution, which is available as the default R distribution through <code>conda</code>!
-</p>
-
-<div class="org-src-container">
-
-<pre class="src src-sh">conda install r-base r-essentials
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-sec-3-2" class="outline-3">
-<h3 id="sec-3-2"><span class="section-number-3">3.2</span> <a href="https://www.tidyverse.org/"><code>tidyverse</code></a></h3>
-<div class="outline-text-3" id="text-3-2">
 <p>
 <code>tidyverse</code> is a metapackage of data analysis tools for <code>R</code>. In many ways it is
 like the <code>anaconda</code> default installation in that it includes so many of the
@@ -828,9 +777,9 @@ with it and use <code>haven</code>.
 </div>
 
 
-<div id="outline-container-sec-3-3" class="outline-3">
-<h3 id="sec-3-3"><span class="section-number-3">3.3</span> <a href="https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html"><code>data.table</code></a></h3>
-<div class="outline-text-3" id="text-3-3">
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> <a href="https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html"><code>data.table</code></a></h3>
+<div class="outline-text-3" id="text-3-2">
 <p>
 <code>data.table</code> is <a href="https://github.com/Rdatatable/data.table/wiki/Benchmarks-:-Grouping">very fast</a>, and has an intuitive syntax. It is certainly
 different from <code>tidyverse::dplyr</code>, but for those familiar with <code>pandas</code>,
@@ -844,9 +793,9 @@ Bonus tip: DataCamp has a great <a href="https://s3.amazonaws.com/assets.datacam
 </div>
 
 
-<div id="outline-container-sec-3-4" class="outline-3">
-<h3 id="sec-3-4"><span class="section-number-3">3.4</span> <a href="https://www.rdocumentation.org/packages/lfe/versions/2.8-6/topics/felm"><code>felm</code></a> and <a href="https://github.com/amrei-stammann/alpaca"><code>alpaca</code></a></h3>
-<div class="outline-text-3" id="text-3-4">
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> <a href="https://www.rdocumentation.org/packages/lfe/versions/2.8-6/topics/felm"><code>felm</code></a> and <a href="https://github.com/amrei-stammann/alpaca"><code>alpaca</code></a></h3>
+<div class="outline-text-3" id="text-3-3">
 <p>
 <code>felm</code> and <code>alpaca</code> are R packages for linear/logistic regressions with high
 dimensional fixed effects and clustered standard errors. Both are available on
@@ -865,9 +814,9 @@ CRAN, and are fairly well documented.
 <p>
 <code>DuckDB</code> is a SQL-style database with very convenient syntax for data analysis. It
 works very well with standard tabular data formats, and plays nicely with
-Python. It is also very fast for analytic workflows, including read/write and
+python. It is also very fast for analytic workflows, including read/write and
 processing data. One of the most useful features is the variety of built-in
-datatypes, such as <code>LIST</code> and <code>STRUCT</code> which map to Python/JSON datatypes. It also
+datatypes, such as <code>LIST</code> and <code>STRUCT</code> which map to python/JSON datatypes. It also
 allows for nested or composite datatypes, which are often found in real-world
 data. By default, <code>DuckDB</code> operates in-memory databases. In many ways, it is like
 <code>SQLite</code> but designed for data analysis workflows. It also features a lot of
@@ -875,31 +824,18 @@ useful extensions whic facilitate full text search, JSON querying,
 reading/writing remote files over HTTP, and reading from <code>Postgres/SQLite</code>
 databases.
 </p>
-</div>
-</div>
 
-<div id="outline-container-sec-4-2" class="outline-3">
-<h3 id="sec-4-2"><span class="section-number-3">4.2</span> <a href="https://graphql.org/"><code>GraphQL</code></a></h3>
-<div class="outline-text-3" id="text-4-2">
 <p>
-<code>GraphQL</code> is a modern query language for APIs, originally developed at Facebook
-and now open sourced and maintained by numerous contributors. You may already be
-familiar with REST APIs, which many websites use to serve their data. <code>GraphQL</code> is
-a dramatic improvement over traditional REST because it allows for getting all
-of the data you need in a single request (including nested operations). Hence
-instead of making thousands of requests and piecing together a dataset, <code>GraphQL</code>
-allows the user to submit a single query much like a traditional database
-transaction. Moreover, GraphQL APIs are somewhat self-documenting, meaning that
-it is fairly easy to inspect the API to figure out all of the things that are in
-the data, and how they connect to one another. There are many clients for
-interacting with <code>GraphQL</code> including <a href="https://github.com/graphql-python/gql"><code>gql</code></a> for Python.
+<code>DuckDB</code> now plays nicely with both python and R, and with their respective
+dataframes. It is also very very good at reading all sorts of common data files
+like csv, json, and parquet.
 </p>
 </div>
 </div>
 
-<div id="outline-container-sec-4-3" class="outline-3">
-<h3 id="sec-4-3"><span class="section-number-3">4.3</span> <a href="https://www.scrapingbee.com/"><code>ScrapingBee</code></a></h3>
-<div class="outline-text-3" id="text-4-3">
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> <a href="https://www.scrapingbee.com/"><code>ScrapingBee</code></a></h3>
+<div class="outline-text-3" id="text-4-2">
 <p>
 Sometimes the only way to get data is through traditional web scraping. Scraping
 is <a href="https://cdn.ca9.uscourts.gov/datastore/opinions/2022/04/18/17-16783.pdf">controversial</a> and at the very least most websites have some sort of rate
@@ -935,7 +871,7 @@ url you want to scrape as another parameter.
 </div></div></div>
 <footer id="postamble" class="">
 <div><p class="author">Author: Edwin Hu</p>
-<p class="date">Created: 2023-08-12 Sat 13:10</p>
+<p class="date">Created: 2024-11-12 Tue 01:14</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="http://orgmode.org">Org-mode</a> 9.5)</p>
 </div>
 </footer>
