@@ -1,3 +1,15 @@
+* Vestigial Tails? Floor Brokers at the Close in Modern Electronic Markets
+with Dermot Murphy ([[https://papers.ssrn.com/abstract=3600230][SSRN]])
+
+- Forthcoming, /Mgmt. Sci./
+- Covered in [[https://www.wsj.com/articles/coronavirus-shutdown-casts-doubt-on-value-of-exchange-trading-floors-11590053419][/The Wall Street Journal/]], [[https://www.bloomberg.com/opinion/articles/2020-05-22/a-vaccine-with-a-poison-pill][Money Stuff (Bloomberg)]], [[https://www.economist.com/finance-and-economics/2020/05/25/covid-19-forced-trading-floors-to-close-theyll-be-back][/The Economist/]].
+- Policy: Cited in [[https://crsreports.congress.gov/product/pdf/IN/IN11447][Congressional Research Service Report IN11447]].
+- Presented at University of Illinois Chicago (2020*), Rice University (2020),
+  SEC (2020*), The Microstructure Exchange (2020) ([[https://www.youtube.com/watch?v=cRQigejq5jg][recording]]) ([[https://microstructure.exchange/slides/20201006%20Microstructure%20Exchange%20-%20WEB.pdf][slides]]), [[https://iextrading.com/insights/academic-research-conference-2020/][IEX ARC]]
+  (2020), NBER Big Data Conference (2020), Microstructure Online Seminars Asia
+  Pacific (2021), Western Finance Association (2021), European Finance
+  Association (2021).
+
 * Regulatory Arbitrage and the Persistence of Financial Misconduct, 74 /Stan. L. Rev./ 737 (2022), with Colleen Honigsberg and Robert Jackson ([[https://papers.ssrn.com/abstract=3769653][SSRN]], [[https://review.law.stanford.edu/wp-content/uploads/sites/3/2022/04/Honigsberg-et-al.-74-Stan.-L.-Rev.-737.pdf][PDF]])
 - Cited in [[https://www.federalregister.gov/documents/2024/04/25/2024-08065/retirement-security-rule-definition-of-an-investment-advice-fiduciary][DOL Investment Advice Fiduciary Rule]]
 - Covered in [[https://www.thinkadvisor.com/2021/05/14/wandering-bad-brokers-pose-risks-for-clients-industry/][ThinkAdvisor]], [[https://www.marketwatch.com/story/the-first-step-of-searching-for-a-financial-adviser-trust-no-one-11621876941][MarketWatch]], [[https://www.financial-planning.com/news/misconduct-study-sheds-light-on-wandering-advisors][Financial Planning]], [[https://www.investmentnews.com/ex-sec-member-targets-rogue-brokers-turning-to-insurance-sales-206925][InvestmentNews]], [[https://www.nasdaq.com/articles/finra-targets-recidivist-brokers-but-its-reach-goes-only-so-far][Nasdaq News and Insights]]
