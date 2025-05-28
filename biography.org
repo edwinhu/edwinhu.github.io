@@ -1,19 +1,7 @@
-Edwin is a Postdoctoral Fellow at the NYU School of Law Institute for Corporate
-Governance & Finance where he writes in empirical law and finance. His current
-research is focused on financial advisors, institutional voting, and equity
-market structure. His scholarly and policy research has been published or is
-forthcoming in the /Journal of Financial Economics/, the /Journal of Financial
-Intermediation/, the /Stanford Law Review/ and featured prominently across major
-periodicals including /The Atlantic/, /Bloomberg/, /The Economist/, /The New York
-Times/, /The Washington Post/, and the front page of /The Wall Street Journal/.
+Edwin Hu is an associate professor at University of Virginia School of Law. His scholarship is focused on the empirical analysis of corporate and securities law and the structure of financial markets. Before joining UVA Law, Professor Hu was a senior economic policymaker, advising the White House’s National Economic Council and as Chief Economist to SEC Commissioner Robert J. Jackson, Jr.
 
-Previously, he was chief economist and counsel to [[https://www.sec.gov/biography/commissioner-robert-j-jackson][Commissioner Robert J. Jackson]]
-Jr. at the Securities and Exchange Commission on broker-dealer, exchange, and
-market structure issues. His original policy analysis on shareholder proposals,
-proxy voting, private placements, disclosure issues, investment advisers, and
-stock buybacks has been cited in every major media outlet, by members of
-Congress in the House and Senate, and by leading securities and corporate
-governance scholars. He holds two bachelor’s degrees (in economics and applied
-computational math) from the University of Washington, and a masters and Ph.D.
-in finance from Rice University, and a J.D. from NYU Law where he was a Furman
-Academic Scholar.
+Professor Hu’s research studies gaps in market structure and financial regulation. His work on the [[https://www.stanfordlawreview.org/print/article/regulatory-arbitrage-and-the-persistence-of-financial-misconduct/][regulation of financial advice]] shows how advisors who pose the most risk to investors seek out lax legal regimes to avoid accountability. Professor Hu’s study of institutional investors’ voting behavior identified how some funds seek [[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4410143][share lending revenue]] rather than vote in contested corporate matters. And his examination of stock-exchange activity during the COVID-19 pandemic raised questions about the effects of [[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3600230][outdated market structure]] on today’s investors.
+
+Professor Hu’s research has helped produce significant policy reforms, including the SEC’s recent institutional [[https://www.sec.gov/news/speech/lee-every-vote-counts][voting transparency initiative]] and its proposal to increase competition for retail stock orders. His current policy initiatives include a [[https://www.sec.gov/news/press-release/2022-225][joint effort]] he co-Chaired with faculty from the Wharton School to facilitate accountability in initial public offerings in the wake of recent Supreme Court rulings on that subject. Professor Hu’s work has been published in leading academic journals, such as the Journal of Financial Economics and the Stanford Law Review, and featured prominently across major periodicals including The Atlantic, Bloomberg, The Economist, The New York Times, The Washington Post, and the front page of The Wall Street Journal.
+
+He holds two undergraduate degrees, in economics and applied computational mathematics, from the University of Washington, a masters and Ph.D. in finance from Rice University, and a J.D. from New York University School of Law, where he was a Furman Academic Scholar and a Fellow at the Institute for Corporate Governance & Finance.

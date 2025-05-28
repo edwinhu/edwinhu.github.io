@@ -23,7 +23,7 @@ Associate Professor of Law\\
 :PROPERTIES:
 :CUSTOM_ID: interests
 :END:
-#+INCLUDE: bio_uva.org
+#+INCLUDE: biography.org
 
 * Research
 :PROPERTIES:
