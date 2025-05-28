@@ -5,102 +5,40 @@
 
 * Some command line tools worth learning
 
-** [[https://www.anaconda.com/products/individual][~anaconda~]]
+** [[https://prefix.dev/docs/pixi/][~pixi~]]
 
-Specifically +~miniconda~+ ~micromamba~ or ~mamba~ ~miniforge~.
+I recommend [[https://prefix.dev/docs/pixi/][~pixi~]], a modern, fast environment and package manager for the Python ecosystem, in the place of ~anaconda~ and ~conda~. ~pixi~ is cross-platform, supports both Python and R, resolves environments quickly, and uses the familiar ~conda-forge~ ecosystem for package sourcing. It also manages all dependencies—including binaries and libraries—making installation and environment reproduction seamless.
 
-Python is one of the most flexible tools for data analysis, but as a general
-purpose programming language it does not come with all of the tools installed by
-default. As such you will likely need to install some packages like ~pandas~,
-~numpy~, or even ~jupyter notebook~. ~anaconda~ is one of many metapackages containing
-almost everything you will need to use. Plus it comes with a great package
-manager ~conda~, which automatically solves dependencies/requirements for you, and
-allows you to create your own environments. However, I do not recommend using
-the default ~conda~ installer as it has become very slow, so instead I recommend a
-third-party installer like ~mamba~ which is much faster.
+Older tools like ~anaconda~ and ~conda~ are still widely used, but ~pixi~ has a much smoother workflow and improved speed. Instead of heavy base installs (~anaconda~), you define lightweight, reproducible environments in a ~pixi.toml~ file. This ensures all your dependencies are explicit and portable.
 
-The default ~anaconda~ installation can be several gigabytes, and over time I've
-found that I never use some packages. That's where ~miniconda~ or ~miniforge~ comes
-in. It's a much lighter-weight version of ~anaconda~ with the basic tools to allow
-you to install only what you need. Or if you prefer even more minimalism, you
-can install ~micromamba~ which is a self-contained package manager that does not
-require any python environment of its own. If you don't know what you will need,
-go ahead and install ~anaconda~.
+A minimal example for a Python data analysis environment:
 
-If you are using ~miniconda~, for starters I would recommend at least the
-following:
-#+BEGIN_SRC src
-mamba install jupyter pandas numpy scipy scikit-learn --yes
+#+BEGIN_SRC toml
+[project]
+name = "myenv"
+
+[dependencies]
+python = "3.11"
+jupyter = "*"
+pandas = "*"
+numpy = "*"
+scipy = "*"
+scikit-learn = "*"
 #+END_SRC
 
-*** [[https://conda-forge.org/][~conda-forge~]]
-
-Some packages may not be available in the default ~conda~ channel. Oftentimes
-these packages are available in the [[https://conda-forge.org/][~conda-forge~]] channel. ~conda-forge~ is a
-vast, community-led project. As such you can often find what you need, but be
-warned that sometimes the dependencies will conflict with your base ~anaconda~
-installation.
-
-It's always worth checking ~conda-forge~, as there are even non-python binaries
-available, such as ~htop~. You never know what you will find there.
-
-*** environments
-
-If you have different dependency requirements, due to conflicts with different
-packages, channels, or if you just want to `freeze` each of your individual
-project requirements individually then you will want to explore environments.
-
-Using ~conda~ you can easily create your own environments and specify the exact
-packages and version numbers you want:
+You can also run program without installing them:
 #+BEGIN_SRC sh
-conda create -n myenv python=3.6 scipy=0.15.0
+pixi run jupyter-console
 #+END_SRC
 
-To start/stop using an environment:
-#+BEGIN_SRC sh
-activate myenv
-deactivate myenv
-#+END_SRC
+Another neat trick is that you can use ~pixi-pack~ to build an environment on one machine and deploy it to another machine. That means no need for more complicated tools like ~docker~.
 
-If you are going to use environments, I highly recommend creating a basic ~.yml~
-configuration file to keep track of what packages you are using in case you need
-to move to a different computer. If you need to change a package, just update
-the ~.yml~ file. Creating one for each new project takes only a little bit of
-time, but speaking from experience, this can save you hours later on when trying
-to figure out why your old code is no longer running on a fresh ~anaconda~
-install. For example the above command for creating an environment could be
-represented as:
-#+BEGIN_SRC yaml
-name: myenv
-channels:
-  - conda-forge
-  - nodefaults
-dependencies:
-  - python=3.6.0
-  - scipy=0.15.0
-#+END_SRC
+*** [[https://github.com/astral-sh/uv][~uv~]]
 
-*** ~pip~
+Where you might have used ~pip~ for Python package management, I now recommend [[https://github.com/astral-sh/uv][~uv~]]. ~uv~ is a fast drop-in replacement for ~pip~. It performs lightning-fast installs, resolves dependencies robustly, and is compatible with both ~requirements.txt~ and ~pyproject.toml~ workflows.
 
-As ~anaconda~ has grown and gotten more complex, sometimes resolving
-dependencies can become a very difficult and time-consuming task. This is
-especially true if you are working off of a highly customized ~anaconda~
-installation--which tends to happen if you have an old install that you keep
-adding to.
+Like ~pixi~, ~uv~ works by adding packages to your virtual environment, and can also run a tool without installing using ~uvx~.
 
-In times like this it is useful to fall back on the default python package
-manager ~pip~. ~pip~ does some dependency-management, and by default reads from
-[[https://pypi.org][PyPI]], the main Python Package Index, but can be tweaked to install from GitHub,
-or from local files.
-
-If you find yourself frustrated by ~conda~ don't forget, there is always ~pip~!
-
-Fortunately, it is also very easy to add ~pip~ packages to your environment ~.yml~ files:
-#+begin_src yml
-dependencies:
-  - pip:
-    - scipy=0.15.0
-#+end_src
 
 *** ~conda~ for ~R~
 
@@ -123,10 +61,10 @@ conda install r-base r-essentials r-irkernel r-tidyverse r-data.table
 If, like me, you find yourself constantly playing with different ~R~ packages
 then you may actually want to rely on ~R~'s built-in ~install.packages()~, or
 the ~devtools::install_github~ included in ~tidyverse~. This may seem
-counterintuitive, as I have (hopefully) just convinced you that ~conda~ is the
+counterintuitive, as I have (hopefully) just convinced you that ~pixi~ is the
 best tool for package management in every context--but just as you may want to
 fall back on ~pip~ for python, you may find it easier to just use the default
-package manager in ~R~ /after/ you do your initial ~conda install~.
+package manager in ~R~ /after/ you do your initial ~pixi install~.
 
 
 ** [[https://curl.haxx.se/][~curl~]]
@@ -166,22 +104,15 @@ It is extremely useful for browsing the structure of your XML files (~xmlstarlet
 el~), and subsequently extract the relevant information (~xmlstarlet sel~). It
 is written in ~C~ so it is very fast.
 
-** [[https://github.com/BurntSushi/xsv][~xsv~]]
+** [[https://github.com/amethysts/xan][~xan~]]
 
 Oftentimes you need to look through a csv file through the command line, and
-maybe you even want to do some basic analysis. Enter ~xsv~, which is written in
-Rust and is extremely fast and capable. ~xsv~ can quickly filter, join, pretty
+maybe you even want to do some basic analysis. Enter ~xan~, which is written in
+Rust and is extremely fast and capable. ~xan~ can quickly filter, join, pretty
 print, etc. a csv, which makes it an invaluable tool.
 
 I used to recommend ~csvkit~ which is written in python, but the performance of
-~xsv~ has convinced me to switch for good.
-
-** [[http://dtach.sourceforge.net/][~dtach~]]
-
-~dtach~ is like a much lighter-weight version of ~screen~ or ~tmux~. As such, it
-is very easy to use and is also a lot less finicky.
-
-Note: you will have to build ~dtach~ from source yourself.
+~xan~ has convinced me to switch for good.
 
 ** [[https://rclone.org/][~Rclone~]]
 
@@ -247,6 +178,7 @@ Just remember you ~bash~ quoting rules and you will be fine!
 - [[https://github.com/ogham/exa][~exa~]] which is like a more advanced ~ls~.
 - [[https://github.com/aristocratos/btop][~btop~]] which is a prettier ~htop~.
 - [[https://github.com/BurntSushi/ripgrep][~ripgrep~]] which is a very fast ~grep~ search from the developer of ~xsv~.
+- [[https://github.com/sxyazi/yazi][~yazi~]] which is a fast file manager.
 - [[https://github.com/ajeetdsouza/zoxide][~zoxide~]] which is a more advanced ~cd~.
 
 * Some python libraries worth learning
