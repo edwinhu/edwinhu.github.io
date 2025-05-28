@@ -2,6 +2,7 @@
 with Jonathon Zytnick and Nadya Malenko
 - Covered in [[https://corpgov.law.harvard.edu/2024/05/23/custom-proxy-voting-advice/][Harvard Law School Forum on Corporate Governance]].
 - Presented at American Law and Economics Association (2023) Junior Scholars Featured Papers Panel, NYU Law Institute for Corporate Governance Spring Roundtable (2023*), Clemson ESG Conference (2024*), UT Austin Business Law & Economics Workshop (2024), Northern Finance Association (2024) *Best Paper Award in Corporate Finance*, PRI Academic Network Conference (2024*), CELS (2024), AFA (2025*), Tulane Corporate and Securities Roundtable (2025).
+- Previously circulated under the title [[./papers/20230301 HMZ IID.pdf][Institutional Investor Deliberation]].
 
 * Regulatory Leakage Among Financial Advisors: Evidence From FINRA Regulation of "Bad" Brokers
 with Colleen Honigsberg and Robert J. Jackson, Jr. ([[https://papers.ssrn.com/abstract=4410143][SSRN]])

@@ -1,246 +1,259 @@
-<!doctype html>
-<html lang="en">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<!-- 2025-05-27 Tue 21:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Software</title>
-<!-- 2024-11-12 Tue 01:14 -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Org-mode">
-<meta name="author" content="Edwin Hu">
-
-<link  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<style>
-/* org mode styles on top of twbs */
-
-html {
+<meta name="author" content="Edwin Hu" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
     position: relative;
-    min-height: 100%;
-}
-
-body {
-    font-size: 18px;
-    margin-bottom: 105px;
-}
-
-footer {
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 101px;
-    background-color: #f5f5f5;
-}
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
-footer > div {
-    padding: 10px;
-}
-
-footer p {
-    margin: 0 0 5px;
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
     text-align: center;
-    font-size: 16px;
-}
-
-#table-of-contents {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-blockquote p {
-    font-size: 18px;
-}
-
-pre {
-    font-size: 16px;
-}
-
-.footpara {
-    display: inline-block;
-}
-
-figcaption {
-  font-size: 16px;
-  color: #666;
-  font-style: italic;
-  padding-bottom: 15px;
-}
-
-/* from twbs docs */
-
-.bs-docs-sidebar.affix {
-    position: static;
-}
-@media (min-width: 768px) {
-    .bs-docs-sidebar {
-        padding-left: 20px;
-    }
-}
-
-/* All levels of nav */
-.bs-docs-sidebar .nav > li > a {
-    display: block;
-    padding: 4px 20px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #999;
-}
-.bs-docs-sidebar .nav > li > a:hover,
-.bs-docs-sidebar .nav > li > a:focus {
-    padding-left: 19px;
-    color: #A1283B;
-    text-decoration: none;
-    background-color: transparent;
-    border-left: 1px solid #A1283B;
-}
-.bs-docs-sidebar .nav > .active > a,
-.bs-docs-sidebar .nav > .active:hover > a,
-.bs-docs-sidebar .nav > .active:focus > a {
-    padding-left: 18px;
-    font-weight: bold;
-    color: #A1283B;
-    background-color: transparent;
-    border-left: 2px solid #A1283B;
-}
-
-/* Nav: second level (shown on .active) */
-.bs-docs-sidebar .nav .nav {
-    display: none; /* Hide by default, but at >768px, show it */
-    padding-bottom: 10px;
-}
-.bs-docs-sidebar .nav .nav > li > a {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 30px;
-    font-size: 12px;
-    font-weight: normal;
-}
-.bs-docs-sidebar .nav .nav > li > a:hover,
-.bs-docs-sidebar .nav .nav > li > a:focus {
-    padding-left: 29px;
-}
-.bs-docs-sidebar .nav .nav > .active > a,
-.bs-docs-sidebar .nav .nav > .active:hover > a,
-.bs-docs-sidebar .nav .nav > .active:focus > a {
-    padding-left: 28px;
-    font-weight: 500;
-}
-
-/* Nav: third level (shown on .active) */
-.bs-docs-sidebar .nav .nav .nav {
-    padding-bottom: 10px;
-}
-.bs-docs-sidebar .nav .nav .nav > li > a {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 40px;
-    font-size: 12px;
-    font-weight: normal;
-}
-.bs-docs-sidebar .nav .nav .nav > li > a:hover,
-.bs-docs-sidebar .nav .nav .nav > li > a:focus {
-    padding-left: 39px;
-}
-.bs-docs-sidebar .nav .nav .nav > .active > a,
-.bs-docs-sidebar .nav .nav .nav > .active:hover > a,
-.bs-docs-sidebar .nav .nav .nav > .active:focus > a {
-    padding-left: 38px;
-    font-weight: 500;
-}
-
-/* Show and affix the side nav when space allows it */
-@media (min-width: 992px) {
-    .bs-docs-sidebar .nav > .active > ul {
-        display: block;
-    }
-    /* Widen the fixed sidebar */
-    .bs-docs-sidebar.affix,
-    .bs-docs-sidebar.affix-bottom {
-        width: 213px;
-    }
-    .bs-docs-sidebar.affix {
-        position: fixed; /* Undo the static from mobile first approach */
-        top: 20px;
-    }
-    .bs-docs-sidebar.affix-bottom {
-        position: absolute; /* Undo the static from mobile first approach */
-    }
-    .bs-docs-sidebar.affix .bs-docs-sidenav,.bs-docs-sidebar.affix-bottom .bs-docs-sidenav {
-        margin-top: 0;
-        margin-bottom: 0
-    }
-}
-@media (min-width: 1200px) {
-    /* Widen the fixed sidebar again */
-    .bs-docs-sidebar.affix-bottom,
-    .bs-docs-sidebar.affix {
-        width: 263px;
-    }
-}
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
 </style>
-<script>
-$(function() {
-    'use strict';
-
-    $('.bs-docs-sidebar li').first().addClass('active');
-
-    $(document.body).scrollspy({target: '.bs-docs-sidebar'});
-
-    $('.bs-docs-sidebar').affix();
-});
-</script>
+<link rel="stylesheet" href="https://latex.vercel.app/style.css">
 </head>
 <body>
-<div id="content" class="container">
-<div class="row"><div class="col-md-3 col-md-push-9"><nav id="table-of-contents">
-<div id="text-table-of-contents" class="bs-docs-sidebar">
-<ul class="nav">
-<li><a href="#sec-1">1. Some command line tools worth learning</a>
-<ul class="nav">
-<li><a href="#sec-1-1">1.1. <code>anaconda</code></a></li>
-<li><a href="#sec-1-2">1.2. <code>curl</code></a></li>
-<li><a href="#sec-1-3">1.3. <code>jq</code></a></li>
-<li><a href="#sec-1-4">1.4. <code>xmlstarlet</code></a></li>
-<li><a href="#sec-1-5">1.5. <code>xsv</code></a></li>
-<li><a href="#sec-1-6">1.6. <code>dtach</code></a></li>
-<li><a href="#sec-1-7">1.7. <code>Rclone</code></a></li>
-<li><a href="#sec-1-8">1.8. <code>GNU parallel</code></a></li>
-<li><a href="#sec-1-9">1.9. Other great CLI tools</a></li>
+<div id="content" class="content">
+<h1 class="title">Software</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org63e7b64">1. Some command line tools worth learning</a>
+<ul>
+<li><a href="#org8fe60af">1.1. <code>anaconda</code></a>
+<ul>
+<li><a href="#orgc252ed2">1.1.1. <code>conda-forge</code></a></li>
+<li><a href="#org9ec0725">1.1.2. environments</a></li>
+<li><a href="#org539aec1">1.1.3. <code>pip</code></a></li>
+<li><a href="#orgb984d08">1.1.4. <code>conda</code> for <code>R</code></a></li>
 </ul>
 </li>
-<li><a href="#sec-2">2. Some python libraries worth learning</a>
-<ul class="nav">
-<li><a href="#sec-2-1">2.1. <code>requests</code></a></li>
-<li><a href="#sec-2-2">2.2. <code>asyncio</code></a></li>
-<li><a href="#sec-2-3">2.3. <code>pandas</code></a></li>
-<li><a href="#sec-2-4">2.4. <code>ujson</code></a></li>
-<li><a href="#sec-2-5">2.5. <code>benedict</code></a></li>
-<li><a href="#sec-2-6">2.6. <code>numba</code></a></li>
+<li><a href="#org4f5a079">1.2. <code>curl</code></a></li>
+<li><a href="#org35ed4d3">1.3. <code>jq</code></a></li>
+<li><a href="#orgea4eceb">1.4. <code>xmlstarlet</code></a></li>
+<li><a href="#orgaa8e91f">1.5. <code>xsv</code></a></li>
+<li><a href="#org6113fd4">1.6. <code>dtach</code></a></li>
+<li><a href="#orga0ae843">1.7. <code>Rclone</code></a></li>
+<li><a href="#org929d470">1.8. <code>GNU parallel</code></a></li>
+<li><a href="#orgd2dee19">1.9. Other great CLI tools</a></li>
 </ul>
 </li>
-<li><a href="#sec-3">3. Some <code>R</code> libraries worth learning</a>
-<ul class="nav">
-<li><a href="#sec-3-1">3.1. <code>tidyverse</code></a></li>
-<li><a href="#sec-3-2">3.2. <code>data.table</code></a></li>
-<li><a href="#sec-3-3">3.3. <code>felm</code> and <code>alpaca</code></a></li>
+<li><a href="#org2fb7f7e">2. Some python libraries worth learning</a>
+<ul>
+<li><a href="#org234761b">2.1. <code>requests</code></a></li>
+<li><a href="#org863fdbc">2.2. <code>asyncio</code></a></li>
+<li><a href="#orgfcc1de8">2.3. <code>pandas</code></a></li>
+<li><a href="#orgd03efa2">2.4. <code>ujson</code></a></li>
+<li><a href="#orgce9ddf4">2.5. <code>benedict</code></a></li>
+<li><a href="#org055cbf8">2.6. <code>numba</code></a></li>
 </ul>
 </li>
-<li><a href="#sec-4">4. Other Useful Software</a>
-<ul class="nav">
-<li><a href="#sec-4-1">4.1. <code>DuckDB</code></a></li>
-<li><a href="#sec-4-2">4.2. <code>ScrapingBee</code></a></li>
+<li><a href="#orgf2a8f22">3. Some <code>R</code> libraries worth learning</a>
+<ul>
+<li><a href="#org0d12434">3.1. <code>tidyverse</code></a></li>
+<li><a href="#org5b7554f">3.2. <code>data.table</code></a></li>
+<li><a href="#orgbdba871">3.3. <code>felm</code> and <code>alpaca</code></a></li>
+</ul>
+</li>
+<li><a href="#orga410b57">4. Other Useful Software</a>
+<ul>
+<li><a href="#org0b0232e">4.1. <code>DuckDB</code></a></li>
+<li><a href="#org6e7cc7e">4.2. <code>ScrapingBee</code></a></li>
 </ul>
 </li>
 </ul>
 </div>
-</nav>
-</div><div class="col-md-9 col-md-pull-3"><h1 class="title">Software</h1>
-
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Some command line tools worth learning</h2>
+</div>
+<div id="outline-container-org63e7b64" class="outline-2">
+<h2 id="org63e7b64"><span class="section-number-2">1.</span> Some command line tools worth learning</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> <a href="https://www.anaconda.com/products/individual"><code>anaconda</code></a></h3>
+</div>
+<div id="outline-container-org8fe60af" class="outline-3">
+<h3 id="org8fe60af"><span class="section-number-3">1.1.</span> <a href="https://www.anaconda.com/products/individual"><code>anaconda</code></a></h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 Specifically <del><code>miniconda</code></del> <code>micromamba</code> or <code>mamba</code> <code>miniforge</code>.
@@ -273,14 +286,12 @@ If you are using <code>miniconda</code>, for starters I would recommend at least
 following:
 </p>
 <div class="org-src-container">
-
 <pre class="src src-src">mamba install jupyter pandas numpy scipy scikit-learn --yes
 </pre>
 </div>
 </div>
-
-<div id="outline-container-sec-1-1-1" class="outline-4">
-<h4 id="sec-1-1-1"><span class="section-number-4">1.1.1</span> <a href="https://conda-forge.org/"><code>conda-forge</code></a></h4>
+<div id="outline-container-orgc252ed2" class="outline-4">
+<h4 id="orgc252ed2"><span class="section-number-4">1.1.1.</span> <a href="https://conda-forge.org/"><code>conda-forge</code></a></h4>
 <div class="outline-text-4" id="text-1-1-1">
 <p>
 Some packages may not be available in the default <code>conda</code> channel. Oftentimes
@@ -296,9 +307,8 @@ available, such as <code>htop</code>. You never know what you will find there.
 </p>
 </div>
 </div>
-
-<div id="outline-container-sec-1-1-2" class="outline-4">
-<h4 id="sec-1-1-2"><span class="section-number-4">1.1.2</span> environments</h4>
+<div id="outline-container-org9ec0725" class="outline-4">
+<h4 id="org9ec0725"><span class="section-number-4">1.1.2.</span> environments</h4>
 <div class="outline-text-4" id="text-1-1-2">
 <p>
 If you have different dependency requirements, due to conflicts with different
@@ -311,7 +321,6 @@ Using <code>conda</code> you can easily create your own environments and specify
 packages and version numbers you want:
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">conda create -n myenv <span style="color: #ff98a4;">python</span>=<span style="color: #ff995e; font-weight: bold;">3.6</span> <span style="color: #ff98a4;">scipy</span>=0.15.0
 </pre>
 </div>
@@ -320,7 +329,6 @@ packages and version numbers you want:
 To start/stop using an environment:
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">activate myenv
 deactivate myenv
 </pre>
@@ -337,7 +345,6 @@ install. For example the above command for creating an environment could be
 represented as:
 </p>
 <div class="org-src-container">
-
 <pre class="src src-yaml">name: myenv
 channels:
   - conda-forge
@@ -349,9 +356,8 @@ dependencies:
 </div>
 </div>
 </div>
-
-<div id="outline-container-sec-1-1-3" class="outline-4">
-<h4 id="sec-1-1-3"><span class="section-number-4">1.1.3</span> <code>pip</code></h4>
+<div id="outline-container-org539aec1" class="outline-4">
+<h4 id="org539aec1"><span class="section-number-4">1.1.3.</span> <code>pip</code></h4>
 <div class="outline-text-4" id="text-1-1-3">
 <p>
 As <code>anaconda</code> has grown and gotten more complex, sometimes resolving
@@ -376,7 +382,6 @@ If you find yourself frustrated by <code>conda</code> don&rsquo;t forget, there 
 Fortunately, it is also very easy to add <code>pip</code> packages to your environment <code>.yml</code> files:
 </p>
 <div class="org-src-container">
-
 <pre class="src src-yml">dependencies:
   - pip:
     - scipy=0.15.0
@@ -384,9 +389,8 @@ Fortunately, it is also very easy to add <code>pip</code> packages to your envir
 </div>
 </div>
 </div>
-
-<div id="outline-container-sec-1-1-4" class="outline-4">
-<h4 id="sec-1-1-4"><span class="section-number-4">1.1.4</span> <code>conda</code> for <code>R</code></h4>
+<div id="outline-container-orgb984d08" class="outline-4">
+<h4 id="orgb984d08"><span class="section-number-4">1.1.4.</span> <code>conda</code> for <code>R</code></h4>
 <div class="outline-text-4" id="text-1-1-4">
 <p>
 Yes I know, this is blasphemy. However, sometimes just getting a basic <code>R</code>
@@ -405,7 +409,6 @@ Much like <code>anaconda</code> for python, I recommend that new <code>R</code> 
 <code>tidyverse</code>, and <code>data.table</code> for getting started with data analysis:
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">conda install r-base r-essentials r-irkernel r-tidyverse r-data.table
 </pre>
 </div>
@@ -422,10 +425,8 @@ package manager in <code>R</code> <i>after</i> you do your initial <code>conda i
 </div>
 </div>
 </div>
-
-
-<div id="outline-container-sec-1-2" class="outline-3">
-<h3 id="sec-1-2"><span class="section-number-3">1.2</span> <a href="https://curl.haxx.se/"><code>curl</code></a></h3>
+<div id="outline-container-org4f5a079" class="outline-3">
+<h3 id="org4f5a079"><span class="section-number-3">1.2.</span> <a href="https://curl.haxx.se/"><code>curl</code></a></h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 These days much of the data you will want to analyze lives on the web. If you
@@ -437,7 +438,6 @@ If you want to work with these things you should probably learn <code>curl</code
 The basic usage of <code>curl</code> is simple, yet endlessly customizable:
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh"><span style="color: #ffc777;">curl</span> <span style="color: #c099ff;">[</span>options<span style="color: #c099ff;">]</span> <span style="color: #c099ff;">[</span>URL...<span style="color: #c099ff;">]</span>
 </pre>
 </div>
@@ -453,10 +453,8 @@ Bonus tip: <a href="https://anaconda.org/conda-forge/curl"><code>curl</code> is 
 </p>
 </div>
 </div>
-
-
-<div id="outline-container-sec-1-3" class="outline-3">
-<h3 id="sec-1-3"><span class="section-number-3">1.3</span> <a href="https://stedolan.github.io/jq/"><code>jq</code></a></h3>
+<div id="outline-container-org35ed4d3" class="outline-3">
+<h3 id="org35ed4d3"><span class="section-number-3">1.3.</span> <a href="https://stedolan.github.io/jq/"><code>jq</code></a></h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 <code>jq</code> is like <code>awk</code> but specifically for json files. It is fast, flexible, and
@@ -474,9 +472,8 @@ Bonus tip: <a href="https://anaconda.org/conda-forge/jq"><code>jq</code> is avai
 </p>
 </div>
 </div>
-
-<div id="outline-container-sec-1-4" class="outline-3">
-<h3 id="sec-1-4"><span class="section-number-3">1.4</span> <a href="http://xmlstar.sourceforge.net/overview.php"><code>xmlstarlet</code></a></h3>
+<div id="outline-container-orgea4eceb" class="outline-3">
+<h3 id="orgea4eceb"><span class="section-number-3">1.4.</span> <a href="http://xmlstar.sourceforge.net/overview.php"><code>xmlstarlet</code></a></h3>
 <div class="outline-text-3" id="text-1-4">
 <p>
 <code>xmlstarlet</code> is like <code>awk/sed/grep</code> for XML files.
@@ -489,9 +486,8 @@ is written in <code>C</code> so it is very fast.
 </p>
 </div>
 </div>
-
-<div id="outline-container-sec-1-5" class="outline-3">
-<h3 id="sec-1-5"><span class="section-number-3">1.5</span> <a href="https://github.com/BurntSushi/xsv"><code>xsv</code></a></h3>
+<div id="outline-container-orgaa8e91f" class="outline-3">
+<h3 id="orgaa8e91f"><span class="section-number-3">1.5.</span> <a href="https://github.com/BurntSushi/xsv"><code>xsv</code></a></h3>
 <div class="outline-text-3" id="text-1-5">
 <p>
 Oftentimes you need to look through a csv file through the command line, and
@@ -506,9 +502,8 @@ I used to recommend <code>csvkit</code> which is written in python, but the perf
 </p>
 </div>
 </div>
-
-<div id="outline-container-sec-1-6" class="outline-3">
-<h3 id="sec-1-6"><span class="section-number-3">1.6</span> <a href="http://dtach.sourceforge.net/"><code>dtach</code></a></h3>
+<div id="outline-container-org6113fd4" class="outline-3">
+<h3 id="org6113fd4"><span class="section-number-3">1.6.</span> <a href="http://dtach.sourceforge.net/"><code>dtach</code></a></h3>
 <div class="outline-text-3" id="text-1-6">
 <p>
 <code>dtach</code> is like a much lighter-weight version of <code>screen</code> or <code>tmux</code>. As such, it
@@ -520,9 +515,8 @@ Note: you will have to build <code>dtach</code> from source yourself.
 </p>
 </div>
 </div>
-
-<div id="outline-container-sec-1-7" class="outline-3">
-<h3 id="sec-1-7"><span class="section-number-3">1.7</span> <a href="https://rclone.org/"><code>Rclone</code></a></h3>
+<div id="outline-container-orga0ae843" class="outline-3">
+<h3 id="orga0ae843"><span class="section-number-3">1.7.</span> <a href="https://rclone.org/"><code>Rclone</code></a></h3>
 <div class="outline-text-3" id="text-1-7">
 <p>
 Rclone is a command-line tool for accessing data located in cloud storage, including common enterprise tools like Box, Dropbox, or Google Drive.
@@ -537,9 +531,8 @@ It also happens to be installed by default on WRDS (/usr/bin/rclone).
 </p>
 </div>
 </div>
-
-<div id="outline-container-sec-1-8" class="outline-3">
-<h3 id="sec-1-8"><span class="section-number-3">1.8</span> <a href="https://www.gnu.org/software/parallel/"><code>GNU parallel</code></a></h3>
+<div id="outline-container-org929d470" class="outline-3">
+<h3 id="org929d470"><span class="section-number-3">1.8.</span> <a href="https://www.gnu.org/software/parallel/"><code>GNU parallel</code></a></h3>
 <div class="outline-text-3" id="text-1-8">
 <p>
 <code>GNU parallel</code> is a great command line utility written in Perl which allows for
@@ -558,7 +551,6 @@ Suppose you have a script <code>SOMETHING</code> which you want to run over a li
 files in your current directory:
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh"><span style="color: #c099ff;">for</span> i<span style="color: #c099ff;"> in</span> $<span style="color: #c099ff;">(</span><span style="color: #ffc777;">find</span> *.csv<span style="color: #c099ff;">)</span>; <span style="color: #c099ff;">do</span>
     ./SOMETHING $<span style="color: #ff98a4;">i</span>
 <span style="color: #c099ff;">done</span>
@@ -569,7 +561,6 @@ files in your current directory:
 One way to easily parallelize this in <code>bash</code> is to add <code>&amp;</code>:
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh"><span style="color: #c099ff;">for</span> i<span style="color: #c099ff;"> in</span> $<span style="color: #c099ff;">(</span><span style="color: #ffc777;">find</span> *.csv<span style="color: #c099ff;">)</span>; <span style="color: #c099ff;">do</span>
     ./SOMETHING $<span style="color: #ff98a4;">i</span> &amp;
 <span style="color: #c099ff;">done</span>
@@ -580,7 +571,6 @@ One way to easily parallelize this in <code>bash</code> is to add <code>&amp;</c
 You could also accomplish the same task with a pipe:
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh"><span style="color: #ffc777;">find</span> *.csv | ./SOMETHING
 </pre>
 </div>
@@ -588,7 +578,6 @@ You could also accomplish the same task with a pipe:
 or if the number of <code>csv</code> files is large you can use <code>xargs</code>:
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh"><span style="color: #ffc777;">find</span> *.csv | xargs ./SOMETHING
 </pre>
 </div>
@@ -598,7 +587,6 @@ If you want more fine tuned control, such as over the number of concurrent jobs,
 then that is where <code>parallel</code> comes in:
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh"><span style="color: #ffc777;">find</span> *.csv | parallel -j8 ./SOMETHING
 </pre>
 </div>
@@ -610,7 +598,6 @@ delimited file that you want to pass as arugments to your script and output to a
 single file:
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh"><span style="color: #ffc777;">cat</span> INPUT.csv | parallel --colsep <span style="color: #c3e88d;">'\|'</span> <span style="color: #c3e88d;">"./SOMETHING {1} {2}"</span> &gt; OUTPUT.csv
 </pre>
 </div>
@@ -620,31 +607,25 @@ Just remember you <code>bash</code> quoting rules and you will be fine!
 </p>
 </div>
 </div>
-
-<div id="outline-container-sec-1-9" class="outline-3">
-<h3 id="sec-1-9"><span class="section-number-3">1.9</span> Other great CLI tools</h3>
+<div id="outline-container-orgd2dee19" class="outline-3">
+<h3 id="orgd2dee19"><span class="section-number-3">1.9.</span> Other great CLI tools</h3>
 <div class="outline-text-3" id="text-1-9">
 <ul class="org-ul">
-<li><a href="https://github.com/junegunn/fzf"><code>fzf</code></a> for fuzzy finding stuff.
-</li>
-<li><a href="https://github.com/ogham/exa"><code>exa</code></a> which is like a more advanced <code>ls</code>.
-</li>
-<li><a href="https://github.com/aristocratos/btop"><code>btop</code></a> which is a prettier <code>htop</code>.
-</li>
-<li><a href="https://github.com/BurntSushi/ripgrep"><code>ripgrep</code></a> which is a very fast <code>grep</code> search from the developer of <code>xsv</code>.
-</li>
-<li><a href="https://github.com/ajeetdsouza/zoxide"><code>zoxide</code></a> which is a more advanced <code>cd</code>.
-</li>
+<li><a href="https://github.com/junegunn/fzf"><code>fzf</code></a> for fuzzy finding stuff.</li>
+<li><a href="https://github.com/ogham/exa"><code>exa</code></a> which is like a more advanced <code>ls</code>.</li>
+<li><a href="https://github.com/aristocratos/btop"><code>btop</code></a> which is a prettier <code>htop</code>.</li>
+<li><a href="https://github.com/BurntSushi/ripgrep"><code>ripgrep</code></a> which is a very fast <code>grep</code> search from the developer of <code>xsv</code>.</li>
+<li><a href="https://github.com/ajeetdsouza/zoxide"><code>zoxide</code></a> which is a more advanced <code>cd</code>.</li>
 </ul>
 </div>
 </div>
 </div>
-
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> Some python libraries worth learning</h2>
+<div id="outline-container-org2fb7f7e" class="outline-2">
+<h2 id="org2fb7f7e"><span class="section-number-2">2.</span> Some python libraries worth learning</h2>
 <div class="outline-text-2" id="text-2">
-</div><div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> <a href="https://requests.readthedocs.io/en/master/"><code>requests</code></a></h3>
+</div>
+<div id="outline-container-org234761b" class="outline-3">
+<h3 id="org234761b"><span class="section-number-3">2.1.</span> <a href="https://requests.readthedocs.io/en/master/"><code>requests</code></a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 <code>requests</code> is a dead-simple HTTP library for python. Like <code>curl</code> it is an essential
@@ -668,9 +649,8 @@ convert into <code>requests</code> code!
 </p>
 </div>
 </div>
-
-<div id="outline-container-sec-2-2" class="outline-3">
-<h3 id="sec-2-2"><span class="section-number-3">2.2</span> <a href="https://docs.python.org/3/library/asyncio.html"><code>asyncio</code></a></h3>
+<div id="outline-container-org863fdbc" class="outline-3">
+<h3 id="org863fdbc"><span class="section-number-3">2.2.</span> <a href="https://docs.python.org/3/library/asyncio.html"><code>asyncio</code></a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 <code>asyncio</code> is part of the python standard library as of python 3.4. It is a library
@@ -687,9 +667,8 @@ filesystem asynchronously.
 </p>
 </div>
 </div>
-
-<div id="outline-container-sec-2-3" class="outline-3">
-<h3 id="sec-2-3"><span class="section-number-3">2.3</span> <a href="https://pandas.pydata.org/"><code>pandas</code></a></h3>
+<div id="outline-container-orgfcc1de8" class="outline-3">
+<h3 id="orgfcc1de8"><span class="section-number-3">2.3.</span> <a href="https://pandas.pydata.org/"><code>pandas</code></a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 You have data. You use python. If these conditions apply, then you should use
@@ -702,9 +681,8 @@ transformation.
 </p>
 </div>
 </div>
-
-<div id="outline-container-sec-2-4" class="outline-3">
-<h3 id="sec-2-4"><span class="section-number-3">2.4</span> <a href="https://github.com/ultrajson/ultrajson"><code>ujson</code></a></h3>
+<div id="outline-container-orgd03efa2" class="outline-3">
+<h3 id="orgd03efa2"><span class="section-number-3">2.4.</span> <a href="https://github.com/ultrajson/ultrajson"><code>ujson</code></a></h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 <code>ujson</code> stands for UltraJSON, which is an ultra fast JSON serializer written in C
@@ -714,9 +692,8 @@ and as such is slower.
 </p>
 </div>
 </div>
-
-<div id="outline-container-sec-2-5" class="outline-3">
-<h3 id="sec-2-5"><span class="section-number-3">2.5</span> <a href="https://github.com/fabiocaccamo/python-benedict"><code>benedict</code></a></h3>
+<div id="outline-container-orgce9ddf4" class="outline-3">
+<h3 id="orgce9ddf4"><span class="section-number-3">2.5.</span> <a href="https://github.com/fabiocaccamo/python-benedict"><code>benedict</code></a></h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
 <code>benedict</code> is a python dictionary subclass that makes navigating dictionaries in
@@ -728,9 +705,8 @@ irregular JSON data.
 </p>
 </div>
 </div>
-
-<div id="outline-container-sec-2-6" class="outline-3">
-<h3 id="sec-2-6"><span class="section-number-3">2.6</span> <a href="http://numba.pydata.org/"><code>numba</code></a></h3>
+<div id="outline-container-org055cbf8" class="outline-3">
+<h3 id="org055cbf8"><span class="section-number-3">2.6.</span> <a href="http://numba.pydata.org/"><code>numba</code></a></h3>
 <div class="outline-text-3" id="text-2-6">
 <p>
 At first glance, <code>numba</code> seems like an odd choice for python users. The appeal of
@@ -751,13 +727,12 @@ significantly faster than <code>numpy</code> counterparts if used correctly.
 </div>
 </div>
 </div>
-
-
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> Some <code>R</code> libraries worth learning</h2>
+<div id="outline-container-orgf2a8f22" class="outline-2">
+<h2 id="orgf2a8f22"><span class="section-number-2">3.</span> Some <code>R</code> libraries worth learning</h2>
 <div class="outline-text-2" id="text-3">
-</div><div id="outline-container-sec-3-1" class="outline-3">
-<h3 id="sec-3-1"><span class="section-number-3">3.1</span> <a href="https://www.tidyverse.org/"><code>tidyverse</code></a></h3>
+</div>
+<div id="outline-container-org0d12434" class="outline-3">
+<h3 id="org0d12434"><span class="section-number-3">3.1.</span> <a href="https://www.tidyverse.org/"><code>tidyverse</code></a></h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 <code>tidyverse</code> is a metapackage of data analysis tools for <code>R</code>. In many ways it is
@@ -775,13 +750,11 @@ with it and use <code>haven</code>.
 </p>
 </div>
 </div>
-
-
-<div id="outline-container-sec-3-2" class="outline-3">
-<h3 id="sec-3-2"><span class="section-number-3">3.2</span> <a href="https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html"><code>data.table</code></a></h3>
+<div id="outline-container-org5b7554f" class="outline-3">
+<h3 id="org5b7554f"><span class="section-number-3">3.2.</span> <a href="https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html"><code>data.table</code></a></h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
-<code>data.table</code> is <a href="https://github.com/Rdatatable/data.table/wiki/Benchmarks-:-Grouping">very fast</a>, and has an intuitive syntax. It is certainly
+<code>data.table</code> is <a href="https://github.com/Rdatatable/data.table/wiki/Benchmarks-%3A-Grouping">very fast</a>, and has an intuitive syntax. It is certainly
 different from <code>tidyverse::dplyr</code>, but for those familiar with <code>pandas</code>,
 PyTable, or <code>sql</code> it may be more intuitive.
 </p>
@@ -791,10 +764,8 @@ Bonus tip: DataCamp has a great <a href="https://s3.amazonaws.com/assets.datacam
 </p>
 </div>
 </div>
-
-
-<div id="outline-container-sec-3-3" class="outline-3">
-<h3 id="sec-3-3"><span class="section-number-3">3.3</span> <a href="https://www.rdocumentation.org/packages/lfe/versions/2.8-6/topics/felm"><code>felm</code></a> and <a href="https://github.com/amrei-stammann/alpaca"><code>alpaca</code></a></h3>
+<div id="outline-container-orgbdba871" class="outline-3">
+<h3 id="orgbdba871"><span class="section-number-3">3.3.</span> <a href="https://www.rdocumentation.org/packages/lfe/versions/2.8-6/topics/felm"><code>felm</code></a> and <a href="https://github.com/amrei-stammann/alpaca"><code>alpaca</code></a></h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 <code>felm</code> and <code>alpaca</code> are R packages for linear/logistic regressions with high
@@ -804,12 +775,12 @@ CRAN, and are fairly well documented.
 </div>
 </div>
 </div>
-
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> Other Useful Software</h2>
+<div id="outline-container-orga410b57" class="outline-2">
+<h2 id="orga410b57"><span class="section-number-2">4.</span> Other Useful Software</h2>
 <div class="outline-text-2" id="text-4">
-</div><div id="outline-container-sec-4-1" class="outline-3">
-<h3 id="sec-4-1"><span class="section-number-3">4.1</span> <a href="https://duckdb.org/"><code>DuckDB</code></a></h3>
+</div>
+<div id="outline-container-org0b0232e" class="outline-3">
+<h3 id="org0b0232e"><span class="section-number-3">4.1.</span> <a href="https://duckdb.org/"><code>DuckDB</code></a></h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 <code>DuckDB</code> is a SQL-style database with very convenient syntax for data analysis. It
@@ -832,9 +803,8 @@ like csv, json, and parquet.
 </p>
 </div>
 </div>
-
-<div id="outline-container-sec-4-2" class="outline-3">
-<h3 id="sec-4-2"><span class="section-number-3">4.2</span> <a href="https://www.scrapingbee.com/"><code>ScrapingBee</code></a></h3>
+<div id="outline-container-org6e7cc7e" class="outline-3">
+<h3 id="org6e7cc7e"><span class="section-number-3">4.2.</span> <a href="https://www.scrapingbee.com/"><code>ScrapingBee</code></a></h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 Sometimes the only way to get data is through traditional web scraping. Scraping
@@ -868,12 +838,10 @@ url you want to scrape as another parameter.
 </div>
 </div>
 </div>
-</div></div></div>
-<footer id="postamble" class="">
-<div><p class="author">Author: Edwin Hu</p>
-<p class="date">Created: 2024-11-12 Tue 01:14</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="http://orgmode.org">Org-mode</a> 9.5)</p>
 </div>
-</footer>
+<div id="postamble" class="status">
+<p class="author">Author: Edwin Hu</p>
+<p class="date">Created: 2025-05-27 Tue 21:56</p>
+</div>
 </body>
 </html>

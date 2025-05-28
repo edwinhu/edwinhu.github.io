@@ -1,6 +1,7 @@
 #+TITLE: Software
 #+AUTHOR: Edwin Hu
 #+OPTIONS: ':t
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" href="https://latex.vercel.app/style.css">
 
 * Some command line tools worth learning
 
