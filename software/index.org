@@ -3,6 +3,8 @@
 #+OPTIONS: ':t
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" href="https://latex.vercel.app/style.css">
 
+For a complete list of tools I use, you can browse my [[https://github.com/edwinhu/nix][nix configuration]]. Warning: Nix has a steep learning curve, but the repository may give you ideas for other useful tools not mentioned here.
+
 * Some command line tools worth learning
 
 ** [[https://prefix.dev/docs/pixi/][~pixi~]]
@@ -174,12 +176,27 @@ Just remember you ~bash~ quoting rules and you will be fine!
 
 **  Other great CLI tools
 
+- [[https://github.com/sharkdp/bat][~bat~]] which is like ~cat~ with syntax highlighting, making it perfect for quickly viewing code and data files.
+- [[https://github.com/sharkdp/fd][~fd~]] which is a simple, fast alternative to ~find~ with intuitive syntax like ~fd pattern~ instead of ~find . -name '*pattern*'~.
 - [[https://github.com/junegunn/fzf][~fzf~]] for fuzzy finding stuff.
 - [[https://github.com/ogham/exa][~exa~]] which is like a more advanced ~ls~.
 - [[https://github.com/aristocratos/btop][~btop~]] which is a prettier ~htop~.
 - [[https://github.com/BurntSushi/ripgrep][~ripgrep~]] which is a very fast ~grep~ search from the developer of ~xsv~.
 - [[https://github.com/sxyazi/yazi][~yazi~]] which is a fast file manager.
 - [[https://github.com/ajeetdsouza/zoxide][~zoxide~]] which is a more advanced ~cd~.
+- [[https://github.com/bensadeh/tailspin][~tspin~]] which adds timestamps to piped output, useful for monitoring long-running computations.
+
+** Development and Research Workflow Tools
+
+- [[https://direnv.net/][~direnv~]] automatically loads environment variables from ~.envrc~ files when you enter a directory. Essential for managing project-specific configurations without polluting your global environment. Just ~echo 'export API_KEY=foo' > .envrc && direnv allow~.
+- [[https://github.com/jesseduffield/lazygit][~lazygit~]] provides a terminal UI for git that makes complex operations intuitive. Perfect for researchers who want version control without memorizing git commands. Press ~?~ for help on any screen.
+- [[https://github.com/atuinsh/atuin][~atuin~]] replaces your shell history with a SQLite database, enabling powerful search across all your commands. Sync across machines and never lose that complex data processing pipeline again. Search with ~Ctrl-R~.
+- [[https://cli.github.com/][~gh~]] is GitHub's official CLI for managing pull requests, issues, and repositories from the terminal. Clone with ~gh repo clone owner/repo~, create PRs with ~gh pr create~.
+
+** AI-Powered Development Tools
+
+- [[https://docs.anthropic.com/en/docs/claude-code][~claude code~]] is an AI-powered coding assistant that helps with software development tasks. It can search codebases, write and edit files, run commands, and help debug issues, it can even read Jupyter Notebook files and "see" your images. The VSCod extension is also very nicely integrated, as it can automatically add the lines you select as context.
+- [[https://github.com/reorx/gemini-cli][~gemini-cli~]] is a free AI assistant powered by Google's Gemini models. You can even have Claude Code call Gemini directly for real-time code reviews during development, creating an AI pair programming experience.
 
 * Some python libraries worth learning
 
@@ -253,6 +270,17 @@ re-writing it as a loop. This may seem counterintuitive as the whole point of
 operations. Yet these dumb, slow python loops combined with ~numba~ can be
 significantly faster than ~numpy~ counterparts if used correctly.
 
+** [[https://marimo.io/][~marimo~]]
+
+~marimo~ is a reactive Python notebook that solves many pain points of traditional Jupyter notebooks. Unlike Jupyter, ~marimo~ notebooks are stored as pure Python files, making them git-friendly and importable as modules. The reactive execution model means cells automatically re-run when their dependencies change, eliminating the hidden state issues common in Jupyter. For researchers, this means more reproducible analyses and easier collaboration. Just run ~marimo edit notebook.py~ to start.
+
+** [[https://altair-viz.github.io/][~altair~]]
+
+~altair~ is a declarative visualization library built on Vega-Lite. Unlike matplotlib's imperative style, ~altair~ uses a grammar of graphics approach that makes complex visualizations surprisingly simple. For researchers, this means publication-quality plots with minimal code. Just ~alt.Chart(df).mark_point().encode(x='x', y='y')~ for a basic scatter plot, with automatic type inference and interactivity.
+
+** [[https://pola.rs/][~polars~]]
+
+~polars~ is a lightning-fast DataFrame library that often outperforms ~pandas~ by 10-100x. Written in Rust, it features lazy evaluation, automatic query optimization, and excellent memory efficiency. For researchers working with large datasets, ~polars~ can process data that would crash ~pandas~. The API is expressive: ~df.filter(pl.col('x') > 5).group_by('category').agg(pl.col('y').mean())~.
 
 * Some ~R~ libraries worth learning
 
@@ -330,3 +358,27 @@ parallelism. Although it is syntactically simple, they run into the Python GIL
 and will lock after a few iterations. Instead, use ~aiohttp~ and just replace the
 url field with the ~ScrapingBee~ url, include your API Key as a parameter, and the
 url you want to scrape as another parameter.
+
+* Mac Applications for Researchers
+
+** Terminal and Development
+
+- [[https://wezfurlong.org/wezterm/][~WezTerm~]] / [[https://ghostty.org/][~Ghostty~]] are modern terminal emulators with GPU acceleration, split panes, and extensive customization. They also provide native image support.
+
+** Productivity Tools
+
+- [[https://superwhisper.com/][~Superwhisper~]] provides system-wide voice transcription using different transcription models. It is much better than the built-in Apple dictation, and can be much faster than typing. You can also have AI process your transcript directly, so you can for example, dictate some sentences and have it automatically turned into a properly formatted email.
+
+- [[https://www.homerow.app/][~Homerow~]] enables keyboard-only navigation of macOS by showing letter hints on clickable elements. Essential for reducing mouse usage during long coding or writing sessions.
+
+- [[https://bitwarden.com/][~Bitwarden~]] is an open-source password manager with excellent cross-platform support.
+ 
+** Knowledge Management
+
+- [[https://logseq.com/][~Logseq~]] / [[https://obsidian.md/][~Obsidian~]] are powerful note-taking apps with bidirectional linking. Logseq uses an outliner approach while Obsidian uses traditional markdown files. Both excel at building a personal knowledge graph for research.
+
+- [[https://sioyek.info/][~Sioyek~]] is a PDF viewer designed specifically for research papers and technical documents. Features include smart jump for references, portals for keeping figures visible while reading, and a command palette for keyboard-driven navigation.
+
+- [[https://paperpile.com/][~Paperpile~]] is a reference manager that integrates seamlessly with Google Docs and Microsoft Word. It automatically extracts metadata from PDFs, syncs across devices, and makes citation formatting painless. The Chrome extension adds papers from Google Scholar with one click.
+
+- [[https://readwise.io/reader][~Readwise Reader~]] is a read-later app designed for deep reading and annotation. It handles PDFs, web articles, newsletters, and even YouTube videos. The killer feature is its powerful highlighting system that syncs with note-taking apps like Logseq or Obsidian. It also has an MCP, so you can connect it with LLMs like Claude, which then knows everything you have read/highlighted and can help you surface relevant passages or citations.
