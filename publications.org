@@ -1,3 +1,9 @@
+* Regulatory Leakage Among Financial Advisors: Evidence From FINRA Regulation of "Bad" Brokers
+with Colleen Honigsberg and Robert J. Jackson, Jr. ([[https://papers.ssrn.com/abstract=4410143][SSRN]])
+
+- Forthcoming, /J. Fin. Econ./
+- Presented at Harvard Law School Workshop in Empirical Law and Economics (2022), Corporate and Securities Litigation Workshop (2022), Junior Corporate Law Workshop (2022), University of Texas Law, Business, and Economics Workshop (2022*), Northwestern Pritzker Law and Economics Colloquium (2022), NYU Law and Economics Workshop (2023), Stanford Law Faculty Workshop (2023*), American Law and Economics Association (2023), American Finance Association (2024), SEC Investor Advisory Committe (2024).
+
 * Vestigial Tails? Floor Brokers at the Close in Modern Electronic Markets
 with Dermot Murphy ([[https://papers.ssrn.com/abstract=3600230][SSRN]])
 
