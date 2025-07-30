@@ -2,6 +2,9 @@
 #+AUTHOR: Edwin Hu
 #+OPTIONS: ':t
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" href="https://latex.vercel.app/style.css">
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD: body { max-width: 120ch !important; }
+#+HTML_HEAD: </style>
 
 For a complete list of tools I use, you can browse my [[https://github.com/edwinhu/nix][nix configuration]]. Warning: Nix has a steep learning curve, but the repository may give you ideas for other useful tools not mentioned here.
 

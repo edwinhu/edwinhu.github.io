@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-07-08 Tue 17:17 -->
+<!-- 2025-07-30 Wed 12:53 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Software</title>
@@ -193,6 +193,9 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
+<style type="text/css">
+body { max-width: 120ch !important; }
+</style>
 <link rel="stylesheet" href="https://latex.vercel.app/style.css">
 </head>
 <body>
@@ -202,56 +205,56 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org3081056">1. Some command line tools worth learning</a>
+<li><a href="#org625b98c">1. Some command line tools worth learning</a>
 <ul>
-<li><a href="#orgf9fbb41">1.1. <code>pixi</code></a>
+<li><a href="#org3b6988f">1.1. <code>pixi</code></a>
 <ul>
-<li><a href="#org002952a">1.1.1. <code>uv</code></a></li>
-<li><a href="#org6e7b0cb">1.1.2. <code>conda</code> for <code>R</code></a></li>
+<li><a href="#org70e1322">1.1.1. <code>uv</code></a></li>
+<li><a href="#org9e82c02">1.1.2. <code>conda</code> for <code>R</code></a></li>
 </ul>
 </li>
-<li><a href="#org4c1e703">1.2. <code>curl</code></a></li>
-<li><a href="#org28943bf">1.3. <code>jq</code></a></li>
-<li><a href="#orge473426">1.4. <code>xmlstarlet</code></a></li>
-<li><a href="#org76054d5">1.5. <code>xan</code></a></li>
-<li><a href="#org219e880">1.6. <code>Rclone</code></a></li>
-<li><a href="#org0e17205">1.7. <code>GNU parallel</code></a></li>
-<li><a href="#orgcd0d337">1.8. Other great CLI tools</a></li>
-<li><a href="#org1b86bfe">1.9. Development and Research Workflow Tools</a></li>
-<li><a href="#org16036f5">1.10. AI-Powered Development Tools</a></li>
+<li><a href="#org57f8121">1.2. <code>curl</code></a></li>
+<li><a href="#orgbc6af61">1.3. <code>jq</code></a></li>
+<li><a href="#org4051e3c">1.4. <code>xmlstarlet</code></a></li>
+<li><a href="#org6bab7e2">1.5. <code>xan</code></a></li>
+<li><a href="#org29e8b68">1.6. <code>Rclone</code></a></li>
+<li><a href="#orgda0ae39">1.7. <code>GNU parallel</code></a></li>
+<li><a href="#orge8bc932">1.8. Other great CLI tools</a></li>
+<li><a href="#orgd2b26b6">1.9. Development and Research Workflow Tools</a></li>
+<li><a href="#org38a6c7d">1.10. AI-Powered Development Tools</a></li>
 </ul>
 </li>
-<li><a href="#org4a82565">2. Some python libraries worth learning</a>
+<li><a href="#org71cc71a">2. Some python libraries worth learning</a>
 <ul>
-<li><a href="#org2670631">2.1. <code>requests</code></a></li>
-<li><a href="#orgcf86400">2.2. <code>asyncio</code></a></li>
-<li><a href="#org316a52c">2.3. <code>pandas</code></a></li>
-<li><a href="#org3a6a6c6">2.4. <code>ujson</code></a></li>
-<li><a href="#orgb177672">2.5. <code>benedict</code></a></li>
-<li><a href="#org9238630">2.6. <code>numba</code></a></li>
-<li><a href="#orgcbd9268">2.7. <code>marimo</code></a></li>
-<li><a href="#orgeb5f6ad">2.8. <code>altair</code></a></li>
-<li><a href="#org0ded312">2.9. <code>polars</code></a></li>
+<li><a href="#org8affad7">2.1. <code>requests</code></a></li>
+<li><a href="#orge99416f">2.2. <code>asyncio</code></a></li>
+<li><a href="#org766061c">2.3. <code>pandas</code></a></li>
+<li><a href="#orgb519fb9">2.4. <code>ujson</code></a></li>
+<li><a href="#org48030db">2.5. <code>benedict</code></a></li>
+<li><a href="#org4e4fd2f">2.6. <code>numba</code></a></li>
+<li><a href="#orgb96bccc">2.7. <code>marimo</code></a></li>
+<li><a href="#org524597c">2.8. <code>altair</code></a></li>
+<li><a href="#orge32b0f3">2.9. <code>polars</code></a></li>
 </ul>
 </li>
-<li><a href="#org3baa27a">3. Some <code>R</code> libraries worth learning</a>
+<li><a href="#org24ed886">3. Some <code>R</code> libraries worth learning</a>
 <ul>
-<li><a href="#orge116c94">3.1. <code>tidyverse</code></a></li>
-<li><a href="#org9b52ac8">3.2. <code>data.table</code></a></li>
-<li><a href="#org2398c38">3.3. <code>felm</code> and <code>alpaca</code></a></li>
+<li><a href="#org2c54105">3.1. <code>tidyverse</code></a></li>
+<li><a href="#org7d57490">3.2. <code>data.table</code></a></li>
+<li><a href="#org2ed32a8">3.3. <code>felm</code> and <code>alpaca</code></a></li>
 </ul>
 </li>
-<li><a href="#orgf8acd0f">4. Other Useful Software</a>
+<li><a href="#orgd40643f">4. Other Useful Software</a>
 <ul>
-<li><a href="#orgf15d0c8">4.1. <code>DuckDB</code></a></li>
-<li><a href="#orgde5945b">4.2. <code>ScrapingBee</code></a></li>
+<li><a href="#org6477465">4.1. <code>DuckDB</code></a></li>
+<li><a href="#org9fef96e">4.2. <code>ScrapingBee</code></a></li>
 </ul>
 </li>
-<li><a href="#orgf0ba63b">5. Mac Applications for Researchers</a>
+<li><a href="#orga5db18b">5. Mac Applications for Researchers</a>
 <ul>
-<li><a href="#org404a10c">5.1. Terminal and Development</a></li>
-<li><a href="#org54dfa51">5.2. Productivity Tools</a></li>
-<li><a href="#orgb6ecf5f">5.3. Knowledge Management</a></li>
+<li><a href="#org70814bf">5.1. Terminal and Development</a></li>
+<li><a href="#org194edf2">5.2. Productivity Tools</a></li>
+<li><a href="#orgc3505f4">5.3. Knowledge Management</a></li>
 </ul>
 </li>
 </ul>
@@ -260,12 +263,12 @@
 <p>
 For a complete list of tools I use, you can browse my <a href="https://github.com/edwinhu/nix">nix configuration</a>. Warning: Nix has a steep learning curve, but the repository may give you ideas for other useful tools not mentioned here.
 </p>
-<div id="outline-container-org3081056" class="outline-2">
-<h2 id="org3081056"><span class="section-number-2">1.</span> Some command line tools worth learning</h2>
+<div id="outline-container-org625b98c" class="outline-2">
+<h2 id="org625b98c"><span class="section-number-2">1.</span> Some command line tools worth learning</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orgf9fbb41" class="outline-3">
-<h3 id="orgf9fbb41"><span class="section-number-3">1.1.</span> <a href="https://prefix.dev/docs/pixi/"><code>pixi</code></a></h3>
+<div id="outline-container-org3b6988f" class="outline-3">
+<h3 id="org3b6988f"><span class="section-number-3">1.1.</span> <a href="https://prefix.dev/docs/pixi/"><code>pixi</code></a></h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 I recommend <a href="https://prefix.dev/docs/pixi/"><code>pixi</code></a>, a modern, fast environment and package manager for the Python ecosystem, in the place of <code>anaconda</code> and <code>conda</code>. <code>pixi</code> is cross-platform, supports both Python and R, resolves environments quickly, and uses the familiar <code>conda-forge</code> ecosystem for package sourcing. It also manages all dependencies—including binaries and libraries—making installation and environment reproduction seamless.
@@ -305,8 +308,8 @@ You can also run program without installing them:
 Another neat trick is that you can use <code>pixi-pack</code> to build an environment on one machine and deploy it to another machine. That means no need for more complicated tools like <code>docker</code>.
 </p>
 </div>
-<div id="outline-container-org002952a" class="outline-4">
-<h4 id="org002952a"><span class="section-number-4">1.1.1.</span> <a href="https://github.com/astral-sh/uv"><code>uv</code></a></h4>
+<div id="outline-container-org70e1322" class="outline-4">
+<h4 id="org70e1322"><span class="section-number-4">1.1.1.</span> <a href="https://github.com/astral-sh/uv"><code>uv</code></a></h4>
 <div class="outline-text-4" id="text-1-1-1">
 <p>
 Where you might have used <code>pip</code> for Python package management, I now recommend <a href="https://github.com/astral-sh/uv"><code>uv</code></a>. <code>uv</code> is a fast drop-in replacement for <code>pip</code>. It performs lightning-fast installs, resolves dependencies robustly, and is compatible with both <code>requirements.txt</code> and <code>pyproject.toml</code> workflows.
@@ -317,8 +320,8 @@ Like <code>pixi</code>, <code>uv</code> works by adding packages to your virtual
 </p>
 </div>
 </div>
-<div id="outline-container-org6e7b0cb" class="outline-4">
-<h4 id="org6e7b0cb"><span class="section-number-4">1.1.2.</span> <code>conda</code> for <code>R</code></h4>
+<div id="outline-container-org9e82c02" class="outline-4">
+<h4 id="org9e82c02"><span class="section-number-4">1.1.2.</span> <code>conda</code> for <code>R</code></h4>
 <div class="outline-text-4" id="text-1-1-2">
 <p>
 Yes I know, this is blasphemy. However, sometimes just getting a basic <code>R</code>
@@ -353,8 +356,8 @@ package manager in <code>R</code> <i>after</i> you do your initial <code>pixi in
 </div>
 </div>
 </div>
-<div id="outline-container-org4c1e703" class="outline-3">
-<h3 id="org4c1e703"><span class="section-number-3">1.2.</span> <a href="https://curl.haxx.se/"><code>curl</code></a></h3>
+<div id="outline-container-org57f8121" class="outline-3">
+<h3 id="org57f8121"><span class="section-number-3">1.2.</span> <a href="https://curl.haxx.se/"><code>curl</code></a></h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 These days much of the data you will want to analyze lives on the web. If you
@@ -381,8 +384,8 @@ Bonus tip: <a href="https://anaconda.org/conda-forge/curl"><code>curl</code> is 
 </p>
 </div>
 </div>
-<div id="outline-container-org28943bf" class="outline-3">
-<h3 id="org28943bf"><span class="section-number-3">1.3.</span> <a href="https://stedolan.github.io/jq/"><code>jq</code></a></h3>
+<div id="outline-container-orgbc6af61" class="outline-3">
+<h3 id="orgbc6af61"><span class="section-number-3">1.3.</span> <a href="https://stedolan.github.io/jq/"><code>jq</code></a></h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 <code>jq</code> is like <code>awk</code> but specifically for json files. It is fast, flexible, and
@@ -400,8 +403,8 @@ Bonus tip: <a href="https://anaconda.org/conda-forge/jq"><code>jq</code> is avai
 </p>
 </div>
 </div>
-<div id="outline-container-orge473426" class="outline-3">
-<h3 id="orge473426"><span class="section-number-3">1.4.</span> <a href="http://xmlstar.sourceforge.net/overview.php"><code>xmlstarlet</code></a></h3>
+<div id="outline-container-org4051e3c" class="outline-3">
+<h3 id="org4051e3c"><span class="section-number-3">1.4.</span> <a href="http://xmlstar.sourceforge.net/overview.php"><code>xmlstarlet</code></a></h3>
 <div class="outline-text-3" id="text-1-4">
 <p>
 <code>xmlstarlet</code> is like <code>awk/sed/grep</code> for XML files.
@@ -414,8 +417,8 @@ is written in <code>C</code> so it is very fast.
 </p>
 </div>
 </div>
-<div id="outline-container-org76054d5" class="outline-3">
-<h3 id="org76054d5"><span class="section-number-3">1.5.</span> <a href="https://github.com/amethysts/xan"><code>xan</code></a></h3>
+<div id="outline-container-org6bab7e2" class="outline-3">
+<h3 id="org6bab7e2"><span class="section-number-3">1.5.</span> <a href="https://github.com/amethysts/xan"><code>xan</code></a></h3>
 <div class="outline-text-3" id="text-1-5">
 <p>
 Oftentimes you need to look through a csv file through the command line, and
@@ -430,8 +433,8 @@ I used to recommend <code>csvkit</code> which is written in python, but the perf
 </p>
 </div>
 </div>
-<div id="outline-container-org219e880" class="outline-3">
-<h3 id="org219e880"><span class="section-number-3">1.6.</span> <a href="https://rclone.org/"><code>Rclone</code></a></h3>
+<div id="outline-container-org29e8b68" class="outline-3">
+<h3 id="org29e8b68"><span class="section-number-3">1.6.</span> <a href="https://rclone.org/"><code>Rclone</code></a></h3>
 <div class="outline-text-3" id="text-1-6">
 <p>
 Rclone is a command-line tool for accessing data located in cloud storage, including common enterprise tools like Box, Dropbox, or Google Drive.
@@ -446,8 +449,8 @@ It also happens to be installed by default on WRDS (/usr/bin/rclone).
 </p>
 </div>
 </div>
-<div id="outline-container-org0e17205" class="outline-3">
-<h3 id="org0e17205"><span class="section-number-3">1.7.</span> <a href="https://www.gnu.org/software/parallel/"><code>GNU parallel</code></a></h3>
+<div id="outline-container-orgda0ae39" class="outline-3">
+<h3 id="orgda0ae39"><span class="section-number-3">1.7.</span> <a href="https://www.gnu.org/software/parallel/"><code>GNU parallel</code></a></h3>
 <div class="outline-text-3" id="text-1-7">
 <p>
 <code>GNU parallel</code> is a great command line utility written in Perl which allows for
@@ -522,8 +525,8 @@ Just remember you <code>bash</code> quoting rules and you will be fine!
 </p>
 </div>
 </div>
-<div id="outline-container-orgcd0d337" class="outline-3">
-<h3 id="orgcd0d337"><span class="section-number-3">1.8.</span> Other great CLI tools</h3>
+<div id="outline-container-orge8bc932" class="outline-3">
+<h3 id="orge8bc932"><span class="section-number-3">1.8.</span> Other great CLI tools</h3>
 <div class="outline-text-3" id="text-1-8">
 <ul class="org-ul">
 <li><a href="https://github.com/sharkdp/bat"><code>bat</code></a> which is like <code>cat</code> with syntax highlighting, making it perfect for quickly viewing code and data files.</li>
@@ -538,8 +541,8 @@ Just remember you <code>bash</code> quoting rules and you will be fine!
 </ul>
 </div>
 </div>
-<div id="outline-container-org1b86bfe" class="outline-3">
-<h3 id="org1b86bfe"><span class="section-number-3">1.9.</span> Development and Research Workflow Tools</h3>
+<div id="outline-container-orgd2b26b6" class="outline-3">
+<h3 id="orgd2b26b6"><span class="section-number-3">1.9.</span> Development and Research Workflow Tools</h3>
 <div class="outline-text-3" id="text-1-9">
 <ul class="org-ul">
 <li><a href="https://direnv.net/"><code>direnv</code></a> automatically loads environment variables from <code>.envrc</code> files when you enter a directory. Essential for managing project-specific configurations without polluting your global environment. Just <code>echo 'export API_KEY=foo' &gt; .envrc &amp;&amp; direnv allow</code>.</li>
@@ -549,8 +552,8 @@ Just remember you <code>bash</code> quoting rules and you will be fine!
 </ul>
 </div>
 </div>
-<div id="outline-container-org16036f5" class="outline-3">
-<h3 id="org16036f5"><span class="section-number-3">1.10.</span> AI-Powered Development Tools</h3>
+<div id="outline-container-org38a6c7d" class="outline-3">
+<h3 id="org38a6c7d"><span class="section-number-3">1.10.</span> AI-Powered Development Tools</h3>
 <div class="outline-text-3" id="text-1-10">
 <ul class="org-ul">
 <li><a href="https://docs.anthropic.com/en/docs/claude-code"><code>claude code</code></a> is an AI-powered coding assistant that helps with software development tasks. It can search codebases, write and edit files, run commands, and help debug issues, it can even read Jupyter Notebook files and &ldquo;see&rdquo; your images. The VSCod extension is also very nicely integrated, as it can automatically add the lines you select as context.</li>
@@ -559,12 +562,12 @@ Just remember you <code>bash</code> quoting rules and you will be fine!
 </div>
 </div>
 </div>
-<div id="outline-container-org4a82565" class="outline-2">
-<h2 id="org4a82565"><span class="section-number-2">2.</span> Some python libraries worth learning</h2>
+<div id="outline-container-org71cc71a" class="outline-2">
+<h2 id="org71cc71a"><span class="section-number-2">2.</span> Some python libraries worth learning</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org2670631" class="outline-3">
-<h3 id="org2670631"><span class="section-number-3">2.1.</span> <a href="https://requests.readthedocs.io/en/master/"><code>requests</code></a></h3>
+<div id="outline-container-org8affad7" class="outline-3">
+<h3 id="org8affad7"><span class="section-number-3">2.1.</span> <a href="https://requests.readthedocs.io/en/master/"><code>requests</code></a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 <code>requests</code> is a dead-simple HTTP library for python. Like <code>curl</code> it is an essential
@@ -588,8 +591,8 @@ convert into <code>requests</code> code!
 </p>
 </div>
 </div>
-<div id="outline-container-orgcf86400" class="outline-3">
-<h3 id="orgcf86400"><span class="section-number-3">2.2.</span> <a href="https://docs.python.org/3/library/asyncio.html"><code>asyncio</code></a></h3>
+<div id="outline-container-orge99416f" class="outline-3">
+<h3 id="orge99416f"><span class="section-number-3">2.2.</span> <a href="https://docs.python.org/3/library/asyncio.html"><code>asyncio</code></a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 <code>asyncio</code> is part of the python standard library as of python 3.4. It is a library
@@ -606,8 +609,8 @@ filesystem asynchronously.
 </p>
 </div>
 </div>
-<div id="outline-container-org316a52c" class="outline-3">
-<h3 id="org316a52c"><span class="section-number-3">2.3.</span> <a href="https://pandas.pydata.org/"><code>pandas</code></a></h3>
+<div id="outline-container-org766061c" class="outline-3">
+<h3 id="org766061c"><span class="section-number-3">2.3.</span> <a href="https://pandas.pydata.org/"><code>pandas</code></a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 You have data. You use python. If these conditions apply, then you should use
@@ -620,8 +623,8 @@ transformation.
 </p>
 </div>
 </div>
-<div id="outline-container-org3a6a6c6" class="outline-3">
-<h3 id="org3a6a6c6"><span class="section-number-3">2.4.</span> <a href="https://github.com/ultrajson/ultrajson"><code>ujson</code></a></h3>
+<div id="outline-container-orgb519fb9" class="outline-3">
+<h3 id="orgb519fb9"><span class="section-number-3">2.4.</span> <a href="https://github.com/ultrajson/ultrajson"><code>ujson</code></a></h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 <code>ujson</code> stands for UltraJSON, which is an ultra fast JSON serializer written in C
@@ -631,8 +634,8 @@ and as such is slower.
 </p>
 </div>
 </div>
-<div id="outline-container-orgb177672" class="outline-3">
-<h3 id="orgb177672"><span class="section-number-3">2.5.</span> <a href="https://github.com/fabiocaccamo/python-benedict"><code>benedict</code></a></h3>
+<div id="outline-container-org48030db" class="outline-3">
+<h3 id="org48030db"><span class="section-number-3">2.5.</span> <a href="https://github.com/fabiocaccamo/python-benedict"><code>benedict</code></a></h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
 <code>benedict</code> is a python dictionary subclass that makes navigating dictionaries in
@@ -644,8 +647,8 @@ irregular JSON data.
 </p>
 </div>
 </div>
-<div id="outline-container-org9238630" class="outline-3">
-<h3 id="org9238630"><span class="section-number-3">2.6.</span> <a href="http://numba.pydata.org/"><code>numba</code></a></h3>
+<div id="outline-container-org4e4fd2f" class="outline-3">
+<h3 id="org4e4fd2f"><span class="section-number-3">2.6.</span> <a href="http://numba.pydata.org/"><code>numba</code></a></h3>
 <div class="outline-text-3" id="text-2-6">
 <p>
 At first glance, <code>numba</code> seems like an odd choice for python users. The appeal of
@@ -665,24 +668,24 @@ significantly faster than <code>numpy</code> counterparts if used correctly.
 </p>
 </div>
 </div>
-<div id="outline-container-orgcbd9268" class="outline-3">
-<h3 id="orgcbd9268"><span class="section-number-3">2.7.</span> <a href="https://marimo.io/"><code>marimo</code></a></h3>
+<div id="outline-container-orgb96bccc" class="outline-3">
+<h3 id="orgb96bccc"><span class="section-number-3">2.7.</span> <a href="https://marimo.io/"><code>marimo</code></a></h3>
 <div class="outline-text-3" id="text-2-7">
 <p>
 <code>marimo</code> is a reactive Python notebook that solves many pain points of traditional Jupyter notebooks. Unlike Jupyter, <code>marimo</code> notebooks are stored as pure Python files, making them git-friendly and importable as modules. The reactive execution model means cells automatically re-run when their dependencies change, eliminating the hidden state issues common in Jupyter. For researchers, this means more reproducible analyses and easier collaboration. Just run <code>marimo edit notebook.py</code> to start.
 </p>
 </div>
 </div>
-<div id="outline-container-orgeb5f6ad" class="outline-3">
-<h3 id="orgeb5f6ad"><span class="section-number-3">2.8.</span> <a href="https://altair-viz.github.io/"><code>altair</code></a></h3>
+<div id="outline-container-org524597c" class="outline-3">
+<h3 id="org524597c"><span class="section-number-3">2.8.</span> <a href="https://altair-viz.github.io/"><code>altair</code></a></h3>
 <div class="outline-text-3" id="text-2-8">
 <p>
 <code>altair</code> is a declarative visualization library built on Vega-Lite. Unlike matplotlib&rsquo;s imperative style, <code>altair</code> uses a grammar of graphics approach that makes complex visualizations surprisingly simple. For researchers, this means publication-quality plots with minimal code. Just <code>alt.Chart(df).mark_point().encode(x='x', y='y')</code> for a basic scatter plot, with automatic type inference and interactivity.
 </p>
 </div>
 </div>
-<div id="outline-container-org0ded312" class="outline-3">
-<h3 id="org0ded312"><span class="section-number-3">2.9.</span> <a href="https://pola.rs/"><code>polars</code></a></h3>
+<div id="outline-container-orge32b0f3" class="outline-3">
+<h3 id="orge32b0f3"><span class="section-number-3">2.9.</span> <a href="https://pola.rs/"><code>polars</code></a></h3>
 <div class="outline-text-3" id="text-2-9">
 <p>
 <code>polars</code> is a lightning-fast DataFrame library that often outperforms <code>pandas</code> by 10-100x. Written in Rust, it features lazy evaluation, automatic query optimization, and excellent memory efficiency. For researchers working with large datasets, <code>polars</code> can process data that would crash <code>pandas</code>. The API is expressive: <code>df.filter(pl.col('x') &gt; 5).group_by('category').agg(pl.col('y').mean())</code>.
@@ -690,12 +693,12 @@ significantly faster than <code>numpy</code> counterparts if used correctly.
 </div>
 </div>
 </div>
-<div id="outline-container-org3baa27a" class="outline-2">
-<h2 id="org3baa27a"><span class="section-number-2">3.</span> Some <code>R</code> libraries worth learning</h2>
+<div id="outline-container-org24ed886" class="outline-2">
+<h2 id="org24ed886"><span class="section-number-2">3.</span> Some <code>R</code> libraries worth learning</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-orge116c94" class="outline-3">
-<h3 id="orge116c94"><span class="section-number-3">3.1.</span> <a href="https://www.tidyverse.org/"><code>tidyverse</code></a></h3>
+<div id="outline-container-org2c54105" class="outline-3">
+<h3 id="org2c54105"><span class="section-number-3">3.1.</span> <a href="https://www.tidyverse.org/"><code>tidyverse</code></a></h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 <code>tidyverse</code> is a metapackage of data analysis tools for <code>R</code>. In many ways it is
@@ -713,8 +716,8 @@ with it and use <code>haven</code>.
 </p>
 </div>
 </div>
-<div id="outline-container-org9b52ac8" class="outline-3">
-<h3 id="org9b52ac8"><span class="section-number-3">3.2.</span> <a href="https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html"><code>data.table</code></a></h3>
+<div id="outline-container-org7d57490" class="outline-3">
+<h3 id="org7d57490"><span class="section-number-3">3.2.</span> <a href="https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html"><code>data.table</code></a></h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 <code>data.table</code> is <a href="https://github.com/Rdatatable/data.table/wiki/Benchmarks-%3A-Grouping">very fast</a>, and has an intuitive syntax. It is certainly
@@ -727,8 +730,8 @@ Bonus tip: DataCamp has a great <a href="https://s3.amazonaws.com/assets.datacam
 </p>
 </div>
 </div>
-<div id="outline-container-org2398c38" class="outline-3">
-<h3 id="org2398c38"><span class="section-number-3">3.3.</span> <a href="https://www.rdocumentation.org/packages/lfe/versions/2.8-6/topics/felm"><code>felm</code></a> and <a href="https://github.com/amrei-stammann/alpaca"><code>alpaca</code></a></h3>
+<div id="outline-container-org2ed32a8" class="outline-3">
+<h3 id="org2ed32a8"><span class="section-number-3">3.3.</span> <a href="https://www.rdocumentation.org/packages/lfe/versions/2.8-6/topics/felm"><code>felm</code></a> and <a href="https://github.com/amrei-stammann/alpaca"><code>alpaca</code></a></h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 <code>felm</code> and <code>alpaca</code> are R packages for linear/logistic regressions with high
@@ -738,12 +741,12 @@ CRAN, and are fairly well documented.
 </div>
 </div>
 </div>
-<div id="outline-container-orgf8acd0f" class="outline-2">
-<h2 id="orgf8acd0f"><span class="section-number-2">4.</span> Other Useful Software</h2>
+<div id="outline-container-orgd40643f" class="outline-2">
+<h2 id="orgd40643f"><span class="section-number-2">4.</span> Other Useful Software</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-orgf15d0c8" class="outline-3">
-<h3 id="orgf15d0c8"><span class="section-number-3">4.1.</span> <a href="https://duckdb.org/"><code>DuckDB</code></a></h3>
+<div id="outline-container-org6477465" class="outline-3">
+<h3 id="org6477465"><span class="section-number-3">4.1.</span> <a href="https://duckdb.org/"><code>DuckDB</code></a></h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 <code>DuckDB</code> is a SQL-style database with very convenient syntax for data analysis. It
@@ -766,8 +769,8 @@ like csv, json, and parquet.
 </p>
 </div>
 </div>
-<div id="outline-container-orgde5945b" class="outline-3">
-<h3 id="orgde5945b"><span class="section-number-3">4.2.</span> <a href="https://www.scrapingbee.com/"><code>ScrapingBee</code></a></h3>
+<div id="outline-container-org9fef96e" class="outline-3">
+<h3 id="org9fef96e"><span class="section-number-3">4.2.</span> <a href="https://www.scrapingbee.com/"><code>ScrapingBee</code></a></h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 Sometimes the only way to get data is through traditional web scraping. Scraping
@@ -801,20 +804,20 @@ url you want to scrape as another parameter.
 </div>
 </div>
 </div>
-<div id="outline-container-orgf0ba63b" class="outline-2">
-<h2 id="orgf0ba63b"><span class="section-number-2">5.</span> Mac Applications for Researchers</h2>
+<div id="outline-container-orga5db18b" class="outline-2">
+<h2 id="orga5db18b"><span class="section-number-2">5.</span> Mac Applications for Researchers</h2>
 <div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-org404a10c" class="outline-3">
-<h3 id="org404a10c"><span class="section-number-3">5.1.</span> Terminal and Development</h3>
+<div id="outline-container-org70814bf" class="outline-3">
+<h3 id="org70814bf"><span class="section-number-3">5.1.</span> Terminal and Development</h3>
 <div class="outline-text-3" id="text-5-1">
 <ul class="org-ul">
 <li><a href="https://wezfurlong.org/wezterm/"><code>WezTerm</code></a> / <a href="https://ghostty.org/"><code>Ghostty</code></a> are modern terminal emulators with GPU acceleration, split panes, and extensive customization. They also provide native image support.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org54dfa51" class="outline-3">
-<h3 id="org54dfa51"><span class="section-number-3">5.2.</span> Productivity Tools</h3>
+<div id="outline-container-org194edf2" class="outline-3">
+<h3 id="org194edf2"><span class="section-number-3">5.2.</span> Productivity Tools</h3>
 <div class="outline-text-3" id="text-5-2">
 <ul class="org-ul">
 <li><a href="https://superwhisper.com/"><code>Superwhisper</code></a> provides system-wide voice transcription using different transcription models. It is much better than the built-in Apple dictation, and can be much faster than typing. You can also have AI process your transcript directly, so you can for example, dictate some sentences and have it automatically turned into a properly formatted email.</li>
@@ -825,8 +828,8 @@ url you want to scrape as another parameter.
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb6ecf5f" class="outline-3">
-<h3 id="orgb6ecf5f"><span class="section-number-3">5.3.</span> Knowledge Management</h3>
+<div id="outline-container-orgc3505f4" class="outline-3">
+<h3 id="orgc3505f4"><span class="section-number-3">5.3.</span> Knowledge Management</h3>
 <div class="outline-text-3" id="text-5-3">
 <ul class="org-ul">
 <li><a href="https://logseq.com/"><code>Logseq</code></a> / <a href="https://obsidian.md/"><code>Obsidian</code></a> are powerful note-taking apps with bidirectional linking. Logseq uses an outliner approach while Obsidian uses traditional markdown files. Both excel at building a personal knowledge graph for research.</li>
@@ -843,7 +846,7 @@ url you want to scrape as another parameter.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Edwin Hu</p>
-<p class="date">Created: 2025-07-08 Tue 17:17</p>
+<p class="date">Created: 2025-07-30 Wed 12:53</p>
 </div>
 </body>
 </html>
