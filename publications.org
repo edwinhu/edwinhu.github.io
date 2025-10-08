@@ -1,11 +1,11 @@
-* Regulatory Leakage Among Financial Advisors: Evidence From FINRA Regulation of "Bad" Brokers
-with Colleen Honigsberg and Robert J. Jackson, Jr. ([[https://papers.ssrn.com/abstract=4410143][SSRN]])
+* Regulatory Leakage Among Financial Advisors: Evidence From FINRA Regulation of "Bad" Brokers ([[https://papers.ssrn.com/abstract=4410143][SSRN, ]][[https://doi.org/10.1016/j.jfineco.2025.104170][DOI]])
+with Colleen Honigsberg and Robert J. Jackson, Jr. )
 
 - Forthcoming, /J. Fin. Econ./
 - Presented at Harvard Law School Workshop in Empirical Law and Economics (2022), Corporate and Securities Litigation Workshop (2022), Junior Corporate Law Workshop (2022), University of Texas Law, Business, and Economics Workshop (2022*), Northwestern Pritzker Law and Economics Colloquium (2022), NYU Law and Economics Workshop (2023), Stanford Law Faculty Workshop (2023*), American Law and Economics Association (2023), American Finance Association (2024), SEC Investor Advisory Committe (2024).
 
-* Vestigial Tails? Floor Brokers at the Close in Modern Electronic Markets
-with Dermot Murphy ([[https://papers.ssrn.com/abstract=3600230][SSRN]])
+* Vestigial Tails? Floor Brokers at the Close in Modern Electronic Markets ([[https://papers.ssrn.com/abstract=3600230][SSRN]], [[https://doi.org/10.1287/mnsc.2023.00884][DOI]])
+with Dermot Murphy
 
 - Forthcoming, /Mgmt. Sci./
 - Covered in [[https://www.wsj.com/articles/coronavirus-shutdown-casts-doubt-on-value-of-exchange-trading-floors-11590053419][/The Wall Street Journal/]], [[https://www.bloomberg.com/opinion/articles/2020-05-22/a-vaccine-with-a-poison-pill][Money Stuff (Bloomberg)]], [[https://www.economist.com/finance-and-economics/2020/05/25/covid-19-forced-trading-floors-to-close-theyll-be-back][/The Economist/]].
