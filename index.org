@@ -50,6 +50,12 @@ Associate Professor of Law\\
 :END:
 #+INCLUDE: publications.org :minlevel 3
 
+** Book Chapters
+:PROPERTIES:
+:CUSTOM_ID: bookchapters
+:END:
+#+INCLUDE: bookchapters.org :minlevel 3
+
 ** Work in Progress :noexport:
 :PROPERTIES:
 :CUSTOM_ID: wip
