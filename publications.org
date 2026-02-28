@@ -1,10 +1,7 @@
 * Other People's Votes: The Law and Economics of Proxy Advice, 115 [[sc:Geo. L.J.]] __ (forthcoming 2026)
 with Jonathon Zytnick and Nadya Malenko
 
-* Regulatory Leakage Among Financial Advisors: Evidence From FINRA Regulation of "Bad" Brokers ([[https://papers.ssrn.com/abstract=4410143][SSRN, ]][[https://doi.org/10.1016/j.jfineco.2025.104170][DOI]])
-with Colleen Honigsberg and Robert J. Jackson, Jr. )
-
-- Forthcoming, [[sc:J. Fin. Econ.]]
+* Regulatory Leakage Among Financial Advisors: Evidence From FINRA Regulation of "Bad" Brokers, 174 [[sc:J. Fin. Econ.]] 104170 (2025), with Colleen Honigsberg and Robert J. Jackson, Jr. ([[https://papers.ssrn.com/abstract=4410143][SSRN]], [[https://doi.org/10.1016/j.jfineco.2025.104170][DOI]])
 - Presented at Harvard Law School Workshop in Empirical Law and Economics
   (2022), Corporate and Securities Litigation Workshop (2022), Junior Corporate
   Law Workshop (2022), University of Texas Law, Business, and Economics Workshop
