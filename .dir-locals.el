@@ -7,5 +7,5 @@
          :export (lambda (path _desc backend _info)
                    (pcase backend
                      ('html (format "<span class=\"smallcaps\">%s</span>" path))
-                     ('latex (format "\\textsc{%s}" path))
+                     ('latex (format "\\textsc{%s}" (string-replace "&" "\\&" path)))
                      (_ path))))))))
