@@ -1,2 +1,2 @@
-* Insurance as Asset Management, in /Research Handbook on Agency and Intermediation/ (Deborah A. DeMott & Tan Cheng-Han eds., 2026) ([[https://www.e-elgar.com/shop/usd/research-handbook-on-agency-and-intermediation-9781035321711.html][Publisher]])
+* Insurance as Asset Management, in [[sc:Research Handbook on Agency and Intermediation]] (Deborah A. DeMott & Tan Cheng-Han eds., 2026) ([[https://www.e-elgar.com/shop/usd/research-handbook-on-agency-and-intermediation-9781035321711.html][Publisher]])
 with Colleen Honigsberg
