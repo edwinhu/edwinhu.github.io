@@ -1,0 +1,93 @@
+% -------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+% -------------------------------------------------------------------
+
+\ProvidesPackage{org_cv}
+
+\usepackage{url}
+\usepackage{calc}
+\usepackage{parskip}            % ignore paragraph prefix space
+\usepackage{titlesec}           % custom section
+\usepackage{enumitem}           % custom lists
+
+\usepackage{fullpage} % Margin formatting of the A4 page, an
+                           % alternative to layaureo can be
+                           % \usepackage{fullpage}
+                           % To reduce the height of the top 
+
+\addtolength{\voffset}{-1.3cm}
+
+%% Define Colors
+\usepackage{color}
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolour,linkcolor=linkcolour}
+
+\definecolor{sectionothercolor}{rgb}{1.00,0.65,0.20}
+\definecolor{sectioncolor}{rgb}{0.35,0.45,0.55}
+
+\pagestyle{empty} % Removes page numbering
+
+\usepackage{etoolbox}
+\patchcmd{\quote}{\rightmargin}{\leftmargin 1em \rightmargin}{}{}
+
+%% Set all text's left skip
+\leftskip=0em
+
+%% Config list
+\usepackage{enumitem}
+\setlist{leftmargin=2em, labelindent=\parindent, noitemsep, nosep, topsep=-0.5em, partopsep=0pt, parsep=0pt, itemsep=0pt}
+
+% -------------------------------------------------------------------
+% REDEFINE COMMANDS
+% -------------------------------------------------------------------
+
+\usepackage{titlesec}
+
+%% Redefine Title
+\renewcommand*{\maketitle}{%
+  {
+    \centering{\Huge \scshape \@title}
+    \noindent\rule{\textwidth}{0.4pt}
+    \\[0.25in]
+  }
+}
+
+%% Redefine Section Headings, etc.
+\titleformat{\section} %command
+            {\Large\scshape\raggedright} %format
+            {} %prefix number label
+            {0pt} %sep
+            {} %before
+            [\titlerule] %after
+
+\titlespacing{\section}
+            {0pt}% max width of the title(for wrap/leftmargin shape)
+            {0pt}% vertical space before the title
+            {0.5em}% separation between title and text
+
+\titleformat{\subsection} %command
+            {\normalsize} %format
+            {} %prefix number label
+            {0pt} %sep
+            {} %before
+            [] %after
+            
+\titlespacing{\subsection}
+            {0pt}% max width of the title(for wrap/leftmargin shape)
+            {0.5em}% vertical space before the title
+            {0pt}% separation between title and text
+
+\titleformat{\subsubsection} %command
+            [runin] %shape
+            {} %format
+            {} %prefix number label
+            {0.5em} %sep
+            {} %before
+            [] %after
+            
+\titlespacing{\subsubsection}
+            {1em}% max width of the title(for wrap/leftmargin shape)
+            {0pt}% vertical space before the title
+            {0.5em}% separation betweexn title and text
+            [\leftskip 1em]

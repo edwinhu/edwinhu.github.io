@@ -1,0 +1,9 @@
+# Build artifacts
+.auctex-auto/
+*.synctex.gz
+.DS_Store
+
+# Unignore files needed for CV
+!cv.tex
+!org_cv.sty
+!resume.tex

@@ -1,0 +1,59 @@
+#+TITLE: Edwin Hu
+#+AUTHOR: Edwin Hu
+#+DATE: {{{time(%Y-%m-%d)}}}
+#+OPTIONS: author:nil creator:nil timestamp:nil ^:{} toc:nil H:10 ':t num:nil
+#+LaTeX_HEADER: \usepackage{org_cv}
+#+LaTeX_HEADER: \usepackage{marvosym}
+#+LaTeX_HEADER: \usepackage{accsupp}
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org_cv.css" />
+#+BEGIN_EXPORT latex
+\newcommand\hiddentext[2]{%
+    \BeginAccSupp{ActualText={\detokenize{#1}}}%
+      #2
+    \EndAccSupp{}%
+}
+#+END_EXPORT
+
+#+INCLUDE: ../contact.org
+
+* Research and Interests :noexport:
+#+INCLUDE: ../interests.org
+
+* Employment
+#+INCLUDE: ../experience.org :minlevel 2
+
+* Education
+#+INCLUDE: ../education.org :minlevel 2
+
+* Publications
+#+INCLUDE: ../publications.org :minlevel 2
+
+* Book Chapters
+#+INCLUDE: ../bookchapters.org :minlevel 2
+
+* Working Papers
+#+INCLUDE: ../workingpapers.org :minlevel 2
+
+* Work in Progress :noexport:
+#+INCLUDE: ../wip.org :minlevel 2
+
+* Selected Policy Work :noexport:
+#+INCLUDE: ../policy.org :minlevel 2
+
+* Teaching :noexport:
+#+INCLUDE: ../teaching.org :minlevel 2
+
+* Academic Service
+#+INCLUDE: ../service.org :minlevel 2
+
+* Skills
+#+INCLUDE: ../skills.org :minlevel 2
+
+* Citizenship :noexport:
+
+USA (Born)
+
+* References :noexport:
+#+ATTR_LaTeX: :center nil
+#+INCLUDE: ../references.org :minlevel 2
+
