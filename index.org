@@ -1,7 +1,7 @@
 #+TITLE: Edwin Hu
 #+AUTHOR: Edwin Hu
 #+DATE: {{{time(%Y-%m-%d)}}}
-#+OPTIONS: author:t creator:t timestamp:nil toc:2 num:nil
+#+OPTIONS: author:t creator:t timestamp:nil toc:2 num:nil ':t
 #+CREATOR:
 #+HTML_HEAD_EXTRA: <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67919104-1"></script>
 #+HTML_HEAD_EXTRA: <script>
