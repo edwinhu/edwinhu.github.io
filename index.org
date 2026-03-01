@@ -15,6 +15,7 @@
 #+HTML_HEAD: <style type="text/css">
 #+HTML_HEAD: body { max-width: 120ch !important; }
 #+HTML_HEAD: .smallcaps { font-variant: small-caps; }
+#+HTML_HEAD: h1.title { font-variant: small-caps; }
 #+HTML_HEAD: </style>
 
 Associate Professor of Law\\
