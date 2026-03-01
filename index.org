@@ -63,6 +63,12 @@ Associate Professor of Law\\
 :END:
 #+INCLUDE: wip.org :minlevel 3
 
+* Selected Briefs and Petitions
+  :PROPERTIES:
+  :CUSTOM_ID: briefs
+  :END:
+#+INCLUDE: briefs.org :minlevel 3
+
 * Policy Work
   :PROPERTIES:
   :CUSTOM_ID: policy

@@ -37,6 +37,9 @@
 * Work in Progress :noexport:
 #+INCLUDE: ../wip.org :minlevel 2
 
+* Selected Briefs and Petitions
+#+INCLUDE: ../briefs.org :minlevel 2
+
 * Selected Policy Work :noexport:
 #+INCLUDE: ../policy.org :minlevel 2
 
