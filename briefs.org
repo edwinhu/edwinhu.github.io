@@ -1,4 +1,3 @@
 * Brief of Securities-Law Scholars and Former Senior SEC Officials as Amici Curiae in Support of Respondents, /FS Credit Opportunities Corp. v. Saba Capital Master Fund/, No. 24-345 (U.S. Oct. 16, 2025) ([[https://www.supremecourt.gov/DocketPDF/24/24-345/379924/20251017140641536_24-345acSecurties-LawScholars.pdf][Brief]])
 
-* Petition for Rulemaking: Modernization of Rule 144, SEC File No. 4-801 (Mar. 9, 2023) ([[https://www.sec.gov/files/rules/petitions/2023/petn4-801.pdf][Petition]])
-with Daniel J. Taylor, Bradford Lynch-Levy, and Jonathon Zytnick
+* Petition for Rulemaking: Modernization of Rule 144, with Daniel J. Taylor, Bradford Lynch-Levy, and Jonathon Zytnick, SEC File No. 4-801 (Mar. 9, 2023) ([[https://www.sec.gov/files/rules/petitions/2023/petn4-801.pdf][Petition]])
