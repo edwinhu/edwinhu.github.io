@@ -49,7 +49,7 @@
 * Academic Service
 #+INCLUDE: ../service.org :minlevel 2
 
-* Skills
+* Skills :noexport:
 #+INCLUDE: ../skills.org :minlevel 2
 
 * Citizenship :noexport:
