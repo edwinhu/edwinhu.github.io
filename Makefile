@@ -2,13 +2,15 @@ TYPST := typst
 FEATURES := --features html
 ROOT := --root .
 
-.PHONY: all website cv software clean watch
+.PHONY: all website cv software pin sas clean watch
 
-all: website cv software
+all: website cv software pin sas
 
 website: index.html
 cv: cv/cv.pdf
 software: software/index.html
+pin: pin/index.html
+sas: sas/index.html
 
 index.html: typ/index.typ typ/lib.typ typ/templates/website-head.typ $(wildcard typ/content/*.typ)
 	$(TYPST) compile $(FEATURES) --format html $(ROOT) typ/index.typ index.html
@@ -19,8 +21,14 @@ cv/cv.pdf: typ/cv.typ typ/lib.typ typ/templates/cv-template.typ $(wildcard typ/c
 software/index.html: typ/software.typ typ/lib.typ typ/templates/website-head.typ
 	$(TYPST) compile $(FEATURES) --format html $(ROOT) typ/software.typ software/index.html
 
+pin/index.html: typ/pin.typ typ/lib.typ typ/templates/website-head.typ
+	$(TYPST) compile $(FEATURES) --format html $(ROOT) typ/pin.typ pin/index.html
+
+sas/index.html: typ/sas.typ typ/lib.typ typ/templates/website-head.typ
+	$(TYPST) compile $(FEATURES) --format html $(ROOT) typ/sas.typ sas/index.html
+
 clean:
-	rm -f index.html cv/cv.pdf software/index.html
+	rm -f index.html cv/cv.pdf software/index.html pin/index.html sas/index.html
 
 watch:
 	$(TYPST) watch $(FEATURES) --format html --no-serve $(ROOT) typ/index.typ index.html
