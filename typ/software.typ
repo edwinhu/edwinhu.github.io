@@ -1,6 +1,6 @@
 #import "templates/website-head.typ": website-page
 
-#show: website-page.with(title: "Software")
+#show: website-page.with(title: "Software", base: "..")
 
 #context {
   if target() == "html" {
