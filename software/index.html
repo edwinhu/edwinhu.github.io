@@ -1,852 +1,172 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-<!-- 2025-07-30 Wed 12:53 -->
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Software</title>
-<meta name="author" content="Edwin Hu" />
-<meta name="generator" content="Org Mode" />
-<style type="text/css">
-  #content { max-width: 60em; margin: auto; }
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: auto;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    top: -8px;
-    right: 12px;
-    padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
-  }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-hledger:before { content: 'hledger'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .equation-container {
-    display: table;
-    text-align: center;
-    width: 100%;
-  }
-  .equation {
-    vertical-align: middle;
-  }
-  .equation-label {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
-  }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { }
-</style>
-<style type="text/css">
-body { max-width: 120ch !important; }
-</style>
-<link rel="stylesheet" href="https://latex.vercel.app/style.css">
-</head>
-<body>
-<div id="content" class="content">
-<h1 class="title">Software</h1>
-<div id="table-of-contents" role="doc-toc">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
-<ul>
-<li><a href="#org625b98c">1. Some command line tools worth learning</a>
-<ul>
-<li><a href="#org3b6988f">1.1. <code>pixi</code></a>
-<ul>
-<li><a href="#org70e1322">1.1.1. <code>uv</code></a></li>
-<li><a href="#org9e82c02">1.1.2. <code>conda</code> for <code>R</code></a></li>
-</ul>
-</li>
-<li><a href="#org57f8121">1.2. <code>curl</code></a></li>
-<li><a href="#orgbc6af61">1.3. <code>jq</code></a></li>
-<li><a href="#org4051e3c">1.4. <code>xmlstarlet</code></a></li>
-<li><a href="#org6bab7e2">1.5. <code>xan</code></a></li>
-<li><a href="#org29e8b68">1.6. <code>Rclone</code></a></li>
-<li><a href="#orgda0ae39">1.7. <code>GNU parallel</code></a></li>
-<li><a href="#orge8bc932">1.8. Other great CLI tools</a></li>
-<li><a href="#orgd2b26b6">1.9. Development and Research Workflow Tools</a></li>
-<li><a href="#org38a6c7d">1.10. AI-Powered Development Tools</a></li>
-</ul>
-</li>
-<li><a href="#org71cc71a">2. Some python libraries worth learning</a>
-<ul>
-<li><a href="#org8affad7">2.1. <code>requests</code></a></li>
-<li><a href="#orge99416f">2.2. <code>asyncio</code></a></li>
-<li><a href="#org766061c">2.3. <code>pandas</code></a></li>
-<li><a href="#orgb519fb9">2.4. <code>ujson</code></a></li>
-<li><a href="#org48030db">2.5. <code>benedict</code></a></li>
-<li><a href="#org4e4fd2f">2.6. <code>numba</code></a></li>
-<li><a href="#orgb96bccc">2.7. <code>marimo</code></a></li>
-<li><a href="#org524597c">2.8. <code>altair</code></a></li>
-<li><a href="#orge32b0f3">2.9. <code>polars</code></a></li>
-</ul>
-</li>
-<li><a href="#org24ed886">3. Some <code>R</code> libraries worth learning</a>
-<ul>
-<li><a href="#org2c54105">3.1. <code>tidyverse</code></a></li>
-<li><a href="#org7d57490">3.2. <code>data.table</code></a></li>
-<li><a href="#org2ed32a8">3.3. <code>felm</code> and <code>alpaca</code></a></li>
-</ul>
-</li>
-<li><a href="#orgd40643f">4. Other Useful Software</a>
-<ul>
-<li><a href="#org6477465">4.1. <code>DuckDB</code></a></li>
-<li><a href="#org9fef96e">4.2. <code>ScrapingBee</code></a></li>
-</ul>
-</li>
-<li><a href="#orga5db18b">5. Mac Applications for Researchers</a>
-<ul>
-<li><a href="#org70814bf">5.1. Terminal and Development</a></li>
-<li><a href="#org194edf2">5.2. Productivity Tools</a></li>
-<li><a href="#orgc3505f4">5.3. Knowledge Management</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<p>
-For a complete list of tools I use, you can browse my <a href="https://github.com/edwinhu/nix">nix configuration</a>. Warning: Nix has a steep learning curve, but the repository may give you ideas for other useful tools not mentioned here.
-</p>
-<div id="outline-container-org625b98c" class="outline-2">
-<h2 id="org625b98c"><span class="section-number-2">1.</span> Some command line tools worth learning</h2>
-<div class="outline-text-2" id="text-1">
-</div>
-<div id="outline-container-org3b6988f" class="outline-3">
-<h3 id="org3b6988f"><span class="section-number-3">1.1.</span> <a href="https://prefix.dev/docs/pixi/"><code>pixi</code></a></h3>
-<div class="outline-text-3" id="text-1-1">
-<p>
-I recommend <a href="https://prefix.dev/docs/pixi/"><code>pixi</code></a>, a modern, fast environment and package manager for the Python ecosystem, in the place of <code>anaconda</code> and <code>conda</code>. <code>pixi</code> is cross-platform, supports both Python and R, resolves environments quickly, and uses the familiar <code>conda-forge</code> ecosystem for package sourcing. It also manages all dependencies—including binaries and libraries—making installation and environment reproduction seamless.
-</p>
-
-<p>
-Older tools like <code>anaconda</code> and <code>conda</code> are still widely used, but <code>pixi</code> has a much smoother workflow and improved speed. Instead of heavy base installs (<code>anaconda</code>), you define lightweight, reproducible environments in a <code>pixi.toml</code> file. This ensures all your dependencies are explicit and portable.
-</p>
-
-<p>
-A minimal example for a Python data analysis environment:
-</p>
-
-<div class="org-src-container">
-<pre class="src src-toml">[<span style="color: #ffc777;">project</span>]
-<span style="color: #ff98a4;">name</span> = <span style="color: #c3e88d;">"myenv"</span>
-
-[<span style="color: #ffc777;">dependencies</span>]
-<span style="color: #ff98a4;">python</span> = <span style="color: #c3e88d;">"3.11"</span>
-<span style="color: #ff98a4;">jupyter</span> = <span style="color: #c3e88d;">"*"</span>
-<span style="color: #ff98a4;">pandas</span> = <span style="color: #c3e88d;">"*"</span>
-<span style="color: #ff98a4;">numpy</span> = <span style="color: #c3e88d;">"*"</span>
-<span style="color: #ff98a4;">scipy</span> = <span style="color: #c3e88d;">"*"</span>
-<span style="color: #ff98a4;">scikit-learn</span> = <span style="color: #c3e88d;">"*"</span>
-</pre>
-</div>
-
-<p>
-You can also run program without installing them:
-</p>
-<div class="org-src-container">
-<pre class="src src-sh">pixi run jupyter-console
-</pre>
-</div>
-
-<p>
-Another neat trick is that you can use <code>pixi-pack</code> to build an environment on one machine and deploy it to another machine. That means no need for more complicated tools like <code>docker</code>.
-</p>
-</div>
-<div id="outline-container-org70e1322" class="outline-4">
-<h4 id="org70e1322"><span class="section-number-4">1.1.1.</span> <a href="https://github.com/astral-sh/uv"><code>uv</code></a></h4>
-<div class="outline-text-4" id="text-1-1-1">
-<p>
-Where you might have used <code>pip</code> for Python package management, I now recommend <a href="https://github.com/astral-sh/uv"><code>uv</code></a>. <code>uv</code> is a fast drop-in replacement for <code>pip</code>. It performs lightning-fast installs, resolves dependencies robustly, and is compatible with both <code>requirements.txt</code> and <code>pyproject.toml</code> workflows.
-</p>
-
-<p>
-Like <code>pixi</code>, <code>uv</code> works by adding packages to your virtual environment, and can also run a tool without installing using <code>uvx</code>.
-</p>
-</div>
-</div>
-<div id="outline-container-org9e82c02" class="outline-4">
-<h4 id="org9e82c02"><span class="section-number-4">1.1.2.</span> <code>conda</code> for <code>R</code></h4>
-<div class="outline-text-4" id="text-1-1-2">
-<p>
-Yes I know, this is blasphemy. However, sometimes just getting a basic <code>R</code>
-installation up and running can take some time, as you might run into issues
-getting things to compile correctly on your system. In fact, getting <code>R</code> set up
-on different machines is what drove me to switch to python and to try <code>anaconda</code>
-in the first place. <code>anaconda</code> has actually <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/">supported <code>R</code></a> for years now, and
-just like with python it is an easy way to get started. Plus, with projects like
-<a href="https://irkernel.github.io/"><code>IRkernel</code></a>, which allows you to run <code>R</code> kernels in <code>jupyter notebook</code> it is a
-pretty good way to do interactive data analysis. Most <code>R</code> packages can be
-installed via <code>conda</code> with <code>r-[package name]</code>.
-</p>
-
-<p>
-Much like <code>anaconda</code> for python, I recommend that new <code>R</code> users start with
-<code>tidyverse</code>, and <code>data.table</code> for getting started with data analysis:
-</p>
-<div class="org-src-container">
-<pre class="src src-sh">conda install r-base r-essentials r-irkernel r-tidyverse r-data.table
-</pre>
-</div>
-
-<p>
-If, like me, you find yourself constantly playing with different <code>R</code> packages
-then you may actually want to rely on <code>R</code>&rsquo;s built-in <code>install.packages()</code>, or
-the <code>devtools::install_github</code> included in <code>tidyverse</code>. This may seem
-counterintuitive, as I have (hopefully) just convinced you that <code>pixi</code> is the
-best tool for package management in every context&#x2013;but just as you may want to
-fall back on <code>pip</code> for python, you may find it easier to just use the default
-package manager in <code>R</code> <i>after</i> you do your initial <code>pixi install</code>.
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-org57f8121" class="outline-3">
-<h3 id="org57f8121"><span class="section-number-3">1.2.</span> <a href="https://curl.haxx.se/"><code>curl</code></a></h3>
-<div class="outline-text-3" id="text-1-2">
-<p>
-These days much of the data you will want to analyze lives on the web. If you
-want to get this data you will run into terms like HTTP, FTP, REST APIs, JSON.
-If you want to work with these things you should probably learn <code>curl</code>.
-</p>
-
-<p>
-The basic usage of <code>curl</code> is simple, yet endlessly customizable:
-</p>
-<div class="org-src-container">
-<pre class="src src-sh"><span style="color: #ffc777;">curl</span> <span style="color: #c099ff;">[</span>options<span style="color: #c099ff;">]</span> <span style="color: #c099ff;">[</span>URL...<span style="color: #c099ff;">]</span>
-</pre>
-</div>
-
-<p>
-Why <code>curl</code> over something like <code>wget</code>? <code>curl</code> by default writes to <code>STDOUT</code>,
-while <code>wget</code> writes directly to disk. This gives <code>curl</code> a significant advantage
-in being a flexible utility in between pipes.
-</p>
-
-<p>
-Bonus tip: <a href="https://anaconda.org/conda-forge/curl"><code>curl</code> is available in <code>conda-forge</code></a>.
-</p>
-</div>
-</div>
-<div id="outline-container-orgbc6af61" class="outline-3">
-<h3 id="orgbc6af61"><span class="section-number-3">1.3.</span> <a href="https://stedolan.github.io/jq/"><code>jq</code></a></h3>
-<div class="outline-text-3" id="text-1-3">
-<p>
-<code>jq</code> is like <code>awk</code> but specifically for json files. It is fast, flexible, and
-plays nicely with your other command-line tools.
-</p>
-
-<p>
-It is extremely useful for pretty-printing your json files, and can be easily
-used to glob multiple files. The more advanced syntax including <code>select/map</code>
-can help you explore very complex files in just a few lines of code.
-</p>
-
-<p>
-Bonus tip: <a href="https://anaconda.org/conda-forge/jq"><code>jq</code> is available in <code>conda-forge</code></a>.
-</p>
-</div>
-</div>
-<div id="outline-container-org4051e3c" class="outline-3">
-<h3 id="org4051e3c"><span class="section-number-3">1.4.</span> <a href="http://xmlstar.sourceforge.net/overview.php"><code>xmlstarlet</code></a></h3>
-<div class="outline-text-3" id="text-1-4">
-<p>
-<code>xmlstarlet</code> is like <code>awk/sed/grep</code> for XML files.
-</p>
-
-<p>
-It is extremely useful for browsing the structure of your XML files (<code>xmlstarlet
-el</code>), and subsequently extract the relevant information (<code>xmlstarlet sel</code>). It
-is written in <code>C</code> so it is very fast.
-</p>
-</div>
-</div>
-<div id="outline-container-org6bab7e2" class="outline-3">
-<h3 id="org6bab7e2"><span class="section-number-3">1.5.</span> <a href="https://github.com/amethysts/xan"><code>xan</code></a></h3>
-<div class="outline-text-3" id="text-1-5">
-<p>
-Oftentimes you need to look through a csv file through the command line, and
-maybe you even want to do some basic analysis. Enter <code>xan</code>, which is written in
-Rust and is extremely fast and capable. <code>xan</code> can quickly filter, join, pretty
-print, etc. a csv, which makes it an invaluable tool.
-</p>
-
-<p>
-I used to recommend <code>csvkit</code> which is written in python, but the performance of
-<code>xan</code> has convinced me to switch for good.
-</p>
-</div>
-</div>
-<div id="outline-container-org29e8b68" class="outline-3">
-<h3 id="org29e8b68"><span class="section-number-3">1.6.</span> <a href="https://rclone.org/"><code>Rclone</code></a></h3>
-<div class="outline-text-3" id="text-1-6">
-<p>
-Rclone is a command-line tool for accessing data located in cloud storage, including common enterprise tools like Box, Dropbox, or Google Drive.
-</p>
-
-<p>
-It&rsquo;s fairly easy to use because it has commands that should be familiar to most unix users. Moreover, it is pretty fast.
-</p>
-
-<p>
-It also happens to be installed by default on WRDS (/usr/bin/rclone).
-</p>
-</div>
-</div>
-<div id="outline-container-orgda0ae39" class="outline-3">
-<h3 id="orgda0ae39"><span class="section-number-3">1.7.</span> <a href="https://www.gnu.org/software/parallel/"><code>GNU parallel</code></a></h3>
-<div class="outline-text-3" id="text-1-7">
-<p>
-<code>GNU parallel</code> is a great command line utility written in Perl which allows for
-very fine-tuned control over parallelization. If you are familiar with something
-like <code>xargs</code>, then <code>parallel</code> is like a more robust, scalable version of
-<code>xargs</code>.
-</p>
-
-<p>
-Admittedly the learning curve for <code>parallel</code> can be a bit high, but it makes
-replacing serial loops with parallel tasks very easy.
-</p>
-
-<p>
-Suppose you have a script <code>SOMETHING</code> which you want to run over a list of <code>csv</code>
-files in your current directory:
-</p>
-<div class="org-src-container">
-<pre class="src src-sh"><span style="color: #c099ff;">for</span> i<span style="color: #c099ff;"> in</span> $<span style="color: #c099ff;">(</span><span style="color: #ffc777;">find</span> *.csv<span style="color: #c099ff;">)</span>; <span style="color: #c099ff;">do</span>
-    ./SOMETHING $<span style="color: #ff98a4;">i</span>
-<span style="color: #c099ff;">done</span>
-</pre>
-</div>
-
-<p>
-One way to easily parallelize this in <code>bash</code> is to add <code>&amp;</code>:
-</p>
-<div class="org-src-container">
-<pre class="src src-sh"><span style="color: #c099ff;">for</span> i<span style="color: #c099ff;"> in</span> $<span style="color: #c099ff;">(</span><span style="color: #ffc777;">find</span> *.csv<span style="color: #c099ff;">)</span>; <span style="color: #c099ff;">do</span>
-    ./SOMETHING $<span style="color: #ff98a4;">i</span> &amp;
-<span style="color: #c099ff;">done</span>
-</pre>
-</div>
-
-<p>
-You could also accomplish the same task with a pipe:
-</p>
-<div class="org-src-container">
-<pre class="src src-sh"><span style="color: #ffc777;">find</span> *.csv | ./SOMETHING
-</pre>
-</div>
-<p>
-or if the number of <code>csv</code> files is large you can use <code>xargs</code>:
-</p>
-<div class="org-src-container">
-<pre class="src src-sh"><span style="color: #ffc777;">find</span> *.csv | xargs ./SOMETHING
-</pre>
-</div>
-
-<p>
-If you want more fine tuned control, such as over the number of concurrent jobs,
-then that is where <code>parallel</code> comes in:
-</p>
-<div class="org-src-container">
-<pre class="src src-sh"><span style="color: #ffc777;">find</span> *.csv | parallel -j8 ./SOMETHING
-</pre>
-</div>
-
-<p>
-<code>parallel</code> is very powerful, and can handle things like parsing arguments, and
-handle concurrent writing in a safe way. Suppose that your input is a pipe
-delimited file that you want to pass as arugments to your script and output to a
-single file:
-</p>
-<div class="org-src-container">
-<pre class="src src-sh"><span style="color: #ffc777;">cat</span> INPUT.csv | parallel --colsep <span style="color: #c3e88d;">'\|'</span> <span style="color: #c3e88d;">"./SOMETHING {1} {2}"</span> &gt; OUTPUT.csv
-</pre>
-</div>
-
-<p>
-Just remember you <code>bash</code> quoting rules and you will be fine!
-</p>
-</div>
-</div>
-<div id="outline-container-orge8bc932" class="outline-3">
-<h3 id="orge8bc932"><span class="section-number-3">1.8.</span> Other great CLI tools</h3>
-<div class="outline-text-3" id="text-1-8">
-<ul class="org-ul">
-<li><a href="https://github.com/sharkdp/bat"><code>bat</code></a> which is like <code>cat</code> with syntax highlighting, making it perfect for quickly viewing code and data files.</li>
-<li><a href="https://github.com/sharkdp/fd"><code>fd</code></a> which is a simple, fast alternative to <code>find</code> with intuitive syntax like <code>fd pattern</code> instead of <code>find . -name '*pattern*'</code>.</li>
-<li><a href="https://github.com/junegunn/fzf"><code>fzf</code></a> for fuzzy finding stuff.</li>
-<li><a href="https://github.com/ogham/exa"><code>exa</code></a> which is like a more advanced <code>ls</code>.</li>
-<li><a href="https://github.com/aristocratos/btop"><code>btop</code></a> which is a prettier <code>htop</code>.</li>
-<li><a href="https://github.com/BurntSushi/ripgrep"><code>ripgrep</code></a> which is a very fast <code>grep</code> search from the developer of <code>xsv</code>.</li>
-<li><a href="https://github.com/sxyazi/yazi"><code>yazi</code></a> which is a fast file manager.</li>
-<li><a href="https://github.com/ajeetdsouza/zoxide"><code>zoxide</code></a> which is a more advanced <code>cd</code>.</li>
-<li><a href="https://github.com/bensadeh/tailspin"><code>tspin</code></a> which adds timestamps to piped output, useful for monitoring long-running computations.</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orgd2b26b6" class="outline-3">
-<h3 id="orgd2b26b6"><span class="section-number-3">1.9.</span> Development and Research Workflow Tools</h3>
-<div class="outline-text-3" id="text-1-9">
-<ul class="org-ul">
-<li><a href="https://direnv.net/"><code>direnv</code></a> automatically loads environment variables from <code>.envrc</code> files when you enter a directory. Essential for managing project-specific configurations without polluting your global environment. Just <code>echo 'export API_KEY=foo' &gt; .envrc &amp;&amp; direnv allow</code>.</li>
-<li><a href="https://github.com/jesseduffield/lazygit"><code>lazygit</code></a> provides a terminal UI for git that makes complex operations intuitive. Perfect for researchers who want version control without memorizing git commands. Press <code>?</code> for help on any screen.</li>
-<li><a href="https://github.com/atuinsh/atuin"><code>atuin</code></a> replaces your shell history with a SQLite database, enabling powerful search across all your commands. Sync across machines and never lose that complex data processing pipeline again. Search with <code>Ctrl-R</code>.</li>
-<li><a href="https://cli.github.com/"><code>gh</code></a> is GitHub&rsquo;s official CLI for managing pull requests, issues, and repositories from the terminal. Clone with <code>gh repo clone owner/repo</code>, create PRs with <code>gh pr create</code>.</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org38a6c7d" class="outline-3">
-<h3 id="org38a6c7d"><span class="section-number-3">1.10.</span> AI-Powered Development Tools</h3>
-<div class="outline-text-3" id="text-1-10">
-<ul class="org-ul">
-<li><a href="https://docs.anthropic.com/en/docs/claude-code"><code>claude code</code></a> is an AI-powered coding assistant that helps with software development tasks. It can search codebases, write and edit files, run commands, and help debug issues, it can even read Jupyter Notebook files and &ldquo;see&rdquo; your images. The VSCod extension is also very nicely integrated, as it can automatically add the lines you select as context.</li>
-<li><a href="https://github.com/reorx/gemini-cli"><code>gemini-cli</code></a> is a free AI assistant powered by Google&rsquo;s Gemini models. You can even have Claude Code call Gemini directly for real-time code reviews during development, creating an AI pair programming experience.</li>
-</ul>
-</div>
-</div>
-</div>
-<div id="outline-container-org71cc71a" class="outline-2">
-<h2 id="org71cc71a"><span class="section-number-2">2.</span> Some python libraries worth learning</h2>
-<div class="outline-text-2" id="text-2">
-</div>
-<div id="outline-container-org8affad7" class="outline-3">
-<h3 id="org8affad7"><span class="section-number-3">2.1.</span> <a href="https://requests.readthedocs.io/en/master/"><code>requests</code></a></h3>
-<div class="outline-text-3" id="text-2-1">
-<p>
-<code>requests</code> is a dead-simple HTTP library for python. Like <code>curl</code> it is an essential
-building tool for working with data that lives on the web (aka scraping).
-</p>
-
-<p>
-For example, many websites are now built around REST APIs and deliver JSON
-payloads. Rather than scraping HTML with something like <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"><code>BeautifulSoup</code></a>, <a href="https://lxml.de/"><code>lxml</code></a>,
-or worst of all <a href="https://www.selenium.dev/"><code>Selenium</code></a> you can save yourself a lot of time and preserve your
-sanity by just using <code>requests</code> to get at the underlying data. All you need is the
-Inspect window of your browser, and some patience and soon you will be an API
-scraping master.
-</p>
-
-<p>
-Bonus tip: <a href="https://curl.trillworks.com/">https://curl.trillworks.com/</a> is a great website that converts <code>curl</code>
-statements into <code>requests</code> code. This is especially useful because some browsers
-allow you to copy the results of HTTP requests into <code>curl</code>, which you can easily
-convert into <code>requests</code> code!
-</p>
-</div>
-</div>
-<div id="outline-container-orge99416f" class="outline-3">
-<h3 id="orge99416f"><span class="section-number-3">2.2.</span> <a href="https://docs.python.org/3/library/asyncio.html"><code>asyncio</code></a></h3>
-<div class="outline-text-3" id="text-2-2">
-<p>
-<code>asyncio</code> is part of the python standard library as of python 3.4. It is a library
-for running concurrent (single-threaded) code, and brings python to the
-forefront of event-driven programming. That is a fancy way of saying that it is
-a neat library that can help you write highly parallel code, help you write your
-own network apps, or even write some pretty fancy scrapers.
-</p>
-
-<p>
-<code>asyncio</code> has spawned its own ecosystem of libraries, such as <a href="https://docs.aiohttp.org/en/stable/"><code>aiohttp</code></a> which is
-like a async version of <a href="https://requests.readthedocs.io/en/master/"><code>requests</code></a>, and <a href="https://github.com/Tinche/aiofiles"><code>aiofiles</code></a> for dealing with the
-filesystem asynchronously.
-</p>
-</div>
-</div>
-<div id="outline-container-org766061c" class="outline-3">
-<h3 id="org766061c"><span class="section-number-3">2.3.</span> <a href="https://pandas.pydata.org/"><code>pandas</code></a></h3>
-<div class="outline-text-3" id="text-2-3">
-<p>
-You have data. You use python. If these conditions apply, then you should use
-<code>pandas</code>. The genius of <code>pandas</code> is that provides a <code>DataFrame</code>, an indexed,
-two-dimensional, potentially heterogeneous and hierarchical table of rows and
-columns. In all likelihood 99% of the data you analyze with statistical
-techniques will fit into the <code>DataFrame</code> structure, and <code>pandas</code> makes working with
-<code>DataFrames</code> a breeze with powerful functions for data serialization and
-transformation.
-</p>
-</div>
-</div>
-<div id="outline-container-orgb519fb9" class="outline-3">
-<h3 id="orgb519fb9"><span class="section-number-3">2.4.</span> <a href="https://github.com/ultrajson/ultrajson"><code>ujson</code></a></h3>
-<div class="outline-text-3" id="text-2-4">
-<p>
-<code>ujson</code> stands for UltraJSON, which is an ultra fast JSON serializer written in C
-with python bindings. For most applications you can use it as a drop-in
-replacement for the default python <code>json</code> module, which is written in pure python
-and as such is slower.
-</p>
-</div>
-</div>
-<div id="outline-container-org48030db" class="outline-3">
-<h3 id="org48030db"><span class="section-number-3">2.5.</span> <a href="https://github.com/fabiocaccamo/python-benedict"><code>benedict</code></a></h3>
-<div class="outline-text-3" id="text-2-5">
-<p>
-<code>benedict</code> is a python dictionary subclass that makes navigating dictionaries in
-python a lot easier. In many ways it is like <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"><code>BeautifulSoup</code></a>, which is very good
-at working with irregular or malformed HTML/XML data, but for python
-dictionaries, and JSON-like data. It is not as full-featured as many of the
-libraries on this list, but it can be very useful if you are working with
-irregular JSON data.
-</p>
-</div>
-</div>
-<div id="outline-container-org4e4fd2f" class="outline-3">
-<h3 id="org4e4fd2f"><span class="section-number-3">2.6.</span> <a href="http://numba.pydata.org/"><code>numba</code></a></h3>
-<div class="outline-text-3" id="text-2-6">
-<p>
-At first glance, <code>numba</code> seems like an odd choice for python users. The appeal of
-python is that it is an interpreted language, and hence does not need to be
-compiled to run. <code>numba</code> is a compiler for python code. However, it is an easy to
-use, just-in-time (JIT) compiler using the LLVM compiler library. That means
-that it can take very simple python and <code>numpy</code> code and turn it into LLVM
-compiled code that is nearly as fast as C or FORTRAN code.
-</p>
-
-<p>
-A good use case for <code>numba</code> is taking an expensive matrix multiplication and
-re-writing it as a loop. This may seem counterintuitive as the whole point of
-<code>numpy</code> is to abstract away from slow python loops for optimized abstracted matrix
-operations. Yet these dumb, slow python loops combined with <code>numba</code> can be
-significantly faster than <code>numpy</code> counterparts if used correctly.
-</p>
-</div>
-</div>
-<div id="outline-container-orgb96bccc" class="outline-3">
-<h3 id="orgb96bccc"><span class="section-number-3">2.7.</span> <a href="https://marimo.io/"><code>marimo</code></a></h3>
-<div class="outline-text-3" id="text-2-7">
-<p>
-<code>marimo</code> is a reactive Python notebook that solves many pain points of traditional Jupyter notebooks. Unlike Jupyter, <code>marimo</code> notebooks are stored as pure Python files, making them git-friendly and importable as modules. The reactive execution model means cells automatically re-run when their dependencies change, eliminating the hidden state issues common in Jupyter. For researchers, this means more reproducible analyses and easier collaboration. Just run <code>marimo edit notebook.py</code> to start.
-</p>
-</div>
-</div>
-<div id="outline-container-org524597c" class="outline-3">
-<h3 id="org524597c"><span class="section-number-3">2.8.</span> <a href="https://altair-viz.github.io/"><code>altair</code></a></h3>
-<div class="outline-text-3" id="text-2-8">
-<p>
-<code>altair</code> is a declarative visualization library built on Vega-Lite. Unlike matplotlib&rsquo;s imperative style, <code>altair</code> uses a grammar of graphics approach that makes complex visualizations surprisingly simple. For researchers, this means publication-quality plots with minimal code. Just <code>alt.Chart(df).mark_point().encode(x='x', y='y')</code> for a basic scatter plot, with automatic type inference and interactivity.
-</p>
-</div>
-</div>
-<div id="outline-container-orge32b0f3" class="outline-3">
-<h3 id="orge32b0f3"><span class="section-number-3">2.9.</span> <a href="https://pola.rs/"><code>polars</code></a></h3>
-<div class="outline-text-3" id="text-2-9">
-<p>
-<code>polars</code> is a lightning-fast DataFrame library that often outperforms <code>pandas</code> by 10-100x. Written in Rust, it features lazy evaluation, automatic query optimization, and excellent memory efficiency. For researchers working with large datasets, <code>polars</code> can process data that would crash <code>pandas</code>. The API is expressive: <code>df.filter(pl.col('x') &gt; 5).group_by('category').agg(pl.col('y').mean())</code>.
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-org24ed886" class="outline-2">
-<h2 id="org24ed886"><span class="section-number-2">3.</span> Some <code>R</code> libraries worth learning</h2>
-<div class="outline-text-2" id="text-3">
-</div>
-<div id="outline-container-org2c54105" class="outline-3">
-<h3 id="org2c54105"><span class="section-number-3">3.1.</span> <a href="https://www.tidyverse.org/"><code>tidyverse</code></a></h3>
-<div class="outline-text-3" id="text-3-1">
-<p>
-<code>tidyverse</code> is a metapackage of data analysis tools for <code>R</code>. In many ways it is
-like the <code>anaconda</code> default installation in that it includes so many of the
-essentials. To get started analyzing data in a modern <code>R</code> setup you will likely
-need <code>ggplot2</code>, <code>dplyr</code>, <code>stringr</code>, and <code>purrr</code> just to name a few. All of these
-are part of <code>tidyverse</code>.
-</p>
-
-<p>
-<code>tidyverse</code> also contains one of the most useful packages in any language:
-<code>haven</code>, which allows you to read <code>SAS</code> and <code>Stata</code> files. Look, we can all
-pretend like we don&rsquo;t have co-authors that use these languages, or we can deal
-with it and use <code>haven</code>.
-</p>
-</div>
-</div>
-<div id="outline-container-org7d57490" class="outline-3">
-<h3 id="org7d57490"><span class="section-number-3">3.2.</span> <a href="https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html"><code>data.table</code></a></h3>
-<div class="outline-text-3" id="text-3-2">
-<p>
-<code>data.table</code> is <a href="https://github.com/Rdatatable/data.table/wiki/Benchmarks-%3A-Grouping">very fast</a>, and has an intuitive syntax. It is certainly
-different from <code>tidyverse::dplyr</code>, but for those familiar with <code>pandas</code>,
-PyTable, or <code>sql</code> it may be more intuitive.
-</p>
-
-<p>
-Bonus tip: DataCamp has a great <a href="https://s3.amazonaws.com/assets.datacamp.com/blog_assets/datatable_Cheat_Sheet_R.pdf">cheat sheet</a> for <code>data.table</code>.
-</p>
-</div>
-</div>
-<div id="outline-container-org2ed32a8" class="outline-3">
-<h3 id="org2ed32a8"><span class="section-number-3">3.3.</span> <a href="https://www.rdocumentation.org/packages/lfe/versions/2.8-6/topics/felm"><code>felm</code></a> and <a href="https://github.com/amrei-stammann/alpaca"><code>alpaca</code></a></h3>
-<div class="outline-text-3" id="text-3-3">
-<p>
-<code>felm</code> and <code>alpaca</code> are R packages for linear/logistic regressions with high
-dimensional fixed effects and clustered standard errors. Both are available on
-CRAN, and are fairly well documented.
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-orgd40643f" class="outline-2">
-<h2 id="orgd40643f"><span class="section-number-2">4.</span> Other Useful Software</h2>
-<div class="outline-text-2" id="text-4">
-</div>
-<div id="outline-container-org6477465" class="outline-3">
-<h3 id="org6477465"><span class="section-number-3">4.1.</span> <a href="https://duckdb.org/"><code>DuckDB</code></a></h3>
-<div class="outline-text-3" id="text-4-1">
-<p>
-<code>DuckDB</code> is a SQL-style database with very convenient syntax for data analysis. It
-works very well with standard tabular data formats, and plays nicely with
-python. It is also very fast for analytic workflows, including read/write and
-processing data. One of the most useful features is the variety of built-in
-datatypes, such as <code>LIST</code> and <code>STRUCT</code> which map to python/JSON datatypes. It also
-allows for nested or composite datatypes, which are often found in real-world
-data. By default, <code>DuckDB</code> operates in-memory databases. In many ways, it is like
-<code>SQLite</code> but designed for data analysis workflows. It also features a lot of
-useful extensions whic facilitate full text search, JSON querying,
-reading/writing remote files over HTTP, and reading from <code>Postgres/SQLite</code>
-databases.
-</p>
-
-<p>
-<code>DuckDB</code> now plays nicely with both python and R, and with their respective
-dataframes. It is also very very good at reading all sorts of common data files
-like csv, json, and parquet.
-</p>
-</div>
-</div>
-<div id="outline-container-org9fef96e" class="outline-3">
-<h3 id="org9fef96e"><span class="section-number-3">4.2.</span> <a href="https://www.scrapingbee.com/"><code>ScrapingBee</code></a></h3>
-<div class="outline-text-3" id="text-4-2">
-<p>
-Sometimes the only way to get data is through traditional web scraping. Scraping
-is <a href="https://cdn.ca9.uscourts.gov/datastore/opinions/2022/04/18/17-16783.pdf">controversial</a> and at the very least most websites have some sort of rate
-limiting or bot restrictions. Other websites are weirdly designed and require
-javascript rendering to be able to access content. <code>ScrapingBee</code> handles the
-former by providing headless instances that imitate a real Chrome browser,
-running through different proxies (including residential IP addresses) and the
-latter through custom javascript rendering. Thus, <code>ScrapingBee</code> makes scraping
-<i>much much</i> easier in the modern age.
-</p>
-
-<p>
-Unlike the rest of the tools on this page, <code>ScrapingBee</code> is a service you have to
-pay for. But the rates are fairly reasonable considering that spinning up a
-custom solution (e.g., multiple AWS instances) is costly and time-consuming.
-Best of all <code>ScrapingBee</code> is fairly easy to use. If you can write a simple
-<code>requests</code> script (see above), then converting it to use <code>ScrapingBee</code> is trivial.
-Last but not least, <code>ScrapingBee</code> only charges you for successful requests, so if
-their proxies get blocked it doesn&rsquo;t cost you any additional money.
-</p>
-
-<p>
-<b>Warning:</b> If you pay for a higher tier with concurrency, do not follow the
-<code>ScrapingBee</code> tutorials and try to use <code>multiprocessing</code> or <code>concurrent.futures</code> for
-parallelism. Although it is syntactically simple, they run into the Python GIL
-and will lock after a few iterations. Instead, use <code>aiohttp</code> and just replace the
-url field with the <code>ScrapingBee</code> url, include your API Key as a parameter, and the
-url you want to scrape as another parameter.
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-orga5db18b" class="outline-2">
-<h2 id="orga5db18b"><span class="section-number-2">5.</span> Mac Applications for Researchers</h2>
-<div class="outline-text-2" id="text-5">
-</div>
-<div id="outline-container-org70814bf" class="outline-3">
-<h3 id="org70814bf"><span class="section-number-3">5.1.</span> Terminal and Development</h3>
-<div class="outline-text-3" id="text-5-1">
-<ul class="org-ul">
-<li><a href="https://wezfurlong.org/wezterm/"><code>WezTerm</code></a> / <a href="https://ghostty.org/"><code>Ghostty</code></a> are modern terminal emulators with GPU acceleration, split panes, and extensive customization. They also provide native image support.</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org194edf2" class="outline-3">
-<h3 id="org194edf2"><span class="section-number-3">5.2.</span> Productivity Tools</h3>
-<div class="outline-text-3" id="text-5-2">
-<ul class="org-ul">
-<li><a href="https://superwhisper.com/"><code>Superwhisper</code></a> provides system-wide voice transcription using different transcription models. It is much better than the built-in Apple dictation, and can be much faster than typing. You can also have AI process your transcript directly, so you can for example, dictate some sentences and have it automatically turned into a properly formatted email.</li>
-
-<li><a href="https://www.homerow.app/"><code>Homerow</code></a> enables keyboard-only navigation of macOS by showing letter hints on clickable elements. Essential for reducing mouse usage during long coding or writing sessions.</li>
-
-<li><a href="https://bitwarden.com/"><code>Bitwarden</code></a> is an open-source password manager with excellent cross-platform support.</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orgc3505f4" class="outline-3">
-<h3 id="orgc3505f4"><span class="section-number-3">5.3.</span> Knowledge Management</h3>
-<div class="outline-text-3" id="text-5-3">
-<ul class="org-ul">
-<li><a href="https://logseq.com/"><code>Logseq</code></a> / <a href="https://obsidian.md/"><code>Obsidian</code></a> are powerful note-taking apps with bidirectional linking. Logseq uses an outliner approach while Obsidian uses traditional markdown files. Both excel at building a personal knowledge graph for research.</li>
-
-<li><a href="https://sioyek.info/"><code>Sioyek</code></a> is a PDF viewer designed specifically for research papers and technical documents. Features include smart jump for references, portals for keeping figures visible while reading, and a command palette for keyboard-driven navigation.</li>
-
-<li><a href="https://paperpile.com/"><code>Paperpile</code></a> is a reference manager that integrates seamlessly with Google Docs and Microsoft Word. It automatically extracts metadata from PDFs, syncs across devices, and makes citation formatting painless. The Chrome extension adds papers from Google Scholar with one click.</li>
-
-<li><a href="https://readwise.io/reader"><code>Readwise Reader</code></a> is a read-later app designed for deep reading and annotation. It handles PDFs, web articles, newsletters, and even YouTube videos. The killer feature is its powerful highlighting system that syncs with note-taking apps like Logseq or Obsidian. It also has an MCP, so you can connect it with LLMs like Claude, which then knows everything you have read/highlighted and can help you surface relevant passages or citations.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div id="postamble" class="status">
-<p class="author">Author: Edwin Hu</p>
-<p class="date">Created: 2025-07-30 Wed 12:53</p>
-</div>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Software</title>
+    <meta name="author" content="Edwin Hu">
+    <link rel="stylesheet" href="css/latex.css">
+    <style>
+      @font-face{font-family:'New Computer Modern';font-style:normal;font-weight:normal;font-display:swap;src:url('./css/fonts/NewCM10-Regular.woff2') format('woff2')}@font-face{font-family:'New Computer Modern';font-style:italic;font-weight:normal;font-display:swap;src:url('./css/fonts/NewCM10-Italic.woff2') format('woff2')}@font-face{font-family:'New Computer Modern';font-style:normal;font-weight:bold;font-display:swap;src:url('./css/fonts/NewCM10-Bold.woff2') format('woff2')}@font-face{font-family:'New Computer Modern';font-style:italic;font-weight:bold;font-display:swap;src:url('./css/fonts/NewCM10-BoldItalic.woff2') format('woff2')}body{max-width:60em!important;margin:auto;font-family:'New Computer Modern','Latin Modern',Georgia,Cambria,'Times New Roman',Times,serif}.smallcaps{font-variant:small-caps}h1{font-variant:small-caps}nav[role=doc-toc] li>div{display:inline}nav[role=doc-toc] ol{padding-left:1.5em}nav[role=doc-toc]>ol{padding-left:0}a{color:#232D4B}a:visited{color:#232D4B}
+    </style>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67919104-1">
+    </script>
+    <script>
+      window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-67919104-1');
+    </script>
+  </head>
+  <body>
+    <h1 class="title"><span style="font-variant-caps: small-caps">Software</span></h1>
+    <p>For a complete list of tools I use, you can browse my <a href="https://github.com/edwinhu/nix">nix configuration</a>. Warning: Nix has a steep learning curve, but the repository may give you ideas for other useful tools not mentioned here.</p>
+    <h2>Some command line tools worth learning</h2>
+    <h3><a href="https://prefix.dev/docs/pixi/"><code>pixi</code></a></h3>
+    <p>I recommend <a href="https://prefix.dev/docs/pixi/"><code>pixi</code></a>, a modern, fast environment and package manager for the Python ecosystem, in the place of <code>anaconda</code> and <code>conda</code>. <code>pixi</code> is cross-platform, supports both Python and R, resolves environments quickly, and uses the familiar <code>conda-forge</code> ecosystem for package sourcing. It also manages all dependencies—including binaries and libraries—making installation and environment reproduction seamless.</p>
+    <p>Older tools like <code>anaconda</code> and <code>conda</code> are still widely used, but <code>pixi</code> has a much smoother workflow and improved speed. Instead of heavy base installs (<code>anaconda</code>), you define lightweight, reproducible environments in a <code>pixi.toml</code> file. This ensures all your dependencies are explicit and portable.</p>
+    <p>A minimal example for a Python data analysis environment:</p>
+    <pre><code data-lang="toml">[<span style="color: #4b69c6">project</span>]<br><span style="color: #4b69c6">name</span> = <span style="color: #198810">"</span><span style="color: #198810">myenv</span><span style="color: #198810">"</span><br><br>[<span style="color: #4b69c6">dependencies</span>]<br><span style="color: #4b69c6">python</span> = <span style="color: #198810">"</span><span style="color: #198810">3.11</span><span style="color: #198810">"</span><br><span style="color: #4b69c6">jupyter</span> = <span style="color: #198810">"</span><span style="color: #198810">*</span><span style="color: #198810">"</span><br><span style="color: #4b69c6">pandas</span> = <span style="color: #198810">"</span><span style="color: #198810">*</span><span style="color: #198810">"</span><br><span style="color: #4b69c6">numpy</span> = <span style="color: #198810">"</span><span style="color: #198810">*</span><span style="color: #198810">"</span><br><span style="color: #4b69c6">scipy</span> = <span style="color: #198810">"</span><span style="color: #198810">*</span><span style="color: #198810">"</span><br><span style="color: #4b69c6">scikit-learn</span> = <span style="color: #198810">"</span><span style="color: #198810">*</span><span style="color: #198810">"</span></code></pre>
+    <p>You can also run program without installing them:</p>
+    <pre><code data-lang="sh"><span style="color: #4b69c6">pixi</span> run jupyter-console</code></pre>
+    <p>Another neat trick is that you can use <code>pixi-pack</code> to build an environment on one machine and deploy it to another machine. That means no need for more complicated tools like <code>docker</code>.</p>
+    <h4><a href="https://github.com/astral-sh/uv"><code>uv</code></a></h4>
+    <p>Where you might have used <code>pip</code> for Python package management, I now recommend <a href="https://github.com/astral-sh/uv"><code>uv</code></a>. <code>uv</code> is a fast drop-in replacement for <code>pip</code>. It performs lightning-fast installs, resolves dependencies robustly, and is compatible with both <code>requirements.txt</code> and <code>pyproject.toml</code> workflows.</p>
+    <p>Like <code>pixi</code>, <code>uv</code> works by adding packages to your virtual environment, and can also run a tool without installing using <code>uvx</code>.</p>
+    <h4><code>conda</code> for <code>R</code></h4>
+    <p>Yes I know, this is blasphemy. However, sometimes just getting a basic <code>R</code> installation up and running can take some time, as you might run into issues getting things to compile correctly on your system. In fact, getting <code>R</code> set up on different machines is what drove me to switch to python and to try <code>anaconda</code> in the first place. <code>anaconda</code> has actually <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/">supported <code>R</code></a> for years now, and just like with python it is an easy way to get started. Plus, with projects like <a href="https://irkernel.github.io/"><code>IRkernel</code></a>, which allows you to run <code>R</code> kernels in <code>jupyter notebook</code> it is a pretty good way to do interactive data analysis. Most <code>R</code> packages can be installed via <code>conda</code> with <code>r-[package name]</code>.</p>
+    <p>Much like <code>anaconda</code> for python, I recommend that new <code>R</code> users start with <code>tidyverse</code>, and <code>data.table</code> for getting started with data analysis:</p>
+    <pre><code data-lang="sh"><span style="color: #4b69c6">conda</span> install r-base r-essentials r-irkernel r-tidyverse r-data.table</code></pre>
+    <p>If, like me, you find yourself constantly playing with different <code>R</code> packages then you may actually want to rely on <code>R</code>’s built-in <code>install.packages()</code>, or the <code>devtools::install_github</code> included in <code>tidyverse</code>. This may seem counterintuitive, as I have (hopefully) just convinced you that <code>pixi</code> is the best tool for package management in every context–but just as you may want to fall back on <code>pip</code> for python, you may find it easier to just use the default package manager in <code>R</code> <em>after</em> you do your initial <code>pixi install</code>.</p>
+    <h3><a href="https://curl.haxx.se/"><code>curl</code></a></h3>
+    <p>These days much of the data you will want to analyze lives on the web. If you want to get this data you will run into terms like HTTP, FTP, REST APIs, JSON. If you want to work with these things you should probably learn <code>curl</code>.</p>
+    <p>The basic usage of <code>curl</code> is simple, yet endlessly customizable:</p>
+    <pre><code data-lang="sh"><span style="color: #4b69c6">curl</span> <span style="color: #d73948">[</span>options<span style="color: #d73948">]</span> <span style="color: #d73948">[</span>URL...<span style="color: #d73948">]</span></code></pre>
+    <p>Why <code>curl</code> over something like <code>wget</code>? <code>curl</code> by default writes to <code>STDOUT</code>, while <code>wget</code> writes directly to disk. This gives <code>curl</code> a significant advantage in being a flexible utility in between pipes.</p>
+    <p>Bonus tip: <a href="https://anaconda.org/conda-forge/curl"><code>curl</code> is available in <code>conda-forge</code></a>.</p>
+    <h3><a href="https://stedolan.github.io/jq/"><code>jq</code></a></h3>
+    <p><code>jq</code> is like <code>awk</code> but specifically for json files. It is fast, flexible, and plays nicely with your other command-line tools.</p>
+    <p>It is extremely useful for pretty-printing your json files, and can be easily used to glob multiple files. The more advanced syntax including <code>select/map</code> can help you explore very complex files in just a few lines of code.</p>
+    <p>Bonus tip: <a href="https://anaconda.org/conda-forge/jq"><code>jq</code> is available in <code>conda-forge</code></a>.</p>
+    <h3><a href="http://xmlstar.sourceforge.net/overview.php"><code>xmlstarlet</code></a></h3>
+    <p><code>xmlstarlet</code> is like <code>awk/sed/grep</code> for XML files.</p>
+    <p>It is extremely useful for browsing the structure of your XML files (<code>xmlstarlet el</code>), and subsequently extract the relevant information (<code>xmlstarlet sel</code>). It is written in <code>C</code> so it is very fast.</p>
+    <h3><a href="https://github.com/amethysts/xan"><code>xan</code></a></h3>
+    <p>Oftentimes you need to look through a csv file through the command line, and maybe you even want to do some basic analysis. Enter <code>xan</code>, which is written in Rust and is extremely fast and capable. <code>xan</code> can quickly filter, join, pretty print, etc. a csv, which makes it an invaluable tool.</p>
+    <p>I used to recommend <code>csvkit</code> which is written in python, but the performance of <code>xan</code> has convinced me to switch for good.</p>
+    <h3><a href="https://rclone.org/"><code>Rclone</code></a></h3>
+    <p>Rclone is a command-line tool for accessing data located in cloud storage, including common enterprise tools like Box, Dropbox, or Google Drive.</p>
+    <p>It’s fairly easy to use because it has commands that should be familiar to most unix users. Moreover, it is pretty fast.</p>
+    <p>It also happens to be installed by default on WRDS (/usr/bin/rclone).</p>
+    <h3><a href="https://www.gnu.org/software/parallel/"><code>GNU parallel</code></a></h3>
+    <p><code>GNU parallel</code> is a great command line utility written in Perl which allows for very fine-tuned control over parallelization. If you are familiar with something like <code>xargs</code>, then <code>parallel</code> is like a more robust, scalable version of <code>xargs</code>.</p>
+    <p>Admittedly the learning curve for <code>parallel</code> can be a bit high, but it makes replacing serial loops with parallel tasks very easy.</p>
+    <p>Suppose you have a script <code>SOMETHING</code> which you want to run over a list of <code>csv</code> files in your current directory:</p>
+    <pre><code data-lang="sh"><span style="color: #d73948">for</span> i <span style="color: #d73948">in</span> $(<span style="color: #4b69c6">find</span> <span style="color: #d73948">*</span>.csv)<span style="color: #d73948">;</span> <span style="color: #d73948">do</span><br>    <span style="color: #4b69c6">./SOMETHING</span> $i<br><span style="color: #d73948">done</span></code></pre>
+    <p>One way to easily parallelize this in <code>bash</code> is to add <code>&amp;</code>:</p>
+    <pre><code data-lang="sh"><span style="color: #d73948">for</span> i <span style="color: #d73948">in</span> $(<span style="color: #4b69c6">find</span> <span style="color: #d73948">*</span>.csv)<span style="color: #d73948">;</span> <span style="color: #d73948">do</span><br>    <span style="color: #4b69c6">./SOMETHING</span> $i <span style="color: #d73948">&amp;</span><br><span style="color: #d73948">done</span></code></pre>
+    <p>You could also accomplish the same task with a pipe:</p>
+    <pre><code data-lang="sh"><span style="color: #4b69c6">find</span> <span style="color: #d73948">*</span>.csv <span style="color: #d73948">|</span> <span style="color: #4b69c6">./SOMETHING</span></code></pre>
+    <p>or if the number of <code>csv</code> files is large you can use <code>xargs</code>:</p>
+    <pre><code data-lang="sh"><span style="color: #4b69c6">find</span> <span style="color: #d73948">*</span>.csv <span style="color: #d73948">|</span> <span style="color: #4b69c6">xargs</span> ./SOMETHING</code></pre>
+    <p>If you want more fine tuned control, such as over the number of concurrent jobs, then that is where <code>parallel</code> comes in:</p>
+    <pre><code data-lang="sh"><span style="color: #4b69c6">find</span> <span style="color: #d73948">*</span>.csv <span style="color: #d73948">|</span> <span style="color: #4b69c6">parallel</span> -j8 ./SOMETHING</code></pre>
+    <p><code>parallel</code> is very powerful, and can handle things like parsing arguments, and handle concurrent writing in a safe way. Suppose that your input is a pipe delimited file that you want to pass as arugments to your script and output to a single file:</p>
+    <pre><code data-lang="sh"><span style="color: #4b69c6">cat</span> INPUT.csv <span style="color: #d73948">|</span> <span style="color: #4b69c6">parallel</span> --colsep <span style="color: #198810">'</span><span style="color: #198810">\|</span><span style="color: #198810">'</span> <span style="color: #198810">"</span><span style="color: #198810">./SOMETHING {1} {2}</span><span style="color: #198810">"</span> <span style="color: #d73948">></span> OUTPUT.csv</code></pre>
+    <p>Just remember you <code>bash</code> quoting rules and you will be fine!</p>
+    <h3>Other great CLI tools</h3>
+    <ul>
+      <li><a href="https://github.com/sharkdp/bat"><code>bat</code></a> which is like <code>cat</code> with syntax highlighting, making it perfect for quickly viewing code and data files.</li>
+      <li><a href="https://github.com/sharkdp/fd"><code>fd</code></a> which is a simple, fast alternative to <code>find</code> with intuitive syntax like <code>fd pattern</code> instead of <code>find . -name '*pattern*'</code>.</li>
+      <li><a href="https://github.com/junegunn/fzf"><code>fzf</code></a> for fuzzy finding stuff.</li>
+      <li><a href="https://github.com/ogham/exa"><code>exa</code></a> which is like a more advanced <code>ls</code>.</li>
+      <li><a href="https://github.com/aristocratos/btop"><code>btop</code></a> which is a prettier <code>htop</code>.</li>
+      <li><a href="https://github.com/BurntSushi/ripgrep"><code>ripgrep</code></a> which is a very fast <code>grep</code> search from the developer of <code>xsv</code>.</li>
+      <li><a href="https://github.com/sxyazi/yazi"><code>yazi</code></a> which is a fast file manager.</li>
+      <li><a href="https://github.com/ajeetdsouza/zoxide"><code>zoxide</code></a> which is a more advanced <code>cd</code>.</li>
+      <li><a href="https://github.com/bensadeh/tailspin"><code>tspin</code></a> which adds timestamps to piped output, useful for monitoring long-running computations.</li>
+    </ul>
+    <h3>Development and Research Workflow Tools</h3>
+    <ul>
+      <li><a href="https://direnv.net/"><code>direnv</code></a> automatically loads environment variables from <code>.envrc</code> files when you enter a directory. Essential for managing project-specific configurations without polluting your global environment. Just <code>echo 'export API_KEY=foo' > .envrc &amp;&amp; direnv allow</code>.</li>
+      <li><a href="https://github.com/jesseduffield/lazygit"><code>lazygit</code></a> provides a terminal UI for git that makes complex operations intuitive. Perfect for researchers who want version control without memorizing git commands. Press <code>?</code> for help on any screen.</li>
+      <li><a href="https://github.com/atuinsh/atuin"><code>atuin</code></a> replaces your shell history with a SQLite database, enabling powerful search across all your commands. Sync across machines and never lose that complex data processing pipeline again. Search with <code>Ctrl-R</code>.</li>
+      <li><a href="https://cli.github.com/"><code>gh</code></a> is GitHub’s official CLI for managing pull requests, issues, and repositories from the terminal. Clone with <code>gh repo clone owner/repo</code>, create PRs with <code>gh pr create</code>.</li>
+    </ul>
+    <h3>AI-Powered Development Tools</h3>
+    <ul>
+      <li><a href="https://docs.anthropic.com/en/docs/claude-code"><code>claude code</code></a> is an AI-powered coding assistant that helps with software development tasks. It can search codebases, write and edit files, run commands, and help debug issues, it can even read Jupyter Notebook files and “see” your images. The VSCod extension is also very nicely integrated, as it can automatically add the lines you select as context.</li>
+      <li><a href="https://github.com/reorx/gemini-cli"><code>gemini-cli</code></a> is a free AI assistant powered by Google’s Gemini models. You can even have Claude Code call Gemini directly for real-time code reviews during development, creating an AI pair programming experience.</li>
+    </ul>
+    <h2>Some python libraries worth learning</h2>
+    <h3><a href="https://requests.readthedocs.io/en/master/"><code>requests</code></a></h3>
+    <p><code>requests</code> is a dead-simple HTTP library for python. Like <code>curl</code> it is an essential building tool for working with data that lives on the web (aka scraping).</p>
+    <p>For example, many websites are now built around REST APIs and deliver JSON payloads. Rather than scraping HTML with something like <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"><code>BeautifulSoup</code></a>, <a href="https://lxml.de/"><code>lxml</code></a>, or worst of all <a href="https://www.selenium.dev/"><code>Selenium</code></a> you can save yourself a lot of time and preserve your sanity by just using <code>requests</code> to get at the underlying data. All you need is the Inspect window of your browser, and some patience and soon you will be an API scraping master.</p>
+    <p>Bonus tip: <a href="https://curl.trillworks.com/">https://curl.trillworks.com/</a> is a great website that converts <code>curl</code> statements into <code>requests</code> code. This is especially useful because some browsers allow you to copy the results of HTTP requests into <code>curl</code>, which you can easily convert into <code>requests</code> code!</p>
+    <h3><a href="https://docs.python.org/3/library/asyncio.html"><code>asyncio</code></a></h3>
+    <p><code>asyncio</code> is part of the python standard library as of python 3.4. It is a library for running concurrent (single-threaded) code, and brings python to the forefront of event-driven programming. That is a fancy way of saying that it is a neat library that can help you write highly parallel code, help you write your own network apps, or even write some pretty fancy scrapers.</p>
+    <p><code>asyncio</code> has spawned its own ecosystem of libraries, such as <a href="https://docs.aiohttp.org/en/stable/"><code>aiohttp</code></a> which is like a async version of <a href="https://requests.readthedocs.io/en/master/"><code>requests</code></a>, and <a href="https://github.com/Tinche/aiofiles"><code>aiofiles</code></a> for dealing with the filesystem asynchronously.</p>
+    <h3><a href="https://pandas.pydata.org/"><code>pandas</code></a></h3>
+    <p>You have data. You use python. If these conditions apply, then you should use <code>pandas</code>. The genius of <code>pandas</code> is that provides a <code>DataFrame</code>, an indexed, two-dimensional, potentially heterogeneous and hierarchical table of rows and columns. In all likelihood 99% of the data you analyze with statistical techniques will fit into the <code>DataFrame</code> structure, and <code>pandas</code> makes working with <code>DataFrames</code> a breeze with powerful functions for data serialization and transformation.</p>
+    <h3><a href="https://github.com/ultrajson/ultrajson"><code>ujson</code></a></h3>
+    <p><code>ujson</code> stands for UltraJSON, which is an ultra fast JSON serializer written in C with python bindings. For most applications you can use it as a drop-in replacement for the default python <code>json</code> module, which is written in pure python and as such is slower.</p>
+    <h3><a href="https://github.com/fabiocaccamo/python-benedict"><code>benedict</code></a></h3>
+    <p><code>benedict</code> is a python dictionary subclass that makes navigating dictionaries in python a lot easier. In many ways it is like <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"><code>BeautifulSoup</code></a>, which is very good at working with irregular or malformed HTML/XML data, but for python dictionaries, and JSON-like data. It is not as full-featured as many of the libraries on this list, but it can be very useful if you are working with irregular JSON data.</p>
+    <h3><a href="http://numba.pydata.org/"><code>numba</code></a></h3>
+    <p>At first glance, <code>numba</code> seems like an odd choice for python users. The appeal of python is that it is an interpreted language, and hence does not need to be compiled to run. <code>numba</code> is a compiler for python code. However, it is an easy to use, just-in-time (JIT) compiler using the LLVM compiler library. That means that it can take very simple python and <code>numpy</code> code and turn it into LLVM compiled code that is nearly as fast as C or FORTRAN code.</p>
+    <p>A good use case for <code>numba</code> is taking an expensive matrix multiplication and re-writing it as a loop. This may seem counterintuitive as the whole point of <code>numpy</code> is to abstract away from slow python loops for optimized abstracted matrix operations. Yet these dumb, slow python loops combined with <code>numba</code> can be significantly faster than <code>numpy</code> counterparts if used correctly.</p>
+    <h3><a href="https://marimo.io/"><code>marimo</code></a></h3>
+    <p><code>marimo</code> is a reactive Python notebook that solves many pain points of traditional Jupyter notebooks. Unlike Jupyter, <code>marimo</code> notebooks are stored as pure Python files, making them git-friendly and importable as modules. The reactive execution model means cells automatically re-run when their dependencies change, eliminating the hidden state issues common in Jupyter. For researchers, this means more reproducible analyses and easier collaboration. Just run <code>marimo edit notebook.py</code> to start.</p>
+    <h3><a href="https://altair-viz.github.io/"><code>altair</code></a></h3>
+    <p><code>altair</code> is a declarative visualization library built on Vega-Lite. Unlike matplotlib’s imperative style, <code>altair</code> uses a grammar of graphics approach that makes complex visualizations surprisingly simple. For researchers, this means publication-quality plots with minimal code. Just <code>alt.Chart(df).mark_point().encode(x='x', y='y')</code> for a basic scatter plot, with automatic type inference and interactivity.</p>
+    <h3><a href="https://pola.rs/"><code>polars</code></a></h3>
+    <p><code>polars</code> is a lightning-fast DataFrame library that often outperforms <code>pandas</code> by 10-100x. Written in Rust, it features lazy evaluation, automatic query optimization, and excellent memory efficiency. For researchers working with large datasets, <code>polars</code> can process data that would crash <code>pandas</code>. The API is expressive: <code>df.filter(pl.col('x') > 5).group_by('category').agg(pl.col('y').mean())</code>.</p>
+    <h2>Some <code>R</code> libraries worth learning</h2>
+    <h3><a href="https://www.tidyverse.org/"><code>tidyverse</code></a></h3>
+    <p><code>tidyverse</code> is a metapackage of data analysis tools for <code>R</code>. In many ways it is like the <code>anaconda</code> default installation in that it includes so many of the essentials. To get started analyzing data in a modern <code>R</code> setup you will likely need <code>ggplot2</code>, <code>dplyr</code>, <code>stringr</code>, and <code>purrr</code> just to name a few. All of these are part of <code>tidyverse</code>.</p>
+    <p><code>tidyverse</code> also contains one of the most useful packages in any language: <code>haven</code>, which allows you to read <code>SAS</code> and <code>Stata</code> files. Look, we can all pretend like we don’t have co-authors that use these languages, or we can deal with it and use <code>haven</code>.</p>
+    <h3><a href="https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html"><code>data.table</code></a></h3>
+    <p><code>data.table</code> is <a href="https://github.com/Rdatatable/data.table/wiki/Benchmarks-%3A-Grouping">very fast</a>, and has an intuitive syntax. It is certainly different from <code>tidyverse::dplyr</code>, but for those familiar with <code>pandas</code>, PyTable, or <code>sql</code> it may be more intuitive.</p>
+    <p>Bonus tip: DataCamp has a great <a href="https://s3.amazonaws.com/assets.datacamp.com/blog_assets/datatable_Cheat_Sheet_R.pdf">cheat sheet</a> for <code>data.table</code>.</p>
+    <h3><a href="https://www.rdocumentation.org/packages/lfe/versions/2.8-6/topics/felm"><code>felm</code></a> and <a href="https://github.com/amrei-stammann/alpaca"><code>alpaca</code></a></h3>
+    <p><code>felm</code> and <code>alpaca</code> are R packages for linear/logistic regressions with high dimensional fixed effects and clustered standard errors. Both are available on CRAN, and are fairly well documented.</p>
+    <h2>Other Useful Software</h2>
+    <h3><a href="https://duckdb.org/"><code>DuckDB</code></a></h3>
+    <p><code>DuckDB</code> is a SQL-style database with very convenient syntax for data analysis. It works very well with standard tabular data formats, and plays nicely with python. It is also very fast for analytic workflows, including read/write and processing data. One of the most useful features is the variety of built-in datatypes, such as <code>LIST</code> and <code>STRUCT</code> which map to python/JSON datatypes. It also allows for nested or composite datatypes, which are often found in real-world data. By default, <code>DuckDB</code> operates in-memory databases. In many ways, it is like <code>SQLite</code> but designed for data analysis workflows. It also features a lot of useful extensions whic facilitate full text search, JSON querying, reading/writing remote files over HTTP, and reading from <code>Postgres/SQLite</code> databases.</p>
+    <p><code>DuckDB</code> now plays nicely with both python and R, and with their respective dataframes. It is also very very good at reading all sorts of common data files like csv, json, and parquet.</p>
+    <h3><a href="https://www.scrapingbee.com/"><code>ScrapingBee</code></a></h3>
+    <p>Sometimes the only way to get data is through traditional web scraping. Scraping is <a href="https://cdn.ca9.uscourts.gov/datastore/opinions/2022/04/18/17-16783.pdf">controversial</a> and at the very least most websites have some sort of rate limiting or bot restrictions. Other websites are weirdly designed and require javascript rendering to be able to access content. <code>ScrapingBee</code> handles the former by providing headless instances that imitate a real Chrome browser, running through different proxies (including residential IP addresses) and the latter through custom javascript rendering. Thus, <code>ScrapingBee</code> makes scraping <em>much much</em> easier in the modern age.</p>
+    <p>Unlike the rest of the tools on this page, <code>ScrapingBee</code> is a service you have to pay for. But the rates are fairly reasonable considering that spinning up a custom solution (e.g., multiple AWS instances) is costly and time-consuming. Best of all <code>ScrapingBee</code> is fairly easy to use. If you can write a simple <code>requests</code> script (see above), then converting it to use <code>ScrapingBee</code> is trivial. Last but not least, <code>ScrapingBee</code> only charges you for successful requests, so if their proxies get blocked it doesn’t cost you any additional money.</p>
+    <p><strong>Warning:</strong> If you pay for a higher tier with concurrency, do not follow the <code>ScrapingBee</code> tutorials and try to use <code>multiprocessing</code> or <code>concurrent.futures</code> for parallelism. Although it is syntactically simple, they run into the Python GIL and will lock after a few iterations. Instead, use <code>aiohttp</code> and just replace the url field with the <code>ScrapingBee</code> url, include your API Key as a parameter, and the url you want to scrape as another parameter.</p>
+    <h2>Mac Applications for Researchers</h2>
+    <h3>Terminal and Development</h3>
+    <ul>
+      <li><a href="https://wezfurlong.org/wezterm/"><code>WezTerm</code></a> / <a href="https://ghostty.org/"><code>Ghostty</code></a> are modern terminal emulators with GPU acceleration, split panes, and extensive customization. They also provide native image support.</li>
+    </ul>
+    <h3>Productivity Tools</h3>
+    <ul>
+      <li>
+        <p><a href="https://superwhisper.com/"><code>Superwhisper</code></a> provides system-wide voice transcription using different transcription models. It is much better than the built-in Apple dictation, and can be much faster than typing. You can also have AI process your transcript directly, so you can for example, dictate some sentences and have it automatically turned into a properly formatted email.</p>
+      </li>
+      <li>
+        <p><a href="https://www.homerow.app/"><code>Homerow</code></a> enables keyboard-only navigation of macOS by showing letter hints on clickable elements. Essential for reducing mouse usage during long coding or writing sessions.</p>
+      </li>
+      <li>
+        <p><a href="https://bitwarden.com/"><code>Bitwarden</code></a> is an open-source password manager with excellent cross-platform support.</p>
+      </li>
+    </ul>
+    <h3>Knowledge Management</h3>
+    <ul>
+      <li>
+        <p><a href="https://logseq.com/"><code>Logseq</code></a> / <a href="https://obsidian.md/"><code>Obsidian</code></a> are powerful note-taking apps with bidirectional linking. Logseq uses an outliner approach while Obsidian uses traditional markdown files. Both excel at building a personal knowledge graph for research.</p>
+      </li>
+      <li>
+        <p><a href="https://sioyek.info/"><code>Sioyek</code></a> is a PDF viewer designed specifically for research papers and technical documents. Features include smart jump for references, portals for keeping figures visible while reading, and a command palette for keyboard-driven navigation.</p>
+      </li>
+      <li>
+        <p><a href="https://paperpile.com/"><code>Paperpile</code></a> is a reference manager that integrates seamlessly with Google Docs and Microsoft Word. It automatically extracts metadata from PDFs, syncs across devices, and makes citation formatting painless. The Chrome extension adds papers from Google Scholar with one click.</p>
+      </li>
+      <li>
+        <p><a href="https://readwise.io/reader"><code>Readwise Reader</code></a> is a read-later app designed for deep reading and annotation. It handles PDFs, web articles, newsletters, and even YouTube videos. The killer feature is its powerful highlighting system that syncs with note-taking apps like Logseq or Obsidian. It also has an MCP, so you can connect it with LLMs like Claude, which then knows everything you have read/highlighted and can help you surface relevant passages or citations.</p>
+      </li>
+    </ul>
+  </body>
 </html>

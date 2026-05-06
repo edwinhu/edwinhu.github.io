@@ -1,6 +1,6 @@
 #import "../lib.typ": sc
 
-= Custom Proxy Voting Advice, with Jonathon Zytnick and Nadya Malenko (#link("https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4770971")[SSRN])
+= Custom Proxy Voting Advice, with Jonathon Zytnick and Nadya Malenko (#link("https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4770971")[SSRN], #link("https://www.nber.org/papers/w32831")[NBER])
 - Revise and Resubmit, #sc[J. Fin.]
 - Best Paper Award in Corporate Finance, Northern Finance Association (2024); John L. Weinberg/IRRCi Research Paper Award, (2025); Paul Van Arsdell Award in Corporate Finance, Midwest Finance Association (2025); The First Annual Corporate Governance Academic Forum at the University of Toronto (2025).
 - Covered in #link("https://corpgov.law.harvard.edu/2024/05/23/custom-proxy-voting-advice/")[Harvard Law School Forum on Corporate Governance].

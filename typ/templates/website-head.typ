@@ -9,7 +9,7 @@
         html.elem("meta", attrs: (name: "author", content: "Edwin Hu"))
         // CSS
         html.elem("link", attrs: (rel: "stylesheet", href: "css/latex.css"))
-        html.elem("style", "body{max-width:60em!important;margin:auto}.smallcaps{font-variant:small-caps}h1{font-variant:small-caps}nav[role=doc-toc] li>div{display:inline}nav[role=doc-toc] ol{padding-left:1.5em}nav[role=doc-toc]>ol{padding-left:0}a{color:#232D4B}a:visited{color:#232D4B}")
+        html.elem("style", "@font-face{font-family:'New Computer Modern';font-style:normal;font-weight:normal;font-display:swap;src:url('./css/fonts/NewCM10-Regular.woff2') format('woff2')}@font-face{font-family:'New Computer Modern';font-style:italic;font-weight:normal;font-display:swap;src:url('./css/fonts/NewCM10-Italic.woff2') format('woff2')}@font-face{font-family:'New Computer Modern';font-style:normal;font-weight:bold;font-display:swap;src:url('./css/fonts/NewCM10-Bold.woff2') format('woff2')}@font-face{font-family:'New Computer Modern';font-style:italic;font-weight:bold;font-display:swap;src:url('./css/fonts/NewCM10-BoldItalic.woff2') format('woff2')}body{max-width:60em!important;margin:auto;font-family:'New Computer Modern','Latin Modern',Georgia,Cambria,'Times New Roman',Times,serif}.smallcaps{font-variant:small-caps}h1{font-variant:small-caps}nav[role=doc-toc] li>div{display:inline}nav[role=doc-toc] ol{padding-left:1.5em}nav[role=doc-toc]>ol{padding-left:0}a{color:#232D4B}a:visited{color:#232D4B}")
         // Favicon
         html.elem("link", attrs: (rel: "icon", href: "favicon.ico", type: "image/x-icon"))
         // Google Analytics
