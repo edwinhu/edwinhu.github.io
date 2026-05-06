@@ -1,3 +1,0 @@
-   | UVA School of Law         | Last Updated: {{{date}}}                           |
-   | 580 Massie Road           | @@latex:\Letter@@@@html:📧@@: ~ehu@law.virginia.edu~ |
-   | Charlottesville, VA 22903 | @@latex:\Mundus@@@@html:🌐@@: [[http://edwinhu.github.io][edwinhu.github.io]]    |
