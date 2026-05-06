@@ -1,0 +1,3 @@
+#import "../lib.typ": sc
+
+= Insurance as Asset Management, with Colleen Honigsberg, in #sc[Research Handbook on Agency and Intermediation] (Deborah A. DeMott & Tan Cheng-Han eds., 2026) (#link("https://www.e-elgar.com/shop/usd/research-handbook-on-agency-and-intermediation-9781035321711.html")[Publisher])

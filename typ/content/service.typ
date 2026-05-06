@@ -1,0 +1,4 @@
+#import "../lib.typ": sc
+
+- Ad-hoc referee for: #sc[J.L. & Econ.], #sc[Mgmt. Sci.] (Accounting, Finance), #sc[J. Fin. Intermediation], #sc[J. Fin. Markets]
+- Memberships: American Law and Economics Association, American Finance Association

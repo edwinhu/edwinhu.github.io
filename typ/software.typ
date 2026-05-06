@@ -1,0 +1,270 @@
+#import "templates/website-head.typ": website-page
+
+#show: website-page.with(title: "Software")
+
+#context {
+  if target() == "html" {
+    html.elem("h1", attrs: (class: "title"), smallcaps[Software])
+  } else {
+    align(center, text(size: 2em, smallcaps[Software]))
+  }
+}
+
+For a complete list of tools I use, you can browse my #link("https://github.com/edwinhu/nix")[nix configuration]. Warning: Nix has a steep learning curve, but the repository may give you ideas for other useful tools not mentioned here.
+
+= Some command line tools worth learning
+
+== #link("https://prefix.dev/docs/pixi/")[`pixi`]
+
+I recommend #link("https://prefix.dev/docs/pixi/")[`pixi`], a modern, fast environment and package manager for the Python ecosystem, in the place of `anaconda` and `conda`. `pixi` is cross-platform, supports both Python and R, resolves environments quickly, and uses the familiar `conda-forge` ecosystem for package sourcing. It also manages all dependencies---including binaries and libraries---making installation and environment reproduction seamless.
+
+Older tools like `anaconda` and `conda` are still widely used, but `pixi` has a much smoother workflow and improved speed. Instead of heavy base installs (`anaconda`), you define lightweight, reproducible environments in a `pixi.toml` file. This ensures all your dependencies are explicit and portable.
+
+A minimal example for a Python data analysis environment:
+
+```toml
+[project]
+name = "myenv"
+
+[dependencies]
+python = "3.11"
+jupyter = "*"
+pandas = "*"
+numpy = "*"
+scipy = "*"
+scikit-learn = "*"
+```
+
+You can also run program without installing them:
+```sh
+pixi run jupyter-console
+```
+
+Another neat trick is that you can use `pixi-pack` to build an environment on one machine and deploy it to another machine. That means no need for more complicated tools like `docker`.
+
+=== #link("https://github.com/astral-sh/uv")[`uv`]
+
+Where you might have used `pip` for Python package management, I now recommend #link("https://github.com/astral-sh/uv")[`uv`]. `uv` is a fast drop-in replacement for `pip`. It performs lightning-fast installs, resolves dependencies robustly, and is compatible with both `requirements.txt` and `pyproject.toml` workflows.
+
+Like `pixi`, `uv` works by adding packages to your virtual environment, and can also run a tool without installing using `uvx`.
+
+=== `conda` for `R`
+
+Yes I know, this is blasphemy. However, sometimes just getting a basic `R` installation up and running can take some time, as you might run into issues getting things to compile correctly on your system. In fact, getting `R` set up on different machines is what drove me to switch to python and to try `anaconda` in the first place. `anaconda` has actually #link("https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/")[supported `R`] for years now, and just like with python it is an easy way to get started. Plus, with projects like #link("https://irkernel.github.io/")[`IRkernel`], which allows you to run `R` kernels in `jupyter notebook` it is a pretty good way to do interactive data analysis. Most `R` packages can be installed via `conda` with `r-[package name]`.
+
+Much like `anaconda` for python, I recommend that new `R` users start with `tidyverse`, and `data.table` for getting started with data analysis:
+```sh
+conda install r-base r-essentials r-irkernel r-tidyverse r-data.table
+```
+
+If, like me, you find yourself constantly playing with different `R` packages then you may actually want to rely on `R`'s built-in `install.packages()`, or the `devtools::install_github` included in `tidyverse`. This may seem counterintuitive, as I have (hopefully) just convinced you that `pixi` is the best tool for package management in every context--but just as you may want to fall back on `pip` for python, you may find it easier to just use the default package manager in `R` _after_ you do your initial `pixi install`.
+
+== #link("https://curl.haxx.se/")[`curl`]
+
+These days much of the data you will want to analyze lives on the web. If you want to get this data you will run into terms like HTTP, FTP, REST APIs, JSON. If you want to work with these things you should probably learn `curl`.
+
+The basic usage of `curl` is simple, yet endlessly customizable:
+```sh
+curl [options] [URL...]
+```
+
+Why `curl` over something like `wget`? `curl` by default writes to `STDOUT`, while `wget` writes directly to disk. This gives `curl` a significant advantage in being a flexible utility in between pipes.
+
+Bonus tip: #link("https://anaconda.org/conda-forge/curl")[`curl` is available in `conda-forge`].
+
+== #link("https://stedolan.github.io/jq/")[`jq`]
+
+`jq` is like `awk` but specifically for json files. It is fast, flexible, and plays nicely with your other command-line tools.
+
+It is extremely useful for pretty-printing your json files, and can be easily used to glob multiple files. The more advanced syntax including `select/map` can help you explore very complex files in just a few lines of code.
+
+Bonus tip: #link("https://anaconda.org/conda-forge/jq")[`jq` is available in `conda-forge`].
+
+== #link("http://xmlstar.sourceforge.net/overview.php")[`xmlstarlet`]
+
+`xmlstarlet` is like `awk/sed/grep` for XML files.
+
+It is extremely useful for browsing the structure of your XML files (`xmlstarlet el`), and subsequently extract the relevant information (`xmlstarlet sel`). It is written in `C` so it is very fast.
+
+== #link("https://github.com/amethysts/xan")[`xan`]
+
+Oftentimes you need to look through a csv file through the command line, and maybe you even want to do some basic analysis. Enter `xan`, which is written in Rust and is extremely fast and capable. `xan` can quickly filter, join, pretty print, etc. a csv, which makes it an invaluable tool.
+
+I used to recommend `csvkit` which is written in python, but the performance of `xan` has convinced me to switch for good.
+
+== #link("https://rclone.org/")[`Rclone`]
+
+Rclone is a command-line tool for accessing data located in cloud storage, including common enterprise tools like Box, Dropbox, or Google Drive.
+
+It's fairly easy to use because it has commands that should be familiar to most unix users. Moreover, it is pretty fast.
+
+It also happens to be installed by default on WRDS (/usr/bin/rclone).
+
+== #link("https://www.gnu.org/software/parallel/")[`GNU parallel`]
+
+`GNU parallel` is a great command line utility written in Perl which allows for very fine-tuned control over parallelization. If you are familiar with something like `xargs`, then `parallel` is like a more robust, scalable version of `xargs`.
+
+Admittedly the learning curve for `parallel` can be a bit high, but it makes replacing serial loops with parallel tasks very easy.
+
+Suppose you have a script `SOMETHING` which you want to run over a list of `csv` files in your current directory:
+```sh
+for i in $(find *.csv); do
+    ./SOMETHING $i
+done
+```
+
+One way to easily parallelize this in `bash` is to add `&`:
+```sh
+for i in $(find *.csv); do
+    ./SOMETHING $i &
+done
+```
+
+You could also accomplish the same task with a pipe:
+```sh
+find *.csv | ./SOMETHING
+```
+or if the number of `csv` files is large you can use `xargs`:
+```sh
+find *.csv | xargs ./SOMETHING
+```
+
+If you want more fine tuned control, such as over the number of concurrent jobs, then that is where `parallel` comes in:
+```sh
+find *.csv | parallel -j8 ./SOMETHING
+```
+
+`parallel` is very powerful, and can handle things like parsing arguments, and handle concurrent writing in a safe way. Suppose that your input is a pipe delimited file that you want to pass as arugments to your script and output to a single file:
+```sh
+cat INPUT.csv | parallel --colsep '\|' "./SOMETHING {1} {2}" > OUTPUT.csv
+```
+
+Just remember you `bash` quoting rules and you will be fine!
+
+== Other great CLI tools
+
+- #link("https://github.com/sharkdp/bat")[`bat`] which is like `cat` with syntax highlighting, making it perfect for quickly viewing code and data files.
+- #link("https://github.com/sharkdp/fd")[`fd`] which is a simple, fast alternative to `find` with intuitive syntax like `fd pattern` instead of `find . -name '*pattern*'`.
+- #link("https://github.com/junegunn/fzf")[`fzf`] for fuzzy finding stuff.
+- #link("https://github.com/ogham/exa")[`exa`] which is like a more advanced `ls`.
+- #link("https://github.com/aristocratos/btop")[`btop`] which is a prettier `htop`.
+- #link("https://github.com/BurntSushi/ripgrep")[`ripgrep`] which is a very fast `grep` search from the developer of `xsv`.
+- #link("https://github.com/sxyazi/yazi")[`yazi`] which is a fast file manager.
+- #link("https://github.com/ajeetdsouza/zoxide")[`zoxide`] which is a more advanced `cd`.
+- #link("https://github.com/bensadeh/tailspin")[`tspin`] which adds timestamps to piped output, useful for monitoring long-running computations.
+
+== Development and Research Workflow Tools
+
+- #link("https://direnv.net/")[`direnv`] automatically loads environment variables from `.envrc` files when you enter a directory. Essential for managing project-specific configurations without polluting your global environment. Just `echo 'export API_KEY=foo' > .envrc && direnv allow`.
+- #link("https://github.com/jesseduffield/lazygit")[`lazygit`] provides a terminal UI for git that makes complex operations intuitive. Perfect for researchers who want version control without memorizing git commands. Press `?` for help on any screen.
+- #link("https://github.com/atuinsh/atuin")[`atuin`] replaces your shell history with a SQLite database, enabling powerful search across all your commands. Sync across machines and never lose that complex data processing pipeline again. Search with `Ctrl-R`.
+- #link("https://cli.github.com/")[`gh`] is GitHub's official CLI for managing pull requests, issues, and repositories from the terminal. Clone with `gh repo clone owner/repo`, create PRs with `gh pr create`.
+
+== AI-Powered Development Tools
+
+- #link("https://docs.anthropic.com/en/docs/claude-code")[`claude code`] is an AI-powered coding assistant that helps with software development tasks. It can search codebases, write and edit files, run commands, and help debug issues, it can even read Jupyter Notebook files and "see" your images. The VSCod extension is also very nicely integrated, as it can automatically add the lines you select as context.
+- #link("https://github.com/reorx/gemini-cli")[`gemini-cli`] is a free AI assistant powered by Google's Gemini models. You can even have Claude Code call Gemini directly for real-time code reviews during development, creating an AI pair programming experience.
+
+= Some python libraries worth learning
+
+== #link("https://requests.readthedocs.io/en/master/")[`requests`]
+
+`requests` is a dead-simple HTTP library for python. Like `curl` it is an essential building tool for working with data that lives on the web (aka scraping).
+
+For example, many websites are now built around REST APIs and deliver JSON payloads. Rather than scraping HTML with something like #link("https://www.crummy.com/software/BeautifulSoup/bs4/doc/")[`BeautifulSoup`], #link("https://lxml.de/")[`lxml`], or worst of all #link("https://www.selenium.dev/")[`Selenium`] you can save yourself a lot of time and preserve your sanity by just using `requests` to get at the underlying data. All you need is the Inspect window of your browser, and some patience and soon you will be an API scraping master.
+
+Bonus tip: https://curl.trillworks.com/ is a great website that converts `curl` statements into `requests` code. This is especially useful because some browsers allow you to copy the results of HTTP requests into `curl`, which you can easily convert into `requests` code!
+
+== #link("https://docs.python.org/3/library/asyncio.html")[`asyncio`]
+
+`asyncio` is part of the python standard library as of python 3.4. It is a library for running concurrent (single-threaded) code, and brings python to the forefront of event-driven programming. That is a fancy way of saying that it is a neat library that can help you write highly parallel code, help you write your own network apps, or even write some pretty fancy scrapers.
+
+`asyncio` has spawned its own ecosystem of libraries, such as #link("https://docs.aiohttp.org/en/stable/")[`aiohttp`] which is like a async version of #link("https://requests.readthedocs.io/en/master/")[`requests`], and #link("https://github.com/Tinche/aiofiles")[`aiofiles`] for dealing with the filesystem asynchronously.
+
+== #link("https://pandas.pydata.org/")[`pandas`]
+
+You have data. You use python. If these conditions apply, then you should use `pandas`. The genius of `pandas` is that provides a `DataFrame`, an indexed, two-dimensional, potentially heterogeneous and hierarchical table of rows and columns. In all likelihood 99% of the data you analyze with statistical techniques will fit into the `DataFrame` structure, and `pandas` makes working with `DataFrames` a breeze with powerful functions for data serialization and transformation.
+
+== #link("https://github.com/ultrajson/ultrajson")[`ujson`]
+
+`ujson` stands for UltraJSON, which is an ultra fast JSON serializer written in C with python bindings. For most applications you can use it as a drop-in replacement for the default python `json` module, which is written in pure python and as such is slower.
+
+== #link("https://github.com/fabiocaccamo/python-benedict")[`benedict`]
+
+`benedict` is a python dictionary subclass that makes navigating dictionaries in python a lot easier. In many ways it is like #link("https://www.crummy.com/software/BeautifulSoup/bs4/doc/")[`BeautifulSoup`], which is very good at working with irregular or malformed HTML/XML data, but for python dictionaries, and JSON-like data. It is not as full-featured as many of the libraries on this list, but it can be very useful if you are working with irregular JSON data.
+
+== #link("http://numba.pydata.org/")[`numba`]
+
+At first glance, `numba` seems like an odd choice for python users. The appeal of python is that it is an interpreted language, and hence does not need to be compiled to run. `numba` is a compiler for python code. However, it is an easy to use, just-in-time (JIT) compiler using the LLVM compiler library. That means that it can take very simple python and `numpy` code and turn it into LLVM compiled code that is nearly as fast as C or FORTRAN code.
+
+A good use case for `numba` is taking an expensive matrix multiplication and re-writing it as a loop. This may seem counterintuitive as the whole point of `numpy` is to abstract away from slow python loops for optimized abstracted matrix operations. Yet these dumb, slow python loops combined with `numba` can be significantly faster than `numpy` counterparts if used correctly.
+
+== #link("https://marimo.io/")[`marimo`]
+
+`marimo` is a reactive Python notebook that solves many pain points of traditional Jupyter notebooks. Unlike Jupyter, `marimo` notebooks are stored as pure Python files, making them git-friendly and importable as modules. The reactive execution model means cells automatically re-run when their dependencies change, eliminating the hidden state issues common in Jupyter. For researchers, this means more reproducible analyses and easier collaboration. Just run `marimo edit notebook.py` to start.
+
+== #link("https://altair-viz.github.io/")[`altair`]
+
+`altair` is a declarative visualization library built on Vega-Lite. Unlike matplotlib's imperative style, `altair` uses a grammar of graphics approach that makes complex visualizations surprisingly simple. For researchers, this means publication-quality plots with minimal code. Just `alt.Chart(df).mark_point().encode(x='x', y='y')` for a basic scatter plot, with automatic type inference and interactivity.
+
+== #link("https://pola.rs/")[`polars`]
+
+`polars` is a lightning-fast DataFrame library that often outperforms `pandas` by 10-100x. Written in Rust, it features lazy evaluation, automatic query optimization, and excellent memory efficiency. For researchers working with large datasets, `polars` can process data that would crash `pandas`. The API is expressive: `df.filter(pl.col('x') > 5).group_by('category').agg(pl.col('y').mean())`.
+
+= Some `R` libraries worth learning
+
+== #link("https://www.tidyverse.org/")[`tidyverse`]
+
+`tidyverse` is a metapackage of data analysis tools for `R`. In many ways it is like the `anaconda` default installation in that it includes so many of the essentials. To get started analyzing data in a modern `R` setup you will likely need `ggplot2`, `dplyr`, `stringr`, and `purrr` just to name a few. All of these are part of `tidyverse`.
+
+`tidyverse` also contains one of the most useful packages in any language: `haven`, which allows you to read `SAS` and `Stata` files. Look, we can all pretend like we don't have co-authors that use these languages, or we can deal with it and use `haven`.
+
+== #link("https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html")[`data.table`]
+
+`data.table` is #link("https://github.com/Rdatatable/data.table/wiki/Benchmarks-%3A-Grouping")[very fast], and has an intuitive syntax. It is certainly different from `tidyverse::dplyr`, but for those familiar with `pandas`, PyTable, or `sql` it may be more intuitive.
+
+Bonus tip: DataCamp has a great #link("https://s3.amazonaws.com/assets.datacamp.com/blog_assets/datatable_Cheat_Sheet_R.pdf")[cheat sheet] for `data.table`.
+
+== #link("https://www.rdocumentation.org/packages/lfe/versions/2.8-6/topics/felm")[`felm`] and #link("https://github.com/amrei-stammann/alpaca")[`alpaca`]
+
+`felm` and `alpaca` are R packages for linear/logistic regressions with high dimensional fixed effects and clustered standard errors. Both are available on CRAN, and are fairly well documented.
+
+= Other Useful Software
+
+== #link("https://duckdb.org/")[`DuckDB`]
+
+`DuckDB` is a SQL-style database with very convenient syntax for data analysis. It works very well with standard tabular data formats, and plays nicely with python. It is also very fast for analytic workflows, including read/write and processing data. One of the most useful features is the variety of built-in datatypes, such as `LIST` and `STRUCT` which map to python/JSON datatypes. It also allows for nested or composite datatypes, which are often found in real-world data. By default, `DuckDB` operates in-memory databases. In many ways, it is like `SQLite` but designed for data analysis workflows. It also features a lot of useful extensions whic facilitate full text search, JSON querying, reading/writing remote files over HTTP, and reading from `Postgres/SQLite` databases.
+
+`DuckDB` now plays nicely with both python and R, and with their respective dataframes. It is also very very good at reading all sorts of common data files like csv, json, and parquet.
+
+== #link("https://www.scrapingbee.com/")[`ScrapingBee`]
+
+Sometimes the only way to get data is through traditional web scraping. Scraping is #link("https://cdn.ca9.uscourts.gov/datastore/opinions/2022/04/18/17-16783.pdf")[controversial] and at the very least most websites have some sort of rate limiting or bot restrictions. Other websites are weirdly designed and require javascript rendering to be able to access content. `ScrapingBee` handles the former by providing headless instances that imitate a real Chrome browser, running through different proxies (including residential IP addresses) and the latter through custom javascript rendering. Thus, `ScrapingBee` makes scraping _much much_ easier in the modern age.
+
+Unlike the rest of the tools on this page, `ScrapingBee` is a service you have to pay for. But the rates are fairly reasonable considering that spinning up a custom solution (e.g., multiple AWS instances) is costly and time-consuming. Best of all `ScrapingBee` is fairly easy to use. If you can write a simple `requests` script (see above), then converting it to use `ScrapingBee` is trivial. Last but not least, `ScrapingBee` only charges you for successful requests, so if their proxies get blocked it doesn't cost you any additional money.
+
+*Warning:* If you pay for a higher tier with concurrency, do not follow the `ScrapingBee` tutorials and try to use `multiprocessing` or `concurrent.futures` for parallelism. Although it is syntactically simple, they run into the Python GIL and will lock after a few iterations. Instead, use `aiohttp` and just replace the url field with the `ScrapingBee` url, include your API Key as a parameter, and the url you want to scrape as another parameter.
+
+= Mac Applications for Researchers
+
+== Terminal and Development
+
+- #link("https://wezfurlong.org/wezterm/")[`WezTerm`] / #link("https://ghostty.org/")[`Ghostty`] are modern terminal emulators with GPU acceleration, split panes, and extensive customization. They also provide native image support.
+
+== Productivity Tools
+
+- #link("https://superwhisper.com/")[`Superwhisper`] provides system-wide voice transcription using different transcription models. It is much better than the built-in Apple dictation, and can be much faster than typing. You can also have AI process your transcript directly, so you can for example, dictate some sentences and have it automatically turned into a properly formatted email.
+
+- #link("https://www.homerow.app/")[`Homerow`] enables keyboard-only navigation of macOS by showing letter hints on clickable elements. Essential for reducing mouse usage during long coding or writing sessions.
+
+- #link("https://bitwarden.com/")[`Bitwarden`] is an open-source password manager with excellent cross-platform support.
+
+== Knowledge Management
+
+- #link("https://logseq.com/")[`Logseq`] / #link("https://obsidian.md/")[`Obsidian`] are powerful note-taking apps with bidirectional linking. Logseq uses an outliner approach while Obsidian uses traditional markdown files. Both excel at building a personal knowledge graph for research.
+
+- #link("https://sioyek.info/")[`Sioyek`] is a PDF viewer designed specifically for research papers and technical documents. Features include smart jump for references, portals for keeping figures visible while reading, and a command palette for keyboard-driven navigation.
+
+- #link("https://paperpile.com/")[`Paperpile`] is a reference manager that integrates seamlessly with Google Docs and Microsoft Word. It automatically extracts metadata from PDFs, syncs across devices, and makes citation formatting painless. The Chrome extension adds papers from Google Scholar with one click.
+
+- #link("https://readwise.io/reader")[`Readwise Reader`] is a read-later app designed for deep reading and annotation. It handles PDFs, web articles, newsletters, and even YouTube videos. The killer feature is its powerful highlighting system that syncs with note-taking apps like Logseq or Obsidian. It also has an MCP, so you can connect it with LLMs like Claude, which then knows everything you have read/highlighted and can help you surface relevant passages or citations.

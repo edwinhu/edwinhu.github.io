@@ -1,0 +1,1 @@
+My current research is focused on the empirical study of securities regulation and corporate governance---with a focus on broker-dealer conduct and shareholder voting issues. Much of my policy work is focused on identifying gaps in securities laws and the resulting agency problems.
