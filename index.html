@@ -1,462 +1,133 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Edwin Hu</title>
-<meta name="author" content="Edwin Hu" />
-<meta name="generator" content="Org Mode" />
-<style type="text/css">
-  #content { max-width: 60em; margin: auto; }
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: auto;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    top: -8px;
-    right: 12px;
-    padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
-  }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-hledger:before { content: 'hledger'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'JavaScript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .equation-container {
-    display: table;
-    text-align: center;
-    width: 100%;
-  }
-  .equation {
-    vertical-align: middle;
-  }
-  .equation-label {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
-  }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { }
-</style>
-<style type="text/css">
-body { max-width: 120ch !important; }
-.smallcaps { font-variant: small-caps; }
-h1.title { font-variant: small-caps; }
-</style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-67919104-1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'UA-67919104-1');
-</script>
-<link rel="stylesheet" href="css/latex.css">
-<link rel="icon" href="favicon.ico" type="image/x-icon" />
-</head>
-<body>
-<div id="content" class="content">
-<h1 class="title">Edwin Hu</h1>
-<div id="table-of-contents" role="doc-toc">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
-<ul>
-<li><a href="#interests">Biography</a></li>
-<li><a href="#research">Research</a>
-<ul>
-<li><a href="#workingpapers">Working Papers</a></li>
-<li><a href="#pubs">Publications</a></li>
-<li><a href="#bookchapters">Book Chapters</a></li>
-</ul>
-</li>
-<li><a href="#briefs">Selected Briefs and Petitions</a></li>
-<li><a href="#policy">Policy Work</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</div>
-</div>
-<p>
-Associate Professor of Law<br />
-<a href="https://www.law.virginia.edu/hu">University of Virginia School of Law</a>
-</p>
-
-<p>
-<a href="./cv">CV (PDF)</a> | <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790">SSRN</a> | <a href="https://www.linkedin.com/in/huedwin/">LinkedIn</a> | <a href="https://github.com/edwinhu">GitHub</a> <br />
-<a href="./pin">PIN Estimates</a> | <a href="./sas">SAS Macros</a> | <a href="./software">Software</a>
-</p>
-<div id="outline-container-interests" class="outline-2">
-<h2 id="interests">Biography</h2>
-<div class="outline-text-2" id="text-interests">
-<p>
-Edwin Hu is an associate professor at University of Virginia School of Law. His scholarship is focused on the empirical analysis of corporate and securities law and the structure of financial markets. Before joining UVA Law, Professor Hu was a senior economic policymaker, advising the White House’s National Economic Council and as Chief Economist to SEC Commissioner Robert J. Jackson, Jr.
-</p>
-
-<p>
-Professor Hu’s research studies gaps in market structure and financial regulation. His work on the <a href="https://www.stanfordlawreview.org/print/article/regulatory-arbitrage-and-the-persistence-of-financial-misconduct/">regulation of financial advice</a> shows how advisors who pose the most risk to investors seek out lax legal regimes to avoid accountability. Professor Hu’s study of institutional investors’ voting behavior identified how some funds seek <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4410143">share lending revenue</a> rather than vote in contested corporate matters. And his examination of stock-exchange activity during the COVID-19 pandemic raised questions about the effects of <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3600230">outdated market structure</a> on today’s investors.
-</p>
-
-<p>
-Professor Hu’s research has helped produce significant policy reforms, including the SEC’s recent institutional <a href="https://www.sec.gov/news/speech/lee-every-vote-counts">voting transparency initiative</a> and its proposal to increase competition for retail stock orders. His recent policy work includes an <a href="https://www.supremecourt.gov/DocketPDF/24/24-345/379924/20251017140641536_24-345acSecurties-LawScholars.pdf">amicus brief</a> to the U.S. Supreme Court in <i>FS Credit Opportunities Corp. v. Saba Capital Master Fund</i> on behalf of securities-law scholars and former senior SEC officials, and a <a href="https://www.sec.gov/files/rules/petitions/2023/petn4-801.pdf">joint petition</a> he co-Chaired with faculty from the Wharton School urging the SEC to modernize Rule 144. Professor Hu’s work has been published in leading academic journals, such as the <i>Journal of Financial Economics</i>, the <i>Stanford Law Review</i>, <i>Management Science</i>, and the <i>Georgetown Law Journal</i>, and his writing has appeared in the <i>Financial Times</i>. His research has been featured prominently across major periodicals including <i>The Atlantic</i>, <i>Bloomberg</i>, <i>The Economist</i>, <i>The New York Times</i>, <i>The Washington Post</i>, and the front page of <i>The Wall Street Journal</i>.
-</p>
-
-<p>
-He holds two undergraduate degrees, in economics and applied computational mathematics, from the University of Washington, a masters and Ph.D. in finance from Rice University, and a J.D. from New York University School of Law, where he was a Furman Academic Scholar and a Fellow at the Institute for Corporate Governance &amp; Finance.
-</p>
-</div>
-</div>
-<div id="outline-container-research" class="outline-2">
-<h2 id="research">Research</h2>
-<div class="outline-text-2" id="text-research">
-</div>
-<div id="outline-container-workingpapers" class="outline-3">
-<h3 id="workingpapers"><a href="http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790">Working Papers</a></h3>
-<div class="outline-text-3" id="text-workingpapers">
-</div>
-<div id="outline-container-orgb618f89" class="outline-4">
-<h4 id="orgb618f89">Custom Proxy Voting Advice, with Jonathon Zytnick and Nadya Malenko (<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4770971">SSRN</a>)</h4>
-<div class="outline-text-4" id="text-orgb618f89">
-<ul class="org-ul">
-<li>Revise and Resubmit, <span class="smallcaps">J. Fin.</span></li>
-<li>Best Paper Award in Corporate Finance, Northern Finance Association (2024); John L. Weinberg/IRRCi Research Paper Award, (2025); Paul Van Arsdell Award in Corporate Finance, Midwest Finance Association (2025); The First Annual Corporate Governance Academic Forum at the University of Toronto (2025).</li>
-<li>Covered in <a href="https://corpgov.law.harvard.edu/2024/05/23/custom-proxy-voting-advice/">Harvard Law School Forum on Corporate Governance</a>.</li>
-<li>Presented at American Law and Economics Association (2023) Junior Scholars Featured Papers Panel, NYU Law Institute for Corporate Governance Spring Roundtable (2023*), Clemson ESG Conference (2024*), UT Austin Business Law &amp; Economics Workshop (2024), Northern Finance Association (2024*), PRI Academic Network Conference (2024*), CELS (2024), AFA (2025*), Tulane Corporate and Securities Roundtable (2025), Toronto Corporate Governance Academic Forum (2025).</li>
-<li>Previously circulated under the working title <a href="./papers/20230301 HMZ IID.pdf">&ldquo;Institutional Investor Deliberation&rdquo;</a></li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orgac29b2b" class="outline-4">
-<h4 id="orgac29b2b">Competition for Retail Order Flow and Market Quality, with Dermot Murphy (<a href="https://ssrn.com/abstract=4070056">SSRN</a>)</h4>
-<div class="outline-text-4" id="text-orgac29b2b">
-<ul class="org-ul">
-<li>Policy: Cited in SEC&rsquo;s <a href="https://www.sec.gov/rules/proposed/2022/34-96495.pdf">Proposed Rule on Order Competition</a>.</li>
-<li>Presented at Microstructure Exchange (2022*), UBC Summer Finance Conference (2023*).</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orgcd30c84" class="outline-4">
-<h4 id="orgcd30c84">The Index-Fund Dilemma: An Empirical Study of the Lending-Voting Tradeoff, with Joshua Mitts and Haley Sylvester (<a href="https://ssrn.com/abstract=3673531">SSRN</a>)</h4>
-<div class="outline-text-4" id="text-orgcd30c84">
-<ul class="org-ul">
-<li>Revise and Resubmit, <span class="smallcaps">J. Legal Stud.</span></li>
-<li>Covered in <a href="https://clsbluesky.law.columbia.edu/2021/01/19/the-index-fund-dilemma-an-empirical-study-of-the-lending-voting-tradeoff">Columbia Blue Sky Blog</a>, <a href="https://www.bloomberg.com/opinion/articles/2021-01-19/maybe-the-index-funds-don-t-vote">Money Stuff (Bloomberg)</a>, <a href="https://www.wsj.com/articles/gamestop-called-attention-to-the-share-lending-market-heres-what-you-should-know-11617375748"><i>The Wall Street Journal</i></a>, <a href="https://www.marketwatch.com/story/reddit-and-robinhood-army-fights-with-grievance-capital-to-break-wall-streets-elite-wall-11612387089">MarketWatch</a></li>
-<li>Policy: Speech by <a href="https://www.sec.gov/news/speech/lee-every-vote-counts">SEC Chair Lee on share lending and proxy voting disclosure</a>, Statement by <a href="https://www.sec.gov/news/public-statement/crenshaw-amac-remarks-031921">SEC Commissioner Crenshaw on the lending-voting tradeoff</a>.</li>
-<li>Presented at JCLAW (2020*), Harvard Empirical Law and Finance Workshop
-(2021*), Columbia Law and Economics Workshop (2021*).</li>
-</ul>
-</div>
-</div>
-</div>
-<div id="outline-container-pubs" class="outline-3">
-<h3 id="pubs"><a href="http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790">Publications</a></h3>
-<div class="outline-text-3" id="text-pubs">
-</div>
-<div id="outline-container-org0a1a36b" class="outline-4">
-<h4 id="org0a1a36b">Other People&rsquo;s Votes: The Law and Economics of Proxy Advice, 115 <span class="smallcaps">Geo. L.J.</span> __ (forthcoming 2026), with Jonathon Zytnick and Nadya Malenko</h4>
-</div>
-
-<div id="outline-container-org14040a6" class="outline-4">
-<h4 id="org14040a6">Regulatory Leakage Among Financial Advisors: Evidence From FINRA Regulation of &ldquo;Bad&rdquo; Brokers, 174 <span class="smallcaps">J. Fin. Econ.</span> 104170 (2025), with Colleen Honigsberg and Robert J. Jackson, Jr. (<a href="https://papers.ssrn.com/abstract=4410143">SSRN</a>, <a href="https://doi.org/10.1016/j.jfineco.2025.104170">DOI</a>)</h4>
-<div class="outline-text-4" id="text-org14040a6">
-<ul class="org-ul">
-<li>Presented at Harvard Law School Workshop in Empirical Law and Economics
-(2022), Corporate and Securities Litigation Workshop (2022), Junior Corporate
-Law Workshop (2022), University of Texas Law, Business, and Economics Workshop
-(2022*), Northwestern Pritzker Law and Economics Colloquium (2022), NYU Law
-and Economics Workshop (2023), Stanford Law Faculty Workshop (2023*), American
-Law and Economics Association (2023), American Finance Association (2024), SEC
-Investor Advisory Committe (2024), UT Austin McCombs Forensic Finance
-Conference (2025*).</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org98dd039" class="outline-4">
-<h4 id="org98dd039">Vestigial Tails? Floor Brokers at the Close in Modern Electronic Markets, with Dermot Murphy (<a href="https://papers.ssrn.com/abstract=3600230">SSRN</a>, <a href="https://doi.org/10.1287/mnsc.2023.00884">DOI</a>)</h4>
-<div class="outline-text-4" id="text-org98dd039">
-<ul class="org-ul">
-<li>Forthcoming, <span class="smallcaps">Mgmt. Sci.</span></li>
-<li>Covered in <a href="https://www.wsj.com/articles/coronavirus-shutdown-casts-doubt-on-value-of-exchange-trading-floors-11590053419"><i>The Wall Street Journal</i></a>, <a href="https://www.bloomberg.com/opinion/articles/2020-05-22/a-vaccine-with-a-poison-pill">Money Stuff (Bloomberg)</a>, <a href="https://www.economist.com/finance-and-economics/2020/05/25/covid-19-forced-trading-floors-to-close-theyll-be-back"><i>The Economist</i></a>.</li>
-<li>Policy: Cited in <a href="https://crsreports.congress.gov/product/pdf/IN/IN11447">Congressional Research Service Report IN11447</a>.</li>
-<li>Presented at University of Illinois Chicago (2020*), Rice University (2020),
-SEC (2020*), The Microstructure Exchange (2020) (<a href="https://www.youtube.com/watch?v=cRQigejq5jg">recording</a>) (<a href="https://microstructure.exchange/slides/20201006%20Microstructure%20Exchange%20-%20WEB.pdf">slides</a>), <a href="https://iextrading.com/insights/academic-research-conference-2020/">IEX ARC</a>
-(2020), NBER Big Data Conference (2020), Microstructure Online Seminars Asia
-Pacific (2021), Western Finance Association (2021), European Finance
-Association (2021).</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orgc3c19d3" class="outline-4">
-<h4 id="orgc3c19d3">Regulatory Arbitrage and the Persistence of Financial Misconduct, 74 <span class="smallcaps">Stan. L. Rev.</span> 737 (2022), with Colleen Honigsberg and Robert Jackson (<a href="https://papers.ssrn.com/abstract=3769653">SSRN</a>, <a href="https://review.law.stanford.edu/wp-content/uploads/sites/3/2022/04/Honigsberg-et-al.-74-Stan.-L.-Rev.-737.pdf">PDF</a>)</h4>
-<div class="outline-text-4" id="text-orgc3c19d3">
-<ul class="org-ul">
-<li>Cited in <a href="https://www.federalregister.gov/documents/2024/04/25/2024-08065/retirement-security-rule-definition-of-an-investment-advice-fiduciary">DOL Investment Advice Fiduciary Rule</a></li>
-<li>Covered in <a href="https://www.thinkadvisor.com/2021/05/14/wandering-bad-brokers-pose-risks-for-clients-industry/">ThinkAdvisor</a>, <a href="https://www.marketwatch.com/story/the-first-step-of-searching-for-a-financial-adviser-trust-no-one-11621876941">MarketWatch</a>, <a href="https://www.financial-planning.com/news/misconduct-study-sheds-light-on-wandering-advisors">Financial Planning</a>, <a href="https://www.investmentnews.com/ex-sec-member-targets-rogue-brokers-turning-to-insurance-sales-206925">InvestmentNews</a>, <a href="https://www.nasdaq.com/articles/finra-targets-recidivist-brokers-but-its-reach-goes-only-so-far">Nasdaq News and Insights</a></li>
-<li>Presented at JCLAW (2020*), Berkeley Law, Accounting, &amp; Business Workshop
-(2020), NYU Law and Economics Faculty Workshop (2021), Harvard Empirical Law
-and Finance Workshop (2021), Goethe University LawFin Seminar (2021), 33rd
-Annual Tulane Corporate Law Institute (2021*), Oxford Business Law Workshop
-(2021*), Investor Issues Dialogue (2021).</li>
-<li>Previously circulated under working title &ldquo;Wandering Financial Advisors&rdquo;</li>
-<li>Winner of the 2023 Order of the Coif Gasaway Award for Best Article.</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org3029c7f" class="outline-4">
-<h4 id="org3029c7f">Financial Integration and Credit Democratization: Linking Banking Deregulation to Economic Growth, 45 <span class="smallcaps">J. Fin. Intermediation</span> 100857 (2021), with Elizabeth Berger, Alexander Butler, and Morad Zekhnini (<a href="https://ssrn.com/abstract=2139679">SSRN</a>, <a href="https://doi.org/10.1016/j.jfi.2020.100857">DOI</a>)</h4>
-<div class="outline-text-4" id="text-org3029c7f">
-<ul class="org-ul">
-<li>Presented at Rice University (2012*), Financial Management Association
-Conference (FMA 2013), Securities and Exchange Commission (SEC, 2014*),
-Fordham University (2014*), University of Cincinnati (2014*), University of
-Kentucky (2014*), Yale School of Management (2015*).</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org9954922" class="outline-4">
-<h4 id="org9954922">A Comparison of Some Structural Models of Private Information Arrival, 135 <span class="smallcaps">J. Fin. Econ.</span> 795 (2020), with Jefferson Duarte and Lance Young, (<a href="https://ssrn.com/abstract=2564369">SSRN</a>, <a href="https://doi.org/10.1016/j.jfineco.2019.08.005">DOI</a>)</h4>
-<div class="outline-text-4" id="text-org9954922">
-<ul class="org-ul">
-<li>Presented at Rice University (2015), Texas A&amp;M (2015*), Multinational Finance
-Society Conference (MFS, 2015*) <b>Best Paper Award</b>, China International
-Finance Conference (CICF, 2015*), Society of Financial Econometrics Conference
-(SoFiE, 2015*), Instituto Technologico Autonomo de Mexico Conference (ITAM,
-2015*), American Finance Association Conference (AFA, 2016), University of
-Washington (2016*), University of Virginia (McIntire) (2017*), Southern
-Methodist University (2017*).</li>
-<li><b><a href="https://edwinhu.github.io/pin/">Data and Previous Refereed Versions</a></b></li>
-<li>Previously circulated under working title &ldquo;Does the PIN Model Mis-Identify Private Information and If So, What is the Alternative?&rdquo;</li>
-</ul>
-</div>
-</div>
-</div>
-<div id="outline-container-bookchapters" class="outline-3">
-<h3 id="bookchapters">Book Chapters</h3>
-<div class="outline-text-3" id="text-bookchapters">
-</div>
-<div id="outline-container-org052ee9e" class="outline-4">
-<h4 id="org052ee9e">Insurance as Asset Management, with Colleen Honigsberg, in <span class="smallcaps">Research Handbook on Agency and Intermediation</span> (Deborah A. DeMott &amp; Tan Cheng-Han eds., 2026) (<a href="https://www.e-elgar.com/shop/usd/research-handbook-on-agency-and-intermediation-9781035321711.html">Publisher</a>)</h4>
-</div>
-</div>
-</div>
-<div id="outline-container-briefs" class="outline-2">
-<h2 id="briefs">Selected Briefs and Petitions</h2>
-<div class="outline-text-2" id="text-briefs">
-</div>
-<div id="outline-container-org2b90d65" class="outline-4">
-<h4 id="org2b90d65">Brief of Securities-Law Scholars and Former Senior SEC Officials as Amici Curiae in Support of Respondents, <i>FS Credit Opportunities Corp. v. Saba Capital Master Fund</i>, No. 24-345 (U.S. Oct. 16, 2025) (<a href="https://www.supremecourt.gov/DocketPDF/24/24-345/379924/20251017140641536_24-345acSecurties-LawScholars.pdf">Brief</a>)</h4>
-</div>
-
-<div id="outline-container-org6312a8a" class="outline-4">
-<h4 id="org6312a8a">Petition for Rulemaking: Modernization of Rule 144, with Daniel J. Taylor, Bradford Lynch-Levy, and Jonathon Zytnick, SEC File No. 4-801 (Mar. 9, 2023) (<a href="https://www.sec.gov/files/rules/petitions/2023/petn4-801.pdf">Petition</a>)</h4>
-</div>
-</div>
-<div id="outline-container-policy" class="outline-2">
-<h2 id="policy">Policy Work</h2>
-<div class="outline-text-2" id="text-policy">
-<p>
-Professor Hu served as Counsel to SEC Commissioner Robert J. Jackson, Jr. and as a Financial Economist in the Commission&rsquo;s Division of Economic and Risk Analysis (2016&ndash;2020), conducting original research on market structure, financial intermediation, and corporate governance.
-</p>
-
-<p>
-His research showed that <a href="https://www.sec.gov/dera/staff-papers/working-papers/07feb18_hu_iex_becoming_an_exchange">slowing down trading reduced costs for investors</a>, contributing to the Commission&rsquo;s evaluation of exchange speed bumps. He led the <a href="https://www.sec.gov/files/bats_moc_analysis.pdf">first SEC economic analysis</a> to use regulatory audit trail data, finding that off-exchange trading at the close had not harmed price discovery&mdash;a result that led NYSE to cut its top-tier closing auction fees by two-thirds. Separate <a href="https://www.sec.gov/dera/staff-papers/white-papers/dera_wp_tick_size-market_quality">evidence on tick size changes and market quality</a> was later cited in <a href="https://financialservices.house.gov/uploadedfiles/hhrg-117-ba16-wstate-piwowarm-20220330.pdf">Congressional testimony</a>.
-</p>
-
-<p>
-Professor Hu&rsquo;s research on financial intermediation informed Commissioner Jackson&rsquo;s <a href="https://www.sec.gov/news/public-statement/statement-jackson-060519-iabd">dissent on Regulation Best Interest</a>, showing that advisors not subject to a fiduciary standard were more likely to give conflicted advice. His evidence that <a href="https://www.sec.gov/news/public-statement/statement-jackson-2019-12-18-accredited-investor">private placement brokers</a> have unusually high misconduct rates supported the Commissioner&rsquo;s dissent on expanding private markets to retail investors.
-</p>
-
-<p>
-On corporate governance, Professor Hu challenged <a href="https://www.sec.gov/news/public-statement/statement-jackson-2019-11-05-open-meeting">proposed restrictions on shareholder proposals</a> and opposed the <a href="https://www.sec.gov/news/public-statement/jackson-statement-proposed-amendments-accelerated-filer-definition">rollback of Sarbanes-Oxley auditor attestation requirements</a>. A <a href="https://www.sec.gov/files/jackson-maloney-response-letter-111819-signed.pdf">letter to Congress</a> revealed that large fund managers overwhelmingly vote against political spending disclosure despite lacking clear guidelines. His research on <a href="https://www.sec.gov/news/speech/speech-jackson-061118">executive selling into stock buybacks</a> showed long-run underperformance, informing <a href="https://www.sec.gov/files/jackson-letter-030619.pdf">a letter to Senator Van Hollen</a> and legislation proposed by Senator Baldwin.
-</p>
-</div>
-</div>
-<div id="outline-container-contact" class="outline-2">
-<h2 id="contact">Contact</h2>
-<div class="outline-text-2" id="text-contact">
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">UVA School of Law</td>
-<td class="org-left">Last Updated: 2026-03-01</td>
-</tr>
-
-<tr>
-<td class="org-left">580 Massie Road</td>
-<td class="org-left">📧: <code>ehu@law.virginia.edu</code></td>
-</tr>
-
-<tr>
-<td class="org-left">Charlottesville, VA 22903</td>
-<td class="org-left">🌐: <a href="http://edwinhu.github.io">edwinhu.github.io</a></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<div id="postamble" class="status">
-<p class="date">Date: 2026-03-01</p>
-<p class="author">Author: Edwin Hu</p>
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
-</div>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edwin Hu</title>
+    <meta name="author" content="Edwin Hu">
+    <link rel="stylesheet" href="css/latex.css">
+    <style>
+      body{max-width:60em!important;margin:auto}.smallcaps{font-variant:small-caps}h1{font-variant:small-caps}nav[role=doc-toc] li>div{display:inline}nav[role=doc-toc] ol{padding-left:1.5em}nav[role=doc-toc]>ol{padding-left:0}
+    </style>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67919104-1">
+    </script>
+    <script>
+      window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-67919104-1');
+    </script>
+  </head>
+  <body>
+    <h1 class="title"><span style="font-variant-caps: small-caps">Edwin Hu</span></h1>
+    <nav role="doc-toc">
+      <h2>Table of Contents</h2>
+      <ol style="list-style-type: none">
+        <li><a href="#interests">Biography</a></li>
+        <li>
+          <div><a href="#research">Research</a></div>
+          <ol style="list-style-type: none">
+            <li><a href="#workingpapers"><a href="http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790">Working Papers</a></a></li>
+            <li><a href="#pubs"><a href="http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790">Publications</a></a></li>
+            <li><a href="#bookchapters">Book Chapters</a></li>
+          </ol>
+        </li>
+        <li><a href="#briefs">Selected Briefs and Petitions</a></li>
+        <li><a href="#policy">Policy Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+    <p>Associate Professor of Law<br><a href="https://www.law.virginia.edu/hu">University of Virginia School of Law</a></p>
+    <p><a href="./cv">CV (PDF)</a> | <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790">SSRN</a> | <a href="https://www.linkedin.com/in/huedwin/">LinkedIn</a> | <a href="https://github.com/edwinhu">GitHub</a><br><a href="./pin">PIN Estimates</a> | <a href="./sas">SAS Macros</a> | <a href="./software">Software</a></p>
+    <h2 id="interests">Biography</h2>
+    <p>Edwin Hu is an associate professor at University of Virginia School of Law. His scholarship is focused on the empirical analysis of corporate and securities law and the structure of financial markets. Before joining UVA Law, Professor Hu was a senior economic policymaker, advising the White House’s National Economic Council and as Chief Economist to SEC Commissioner Robert J. Jackson, Jr.</p>
+    <p>Professor Hu’s research studies gaps in market structure and financial regulation. His work on the <a href="https://www.stanfordlawreview.org/print/article/regulatory-arbitrage-and-the-persistence-of-financial-misconduct/">regulation of financial advice</a> shows how advisors who pose the most risk to investors seek out lax legal regimes to avoid accountability. Professor Hu’s study of institutional investors’ voting behavior identified how some funds seek <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4410143">share lending revenue</a> rather than vote in contested corporate matters. And his examination of stock-exchange activity during the COVID-19 pandemic raised questions about the effects of <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3600230">outdated market structure</a> on today’s investors.</p>
+    <p>Professor Hu’s research has helped produce significant policy reforms, including the SEC’s recent institutional <a href="https://www.sec.gov/news/speech/lee-every-vote-counts">voting transparency initiative</a> and its proposal to increase competition for retail stock orders. His recent policy work includes an <a href="https://www.supremecourt.gov/DocketPDF/24/24-345/379924/20251017140641536_24-345acSecurties-LawScholars.pdf">amicus brief</a> to the U.S. Supreme Court in <em>FS Credit Opportunities Corp. v. Saba Capital Master Fund</em> on behalf of securities-law scholars and former senior SEC officials, and a <a href="https://www.sec.gov/files/rules/petitions/2023/petn4-801.pdf">joint petition</a> he co-Chaired with faculty from the Wharton School urging the SEC to modernize Rule 144. Professor Hu’s work has been published in leading academic journals, such as the <em>Journal of Financial Economics</em>, the <em>Stanford Law Review</em>, <em>Management Science</em>, and the <em>Georgetown Law Journal</em>, and his writing has appeared in the <em>Financial Times</em>. His research has been featured prominently across major periodicals including <em>The Atlantic</em>, <em>Bloomberg</em>, <em>The Economist</em>, <em>The New York Times</em>, <em>The Washington Post</em>, and the front page of <em>The Wall Street Journal</em>.</p>
+    <p>He holds two undergraduate degrees, in economics and applied computational mathematics, from the University of Washington, a masters and Ph.D. in finance from Rice University, and a J.D. from New York University School of Law, where he was a Furman Academic Scholar and a Fellow at the Institute for Corporate Governance &amp; Finance.</p>
+    <h2 id="research">Research</h2>
+    <h3 id="workingpapers"><a href="http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790">Working Papers</a></h3>
+    <h5>Custom Proxy Voting Advice, with Jonathon Zytnick and Nadya Malenko (<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4770971">SSRN</a>)</h5>
+    <ul>
+      <li>Revise and Resubmit, <span style="font-variant-caps: small-caps">J. Fin.</span></li>
+      <li>Best Paper Award in Corporate Finance, Northern Finance Association (2024); John L. Weinberg/IRRCi Research Paper Award, (2025); Paul Van Arsdell Award in Corporate Finance, Midwest Finance Association (2025); The First Annual Corporate Governance Academic Forum at the University of Toronto (2025).</li>
+      <li>Covered in <a href="https://corpgov.law.harvard.edu/2024/05/23/custom-proxy-voting-advice/">Harvard Law School Forum on Corporate Governance</a>.</li>
+      <li>Presented at American Law and Economics Association (2023) Junior Scholars Featured Papers Panel, NYU Law Institute for Corporate Governance Spring Roundtable (2023*), Clemson ESG Conference (2024*), UT Austin Business Law &amp; Economics Workshop (2024), Northern Finance Association (2024*), PRI Academic Network Conference (2024*), CELS (2024), AFA (2025*), Tulane Corporate and Securities Roundtable (2025), Toronto Corporate Governance Academic Forum (2025), Columbia Milstein Center The Law and Economics of “Mirror Voting” Conference (2026).</li>
+      <li>Previously circulated under the working title <a href="./papers/20230301 HMZ IID.pdf">“Institutional Investor Deliberation”</a></li>
+    </ul>
+    <h5>Mirror Voting, with Robert E. Bishop and Frank Partnoy</h5>
+    <ul>
+      <li>Presented at Columbia Milstein Center The Law and Economics of “Mirror Voting” Conference (2026).</li>
+    </ul>
+    <h5>Competition for Retail Order Flow and Market Quality, with Dermot Murphy (<a href="https://ssrn.com/abstract=4070056">SSRN</a>)</h5>
+    <ul>
+      <li>Policy: Cited in SEC’s <a href="https://www.sec.gov/rules/proposed/2022/34-96495.pdf">Proposed Rule on Order Competition</a>.</li>
+      <li>Presented at Microstructure Exchange (2022*), UBC Summer Finance Conference (2023*).</li>
+    </ul>
+    <h5>The Index-Fund Dilemma: An Empirical Study of the Lending-Voting Tradeoff, with Joshua Mitts and Haley Sylvester (<a href="https://ssrn.com/abstract=3673531">SSRN</a>)</h5>
+    <ul>
+      <li>Revise and Resubmit, <span style="font-variant-caps: small-caps">J. Legal Stud.</span></li>
+      <li>Covered in <a href="https://clsbluesky.law.columbia.edu/2021/01/19/the-index-fund-dilemma-an-empirical-study-of-the-lending-voting-tradeoff">Columbia Blue Sky Blog</a>, <a href="https://www.bloomberg.com/opinion/articles/2021-01-19/maybe-the-index-funds-don-t-vote">Money Stuff (Bloomberg)</a>, <a href="https://www.wsj.com/articles/gamestop-called-attention-to-the-share-lending-market-heres-what-you-should-know-11617375748"><em>The Wall Street Journal</em></a>, <a href="https://www.marketwatch.com/story/reddit-and-robinhood-army-fights-with-grievance-capital-to-break-wall-streets-elite-wall-11612387089">MarketWatch</a></li>
+      <li>Policy: Speech by <a href="https://www.sec.gov/news/speech/lee-every-vote-counts">SEC Chair Lee on share lending and proxy voting disclosure</a>, Statement by <a href="https://www.sec.gov/news/public-statement/crenshaw-amac-remarks-031921">SEC Commissioner Crenshaw on the lending-voting tradeoff</a>.</li>
+      <li>Presented at JCLAW (2020*), Harvard Empirical Law and Finance Workshop (2021*), Columbia Law and Economics Workshop (2021*).</li>
+    </ul>
+    <h3 id="pubs"><a href="http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790">Publications</a></h3>
+    <h5>Other People’s Votes: The Law and Economics of Proxy Advice, 115 <span style="font-variant-caps: small-caps">Geo. L.J.</span> __ (forthcoming 2026), with Jonathon Zytnick and Nadya Malenko</h5>
+    <ul>
+      <li>Presented at Emory Carney Center Business Law Workshop (2026), Columbia Milstein Center The Law and Economics of “Mirror Voting” Conference (2026).</li>
+    </ul>
+    <h5>Regulatory Leakage Among Financial Advisors: Evidence From FINRA Regulation of “Bad” Brokers, 174 <span style="font-variant-caps: small-caps">J. Fin. Econ.</span> 104170 (2025), with Colleen Honigsberg and Robert J. Jackson, Jr. (<a href="https://papers.ssrn.com/abstract=4410143">SSRN</a>, <a href="https://doi.org/10.1016/j.jfineco.2025.104170">DOI</a>)</h5>
+    <ul>
+      <li>Presented at Harvard Law School Workshop in Empirical Law and Economics (2022), Corporate and Securities Litigation Workshop (2022), Junior Corporate Law Workshop (2022), University of Texas Law, Business, and Economics Workshop (2022*), Northwestern Pritzker Law and Economics Colloquium (2022), NYU Law and Economics Workshop (2023), Stanford Law Faculty Workshop (2023*), American Law and Economics Association (2023), American Finance Association (2024), SEC Investor Advisory Committe (2024), UT Austin McCombs Forensic Finance Conference (2025*).</li>
+    </ul>
+    <h5>Vestigial Tails? Floor Brokers at the Close in Modern Electronic Markets, with Dermot Murphy (<a href="https://papers.ssrn.com/abstract=3600230">SSRN</a>, <a href="https://doi.org/10.1287/mnsc.2023.00884">DOI</a>)</h5>
+    <ul>
+      <li>Forthcoming, <span style="font-variant-caps: small-caps">Mgmt. Sci.</span></li>
+      <li>Covered in <a href="https://www.wsj.com/articles/coronavirus-shutdown-casts-doubt-on-value-of-exchange-trading-floors-11590053419"><em>The Wall Street Journal</em></a>, <a href="https://www.bloomberg.com/opinion/articles/2020-05-22/a-vaccine-with-a-poison-pill">Money Stuff (Bloomberg)</a>, <a href="https://www.economist.com/finance-and-economics/2020/05/25/covid-19-forced-trading-floors-to-close-theyll-be-back"><em>The Economist</em></a>.</li>
+      <li>Policy: Cited in <a href="https://crsreports.congress.gov/product/pdf/IN/IN11447">Congressional Research Service Report IN11447</a>.</li>
+      <li>Presented at University of Illinois Chicago (2020*), Rice University (2020), SEC (2020*), The Microstructure Exchange (2020) (<a href="https://www.youtube.com/watch?v=cRQigejq5jg">recording</a>) (<a href="https://microstructure.exchange/slides/20201006%20Microstructure%20Exchange%20-%20WEB.pdf">slides</a>), <a href="https://iextrading.com/insights/academic-research-conference-2020/">IEX ARC</a> (2020), NBER Big Data Conference (2020), Microstructure Online Seminars Asia Pacific (2021), Western Finance Association (2021), European Finance Association (2021).</li>
+    </ul>
+    <h5>Regulatory Arbitrage and the Persistence of Financial Misconduct, 74 <span style="font-variant-caps: small-caps">Stan. L. Rev.</span> 737 (2022), with Colleen Honigsberg and Robert Jackson (<a href="https://papers.ssrn.com/abstract=3769653">SSRN</a>, <a href="https://review.law.stanford.edu/wp-content/uploads/sites/3/2022/04/Honigsberg-et-al.-74-Stan.-L.-Rev.-737.pdf">PDF</a>)</h5>
+    <ul>
+      <li>Cited in <a href="https://www.federalregister.gov/documents/2024/04/25/2024-08065/retirement-security-rule-definition-of-an-investment-advice-fiduciary">DOL Investment Advice Fiduciary Rule</a></li>
+      <li>Covered in <a href="https://www.thinkadvisor.com/2021/05/14/wandering-bad-brokers-pose-risks-for-clients-industry/">ThinkAdvisor</a>, <a href="https://www.marketwatch.com/story/the-first-step-of-searching-for-a-financial-adviser-trust-no-one-11621876941">MarketWatch</a>, <a href="https://www.financial-planning.com/news/misconduct-study-sheds-light-on-wandering-advisors">Financial Planning</a>, <a href="https://www.investmentnews.com/ex-sec-member-targets-rogue-brokers-turning-to-insurance-sales-206925">InvestmentNews</a>, <a href="https://www.nasdaq.com/articles/finra-targets-recidivist-brokers-but-its-reach-goes-only-so-far">Nasdaq News and Insights</a></li>
+      <li>Presented at JCLAW (2020*), Berkeley Law, Accounting, &amp; Business Workshop (2020), NYU Law and Economics Faculty Workshop (2021), Harvard Empirical Law and Finance Workshop (2021), Goethe University LawFin Seminar (2021), 33rd Annual Tulane Corporate Law Institute (2021*), Oxford Business Law Workshop (2021*), Investor Issues Dialogue (2021).</li>
+      <li>Previously circulated under working title “Wandering Financial Advisors”</li>
+      <li>Winner of the 2023 Order of the Coif Gasaway Award for Best Article.</li>
+    </ul>
+    <h5>Financial Integration and Credit Democratization: Linking Banking Deregulation to Economic Growth, 45 <span style="font-variant-caps: small-caps">J. Fin. Intermediation</span> 100857 (2021), with Elizabeth Berger, Alexander Butler, and Morad Zekhnini (<a href="https://ssrn.com/abstract=2139679">SSRN</a>, <a href="https://doi.org/10.1016/j.jfi.2020.100857">DOI</a>)</h5>
+    <ul>
+      <li>Presented at Rice University (2012*), Financial Management Association Conference (FMA 2013), Securities and Exchange Commission (SEC, 2014*), Fordham University (2014*), University of Cincinnati (2014*), University of Kentucky (2014*), Yale School of Management (2015*).</li>
+    </ul>
+    <h5>A Comparison of Some Structural Models of Private Information Arrival, 135 <span style="font-variant-caps: small-caps">J. Fin. Econ.</span> 795 (2020), with Jefferson Duarte and Lance Young, (<a href="https://ssrn.com/abstract=2564369">SSRN</a>, <a href="https://doi.org/10.1016/j.jfineco.2019.08.005">DOI</a>)</h5>
+    <ul>
+      <li>Presented at Rice University (2015), Texas A&amp;M (2015*), Multinational Finance Society Conference (MFS, 2015*) <strong>Best Paper Award</strong>, China International Finance Conference (CICF, 2015*), Society of Financial Econometrics Conference (SoFiE, 2015*), Instituto Technologico Autonomo de Mexico Conference (ITAM, 2015*), American Finance Association Conference (AFA, 2016), University of Washington (2016*), University of Virginia (McIntire) (2017*), Southern Methodist University (2017*).</li>
+      <li><strong><a href="https://edwinhu.github.io/pin/">Data and Previous Refereed Versions</a></strong></li>
+      <li>Previously circulated under working title “Does the PIN Model Mis-Identify Private Information and If So, What is the Alternative?”</li>
+    </ul>
+    <h3 id="bookchapters">Book Chapters</h3>
+    <h5>Insurance as Asset Management, with Colleen Honigsberg, in <span style="font-variant-caps: small-caps">Research Handbook on Agency and Intermediation</span> (Deborah A. DeMott &amp; Tan Cheng-Han eds., 2026) (<a href="https://www.e-elgar.com/shop/usd/research-handbook-on-agency-and-intermediation-9781035321711.html">Publisher</a>)</h5>
+    <h2 id="briefs">Selected Briefs and Petitions</h2>
+    <h5>Brief of Securities-Law Scholars and Former Senior SEC Officials as Amici Curiae in Support of Respondents, <em>FS Credit Opportunities Corp. v. Saba Capital Master Fund</em>, No. 24-345 (U.S. Oct. 16, 2025) (<a href="https://www.supremecourt.gov/DocketPDF/24/24-345/379924/20251017140641536_24-345acSecurties-LawScholars.pdf">Brief</a>)</h5>
+    <h5>Petition for Rulemaking: Modernization of Rule 144, with Daniel J. Taylor, Bradford Lynch-Levy, and Jonathon Zytnick, SEC File No. 4-801 (Mar. 9, 2023) (<a href="https://www.sec.gov/files/rules/petitions/2023/petn4-801.pdf">Petition</a>)</h5>
+    <h2 id="policy">Policy Work</h2>
+    <p>Professor Hu served as Counsel to SEC Commissioner Robert J. Jackson, Jr. and as a Financial Economist in the Commission’s Division of Economic and Risk Analysis (2016–2020), conducting original research on market structure, financial intermediation, and corporate governance.</p>
+    <p>His research showed that <a href="https://www.sec.gov/dera/staff-papers/working-papers/07feb18_hu_iex_becoming_an_exchange">slowing down trading reduced costs for investors</a>, contributing to the Commission’s evaluation of exchange speed bumps. He led the <a href="https://www.sec.gov/files/bats_moc_analysis.pdf">first SEC economic analysis</a> to use regulatory audit trail data, finding that off-exchange trading at the close had not harmed price discovery—a result that led NYSE to cut its top-tier closing auction fees by two-thirds. Separate <a href="https://www.sec.gov/dera/staff-papers/white-papers/dera_wp_tick_size-market_quality">evidence on tick size changes and market quality</a> was later cited in <a href="https://financialservices.house.gov/uploadedfiles/hhrg-117-ba16-wstate-piwowarm-20220330.pdf">Congressional testimony</a>.</p>
+    <p>Professor Hu’s research on financial intermediation informed Commissioner Jackson’s <a href="https://www.sec.gov/news/public-statement/statement-jackson-060519-iabd">dissent on Regulation Best Interest</a>, showing that advisors not subject to a fiduciary standard were more likely to give conflicted advice. His evidence that <a href="https://www.sec.gov/news/public-statement/statement-jackson-2019-12-18-accredited-investor">private placement brokers</a> have unusually high misconduct rates supported the Commissioner’s dissent on expanding private markets to retail investors.</p>
+    <p>On corporate governance, Professor Hu challenged <a href="https://www.sec.gov/news/public-statement/statement-jackson-2019-11-05-open-meeting">proposed restrictions on shareholder proposals</a> and opposed the <a href="https://www.sec.gov/news/public-statement/jackson-statement-proposed-amendments-accelerated-filer-definition">rollback of Sarbanes-Oxley auditor attestation requirements</a>. A <a href="https://www.sec.gov/files/jackson-maloney-response-letter-111819-signed.pdf">letter to Congress</a> revealed that large fund managers overwhelmingly vote against political spending disclosure despite lacking clear guidelines. His research on <a href="https://www.sec.gov/news/speech/speech-jackson-061118">executive selling into stock buybacks</a> showed long-run underperformance, informing <a href="https://www.sec.gov/files/jackson-letter-030619.pdf">a letter to Senator Van Hollen</a> and legislation proposed by Senator Baldwin.</p>
+    <h2 id="contact">Contact</h2>
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+      <tbody>
+        <tr>
+          <td>UVA School of Law</td>
+          <td>Last Updated: 2026-05-06</td>
+        </tr>
+        <tr>
+          <td>580 Massie Road</td>
+          <td>✉️: <code>ehu@law.virginia.edu</code></td>
+        </tr>
+        <tr>
+          <td>Charlottesville, VA 22903</td>
+          <td>🌐: <a href="http://edwinhu.github.io">edwinhu.github.io</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
