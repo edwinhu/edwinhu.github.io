@@ -42,6 +42,10 @@ Associate Professor of Law\
 
 #include-offset("content/briefs.typ", 3)
 
+= Selected Commentary <commentary>
+
+#include-offset("content/commentary.typ", 3)
+
 = Policy Work <policy>
 
 #include "content/policy.typ"

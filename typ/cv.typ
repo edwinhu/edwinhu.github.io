@@ -30,6 +30,10 @@
 
 #include-offset("content/briefs.typ", 2)
 
+= Selected Commentary
+
+#include-offset("content/commentary.typ", 2)
+
 #v(0.5em)
 = Academic Service
 
