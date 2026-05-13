@@ -160,7 +160,7 @@ Just remember you `bash` quoting rules and you will be fine!
 - #link("https://github.com/atuinsh/atuin")[`atuin`] replaces your shell history with a SQLite database, enabling powerful search across all your commands. Sync across machines and never lose that complex data processing pipeline again. Search with `Ctrl-R`.
 - #link("https://cli.github.com/")[`gh`] is GitHub's official CLI for managing pull requests, issues, and repositories from the terminal. Clone with `gh repo clone owner/repo`, create PRs with `gh pr create`.
 
-== AI-Powered Development Tools
+== Agentic Coding Tools
 
 - #link("https://docs.anthropic.com/en/docs/claude-code")[`claude code`] is an AI-powered coding assistant that helps with software development tasks. It can search codebases, write and edit files, run commands, and help debug issues, it can even read Jupyter Notebook files and "see" your images. The VSCod extension is also very nicely integrated, as it can automatically add the lines you select as context.
 - #link("https://github.com/reorx/gemini-cli")[`gemini-cli`] is a free AI assistant powered by Google's Gemini models. You can even have Claude Code call Gemini directly for real-time code reviews during development, creating an AI pair programming experience.
