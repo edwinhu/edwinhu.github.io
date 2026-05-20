@@ -13,6 +13,10 @@
 
 #include-offset("content/education.typ", 2)
 
+= Honors and Awards
+
+#include-offset("content/honors.typ", 2)
+
 = Publications
 
 #include-offset("content/publications.typ", 2)

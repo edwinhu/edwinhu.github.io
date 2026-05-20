@@ -1,5 +1,5 @@
 = *2020--2023: #link("https://www.law.nyu.edu")[NYU School of Law]*
-- J.D., #link("https://www.law.nyu.edu/furmanprogram")[Furman Scholar], Law and Economics Prize.
+- J.D., #link("https://www.law.nyu.edu/furmanprogram")[Furman Scholar].
 
 = *2010--2016: #link("http://business.rice.edu")[Rice University]*
 - Ph.D., M.A. #link("https://business.rice.edu/our-programs/phd-business/finance-phd")[Finance].
