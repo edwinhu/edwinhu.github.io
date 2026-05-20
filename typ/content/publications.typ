@@ -1,6 +1,6 @@
 #import "../lib.typ": sc
 
-= Other People's Votes: The Law and Economics of Proxy Advice, 115 #sc[Geo. L.J.] \_\_ (forthcoming 2026), with Jonathon Zytnick and Nadya Malenko
+= Other People's Votes: The Law and Economics of Proxy Advice, 115 #sc[Geo. L.J.] \_\_ (forthcoming 2026), with Jonathon Zytnick and Nadya Malenko (#link("https://ssrn.com/abstract=6798600")[SSRN])
 - Presented at Emory Carney Center Business Law Workshop (2026), Columbia Milstein Center The Law and Economics of "Mirror Voting" Conference (2026).
 
 = Regulatory Leakage Among Financial Advisors: Evidence From FINRA Regulation of "Bad" Brokers, 174 #sc[J. Fin. Econ.] 104170 (2025), with Colleen Honigsberg and Robert J. Jackson, Jr. (#link("https://papers.ssrn.com/abstract=4410143")[SSRN], #link("https://doi.org/10.1016/j.jfineco.2025.104170")[DOI])
