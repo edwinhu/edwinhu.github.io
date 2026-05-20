@@ -13,10 +13,6 @@
 
 #include-offset("content/education.typ", 2)
 
-= Honors and Awards
-
-#include-offset("content/honors.typ", 2)
-
 = Publications
 
 #include-offset("content/publications.typ", 2)
@@ -39,6 +35,10 @@
 #include-offset("content/commentary.typ", 2)
 
 #v(0.5em)
+= Honors and Awards
+
+#include-offset("content/honors.typ", 2)
+
 = Academic Service
 
 #include-offset("content/service.typ", 2)

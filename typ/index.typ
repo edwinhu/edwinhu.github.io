@@ -24,10 +24,6 @@ Associate Professor of Law\
 
 #include "content/biography.typ"
 
-= Honors and Awards <honors>
-
-#include-offset("content/honors.typ", 3)
-
 = Research <research>
 
 == #link("http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1889790")[Working Papers] <workingpapers>
@@ -53,6 +49,10 @@ Associate Professor of Law\
 = Policy Work <policy>
 
 #include "content/policy.typ"
+
+= Honors and Awards <honors>
+
+#include-offset("content/honors.typ", 3)
 
 = Contact <contact>
 
