@@ -8,7 +8,7 @@
 - Previously circulated under the working title #link("./papers/20230301 HMZ IID.pdf")["Institutional Investor Deliberation"]
 
 = Mirror Voting, with Robert E. Bishop and Frank Partnoy
-- Presented at Columbia Milstein Center The Law and Economics of "Mirror Voting" Conference (2026).
+- Presented at Columbia Milstein Center The Law and Economics of "Mirror Voting" Conference (2026), #link("https://www.sec.gov/about/advisory-committees/investor-advisory-committee/iac060426-agenda")[SEC Investor Advisory Committee] (2026\*).
 
 = Competition for Retail Order Flow and Market Quality, with Dermot Murphy (#link("https://ssrn.com/abstract=4070056")[SSRN])
 - Policy: Cited in SEC's #link("https://www.sec.gov/rules/proposed/2022/34-96495.pdf")[Proposed Rule on Order Competition].
