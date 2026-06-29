@@ -8,6 +8,7 @@
 - Previously circulated under the working title #link("./papers/20230301 HMZ IID.pdf")["Institutional Investor Deliberation"]
 
 = Mirror Voting, with Robert E. Bishop and Frank Partnoy
+- Covered in #link("https://clsbluesky.law.columbia.edu/2026/06/17/mirror-voting/")[Columbia Blue Sky Blog], #link("https://www.gladstoneplace.com/news/mirror-mirror-on-the-wall-should-the-market-vote-for-us-all/")[Gladstone Place Partners], and #link("https://www.capitolaccountdc.com/")[Capitol Account].
 - Presented at Columbia Milstein Center The Law and Economics of "Mirror Voting" Conference (2026), #link("https://www.sec.gov/about/advisory-committees/investor-advisory-committee/iac060426-agenda")[SEC Investor Advisory Committee] (2026\*).
 
 = Competition for Retail Order Flow and Market Quality, with Dermot Murphy (#link("https://ssrn.com/abstract=4070056")[SSRN])
