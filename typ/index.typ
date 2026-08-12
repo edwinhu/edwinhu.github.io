@@ -38,7 +38,7 @@ Associate Professor of Law\
 
 #include-offset("content/bookchapters.typ", 3)
 
-= Selected Briefs and Petitions <briefs>
+= Selected Briefs, Petitions, and Comment Letters <briefs>
 
 #include-offset("content/briefs.typ", 3)
 

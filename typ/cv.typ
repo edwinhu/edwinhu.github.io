@@ -26,7 +26,7 @@
 
 #include-offset("content/workingpapers.typ", 2)
 
-= Selected Briefs and Petitions
+= Selected Briefs, Petitions, and Comment Letters
 
 #include-offset("content/briefs.typ", 2)
 
