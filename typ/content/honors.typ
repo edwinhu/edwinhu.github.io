@@ -1,4 +1,4 @@
-- #link("https://ai.provost.virginia.edu/ai-research")[AI Catalyst Fellow], AI Research \@UVA (2026--27).
-- #link("https://research.virginia.edu/initiatives/research-achievement-awards")[UVA Research Achievement Award] (2024).
+- #link("https://perma.cc/JT6B-NJMH")[AI Catalyst Fellow], AI Research \@UVA (2026--27).
+- UVA Research Achievement Award (2024).
 - #link("https://orderofthecoif.org/gasaway-award-2023")[Order of the Coif Lolly Gasaway Faculty-Student Writing Award] (2023), for _Regulatory Arbitrage and the Persistence of Financial Misconduct_.
 - Law and Economics Prize, NYU School of Law (2023).
