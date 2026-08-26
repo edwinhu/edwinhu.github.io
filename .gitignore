@@ -252,3 +252,6 @@ auto
 
 # gh-pages
 pin/archive/
+
+# pre-Typst org-mode site source (kept locally, not published)
+archive/
