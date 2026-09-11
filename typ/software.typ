@@ -173,17 +173,17 @@ Agents are only as useful as the interfaces you give them. A coding agent is
 very good at composing small text-in, text-out programs and very bad at
 clicking through a web app, so the highest-leverage thing you can build is a
 CLI wrapper around a service you already pay for. These are the ones I use
-daily, all public on #link("https://github.com/edwinhu")[GitHub]:
+daily, mostly my own and all public on #link("https://github.com/edwinhu")[GitHub]:
 
 - #link("https://github.com/edwinhu/workflows")[`workflows`] is a Claude Code plugin holding the skills and agents I use for research, data work, writing, teaching, and legal drafting. Install it with `/plugin marketplace add edwinhu/workflows`. It is the piece that turns a general assistant into one that knows how WRDS joins work, what a Bluebook short form looks like, and which of my notebooks to search before it reaches for the open web.
 
 - #link("https://github.com/edwinhu/google-scholar-cli")[`google-scholar-cli`] searches Scholar, pulls BibTeX by cluster ID, and downloads PDFs through an institutional link resolver, all from one zero-dependency binary. This is the tool that makes "find the paper and add it to my library" a single agent step instead of a browsing session.
 
-- #link("https://github.com/edwinhu/morgen-cli")[`morgen-cli`] drives #link("https://morgen.so")[Morgen] calendars and tasks from the terminal, so an agent can read my week and block time without touching a calendar UI.
-
-- #link("https://github.com/edwinhu/superhuman-cli")[`superhuman-cli`] controls #link("https://superhuman.com")[Superhuman] over the Chrome DevTools Protocol, with a signed-in Outlook Web tab as the fallback for Microsoft accounts. It also ships an MCP server, which is the other half of the same idea: the same operations exposed to an agent as tools rather than as a shell command.
-
 - #link("https://github.com/edwinhu/consensus-cli")[`consensus-cli`] queries #link("https://consensus.app")[Consensus] from the terminal. Consensus has become genuinely useful for literature reviews: ask a question and it returns papers that bear on it with the direction and strength of their findings, rather than a keyword ranking you then have to read through to find out who agrees with whom. That is the right shape for a first pass on an unfamiliar literature, and having it as a CLI means an agent can run the pass, pull the hits into #link("https://paperpile.com/")[Paperpile], and hand back a reading list instead of a browser tab.
+
+- #link("https://github.com/tmc/nlm")[`nlm`] is not mine, but it belongs on this list: a CLI for #link("https://notebooklm.google.com/")[NotebookLM], which is otherwise a web app an agent cannot touch. Upload sources, create a notebook, and query it from a script. NotebookLM answers from a fixed corpus you gave it rather than from the open web, so pointing it at a folder of papers and asking questions across all of them is a real research move, and the CLI is what makes it scriptable.
+
+- #link("https://github.com/edwinhu/sec-sro-rss")[`sec-sro-rss`] builds an RSS, Atom, and JSON feed of SEC self-regulatory organization rulemaking off the Federal Register API, since the SEC publishes no usable feed of its own. Subscribe at #link("https://edwinhu.github.io/sec-sro-rss/feed.xml")[`feed.xml`].
 
 = Some python libraries worth learning
 
