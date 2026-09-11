@@ -183,7 +183,7 @@ daily, all public on #link("https://github.com/edwinhu")[GitHub]:
 
 - #link("https://github.com/edwinhu/superhuman-cli")[`superhuman-cli`] controls #link("https://superhuman.com")[Superhuman] over the Chrome DevTools Protocol, with a signed-in Outlook Web tab as the fallback for Microsoft accounts. It also ships an MCP server, which is the other half of the same idea: the same operations exposed to an agent as tools rather than as a shell command.
 
-- #link("https://github.com/edwinhu/consensus-cli")[`consensus-cli`] queries #link("https://consensus.app")[Consensus] for evidence-weighted answers from the literature.
+- #link("https://github.com/edwinhu/consensus-cli")[`consensus-cli`] queries #link("https://consensus.app")[Consensus] from the terminal. Consensus has become genuinely useful for literature reviews: ask a question and it returns papers that bear on it with the direction and strength of their findings, rather than a keyword ranking you then have to read through to find out who agrees with whom. That is the right shape for a first pass on an unfamiliar literature, and having it as a CLI means an agent can run the pass, pull the hits into #link("https://paperpile.com/")[Paperpile], and hand back a reading list instead of a browser tab.
 
 = Some python libraries worth learning
 
