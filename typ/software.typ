@@ -183,8 +183,6 @@ daily, mostly my own and all public on #link("https://github.com/edwinhu")[GitHu
 
 - #link("https://github.com/tmc/nlm")[`nlm`] is not mine, but it belongs on this list: a CLI for #link("https://notebooklm.google.com/")[NotebookLM], which is otherwise a web app an agent cannot touch. Upload sources, create a notebook, and query it from a script. NotebookLM answers from a fixed corpus you gave it rather than from the open web, so pointing it at a folder of papers and asking questions across all of them is a real research move, and the CLI is what makes it scriptable.
 
-- #link("https://github.com/edwinhu/sec-sro-rss")[`sec-sro-rss`] builds an RSS, Atom, and JSON feed of SEC self-regulatory organization rulemaking off the Federal Register API, since the SEC publishes no usable feed of its own. Subscribe at #link("https://edwinhu.github.io/sec-sro-rss/feed.xml")[`feed.xml`].
-
 = Some python libraries worth learning
 
 == #link("https://requests.readthedocs.io/en/master/")[`requests`]
