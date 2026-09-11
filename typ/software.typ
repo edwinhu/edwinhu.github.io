@@ -164,8 +164,26 @@ Just remember you `bash` quoting rules and you will be fine!
 
 - #link("https://docs.anthropic.com/en/docs/claude-code")[`claude code`] is an AI-powered coding assistant that helps with software development tasks. It can search codebases, write and edit files, run commands, and help debug issues, it can even read Jupyter Notebook files and "see" your images. The VSCod extension is also very nicely integrated, as it can automatically add the lines you select as context.
 - #link("https://github.com/reorx/gemini-cli")[`gemini-cli`] is a free AI assistant powered by Google's Gemini models. You can even have Claude Code call Gemini directly for real-time code reviews during development, creating an AI pair programming experience.
-- #link("https://github.com/manaflow-ai/cmux")[`cmux`] is a native macOS terminal app purpose-built for running multiple AI coding agents in parallel, with vertical tabs, split panes, an embedded browser, and per-tab notifications when an agent needs your attention. It supports Claude Code, Codex CLI, Gemini CLI, Cursor CLI, and others side by side, so you can fan out work across concurrent sessions without losing track of which one is blocked on input. Far more ergonomic than a generic `tmux` setup when you routinely have several agents grinding on different tasks.
-- #link("https://github.com/umputun/revdiff")[`revdiff`] is a terminal TUI for reviewing diffs with inline annotations, designed to feed structured review notes back into AI coding agents. It renders syntax-highlighted diffs with a blame gutter, auto-detects Git/Mercurial/Jujutsu, and ships with a Claude Code plugin that launches it as an overlay and pipes your annotations back to the agent on exit. Useful when you want to scrutinize an agent's proposed changes and hand back a structured punch list rather than free-form prose.
+- #link("https://herdr.dev")[`herdr`] is a terminal multiplexer built for running coding agents rather than shells. Workspaces, tabs, and panes are scriptable from the command line, so an agent can spawn a sibling session, hand it a task,, and you can attach to any of them to watch or take over. It solves the problem `tmux` only half-solves once you routinely have several agents grinding on different repos: each one gets a named, revisitable home instead of a pane you have to remember.
+- #link("https://github.com/agavra/tuicr")[`tuicr`] is a code review TUI with vim keybindings, covering a GitHub PR, a commit range, or just the uncommitted working tree, and it auto-detects `git`, `jj`, or `mercurial`. You scroll a continuous GitHub-style diff and leave line, range, or file-level comments. The part that matters for agentic work is that sessions persist to disk and read both ways: `tuicr review comments` hands your annotations to the agent as structured JSON, and the agent can reply into the same session with `tuicr review add` while you watch. Review the code before it ever reaches GitHub, and hand back a punch list instead of prose.
+
+== My own tools
+
+Agents are only as useful as the interfaces you give them. A coding agent is
+very good at composing small text-in, text-out programs and very bad at
+clicking through a web app, so the highest-leverage thing you can build is a
+CLI wrapper around a service you already pay for. These are the ones I use
+daily, all public on #link("https://github.com/edwinhu")[GitHub]:
+
+- #link("https://github.com/edwinhu/workflows")[`workflows`] is a Claude Code plugin holding the skills and agents I use for research, data work, writing, teaching, and legal drafting. Install it with `/plugin marketplace add edwinhu/workflows`. It is the piece that turns a general assistant into one that knows how WRDS joins work, what a Bluebook short form looks like, and which of my notebooks to search before it reaches for the open web.
+
+- #link("https://github.com/edwinhu/google-scholar-cli")[`google-scholar-cli`] searches Scholar, pulls BibTeX by cluster ID, and downloads PDFs through an institutional link resolver, all from one zero-dependency binary. This is the tool that makes "find the paper and add it to my library" a single agent step instead of a browsing session.
+
+- #link("https://github.com/edwinhu/morgen-cli")[`morgen-cli`] drives #link("https://morgen.so")[Morgen] calendars and tasks from the terminal, so an agent can read my week and block time without touching a calendar UI.
+
+- #link("https://github.com/edwinhu/superhuman-cli")[`superhuman-cli`] controls #link("https://superhuman.com")[Superhuman] over the Chrome DevTools Protocol, with a signed-in Outlook Web tab as the fallback for Microsoft accounts. It also ships an MCP server, which is the other half of the same idea: the same operations exposed to an agent as tools rather than as a shell command.
+
+- #link("https://github.com/edwinhu/consensus-cli")[`consensus-cli`] queries #link("https://consensus.app")[Consensus] for evidence-weighted answers from the literature.
 
 = Some python libraries worth learning
 
@@ -205,13 +223,17 @@ A good use case for `numba` is taking an expensive matrix multiplication and re-
 
 `marimo` is a reactive Python notebook that solves many pain points of traditional Jupyter notebooks. Unlike Jupyter, `marimo` notebooks are stored as pure Python files, making them git-friendly and importable as modules. The reactive execution model means cells automatically re-run when their dependencies change, eliminating the hidden state issues common in Jupyter. For researchers, this means more reproducible analyses and easier collaboration. Just run `marimo edit notebook.py` to start.
 
-== #link("https://altair-viz.github.io/")[`altair`]
+== #link("https://github.com/juba/pyobsplot")[`pyobsplot`]
 
-`altair` is a declarative visualization library built on Vega-Lite. Unlike matplotlib's imperative style, `altair` uses a grammar of graphics approach that makes complex visualizations surprisingly simple. For researchers, this means publication-quality plots with minimal code. Just `alt.Chart(df).mark_point().encode(x='x', y='y')` for a basic scatter plot, with automatic type inference and interactivity.
+`pyobsplot` brings Observable Plot to Python, rendering interactive charts from `pandas` or `polars` DataFrames inside Jupyter, `marimo`, or Quarto. Observable Plot is a concise grammar of graphics, so a scatter plot is just `Plot.plot({"marks": [Plot.dot(df, {"x": "x", "y": "y"})]})`, with sensible defaults for scales, legends, and faceting. Output is real JavaScript, so tooltips and zooming work in the browser, and figures can be saved to SVG or PNG for a paper.
 
 == #link("https://pola.rs/")[`polars`]
 
 `polars` is a lightning-fast DataFrame library that often outperforms `pandas` by 10-100x. Written in Rust, it features lazy evaluation, automatic query optimization, and excellent memory efficiency. For researchers working with large datasets, `polars` can process data that would crash `pandas`. The API is expressive: `df.filter(pl.col('x') > 5).group_by('category').agg(pl.col('y').mean())`.
+
+== #link("https://github.com/posit-dev/great-tables")[`great_tables`]
+
+`great_tables` builds finished display tables in Python. It is the same project as R's `gt`, maintained by Posit for both languages, so the grammar carries across if you move between them. A table is split into named parts (title, stub, column spanners, body, footnotes, source note) and formatting is declarative rather than a pile of string munging: `GT(df).fmt_number(columns="ret", decimals=3).tab_spanner("Returns", ["ret", "vol"])`. Useful for turning regression or summary output into something you can drop straight into a paper or a slide, and it exports to HTML, LaTeX, and PNG.
 
 = Some `R` libraries worth learning
 
@@ -221,11 +243,17 @@ A good use case for `numba` is taking an expensive matrix multiplication and re-
 
 `tidyverse` also contains one of the most useful packages in any language: `haven`, which allows you to read `SAS` and `Stata` files. Look, we can all pretend like we don't have co-authors that use these languages, or we can deal with it and use `haven`.
 
-== #link("https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html")[`data.table`]
+== #link(
+  "https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html",
+)[`data.table`]
 
 `data.table` is #link("https://github.com/Rdatatable/data.table/wiki/Benchmarks-%3A-Grouping")[very fast], and has an intuitive syntax. It is certainly different from `tidyverse::dplyr`, but for those familiar with `pandas`, PyTable, or `sql` it may be more intuitive.
 
 Bonus tip: DataCamp has a great #link("https://s3.amazonaws.com/assets.datacamp.com/blog_assets/datatable_Cheat_Sheet_R.pdf")[cheat sheet] for `data.table`.
+
+== #link("https://gt.rstudio.com/")[`gt`]
+
+`gt` is the `R` half of the same table grammar as `great_tables` above: `gt(df) |> fmt_number(columns = ret, decimals = 3) |> tab_spanner("Returns", c(ret, vol))`. Pair it with `modelsummary` to turn regression output into a table you can send to a journal without hand-editing LaTeX.
 
 == #link("https://www.rdocumentation.org/packages/lfe/versions/2.8-6/topics/felm")[`felm`] and #link("https://github.com/amrei-stammann/alpaca")[`alpaca`]
 
@@ -239,6 +267,12 @@ Bonus tip: DataCamp has a great #link("https://s3.amazonaws.com/assets.datacamp.
 
 `DuckDB` now plays nicely with both python and R, and with their respective dataframes. It is also very very good at reading all sorts of common data files like csv, json, and parquet.
 
+== Typesetting (#link("https://typst.app/")[`Typst`] and #link("https://tectonic-typesetting.github.io/")[`Tectonic`])
+
+`Typst` is what I write in now: a markup-based typesetting system with a real scripting language, incremental compilation fast enough to preview while you type, and error messages that name the problem instead of unwinding a macro expansion. Papers, slides, and course handouts all come out of the same source, and because a document is a program you can compute a number in the document rather than pasting one in and watching it go stale.
+
+Sometimes LaTeX is not optional: a coauthor's file, a journal's class file. `Tectonic` is the answer there, a Rust rewrite of the TeX engine that fetches only the packages a document actually needs from a web bundle, so there is no multi-gigabyte TeX Live install and no `Package not found` on a fresh machine. One `tectonic -X compile paper.tex`, reproducible anywhere.
+
 == Web Scraping APIs (#link("https://www.zyte.com/")[`Zyte`], #link("https://brightdata.com/")[`Bright Data`])
 
 Sometimes the only way to get data is through traditional web scraping. Scraping is #link("https://cdn.ca9.uscourts.gov/datastore/opinions/2022/04/18/17-16783.pdf")[controversial] and at the very least most websites have some sort of rate limiting or bot restrictions. Other websites are weirdly designed and require javascript rendering to be able to access content. A scraping API handles the former by providing headless instances that imitate a real Chrome browser, running through different proxies (including residential IP addresses) and the latter through custom javascript rendering. These services make scraping _much much_ easier in the modern age. They are services you have to pay for, but the rates are reasonable considering that spinning up a custom solution (e.g., multiple AWS instances) is costly and time-consuming. I've used several of these, and after hands-on testing against a genuinely tough Cloudflare-protected target, my clear recommendation now is `Zyte`.
@@ -246,8 +280,6 @@ Sometimes the only way to get data is through traditional web scraping. Scraping
 #link("https://www.zyte.com/")[`Zyte API`] is what I reach for first. The big selling point is that it _just works_: it cleared a hard Cloudflare managed-challenge target on default settings, with no special flags, proxy modes, or zone configuration to fiddle with, at roughly 18s/page. Built by the `Scrapy` team, it has a clean, well-documented API with both `httpResponseBody` (static) and `browserHtml` (JS-rendered) modes — you flip one field to add JS rendering. It bills per successful request and has a free tier. Of everything I tested, it required the least setup and the least trial-and-error, which is worth a lot when you just want the data.
 
 The one alternative worth knowing about is #link("https://brightdata.com/")[`Bright Data` Web Unlocker], which has industry-leading anti-bot bypass and is the most economical at large scale — you pay per successful request (roughly \$1.5–3 per 1,000), so failures cost nothing. It cleared the same hard target (around 50s/page) and even returned usable raw HTML without JS rendering. The catch is setup friction: you have to create a "Web Unlocker zone" and, for some accounts, clear KYC before it works. So reach for `Bright Data` if you're scraping at large scale and want the cheapest per-success pricing; otherwise `Zyte` is the easier default.
-
-(I previously recommended `ScrapingBee` here. It's simple to start with, but on hard Cloudflare targets it only works in an expensive `stealth_proxy` mode that costs many times more per request than `Zyte` for the same result, so it no longer makes my list.)
 
 *Warning:* If you pay for a higher tier with concurrency, do not follow the vendor tutorials and try to use `multiprocessing` or `concurrent.futures` for parallelism. Although it is syntactically simple, they run into the Python GIL and will lock after a few iterations. Instead, use `aiohttp` and just replace the url field with the scraping API url, include your API Key as a parameter, and the url you want to scrape as another parameter.
 
@@ -261,15 +293,17 @@ The one alternative worth knowing about is #link("https://brightdata.com/")[`Bri
 
 - #link("https://superwhisper.com/")[`Superwhisper`] provides system-wide voice transcription using different transcription models. It is much better than the built-in Apple dictation, and can be much faster than typing. You can also have AI process your transcript directly, so you can for example, dictate some sentences and have it automatically turned into a properly formatted email.
 
+- #link("https://voxtype.io/")[`Voxtype`] is the Linux counterpart: push-to-talk voice-to-text for Wayland, written in Rust and running local Whisper models, so nothing leaves the machine. Hold a hotkey, speak, and the text is typed into whatever window has focus. On #link("https://omarchy.org/")[Omarchy] it ships as an optional one-click install with Waybar and Hyprland integration already wired up, and packages exist for Arch, NixOS, Ubuntu, Debian, and Fedora.
+
 - #link("https://www.homerow.app/")[`Homerow`] enables keyboard-only navigation of macOS by showing letter hints on clickable elements. Essential for reducing mouse usage during long coding or writing sessions.
 
-- #link("https://bitwarden.com/")[`Bitwarden`] is an open-source password manager with excellent cross-platform support.
+- #link("https://1password.com/")[`1Password`] is a password manager with good cross-platform support and, more usefully for research work, a CLI (`op`) and SSH agent. Secrets stay out of your dotfiles and scripts: `op read "op://vault/wrds/password"` pulls a credential at runtime, and service accounts scoped to a single vault let an agent or a cron job fetch exactly what it needs and nothing else.
 
 == Knowledge Management
 
-- #link("https://logseq.com/")[`Logseq`] / #link("https://obsidian.md/")[`Obsidian`] are powerful note-taking apps with bidirectional linking. Logseq uses an outliner approach while Obsidian uses traditional markdown files. Both excel at building a personal knowledge graph for research.
+- #link("https://obsidian.md/")[`Obsidian`] is a note-taking app over a plain folder of markdown files, with bidirectional links and backlinks on top. Because the vault is just files, `rg`, `git`, and a coding agent all work on it directly, which matters more than any feature the app itself ships. For research it does double duty: a knowledge graph of concepts and case notes you can actually search, and a corpus you can point an LLM at when you would rather get your own prior reading back than a generic answer.
 
-- #link("https://sioyek.info/")[`Sioyek`] is a PDF viewer designed specifically for research papers and technical documents. Features include smart jump for references, portals for keeping figures visible while reading, and a command palette for keyboard-driven navigation.
+- #link("https://pwmt.org/projects/zathura/")[`zathura`] is a keyboard-driven document viewer with vim bindings: `j`/`k` to scroll, `/` to search, `tab` for the outline, and no chrome around the page. It reads PDF, DjVu, PostScript, and EPUB through pluggable backends, follows SyncTeX both ways so you can jump between a source line and the rendered page, and reloads on its own when the file changes, which makes it the right pane to leave open next to a Typst or LaTeX document you are recompiling.
 
 - #link("https://paperpile.com/")[`Paperpile`] is a reference manager that integrates seamlessly with Google Docs and Microsoft Word. It automatically extracts metadata from PDFs, syncs across devices, and makes citation formatting painless. The Chrome extension adds papers from Google Scholar with one click.
 
