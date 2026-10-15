@@ -37,7 +37,7 @@ Latest version available at SSRN: https://ssrn.com/abstract=2564369
 :CUSTOM_ID: data
 :END:
 
-https://www.dropbox.com/s/45b42e89gaafg0n/cpie_data.zip?dl=1
+https://github.com/edwinhu/pin-code/releases/download/legacy-1993-2012/cpie_data.zip
 
 The data contains several files:
 - ~cpie_daily.csv~
@@ -177,7 +177,7 @@ $\delta$, and ~th~ is $\theta$.
 
 2013--2019 GPIN
 and OWR estimates:\\
-https://www.dropbox.com/s/6xaa3x5zbmvyyq1/pin-est-1319.zip?dl=1
+https://github.com/edwinhu/pin-code/releases/download/legacy-1993-2012/pin-est-1319.zip
 
 Based on requests from other researchers we have updated our estimates
 beyond the sample period in our paper. These estimates may be used as

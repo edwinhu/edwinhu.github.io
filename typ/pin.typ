@@ -30,7 +30,7 @@ Latest version available at #link("https://ssrn.com/abstract=2564369")[SSRN].
 
 = Data <data>
 
-#link("https://www.dropbox.com/s/45b42e89gaafg0n/cpie_data.zip?dl=1")[https://www.dropbox.com/s/45b42e89gaafg0n/cpie_data.zip?dl=1]
+#link("https://github.com/edwinhu/pin-code/releases/download/legacy-1993-2012/cpie_data.zip")[https://github.com/edwinhu/pin-code/releases/download/legacy-1993-2012/cpie_data.zip]
 
 The data contains several files:
 
@@ -178,7 +178,7 @@ The data contains several files:
 
 2013--2019 GPIN and OWR estimates:
 
-#link("https://www.dropbox.com/s/6xaa3x5zbmvyyq1/pin-est-1319.zip?dl=1")[https://www.dropbox.com/s/6xaa3x5zbmvyyq1/pin-est-1319.zip?dl=1]
+#link("https://github.com/edwinhu/pin-code/releases/download/legacy-1993-2012/pin-est-1319.zip")[https://github.com/edwinhu/pin-code/releases/download/legacy-1993-2012/pin-est-1319.zip]
 
 Based on requests from other researchers we have updated our estimates beyond the sample period in our paper. These estimates may be used as starting points for your own estimation, or used as-is. We have done some basic quality checks with the estimates, but not to the full extent of the 1993--2012 sample from the paper. In the paper we also only used NYSE-listed stocks. If you have any questions, comments, suggestions, or find any issues please feel free to contact me. If you use these estimates in your work, please cite to our paper and website so that future researchers can find our work.
 
